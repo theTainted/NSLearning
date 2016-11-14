@@ -17,12 +17,12 @@ public class HomePage {
     public WebElement btnAcceptCookies;
     @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
     public WebElement btnSearchIcon;
-
+    @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
+    public WebElement txtBoxSearch;
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
-
    public void  clickAcceptCookiesButton(){
        if (btnAcceptCookies.isDisplayed()){
            btnAcceptCookies.click();
@@ -31,10 +31,13 @@ public class HomePage {
            System.out.println("accept Cookies button not found");
        }
    }
-
-
     public void clickOnSearchIcon() {
         btnSearchIcon.click();
 
+    }
+    public ProductListPage searchText(String searchString){
+        txtBoxSearch.sendKeys(searchString);
+        clickOnSearchIcon();
+        return new ProductListPage(driver);
     }
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import PageObjects.ProductListPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,6 +27,8 @@ public class Dummy {
 
     //Search for Jackets
         homePage.clickOnSearchIcon();
+       ProductListPage plp= homePage.searchText("Jackets");
+
 
 
 
