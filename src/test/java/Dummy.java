@@ -31,7 +31,7 @@ public class Dummy {
         homePage.clickOnSearchIcon();
         ProductListPage plp= homePage.searchText("JACKET DICKEY");
         ProductDisplayPage pdp = plp.clickOnFirstResult();
-     //  pdp.clickOnFirstSize();
+        pdp.clickOnFirstSize();
         pdp.clickOnAddToCart();
 
 
