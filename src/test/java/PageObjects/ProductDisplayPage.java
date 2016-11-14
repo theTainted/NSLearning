@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by syam.suryanarayanan on 11/14/2016.
@@ -35,6 +36,8 @@ public class ProductDisplayPage {
 
     }
     public void clickOnAddToCart(){
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println(btnAddToCart.isEnabled());
         if(btnAddToCart.isEnabled()){
             btnAddToCart.click();
         System.out.println("in if");
