@@ -13,7 +13,8 @@ public class HomePage {
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
     public WebElement btnAcceptCookies;
-
+    @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
+    public WebElement searchIcon;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by syam.suryanarayanan on 11/3/2016.
  */
@@ -27,6 +30,7 @@ public class Dummy {
      }
 
     //Search for Jackets
+        homePage.searchIcon.click();
 
 
 
