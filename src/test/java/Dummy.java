@@ -1,4 +1,5 @@
 import PageObjects.HomePage;
+import PageObjects.ProductDisplayPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import PageObjects.ProductListPage;
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,8 +29,8 @@ public class Dummy {
 
     //Search for Jackets
         homePage.clickOnSearchIcon();
-       ProductListPage plp= homePage.searchText("Jackets");
-
+        ProductListPage plp= homePage.searchText("JACKET DICKEY");
+        ProductDisplayPage pdp = plp.clickOnFirstResult();
 
 
 
