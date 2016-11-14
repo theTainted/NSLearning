@@ -14,14 +14,25 @@ public class HomePage {
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
     public WebElement btnAcceptCookies;
     @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
-    public WebElement searchIcon;
+    public WebElement btnSearchIcon;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
 
+   public void  clickAcceptCookiesButton(){
+       if (btnAcceptCookies.isDisplayed()){
+           btnAcceptCookies.click();
+       }
+       else{
+           System.out.println("accept Cookies button not found");
+       }
+   }
 
 
+    public void clickOnSearchIcon() {
+        btnSearchIcon.click();
 
+    }
 }

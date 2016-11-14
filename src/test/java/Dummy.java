@@ -22,15 +22,10 @@ public class Dummy {
         driver.manage().window().maximize();
     //Accept cookies message
         HomePage homePage =new HomePage(driver);
-     if (homePage.btnAcceptCookies.isDisplayed()){
-         homePage.btnAcceptCookies.click();
-     }
-        else{
-         System.out.println("accept Cookies button not found");
-     }
+        homePage.clickAcceptCookiesButton();
 
     //Search for Jackets
-        homePage.searchIcon.click();
+        homePage.clickOnSearchIcon();
 
 
 
