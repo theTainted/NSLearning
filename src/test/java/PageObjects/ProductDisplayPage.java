@@ -16,9 +16,11 @@ public class ProductDisplayPage {
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
     @FindAll({
-            @FindBy(xpath="//div[@id='product-content']//ul[@class='swatches size']")
+            @FindBy(xpath="//div[@id='product-content']//ul[@class='swatches size']/li")
     })
     public List<WebElement> allSizes ;
+    @FindBy(id="add-to-cart")
+    public WebElement btnAddToCart;
 
 
     public ProductDisplayPage(WebDriver driver) {
@@ -27,7 +29,21 @@ public class ProductDisplayPage {
     }
     /*clicks on the first available size*/
     public void clickOnFirstSize(){
-        allSizes.get(1).click();
+        System.out.println(allSizes.size());
+        System.out.println(allSizes.get(0).getText()); //gets the text of the size
+        allSizes.get(0).click();
+
+    }
+    public void clickOnAddToCart(){
+        if(btnAddToCart.isEnabled()){
+            btnAddToCart.click();
+        System.out.println("in if");
+        }
+         else {
+
+         softAssert.fail("add to cart button is disabled");
+         softAssert.assertAll();
+        }
     }
 
 }

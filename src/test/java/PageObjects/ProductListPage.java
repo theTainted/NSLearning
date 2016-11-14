@@ -26,10 +26,10 @@ public class ProductListPage {
         PageFactory.initElements(this.driver, this);
     }
 
-
+    /*clicks on the first available product*/
     public ProductDisplayPage clickOnFirstResult(){
         System.out.println(allResults.size());
-        allResults.get(1).click();
+        allResults.get(0).click();
         return new ProductDisplayPage(driver);
     }
 
