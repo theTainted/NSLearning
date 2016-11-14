@@ -12,13 +12,8 @@ public class Dummy {
         WebDriver driver = new ChromeDriver();
         String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
         driver.get(URL);
-     //   driver.get("https://development.northsails.com");
-      //  driver.switchTo().alert();
-//Selenium-WebDriver Java Code for entering Username & Password as below:
-    /*    driver.findElement(By.id("userID")).sendKeys("userName");
+        driver.manage().window().maximize();
 
-        driver.findElement(By.id("password")).sendKeys("myPassword");
-        driver.switchTo().alert().accept();
-        driver.switchTo().defaultContent();*/
+
     }
 }
