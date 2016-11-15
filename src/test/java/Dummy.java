@@ -32,7 +32,7 @@ public class Dummy {
         ProductListPage plp= homePage.searchText("JACKET DICKEY");
         ProductDisplayPage pdp = plp.clickOnFirstResult();
          pdp.clickOnFirstSize();
-        //Thread.sleep(15000);
+        Thread.sleep(15000);
         pdp.clickOnAddToCart();
 
 

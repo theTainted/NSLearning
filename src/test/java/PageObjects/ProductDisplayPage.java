@@ -41,9 +41,9 @@ public class ProductDisplayPage {
 
     }
     public void clickOnAddToCart(){
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        /*WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOf(productImage));
-        System.out.println(btnAddToCart.isEnabled());
+        System.out.println(btnAddToCart.isEnabled());*/
         if(btnAddToCart.isEnabled()){
             btnAddToCart.click();
         System.out.println("in if");
