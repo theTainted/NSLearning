@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -40,12 +41,15 @@ public class ProductDisplayPage {
         allSizes.get(0).click();
 
     }
+
+
     public void clickOnAddToCart(){
-        /*WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOf(productImage));
-        System.out.println(btnAddToCart.isEnabled());*/
-        if(btnAddToCart.isEnabled()){
-            btnAddToCart.click();
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.elementToBeClickable(btnAddToCart));
+      //  wait.until(ExpectedConditions.visibilityOf(btnAddToCart));
+        System.out.println(btnAddToCart.isEnabled());
+        if(driver.findElement(By.id("add-to-cart")).isEnabled()){
+            driver.findElement(By.id("add-to-cart")).click();
         System.out.println("in if");
         }
          else {
