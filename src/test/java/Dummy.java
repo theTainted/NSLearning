@@ -34,6 +34,7 @@ public class Dummy {
          pdp.clickOnFirstSize();
         Thread.sleep(15000);
         pdp.clickOnAddToCart();
+        driver.findElement(By.xpath("//div[@id='wrapper']/header//i[@class='icon-bag']"));
 
 
 
