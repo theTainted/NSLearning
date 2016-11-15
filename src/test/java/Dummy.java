@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Dummy {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -31,7 +31,8 @@ public class Dummy {
         homePage.clickOnSearchIcon();
         ProductListPage plp= homePage.searchText("JACKET DICKEY");
         ProductDisplayPage pdp = plp.clickOnFirstResult();
-        pdp.clickOnFirstSize();
+         pdp.clickOnFirstSize();
+        //Thread.sleep(15000);
         pdp.clickOnAddToCart();
 
 

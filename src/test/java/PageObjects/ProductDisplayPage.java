@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
@@ -16,13 +19,15 @@ import java.util.concurrent.TimeUnit;
 public class ProductDisplayPage {
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
+
     @FindAll({
             @FindBy(xpath="//div[@id='product-content']//ul[@class='swatches size']/li")
     })
     public List<WebElement> allSizes ;
     @FindBy(id="add-to-cart")
     public WebElement btnAddToCart;
-
+    @FindBy(xpath="//div[@id='pdpMain']/span//a/img[@class='primary-image']")
+    public WebElement productImage;
 
     public ProductDisplayPage(WebDriver driver) {
         this.driver = driver;
@@ -36,7 +41,8 @@ public class ProductDisplayPage {
 
     }
     public void clickOnAddToCart(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOf(productImage));
         System.out.println(btnAddToCart.isEnabled());
         if(btnAddToCart.isEnabled()){
             btnAddToCart.click();
