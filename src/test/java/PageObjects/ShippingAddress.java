@@ -1,8 +1,10 @@
 package PageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,7 +37,7 @@ public class ShippingAddress {
     public WebElement txtBoxPhone;
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_useAsBillingAddress")
     public WebElement rdoChooseBillingAddress;
-    @FindBy(xpath = "//form[@id='dwfrm_singleshipping_shippingAddress']/fieldset[@class='to-billing']//button[@name='dwfrm_singleshipping_shippingAddress_save']")
+    @FindBy(xpath = "//form[@id='dwfrm_singleshipping_shippingAddress']/fieldset[@class='to-billing']//button[@class='btn btn--blue']")
     public WebElement btnToBilling;
 
     public ShippingAddress(WebDriver driver) {
@@ -87,13 +89,21 @@ public class ShippingAddress {
     }
 
     public void clickBtnToBilling() {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(btnToBilling));
-        System.out.println(btnToBilling.isEnabled());
-      if (btnToBilling.isEnabled()) {
 
+
+
+     /*   Actions actions = new Actions(driver);
+
+        actions.moveToElement(btnToBilling).click().perform();*/
+        btnToBilling.sendKeys(Keys.RETURN);
+
+
+      /*  if (btnToBilling.isEnabled()){
             btnToBilling.click();
 
-        }
+
+        }*/
     }
 }
