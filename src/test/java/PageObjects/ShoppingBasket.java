@@ -20,10 +20,12 @@ public class ShoppingBasket {
         PageFactory.initElements(this.driver, this);
     }
 
-    public void clickOnCheckoutButton(){
+    public Login clickOnCheckoutButton(){
         if(btnTopCheckout.isEnabled()){
             btnTopCheckout.click();
+
         }
+        return new Login(driver);
     }
 
 }

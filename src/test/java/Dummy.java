@@ -1,6 +1,4 @@
-import PageObjects.HomePage;
-import PageObjects.ProductDisplayPage;
-import PageObjects.ShoppingBasket;
+import PageObjects.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
-import PageObjects.ProductListPage;
 
 
 import java.util.concurrent.TimeUnit;
@@ -36,8 +33,9 @@ public class Dummy {
          pdp.clickOnFirstSize();
         //Thread.sleep(2000);
         pdp.clickOnAddToCart();
-       ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
-        sb.clickOnCheckoutButton();
+        ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
+        Login login = sb.clickOnCheckoutButton();
+        login.clickOnCheckoutAsGuest();
 
 
 
