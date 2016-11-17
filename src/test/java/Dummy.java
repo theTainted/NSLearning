@@ -37,6 +37,7 @@ public class Dummy {
         //Thread.sleep(2000);
         pdp.clickOnAddToCart();
        ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
+        sb.clickOnCheckoutButton();
 
 
 
