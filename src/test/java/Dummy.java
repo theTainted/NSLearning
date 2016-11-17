@@ -45,7 +45,7 @@ public class Dummy {
         shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
         shippingAddress.enterPhone("3333");
        // shippingAddress.selectBillingAddressOption();
-        Thread.sleep(5000);
+
         shippingAddress.clickBtnToBilling();
 
 

@@ -52,7 +52,7 @@ public class ProductDisplayPage {
         System.out.println(btnAddToCart.isEnabled());
         if(driver.findElement(By.id("add-to-cart")).isEnabled()){
             driver.findElement(By.id("add-to-cart")).click();
-        System.out.println("in if");
+     //   System.out.println("in if");
         }
          else {
 
