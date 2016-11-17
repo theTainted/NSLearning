@@ -56,6 +56,11 @@ public class BillingPage {
     public void selectTermsAndConditions(){
         chkBoxTermsAndConditions.click();
     }
+
+    /**
+     * for select dropdowns i am passing values and treating them as WebElements instead of dropdowns, need to check this again.
+     * @param month
+     */
     public void selectExpiryMonth(String month){
         expiryMonth.sendKeys(month);
       //  expiryMonth.selectByIndex(6);
@@ -66,7 +71,12 @@ public class BillingPage {
                 option.click();*/
         }
 
+    /**
+     * for select dropdowns i am passing values and treating them as WebElements instead of dropdowns, need to check this again.
+     * @param year
+     */
     public void selectExpiryYear(String year){
+
         expiryYear.sendKeys(year);
       /*  optionYear=expiryYear.getOptions();
         for (WebElement option : optionYear) {
