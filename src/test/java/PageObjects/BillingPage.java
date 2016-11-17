@@ -28,9 +28,9 @@ public class BillingPage {
     @FindBy(id="dwfrm_billing_terms")
     public WebElement chkBoxTermsAndConditions;
     @FindBy (id="dwfrm_billing_paymentMethods_creditCard_expiration_month")
-    public Select expiryMonth;
+    public WebElement expiryMonth;
     @FindBy(id="dwfrm_billing_paymentMethods_creditCard_expiration_year")
-    public Select expiryYear;
+    public WebElement expiryYear;
     @FindBy(xpath="//form[@id='dwfrm_billing']//button[@name='dwfrm_billing_save']")
     public WebElement btnPay;
     List<WebElement> options;
@@ -57,8 +57,8 @@ public class BillingPage {
         chkBoxTermsAndConditions.click();
     }
     public void selectExpiryMonth(String month){
-        expiryMonth.selectByValue(month);
-        expiryMonth.selectByIndex(6);
+        expiryMonth.sendKeys(month);
+      //  expiryMonth.selectByIndex(6);
       /*  options=expiryMonth.getOptions();
         for (WebElement option : options) {
             if(month.equals(option.getText()))
@@ -67,7 +67,7 @@ public class BillingPage {
         }
 
     public void selectExpiryYear(String year){
-        expiryYear.selectByValue(year);
+        expiryYear.sendKeys(year);
       /*  optionYear=expiryYear.getOptions();
         for (WebElement option : optionYear) {
             if(year.equals(option.getText()))
