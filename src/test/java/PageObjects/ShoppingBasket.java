@@ -13,7 +13,7 @@ public class ShoppingBasket {
 
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart\"']")
+    @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart']")
     public WebElement btnTopCheckout;
     public ShoppingBasket(WebDriver driver) {
         this.driver = driver;
