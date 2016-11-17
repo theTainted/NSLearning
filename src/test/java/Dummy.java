@@ -48,8 +48,15 @@ public class Dummy {
 
         shippingAddress.clickBtnToBilling();
 
-
-
+        BillingPage billingPage = new BillingPage(driver);
+        Thread.sleep(5000);
+        billingPage.enterNumber("4111111111111111");
+        billingPage.enterCVV("737");
+        billingPage.enterName("test");
+        billingPage.selectTermsAndConditions();
+        billingPage.selectExpiryMonth("August");
+        billingPage.selectExpiryYear("2018");
+        billingPage.clickBtnToPay();
 
 
 /*
