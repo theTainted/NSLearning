@@ -61,10 +61,12 @@ public class ProductDisplayPage {
         }
     }
 
-    public void clickOnMiniBasketIcon(){
+    public ShoppingBasket clickOnMiniBasketIcon(){
         if(miniBasket.isEnabled()){
             miniBasket.click();
+
         }
+        return new ShoppingBasket(driver);
     }
 
 }

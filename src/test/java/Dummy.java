@@ -1,5 +1,6 @@
 import PageObjects.HomePage;
 import PageObjects.ProductDisplayPage;
+import PageObjects.ShoppingBasket;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +36,8 @@ public class Dummy {
          pdp.clickOnFirstSize();
         //Thread.sleep(2000);
         pdp.clickOnAddToCart();
-        pdp.clickOnMiniBasketIcon();
+       ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
+
 
 
 /*
