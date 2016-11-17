@@ -35,6 +35,7 @@ public class Dummy {
          pdp.clickOnFirstSize();
         //Thread.sleep(2000);
         pdp.clickOnAddToCart();
+        pdp.clickOnMiniBasketIcon();
 
 
 /*

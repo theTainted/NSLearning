@@ -29,6 +29,8 @@ public class ProductDisplayPage {
     public WebElement btnAddToCart;
     @FindBy(xpath="//div[@id='pdpMain']/span//a/img[@class='primary-image']")
     public WebElement productImage;
+    @FindBy(xpath="//div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']")
+    public WebElement miniBasket;
 
     public ProductDisplayPage(WebDriver driver) {
         this.driver = driver;
@@ -41,7 +43,7 @@ public class ProductDisplayPage {
         allSizes.get(0).click();
 
     }
-
+//div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']
 
     public void clickOnAddToCart(){
         WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -56,6 +58,12 @@ public class ProductDisplayPage {
 
          softAssert.fail("add to cart button is disabled");
          softAssert.assertAll();
+        }
+    }
+
+    public void clickOnMiniBasketIcon(){
+        if(miniBasket.isEnabled()){
+            miniBasket.click();
         }
     }
 
