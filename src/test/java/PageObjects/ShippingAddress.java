@@ -88,7 +88,7 @@ public class ShippingAddress {
 
     }
 
-    public void clickBtnToBilling() {
+    public BillingPage clickBtnToBilling() {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(btnToBilling));
 
@@ -98,6 +98,7 @@ public class ShippingAddress {
 
         actions.moveToElement(btnToBilling).click().perform();*/
         btnToBilling.sendKeys(Keys.RETURN);
+        return new BillingPage(driver);
 
 
       /*  if (btnToBilling.isEnabled()){

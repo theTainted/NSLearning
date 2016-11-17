@@ -46,9 +46,9 @@ public class Dummy {
         shippingAddress.enterPhone("3333");
        // shippingAddress.selectBillingAddressOption();
 
-        shippingAddress.clickBtnToBilling();
+        BillingPage billingPage= shippingAddress.clickBtnToBilling();
 
-        BillingPage billingPage = new BillingPage(driver);
+
         Thread.sleep(5000);
         billingPage.enterNumber("4111111111111111");
         billingPage.enterCVV("737");

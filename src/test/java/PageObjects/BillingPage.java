@@ -33,8 +33,8 @@ public class BillingPage {
     public Select expiryYear;
     @FindBy(xpath="//form[@id='dwfrm_billing']//button[@name='dwfrm_billing_save']")
     public WebElement btnPay;
-
-
+    List<WebElement> options;
+    List<WebElement> optionYear;
 
 
     public BillingPage(WebDriver driver) {
@@ -57,33 +57,37 @@ public class BillingPage {
         chkBoxTermsAndConditions.click();
     }
     public void selectExpiryMonth(String month){
-        List<WebElement> options=expiryMonth.getOptions();
+        expiryMonth.selectByValue(month);
+        expiryMonth.selectByIndex(6);
+      /*  options=expiryMonth.getOptions();
         for (WebElement option : options) {
             if(month.equals(option.getText()))
-                option.click();
+                System.out.println(option);
+                option.click();*/
         }
-    }
+
     public void selectExpiryYear(String year){
-        List<WebElement> options=expiryYear.getOptions();
-        for (WebElement option : options) {
+        expiryYear.selectByValue(year);
+      /*  optionYear=expiryYear.getOptions();
+        for (WebElement option : optionYear) {
             if(year.equals(option.getText()))
-                option.click();
+                option.click();*/
         }
-    }
+
     public void clickBtnToPay() {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(btnPay));
-
+        btnPay.sendKeys(Keys.RETURN);
 
 
      /*   Actions actions = new Actions(driver);
 
         actions.moveToElement(btnToBilling).click().perform();*/
-        btnPay.sendKeys(Keys.RETURN);
+
 
 
       /*  if (btnToBilling.isEnabled()){
-            btnToBilling.click();
+            btnToBilling.click();s
 
 
         }*/
