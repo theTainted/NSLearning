@@ -22,8 +22,9 @@ public class Login {
     }
 
 
-    public void clickOnCheckoutAsGuest(){
+    public ShippingAddress clickOnCheckoutAsGuest(){
         btnCheckoutAsGuest.click();
+        return new ShippingAddress(driver);
 
     }
 

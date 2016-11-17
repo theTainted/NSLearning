@@ -35,7 +35,20 @@ public class Dummy {
         pdp.clickOnAddToCart();
         ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
         Login login = sb.clickOnCheckoutButton();
-        login.clickOnCheckoutAsGuest();
+        ShippingAddress shippingAddress = login.clickOnCheckoutAsGuest();
+        shippingAddress.selectMan();
+        shippingAddress.enterFirstName("test");
+        shippingAddress.enterLastName("tester");
+        shippingAddress.enterAddressOne("Line 1");
+        shippingAddress.enterZip("1114AB");
+        shippingAddress.enterCity("Amsterdam");
+        shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
+        shippingAddress.enterPhone("3333");
+       // shippingAddress.selectBillingAddressOption();
+        Thread.sleep(5000);
+        shippingAddress.clickBtnToBilling();
+
+
 
 
 
