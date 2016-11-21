@@ -19,6 +19,8 @@ public class HomePage {
     public WebElement btnSearchIcon;
     @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
     public WebElement txtBoxSearch;
+    @FindBy(id="shopping-button")
+    public WebElement btnShoppingButtonInCountrySelector;
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -34,6 +36,11 @@ public class HomePage {
     public void clickOnSearchIcon() {
         btnSearchIcon.click();
 
+    }
+    public void clickShoppingButtonInCountrySelector(){
+        if(btnShoppingButtonInCountrySelector.isDisplayed()){
+            btnShoppingButtonInCountrySelector.click();
+        }
     }
     public ProductListPage searchText(String searchString){
         txtBoxSearch.sendKeys(searchString);
