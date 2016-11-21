@@ -11,9 +11,11 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by syam.suryanarayanan on 11/3/2016.
  */
-public class Dummy {
+public class GuestUserCheckOutFlow {
 
-    public static void main(String[] args) throws InterruptedException {
+    @Test
+   // public static void main(String[] args) throws InterruptedException {
+     public void testGuestUserCheckOutFlow() {
 
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -49,7 +51,7 @@ public class Dummy {
         BillingPage billingPage= shippingAddress.clickBtnToBilling();
 
 
-        Thread.sleep(5000);
+      //  Thread.sleep(5000);
         billingPage.enterNumber("4111111111111111");
         billingPage.enterCVV("737");
         billingPage.enterName("test");
