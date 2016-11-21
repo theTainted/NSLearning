@@ -7,4 +7,5 @@ public class General {
 
    public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/de/en/homepage/";
 
+
 }
