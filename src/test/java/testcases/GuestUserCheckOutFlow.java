@@ -33,7 +33,7 @@ public class GuestUserCheckOutFlow extends General{
 
     //Search for Jackets
         homePage.clickOnSearchIcon();
-        ProductListPage plp= homePage.searchText("JACKET DICKEY");
+        ProductListPage plp= homePage.searchText(searchString);
         ProductDisplayPage pdp = plp.clickOnFirstResult();
          pdp.clickOnFirstSize();
         //Thread.sleep(2000);

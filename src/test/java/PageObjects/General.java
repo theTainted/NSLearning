@@ -14,6 +14,7 @@ public class General {
 
 
     public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/de/en/homepage/";
+    public static String searchString="Jacket";
 
     public static WebDriver getBrowser(String browserType)
 
