@@ -19,8 +19,8 @@ public class GuestUserCheckOutFlow extends General{
    // public static void main(String[] args) throws InterruptedException {
     /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() {
-
-       /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+/*
+        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
          General.getBrowser("Chrome");
         driver.get(General.URL);
@@ -63,7 +63,7 @@ public class GuestUserCheckOutFlow extends General{
         billingPage.selectExpiryYear("2018");
         billingPage.clickBtnToPay();
 
-
+       driver.quit();
 /*
                 Actions action = new Actions(driver);
         WebElement we = driver.findElement(By.xpath("//div[@id='wrapper']/header//i[@class='icon-bag']"));

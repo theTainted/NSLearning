@@ -2,8 +2,9 @@
 <suite name="Example test run">
     <test name="Simple Test">
         <classes>
-            <class name="testcases.GuestUserCheckOutFlow"/>
+
             <class name ="testcases.RegisteredUserCheckOutFlow"/>
+            <class name="testcases.GuestUserCheckOutFlow"/>
 
         </classes>
     </test>
