@@ -17,7 +17,7 @@ public class RegisteredUserCheckOutFlow extends General {
     driver.get(General.URL);
     driver.manage().window().maximize();
     //Accept cookies message
-    HomePage homePage =new HomePage(driver);
+    final HomePage homePage =new HomePage(driver);
     homePage.clickAcceptCookiesButton();
     //Click on ContinueShopping in the countrySelector PopuP
     homePage.clickShoppingButtonInCountrySelector();
