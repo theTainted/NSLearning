@@ -13,16 +13,16 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by syam.suryanarayanan on 11/3/2016.
  */
-public class GuestUserCheckOutFlow {
+public class GuestUserCheckOutFlow extends General{
 
     @Test
    // public static void main(String[] args) throws InterruptedException {
     /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() {
 
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-
+       /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();*/
+         General.getBrowser("Chrome");
         driver.get(General.URL);
         driver.manage().window().maximize();
     //Accept cookies message
@@ -47,7 +47,7 @@ public class GuestUserCheckOutFlow {
         shippingAddress.enterAddressOne("Line 1");
         shippingAddress.enterZip("1114AB");
         shippingAddress.enterCity("Amsterdam");
-        shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
+        shippingAddress.enterEmail("bjornjaco.geerdingdffddsfds@digitaslbi.com");
         shippingAddress.enterPhone("3333");
        // shippingAddress.selectBillingAddressOption();
 
