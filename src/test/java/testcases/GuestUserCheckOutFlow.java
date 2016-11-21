@@ -17,6 +17,7 @@ public class GuestUserCheckOutFlow {
 
     @Test
    // public static void main(String[] args) throws InterruptedException {
+    /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() {
 
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");

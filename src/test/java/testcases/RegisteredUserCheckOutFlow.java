@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 public class RegisteredUserCheckOutFlow {
 
 @Test
+/*016fd76(Need to add the driver in the general class)*/
     public void testRegisteredUserCheckOutFlow(){
     System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
     WebDriver driver = new ChromeDriver();
