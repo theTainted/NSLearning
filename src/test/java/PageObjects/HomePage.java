@@ -9,8 +9,8 @@ import org.testng.asserts.SoftAssert;
 /**
  * Created by syam.suryanarayanan on 11/14/2016.
  */
-public class HomePage {
-    WebDriver driver;
+public class HomePage extends General {
+   // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")

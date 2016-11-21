@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by syam.suryanarayanan on 11/14/2016.
  */
-public class ProductDisplayPage {
-    WebDriver driver;
+public class ProductDisplayPage extends General {
+   // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
     @FindAll({

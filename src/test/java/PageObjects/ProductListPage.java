@@ -12,8 +12,8 @@ import java.util.List;
 /**
  * Created by syam.suryanarayanan on 11/14/2016.
  */
-public class ProductListPage {
-    WebDriver driver;
+public class ProductListPage extends General {
+    //WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
     @FindAll({
         @FindBy(xpath="//ul[@id='search-result-items']/li")

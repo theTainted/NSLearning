@@ -15,8 +15,8 @@ import java.util.List;
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
  */
-public class BillingPage {
-    WebDriver driver;
+public class BillingPage extends General {
+  //  WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(id="dwfrm_billing_paymentMethods_creditCard_owner")

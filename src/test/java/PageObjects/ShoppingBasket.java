@@ -9,9 +9,9 @@ import org.testng.asserts.SoftAssert;
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
  */
-public class ShoppingBasket {
+public class ShoppingBasket extends General {
 
-    WebDriver driver;
+  //  WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
     @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart']")
     public WebElement btnTopCheckout;

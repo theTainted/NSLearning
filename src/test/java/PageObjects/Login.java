@@ -9,8 +9,8 @@ import org.testng.asserts.SoftAssert;
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
  */
-public class Login {
-    WebDriver driver;
+public class Login extends General {
+  //  WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath="//div[@id='checkoutloginpage']//button[@name='dwfrm_login_unregistered']")

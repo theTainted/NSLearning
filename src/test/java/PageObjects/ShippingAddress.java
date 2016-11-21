@@ -14,9 +14,9 @@ import org.testng.asserts.SoftAssert;
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
  */
-public class ShippingAddress {
+public class ShippingAddress extends General {
 
-    WebDriver driver;
+   // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath = "//input[@value='Man']")
