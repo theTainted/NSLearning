@@ -19,7 +19,7 @@ public class General {
     public static WebDriver getBrowser(String browserType)
 
     {
-        if(driver == null)
+        //if(driver == null)
 
         {
 
