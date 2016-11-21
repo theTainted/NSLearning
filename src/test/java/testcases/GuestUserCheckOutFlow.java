@@ -1,3 +1,5 @@
+package testcases;
+
 import PageObjects.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,8 +21,8 @@ public class GuestUserCheckOutFlow {
 
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/de/en/homepage/";
-        driver.get(URL);
+
+        driver.get(General.URL);
         driver.manage().window().maximize();
     //Accept cookies message
         HomePage homePage =new HomePage(driver);
