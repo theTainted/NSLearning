@@ -13,11 +13,14 @@ public class RegisteredUserCheckOutFlow extends General {
 @Test
 /*016fd76(Need to add the driver in the general class)*/
     public void testRegisteredUserCheckOutFlow() {
+  /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+    WebDriver driver = new ChromeDriver();*/
+
     General.getBrowser("Chrome");
     driver.get(General.URL);
     driver.manage().window().maximize();
     //Accept cookies message
-    HomePage homePage =new HomePage(driver);
+    final HomePage homePage =new HomePage(driver);
     homePage.clickAcceptCookiesButton();
     //Click on ContinueShopping in the countrySelector PopuP
     homePage.clickShoppingButtonInCountrySelector();
@@ -29,7 +32,10 @@ public class RegisteredUserCheckOutFlow extends General {
     pdp.clickOnFirstSize();
     //Thread.sleep(2000);
     pdp.clickOnAddToCart();
-    ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
-    Login login = sb.clickOnCheckoutButton();
+    ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
+    Login Login = sb.clickOnCheckoutButton();
+    driver.quit();
+
+
 }
 }

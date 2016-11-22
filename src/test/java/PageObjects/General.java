@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
  * Created by syam.suryanarayanan on 11/21/2016.
  */
 public class General {
-   public static WebDriver driver =null;
+   public static WebDriver driver;
 
 
     public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/de/en/homepage/";
@@ -19,7 +19,7 @@ public class General {
     public static WebDriver getBrowser(String browserType)
 
     {
-        if(driver == null)
+        //if(driver == null)
 
         {
 
