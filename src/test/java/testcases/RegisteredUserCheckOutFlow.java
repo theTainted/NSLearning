@@ -1,9 +1,6 @@
 package testcases;
 
-import PageObjects.General;
-import PageObjects.HomePage;
-import PageObjects.ProductDisplayPage;
-import PageObjects.ProductListPage;
+import PageObjects.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -32,5 +29,7 @@ public class RegisteredUserCheckOutFlow extends General {
     pdp.clickOnFirstSize();
     //Thread.sleep(2000);
     pdp.clickOnAddToCart();
+    ShoppingBasket sb= pdp.clickOnMiniBasketIcon();
+    Login login = sb.clickOnCheckoutButton();
 }
 }
