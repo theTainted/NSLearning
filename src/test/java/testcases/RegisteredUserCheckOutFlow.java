@@ -36,7 +36,7 @@ public class RegisteredUserCheckOutFlow extends General {
     Login Login = sb.clickOnCheckoutButton();
 
     driver.quit();
-
+//test comment
 
 }
 }
