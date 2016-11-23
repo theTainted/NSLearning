@@ -34,8 +34,9 @@ public class RegisteredUserCheckOutFlow extends General {
     pdp.clickOnAddToCart();
     ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
     Login Login = sb.clickOnCheckoutButton();
-    driver.quit();
 
+    driver.quit();
+//test comment
 
 }
 }
