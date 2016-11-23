@@ -37,6 +37,7 @@ public class RegisteredUserCheckOutFlow extends General {
 
     driver.quit();
 //test comment
+    //test comment2
 
 }
 }
