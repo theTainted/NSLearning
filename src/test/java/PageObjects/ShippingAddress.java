@@ -39,6 +39,8 @@ public class ShippingAddress extends General {
     public WebElement rdoChooseBillingAddress;
     @FindBy(xpath = "//form[@id='dwfrm_singleshipping_shippingAddress']/fieldset[@class='to-billing']//button[@class='btn btn--blue']")
     public WebElement btnToBilling;
+    @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_country")
+    public WebElement selectCountry;
 
     public ShippingAddress(WebDriver driver) {
         this.driver = driver;
@@ -106,5 +108,18 @@ public class ShippingAddress extends General {
 
 
         }*/
+    }
+    /**
+     * for select dropdowns i am passing values and treating them as WebElements instead of dropdowns, need to check this again.
+     * @param country
+     */
+    public void selectCountry(String country){
+        selectCountry.sendKeys(country);
+        //  expiryMonth.selectByIndex(6);
+      /*  options=expiryMonth.getOptions();
+        for (WebElement option : options) {
+            if(month.equals(option.getText()))
+                System.out.println(option);
+                option.click();*/
     }
 }
