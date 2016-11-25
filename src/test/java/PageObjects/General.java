@@ -3,6 +3,8 @@ package PageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,8 +28,12 @@ public class General {
             if(browserType.equals("Firefox"))
 
             {
-
-                driver = new FirefoxDriver();
+                System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+                ProfilesIni prof = new ProfilesIni();
+                FirefoxProfile ffProfile= prof.getProfile ("myProfile");
+                ffProfile.setAcceptUntrustedCertificates(true);
+                ffProfile.setAssumeUntrustedCertificateIssuer(false);
+                driver = new FirefoxDriver(ffProfile);
 
             }
 

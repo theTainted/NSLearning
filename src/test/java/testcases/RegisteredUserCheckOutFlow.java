@@ -20,7 +20,7 @@ public class RegisteredUserCheckOutFlow extends General {
     String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 for(int i=0;i<countries.length;i++) {
 
-    General.getBrowser("Chrome");
+    General.getBrowser("Firefox");
     driver.get(General.URL);
     driver.manage().window().maximize();
     //Accept cookies message
@@ -57,12 +57,12 @@ for(int i=0;i<countries.length;i++) {
 
 
     //  Thread.sleep(5000);
-    billingPage.enterNumber("4111111111111111");
+    billingPage.enterNumber("5100290029002909");
     billingPage.enterCVV("737");
     billingPage.enterName("test");
     billingPage.selectTermsAndConditions();
-    billingPage.selectExpiryMonth("August");
-    billingPage.selectExpiryYear("2018");
+    billingPage.selectExpiryMonth("October");
+    billingPage.selectExpiryYear("2020");
     billingPage.clickBtnToPay();
 
 
