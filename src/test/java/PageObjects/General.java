@@ -28,12 +28,14 @@ public class General {
             if(browserType.equals("Firefox"))
 
             {
-                System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-                ProfilesIni prof = new ProfilesIni();
-                FirefoxProfile ffProfile= prof.getProfile ("myProfile");
-                ffProfile.setAcceptUntrustedCertificates(true);
+
+               ProfilesIni prof = new ProfilesIni();
+                FirefoxProfile ffProfile= prof.getProfile ("myprofile");
+               ffProfile.setAcceptUntrustedCertificates(true);
                 ffProfile.setAssumeUntrustedCertificateIssuer(false);
-                driver = new FirefoxDriver(ffProfile);
+               System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+             driver = new FirefoxDriver(ffProfile);
+
 
             }
 
