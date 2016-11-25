@@ -44,7 +44,7 @@ public class RegisteredUserCheckOutFlow extends General {
     shippingAddress.enterZip("1114AB");
     shippingAddress.enterCity("Amsterdam");
     shippingAddress.selectCountry("Greece");
-    shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
+    //shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com"); -> commented out as for a registered user the email id is prefilled with the login id
     shippingAddress.enterPhone("3333333333");
     // shippingAddress.selectBillingAddressOption();
 
