@@ -60,7 +60,6 @@ public class RegisteredUserCheckOutFlow extends General {
     billingPage.selectExpiryYear("2018");
     billingPage.clickBtnToPay();
 
-    driver.quit();
 
     driver.quit();
 //test comment
