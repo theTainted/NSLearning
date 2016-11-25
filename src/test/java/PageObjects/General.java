@@ -29,12 +29,11 @@ public class General {
 
             {
 
-               ProfilesIni prof = new ProfilesIni();
-                FirefoxProfile ffProfile= prof.getProfile ("myprofile");
-               ffProfile.setAcceptUntrustedCertificates(true);
-                ffProfile.setAssumeUntrustedCertificateIssuer(false);
-               System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-             driver = new FirefoxDriver(ffProfile);
+                FirefoxProfile profile = new FirefoxProfile();
+                profile.setAcceptUntrustedCertificates(true);
+                profile.setAssumeUntrustedCertificateIssuer(false);
+               ;System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+                driver = new FirefoxDriver(profile);
 
 
             }
