@@ -23,17 +23,44 @@ public class RegisteredUserCheckOutFlow extends General {
     final HomePage homePage =new HomePage(driver);
     homePage.clickAcceptCookiesButton();
     //Click on ContinueShopping in the countrySelector PopuP
-    homePage.clickShoppingButtonInCountrySelector();
+   // homePage.clickShoppingButtonInCountrySelector();
 
     //Search for Jackets
     homePage.clickOnSearchIcon();
-    ProductListPage plp= homePage.searchText("cc");
+    ProductListPage plp= homePage.searchText("jacket dickey");
     ProductDisplayPage pdp = plp.clickOnFirstResult();
     pdp.clickOnFirstSize();
     //Thread.sleep(2000);
     pdp.clickOnAddToCart();
     ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
-    Login Login = sb.clickOnCheckoutButton();
+    Login login = sb.clickOnCheckoutButton();
+    login.enterUserName("bjornjg@yopmail.com");
+    login.enterPassword("test1234");
+    ShippingAddress shippingAddress = login.clickOnRegisteredLogin();
+    shippingAddress.selectMan();
+    shippingAddress.enterFirstName("test");
+    shippingAddress.enterLastName("tester");
+    shippingAddress.enterAddressOne("Line 1");
+    shippingAddress.enterZip("1114AB");
+    shippingAddress.enterCity("Amsterdam");
+    shippingAddress.selectCountry("Greece");
+    shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
+    shippingAddress.enterPhone("3333333333");
+    // shippingAddress.selectBillingAddressOption();
+
+    BillingPage billingPage= shippingAddress.clickBtnToBilling();
+
+
+    //  Thread.sleep(5000);
+    billingPage.enterNumber("4111111111111111");
+    billingPage.enterCVV("737");
+    billingPage.enterName("test");
+    billingPage.selectTermsAndConditions();
+    billingPage.selectExpiryMonth("August");
+    billingPage.selectExpiryYear("2018");
+    billingPage.clickBtnToPay();
+
+    driver.quit();
 
     driver.quit();
 //test comment
