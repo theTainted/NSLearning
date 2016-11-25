@@ -29,11 +29,11 @@ public class GuestUserCheckOutFlow extends General{
         HomePage homePage =new HomePage(driver);
         homePage.clickAcceptCookiesButton();
     //Click on ContinueShopping in the countrySelector PopuP
-        homePage.clickShoppingButtonInCountrySelector();
+     //   homePage.clickShoppingButtonInCountrySelector();
 
     //Search for Jackets
         homePage.clickOnSearchIcon();
-        ProductListPage plp= homePage.searchText(searchString);
+        ProductListPage plp= homePage.searchText("jacket dickey");
         ProductDisplayPage pdp = plp.clickOnFirstResult();
          pdp.clickOnFirstSize();
         //Thread.sleep(2000);
@@ -47,7 +47,7 @@ public class GuestUserCheckOutFlow extends General{
         shippingAddress.enterAddressOne("Line 1");
         shippingAddress.enterZip("1114AB");
         shippingAddress.enterCity("Amsterdam");
-        shippingAddress.enterEmail("bjornjaco.geerdingdffddsfds@digitaslbi.com");
+        shippingAddress.enterEmail("kim.tielen423432432@digitaslbi.com");
         shippingAddress.enterPhone("3333");
        // shippingAddress.selectBillingAddressOption();
 
