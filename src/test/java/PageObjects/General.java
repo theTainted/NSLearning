@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -32,8 +33,8 @@ public class General {
                 FirefoxProfile profile = new FirefoxProfile();
                 profile.setAcceptUntrustedCertificates(true);
                 profile.setAssumeUntrustedCertificateIssuer(false);
-               ;System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-                driver = new FirefoxDriver(profile);
+               System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+                  driver = new FirefoxDriver(profile);
 
 
             }
