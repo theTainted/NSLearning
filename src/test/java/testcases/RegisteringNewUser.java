@@ -20,6 +20,12 @@ public class RegisteringNewUser extends General{
         homePage.clickAcceptCookiesButton();
         homePage.clickLoginRegisterButton();
         RegistrationPage register = homePage.clickOnRegisterButton();
-
+        register.generateFirstName();
+        register.enterLastName("tester");
+        register.enterEmail();
+        register.enterConfirmationEmailAddress();
+        register.enterPassword();
+        register.enterConfrimsPassword();
+        register.clickCreateAccount();
     }
 }
