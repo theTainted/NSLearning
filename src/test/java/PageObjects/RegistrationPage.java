@@ -15,7 +15,7 @@ import java.util.Date;
  * Created by syam.suryanarayanan on 11/29/2016.
  */
 public class RegistrationPage extends General {
-    public String sEmailAddress;
+    public String sEmailAddress ;
     SoftAssert softAssert = new SoftAssert();
     @FindBy(id="dwfrm_profile_customer_firstname")
     public WebElement txtBoxFirstName;
