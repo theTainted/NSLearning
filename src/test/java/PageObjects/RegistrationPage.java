@@ -1,6 +1,5 @@
 package PageObjects;
 
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +34,7 @@ public class RegistrationPage extends General {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
+
 
     public void generateFirstName(){
         DateFormat dateFormat = new SimpleDateFormat("MMddHHmm");
