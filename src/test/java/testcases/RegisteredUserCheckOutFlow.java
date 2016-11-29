@@ -20,7 +20,7 @@ public class RegisteredUserCheckOutFlow extends General {
     String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 for(int i=0;i<countries.length;i++) {
 
-    General.getBrowser("Firefox");
+    General.getBrowser("Chrome");
     driver.get(General.URL);
     driver.manage().window().maximize();
     //Accept cookies message
