@@ -21,6 +21,11 @@ public class HomePage extends General {
     public WebElement txtBoxSearch;
     @FindBy(id="shopping-button")
     public WebElement btnShoppingButtonInCountrySelector;
+    @FindBy(xpath="//div[@id='wrapper']//a[@class='user-account']")
+    public WebElement btnLoginRegister;
+    @FindBy(xpath="//div[@id='wrapper']//div[@class='user-links']/a[2]") //have used the [2] because as language changes the text changes
+    public WebElement btnRegister;
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -37,10 +42,18 @@ public class HomePage extends General {
         btnSearchIcon.click();
 
     }
-    public void clickShoppingButtonInCountrySelector(){
-        if(btnShoppingButtonInCountrySelector.isDisplayed()){
+    public void clickShoppingButtonInCountrySelector() {
+        if (btnShoppingButtonInCountrySelector.isDisplayed()) {
             btnShoppingButtonInCountrySelector.click();
         }
+    }
+    public void clickLoginRegisterButton(){
+        btnLoginRegister.click();
+    }
+
+    public RegistrationPage clickOnRegisterButton(){
+        btnRegister.click();
+        return new RegistrationPage(driver);
     }
     public ProductListPage searchText(String searchString){
         txtBoxSearch.sendKeys(searchString);
