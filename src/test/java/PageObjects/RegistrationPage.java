@@ -30,6 +30,8 @@ public class RegistrationPage extends General {
     public WebElement txtBoxConfirmPassword;
     @FindBy(xpath="//form[@id='RegistrationForm']//button[@name='dwfrm_profile_confirm']")
     public WebElement btnCreateAccount;
+
+
     public RegistrationPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
