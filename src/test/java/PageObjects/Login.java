@@ -35,6 +35,10 @@ public class Login extends General {
         return new ShippingAddress(driver);
 
     }
+   public RegistrationPage clickCreateAccountButton(){
+       btnCreateAccount.click();
+       return new RegistrationPage(driver);
+   }
 
     public void enterUserName(String emailID){
         username.sendKeys(emailID);
