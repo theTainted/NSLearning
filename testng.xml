@@ -3,8 +3,8 @@
     <test name="Simple Test">
         <classes>
 
-            <class name ="testcases.RegisteredUserCheckOutFlow"/>
-            <class name="testcases.GuestUserCheckOutFlow"/>
+
+            <class name ="testcases.RegisteringNewUser"/>
 
         </classes>
     </test>
