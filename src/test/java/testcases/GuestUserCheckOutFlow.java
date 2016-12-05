@@ -18,9 +18,9 @@ public class GuestUserCheckOutFlow extends General{
     @Test
    // public static void main(String[] args) throws InterruptedException {
     /*016fd76(Need to add the driver in the general class)*/
-     public void testGuestUserCheckOutFlow() {
+     public void testGuestUserCheckOutFlow() throws InterruptedException {
        String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
-       for(int i=0;i<countries.length;i++) {
+   //    for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
           General.getBrowser("Chrome");
@@ -39,6 +39,7 @@ public class GuestUserCheckOutFlow extends General{
           pdp.clickOnFirstSize();
           //Thread.sleep(2000);
           pdp.clickOnAddToCart();
+       Thread.sleep(2000);
           ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
           Login login = sb.clickOnCheckoutButton();
           ShippingAddress shippingAddress = login.clickOnCheckoutAsGuest();
@@ -48,7 +49,7 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterAddressOne("Line 1");
           shippingAddress.enterZip("1114AB");
           shippingAddress.enterCity("Amsterdam");
-          shippingAddress.selectCountry(countries[i]);
+          //shippingAddress.selectCountry(countries[i]);
           shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
@@ -74,4 +75,4 @@ public class GuestUserCheckOutFlow extends General{
 
        }
     }
-}
+//}
