@@ -22,7 +22,7 @@ public class DropDownValuesInReturnForm {
         homePage.clickLoginRegisterButton();
     //clicking on returns link in the footer
         homePage.footerReturnLink.click();
-    ReturnPage returnPage = new ReturnPage(driver);
-    returnPage.clickLinkReturn();
+        ReturnPage returnPage = new ReturnPage(driver);
+         returnPage.clickLinkReturn();
     }
 }

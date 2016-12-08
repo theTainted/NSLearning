@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 
 /**
@@ -15,7 +16,8 @@ public class ReturnPage extends General {
 
     @FindBy(xpath="//div[@id='primary']//a[contains(@href,'return')]")
     public WebElement lnkReturn;
-
+    @FindBy(id = "dwfrm_return_request_items_item1_reason")
+    public Select dropdownReason ;
 
     public ReturnPage(WebDriver driver) {
         this.driver = driver;
