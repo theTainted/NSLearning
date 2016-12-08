@@ -2,6 +2,7 @@ package testcases;
 
 import PageObjects.General;
 import PageObjects.HomePage;
+import PageObjects.ReturnPage;
 import org.testng.annotations.Test;
 
 import static PageObjects.General.driver;
@@ -21,5 +22,7 @@ public class DropDownValuesInReturnForm {
         homePage.clickLoginRegisterButton();
     //clicking on returns link in the footer
         homePage.footerReturnLink.click();
+    ReturnPage returnPage = new ReturnPage(driver);
+    returnPage.clickLinkReturn();
     }
 }
