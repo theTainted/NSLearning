@@ -24,5 +24,6 @@ public class DropDownValuesInReturnForm {
         homePage.footerReturnLink.click();
         ReturnPage returnPage = new ReturnPage(driver);
          returnPage.clickLinkReturn();
+         returnPage.listAllOptionsFromDropDownReason();
     }
 }
