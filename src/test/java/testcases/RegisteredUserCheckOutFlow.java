@@ -14,11 +14,11 @@ public class RegisteredUserCheckOutFlow extends General {
 
 @Test
 /*016fd76(Need to add the driver in the general class)*/
-    public void testRegisteredUserCheckOutFlow() {
+    public void testRegisteredUserCheckOutFlow() throws InterruptedException {
   /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
     WebDriver driver = new ChromeDriver();*/
     String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
-for(int i=0;i<countries.length;i++) {
+//for(int i=0;i<countries.length;i++) {
 
     General.getBrowser("Chrome");
     driver.get(General.URL);
@@ -34,8 +34,9 @@ for(int i=0;i<countries.length;i++) {
     ProductListPage plp = homePage.searchText("jacket dickey");
     ProductDisplayPage pdp = plp.clickOnFirstResult();
     pdp.clickOnFirstSize();
-    //Thread.sleep(2000);
+    Thread.sleep(2000);
     pdp.clickOnAddToCart();
+    Thread.sleep(5000);
     ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
     Login login = sb.clickOnCheckoutButton();
     login.enterUserName("bjornjg@yopmail.com");
@@ -48,7 +49,7 @@ for(int i=0;i<countries.length;i++) {
     shippingAddress.enterAddressOne("Line 1");
     shippingAddress.enterZip("1114AB");
     shippingAddress.enterCity("Amsterdam");*/
-    shippingAddress.selectCountry(countries[i]);
+    //shippingAddress.selectCountry(countries[i]);
     //shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com"); -> commented out as for a registered user the email id is prefilled with the login id
     shippingAddress.enterPhone("3333333333");
     // shippingAddress.selectBillingAddressOption();
@@ -69,6 +70,6 @@ for(int i=0;i<countries.length;i++) {
     driver.quit();
 //test comment
     //test comment2
-}
+//}
 }
 }
