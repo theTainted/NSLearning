@@ -20,6 +20,7 @@ public class GuestUserCheckOutFlow extends General{
     /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() throws InterruptedException {
        String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
+
    //    for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
