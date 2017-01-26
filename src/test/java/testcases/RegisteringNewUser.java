@@ -13,7 +13,7 @@ import org.testng.annotations.Test;;
 public class RegisteringNewUser extends General{
 @Test
     public void testRegisteringNewUser(){
-        General.getBrowser("Firefox");
+        General.getBrowser("Chrome");
         driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
