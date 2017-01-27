@@ -15,7 +15,8 @@ public class HomePage extends General {
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
     public WebElement btnAcceptCookies;
-    @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
+   // @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']") '-> changed to below to handle the change in country selector.
+    @FindBy(xpath="//div[@id='language-overlay']//a[contains(@class , 'btn btn--blue flag-icon')]")
     public WebElement btnSearchIcon;
     @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
     public WebElement txtBoxSearch;
