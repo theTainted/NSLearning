@@ -15,19 +15,26 @@ public class HomePage extends General {
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
     public WebElement btnAcceptCookies;
-   @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
-   public WebElement btnCountrySelector;
-    @FindBy(xpath="//div[@id='language-overlay']//i[@class='icon icon-chevron-right']")
 
+
+   @FindBy(xpath="//div[@id='language-overlay']//a[contains(@class,'btn btn')]")
+   public WebElement btnCountrySelector;
+
+    @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
     public WebElement btnSearchIcon;
+
     @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
     public WebElement txtBoxSearch;
+
     @FindBy(id="shopping-button")
     public WebElement btnShoppingButtonInCountrySelector;
+
     @FindBy(xpath="//div[@id='wrapper']//a[@class='user-account']")
     public WebElement btnLoginRegister;
+
     @FindBy(xpath="//div[@id='wrapper']//div[@class='user-links']/a[2]") //have used the [2] because as language changes the text changes
     public WebElement btnRegister;
+
     @FindBy(xpath="//div[@id='wrapper']/footer//a[contains(@href,'returns')]")
     public WebElement footerReturnLink;
 
@@ -35,14 +42,17 @@ public class HomePage extends General {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
-   public void  clickAcceptCookiesButton(){
-       if (btnCountrySelector.isDisplayed()){
-         System.out.println(btnCountrySelector.getText());
+   public void clickOnCountrySelectorFirstLink() {
+       if (btnCountrySelector.isDisplayed()) {
+
            btnCountrySelector.click();
-       }
-       else{
+       } else {
            System.out.println("accept Cookies button not found");
        }
+   }
+   public void  clickAcceptCookiesButton(){
+       System.out.println("in");
+
 
        if (btnAcceptCookies.isDisplayed()){
            btnAcceptCookies.click();
