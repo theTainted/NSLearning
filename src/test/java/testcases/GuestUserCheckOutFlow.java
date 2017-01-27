@@ -34,9 +34,9 @@ public class GuestUserCheckOutFlow extends General{
           //Accept cookies message
         HomePage homePage = new HomePage(driver);
 
-      homePage.clickOnCountrySelectorFirstLink();
+            homePage.clickOnCountrySelectorFirstLink();
 
-        homePage.clickAcceptCookiesButton();
+            homePage.clickAcceptCookiesButton();
           //Click on ContinueShopping in the countrySelector PopuP
           //   homePage.clickShoppingButtonInCountrySelector();
 
@@ -58,7 +58,7 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterZip("1114AB");
           shippingAddress.enterCity("Amsterdam");
           //shippingAddress.selectCountry(countries[i]);
-          shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
+          shippingAddress.enterEmail("bjornjclsaco.geerding@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
 

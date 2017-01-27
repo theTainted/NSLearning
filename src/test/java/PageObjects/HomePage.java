@@ -43,11 +43,13 @@ public class HomePage extends General {
         PageFactory.initElements(this.driver, this);
     }
    public void clickOnCountrySelectorFirstLink() {
-       if (btnCountrySelector.isDisplayed()) {
-
+       boolean countrySelector = btnCountrySelector.isDisplayed();
+       System.out.println(countrySelector);
+       if (countrySelector= true) {
+        System.out.println("in clickOnCountrySelectorFirstLinkcls");
            btnCountrySelector.click();
        } else {
-           System.out.println("accept Cookies button not found");
+           System.out.println("something is wrong");
        }
    }
    public void  clickAcceptCookiesButton(){
