@@ -8,6 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+
+
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -28,7 +32,7 @@ public class GuestUserCheckOutFlow extends General{
           driver.get(General.URL);
           driver.manage().window().maximize();
           //Accept cookies message
-          HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(driver);
        Thread.sleep(5000);
           homePage.clickAcceptCookiesButton();
           //Click on ContinueShopping in the countrySelector PopuP

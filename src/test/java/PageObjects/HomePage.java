@@ -17,8 +17,8 @@ public class HomePage extends General {
     public WebElement btnAcceptCookies;
    @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
    public WebElement btnCountrySelector;
-   // @FindBy(xpath="//div[@id='language-overlay']//div[@class='top__suggestions']/a[contains(@class , 'btn btn--blue flag-icon')]")
-    @FindBy(xpath="//div[@id='language-overlay']/div/div/div[1]/div[3]/div/a[2]/u")
+    @FindBy(xpath="//div[@id='language-overlay']//i[@class='icon icon-chevron-right']")
+
     public WebElement btnSearchIcon;
     @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
     public WebElement txtBoxSearch;
@@ -37,7 +37,7 @@ public class HomePage extends General {
     }
    public void  clickAcceptCookiesButton(){
        if (btnCountrySelector.isDisplayed()){
-       //    System.out.println(btnCountrySelector.getText());
+         System.out.println(btnCountrySelector.getText());
            btnCountrySelector.click();
        }
        else{
