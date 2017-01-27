@@ -1,9 +1,13 @@
 package PageObjects;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 /**
@@ -17,7 +21,7 @@ public class HomePage extends General {
     public WebElement btnAcceptCookies;
 
 
-   @FindBy(xpath="//div[@id='language-overlay']//a[contains(@class,'btn btn')]")
+   @FindBy(xpath="//div[@id='language-overlay']//div[@class='buttons-holder']//a[contains(@class,'btn btn--blue flag-icon')]")
    public WebElement btnCountrySelector;
 
     @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
@@ -42,14 +46,23 @@ public class HomePage extends General {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
-   public void clickOnCountrySelectorFirstLink() {
+   public void clickOnCountrySelectorFirstLink(String countryName) {
+
+       WebDriverWait wait = new WebDriverWait(driver, 30);
+       wait.until(ExpectedConditions.elementToBeClickable(btnCountrySelector));
+
+
        boolean countrySelector = btnCountrySelector.isDisplayed();
        System.out.println(countrySelector);
        if (countrySelector= true) {
         System.out.println("in clickOnCountrySelectorFirstLinkcls");
            btnCountrySelector.click();
-       } else {
-           System.out.println("something is wrong");
+       } else if (countrySelector=false) {
+           driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]"));
+
+       }
+       else {
+           System.out.println("help me !!!!");
        }
    }
    public void  clickAcceptCookiesButton(){

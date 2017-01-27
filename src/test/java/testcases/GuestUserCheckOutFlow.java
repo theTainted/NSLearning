@@ -31,10 +31,11 @@ public class GuestUserCheckOutFlow extends General{
           General.getBrowser("Chrome");
           driver.get(General.URL);
           driver.manage().window().maximize();
+
           //Accept cookies message
         HomePage homePage = new HomePage(driver);
 
-            homePage.clickOnCountrySelectorFirstLink();
+            homePage.clickOnCountrySelectorFirstLink("BE~fr");
 
             homePage.clickAcceptCookiesButton();
           //Click on ContinueShopping in the countrySelector PopuP
