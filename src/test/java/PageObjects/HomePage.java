@@ -47,8 +47,9 @@ public class HomePage extends General {
         PageFactory.initElements(this.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
+       driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]")).click();
 
-       WebDriverWait wait = new WebDriverWait(driver, 30);
+  /*     WebDriverWait wait = new WebDriverWait(driver, 30);
        wait.until(ExpectedConditions.elementToBeClickable(btnCountrySelector));
 
 
@@ -63,7 +64,7 @@ public class HomePage extends General {
        }
        else {
            System.out.println("help me !!!!");
-       }
+       }*/
    }
    public void  clickAcceptCookiesButton(){
        System.out.println("in");
