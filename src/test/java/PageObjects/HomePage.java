@@ -58,7 +58,7 @@ public class HomePage extends General {
         System.out.println("in clickOnCountrySelectorFirstLinkcls");
            btnCountrySelector.click();
        } else if (countrySelector=false) {
-           driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]"));
+           driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]")).click();
 
        }
        else {
