@@ -34,7 +34,7 @@ public class GuestUserCheckOutFlow extends General{
           //Accept cookies message
         HomePage homePage = new HomePage(driver);
        Thread.sleep(5000);
-          homePage.clickAcceptCookiesButton();
+             //  homePage.clickAcceptCookiesButton();
           //Click on ContinueShopping in the countrySelector PopuP
           //   homePage.clickShoppingButtonInCountrySelector();
 /*
