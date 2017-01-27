@@ -29,10 +29,11 @@ public class GuestUserCheckOutFlow extends General{
           driver.manage().window().maximize();
           //Accept cookies message
           HomePage homePage = new HomePage(driver);
+       Thread.sleep(5000);
           homePage.clickAcceptCookiesButton();
           //Click on ContinueShopping in the countrySelector PopuP
           //   homePage.clickShoppingButtonInCountrySelector();
-
+/*
           //Search for Jackets
           homePage.clickOnSearchIcon();
           ProductListPage plp = homePage.searchText("jacket dickey");
@@ -67,7 +68,7 @@ public class GuestUserCheckOutFlow extends General{
           billingPage.selectExpiryYear("2020");
           billingPage.clickBtnToPay();
 
-          driver.quit();
+          driver.quit();*/
 /*
                 Actions action = new Actions(driver);
         WebElement we = driver.findElement(By.xpath("//div[@id='wrapper']/header//i[@class='icon-bag']"));

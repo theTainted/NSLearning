@@ -15,8 +15,10 @@ public class HomePage extends General {
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
     public WebElement btnAcceptCookies;
-   // @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']") '-> changed to below to handle the change in country selector.
-    @FindBy(xpath="//div[@id='language-overlay']//a[contains(@class , 'btn btn--blue flag-icon')]")
+   @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
+   public WebElement btnCountrySelector;
+   // @FindBy(xpath="//div[@id='language-overlay']//div[@class='top__suggestions']/a[contains(@class , 'btn btn--blue flag-icon')]")
+    @FindBy(xpath="//div[@id='language-overlay']/div/div/div[1]/div[3]/div/a[2]/u")
     public WebElement btnSearchIcon;
     @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
     public WebElement txtBoxSearch;
@@ -34,6 +36,14 @@ public class HomePage extends General {
         PageFactory.initElements(this.driver, this);
     }
    public void  clickAcceptCookiesButton(){
+       if (btnCountrySelector.isDisplayed()){
+       //    System.out.println(btnCountrySelector.getText());
+           btnCountrySelector.click();
+       }
+       else{
+           System.out.println("accept Cookies button not found");
+       }
+
        if (btnAcceptCookies.isDisplayed()){
            btnAcceptCookies.click();
        }
