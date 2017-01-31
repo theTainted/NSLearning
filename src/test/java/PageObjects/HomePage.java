@@ -47,7 +47,9 @@ public class HomePage extends General {
         PageFactory.initElements(this.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
-       driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]")).click();
+     //  String sText=" //div[@id='language-overlay']//a[@data-countrycode='";
+   //    System.out.println(sText+countryName+"'"+"]");
+       driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).click();
 
   /*     WebDriverWait wait = new WebDriverWait(driver, 30);
        wait.until(ExpectedConditions.elementToBeClickable(btnCountrySelector));
