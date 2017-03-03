@@ -37,7 +37,7 @@ public class GuestUserCheckOutFlow extends General{
         Thread.sleep(10000);
         homePage.clickOnCountrySelectorFirstLink("ALL~en");
             Thread.sleep(10000);
-            homePage.clickAcceptCookiesButton();
+        homePage.clickAcceptCookiesButton();;
           //Click on ContinueShopping in the countrySelector PopuP
           //   homePage.clickShoppingButtonInCountrySelector();
 
