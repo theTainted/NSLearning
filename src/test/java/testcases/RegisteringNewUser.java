@@ -17,7 +17,7 @@ public class RegisteringNewUser extends General{
         driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
-        homePage.clickAcceptCookiesButton();
+       // homePage.clickAcceptCookiesButton();
         homePage.clickLoginRegisterButton();
         RegistrationPage register = homePage.clickOnRegisterButton();
         register.generateFirstName();
