@@ -40,7 +40,7 @@ public class HomePage extends General {
     public WebElement btnLoginRegister;
 
    // @FindBy(xpath="//div[@id='wrapper']//div[@class='user-links']/a[2]") //have used the [2] because as language changes the text changes
-    @FindBy(xpath="//div[@id='dwfrm_login_register']//button[@name='dwfrm_login_register']") // -> this is the create accout now button which is displayed when we click on the login link in the home page
+    @FindBy(xpath="//form[@id='dwfrm_login_register']//button[@name='dwfrm_login_register']") // -> this is the create accout now button which is displayed when we click on the login link in the home page
     public WebElement btnRegister;
 
     @FindBy(xpath="//div[@id='wrapper']/footer//a[contains(@href,'returns')]")
@@ -101,6 +101,7 @@ public class HomePage extends General {
     }
 
     public RegistrationPage clickOnRegisterButton(){
+        System.out.println(btnRegister.isDisplayed());
         btnRegister.click();
         return new RegistrationPage(driver);
     }
