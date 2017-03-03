@@ -26,7 +26,8 @@ public class HomePage extends General {
     @FindBy (xpath="//div[@id='language-overlay']//a[@data-countrycode='ALL~en']")
    public WebElement btnCountrySelector;
 
-    @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
+   // @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
+    @FindBy(xpath="//div[@id='simple-search']/form/button[@class='simple-search__submit js-btn-search']")
     public WebElement btnSearchIcon;
 
     @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
