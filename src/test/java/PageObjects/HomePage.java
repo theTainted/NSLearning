@@ -21,7 +21,8 @@ public class HomePage extends General {
     public WebElement btnAcceptCookies;
 
 
-   @FindBy(xpath="//div[@id='language-overlay']//div[@class='buttons-holder']//a[contains(@class,'btn btn--blue flag-icon')]")
+   //@FindBy(xpath="//div[@id='language-overlay']//div[@class='buttons-holder']//a[contains(@class,'btn btn--blue flag-icon')]")
+    @FindBy (xpath="//div[@id='language-overlay']//a[@data-countrycode='ALL~en']")
    public WebElement btnCountrySelector;
 
     @FindBy(xpath="//li[@id='simple-search']//button[@type='submit']")
@@ -33,7 +34,8 @@ public class HomePage extends General {
     @FindBy(id="shopping-button")
     public WebElement btnShoppingButtonInCountrySelector;
 
-    @FindBy(xpath="//div[@id='wrapper']//a[@class='user-account']")
+    //@FindBy(xpath="//div[@id='wrapper']//a[@class='user-account']")
+    @FindBy(xpath="//div[@id='wrapper']/header//a/span")
     public WebElement btnLoginRegister;
 
     @FindBy(xpath="//div[@id='wrapper']//div[@class='user-links']/a[2]") //have used the [2] because as language changes the text changes
