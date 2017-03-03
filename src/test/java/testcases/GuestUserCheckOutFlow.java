@@ -35,7 +35,7 @@ public class GuestUserCheckOutFlow extends General{
           //Accept cookies message
         HomePage homePage = new HomePage(driver);
         Thread.sleep(10000);
-            homePage.clickOnCountrySelectorFirstLink("ALL~en");
+        homePage.clickOnCountrySelectorFirstLink("ALL~en");
             Thread.sleep(10000);
             homePage.clickAcceptCookiesButton();
           //Click on ContinueShopping in the countrySelector PopuP
