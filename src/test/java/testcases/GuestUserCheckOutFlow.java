@@ -36,11 +36,7 @@ public class GuestUserCheckOutFlow extends General{
         HomePage homePage = new HomePage(driver);
         Thread.sleep(10000);
         homePage.clickOnCountrySelectorFirstLink("ALL~en");
-            Thread.sleep(10000);
-        homePage.clickAcceptCookiesButton();;
-          //Click on ContinueShopping in the countrySelector PopuP
-          //   homePage.clickShoppingButtonInCountrySelector();
-
+        homePage.clickAcceptCookiesButton();
           //Search for Jackets
           homePage.clickOnSearchIcon();
           ProductListPage plp = homePage.searchText("jacket dickey");
@@ -48,7 +44,7 @@ public class GuestUserCheckOutFlow extends General{
           pdp.clickOnFirstSize();
           //Thread.sleep(2000);
           pdp.clickOnAddToCart();
-       Thread.sleep(2000);
+        Thread.sleep(2000);
           ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
           Login login = sb.clickOnCheckoutButton();
           ShippingAddress shippingAddress = login.clickOnCheckoutAsGuest();
