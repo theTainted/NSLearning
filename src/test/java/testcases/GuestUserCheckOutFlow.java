@@ -41,8 +41,8 @@ public class GuestUserCheckOutFlow extends General{
           homePage.clickOnSearchIcon();
           ProductListPage plp = homePage.searchText("jacket dickey");
           ProductDisplayPage pdp = plp.clickOnFirstResult();
-
           pdp.clickOnFirstColor();
+          Thread.sleep(2000);
           pdp.clickOnFirstSize();
           //Thread.sleep(2000);
           pdp.clickOnAddToCart();
