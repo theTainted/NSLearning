@@ -74,7 +74,7 @@ public class HomePage extends General {
        }*/
    }
    public void  clickAcceptCookiesButton(){
-       System.out.println("in");
+      // System.out.println("in");
 
 
        if (btnAcceptCookies.isDisplayed()){
