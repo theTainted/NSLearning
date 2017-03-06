@@ -22,7 +22,8 @@ public class ProductDisplayPage extends General {
     SoftAssert softAssert = new SoftAssert();
 
     @FindAll({
-            @FindBy(xpath="//div[@id='product-content']//ul[@class='swatches size']/li")
+          //  @FindBy(xpath="//div[@id='product-content']//ul[@class='swatches size']/li") -> updated to the below
+            @FindBy(xpath="//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='size']")
     })
     public List<WebElement> allSizes ;
     @FindBy(id="add-to-cart")
