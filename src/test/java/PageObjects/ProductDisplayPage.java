@@ -36,7 +36,8 @@ public class ProductDisplayPage extends General {
     public WebElement btnAddToCart;
     @FindBy(xpath="//div[@id='pdpMain']/span//a/img[@class='primary-image']")
     public WebElement productImage;
-    @FindBy(xpath="//div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']")
+   // @FindBy(xpath="//div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']") ->updated to the below
+    @FindBy(id="mini-cart")
     public WebElement miniBasket;
 
     public ProductDisplayPage(WebDriver driver) {
