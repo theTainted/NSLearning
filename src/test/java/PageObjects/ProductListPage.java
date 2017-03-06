@@ -15,10 +15,14 @@ import java.util.List;
 public class ProductListPage extends General {
     //WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    @FindAll({
+  /*  @FindAll({
         @FindBy(xpath="//ul[@id='search-result-items']/li")
+    })*/
+    @FindAll({
+            @FindBy(xpath="//div[@class='product-image product__thumbnail']//img") //replaced the above list with this one
     })
     public List <WebElement> allResults ;
+
 
 
     public ProductListPage(WebDriver driver) {
