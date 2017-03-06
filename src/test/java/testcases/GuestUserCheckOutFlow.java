@@ -57,7 +57,7 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterZip("1114AB");
           shippingAddress.enterCity("Amsterdam");
           //shippingAddress.selectCountry(countries[i]);
-          shippingAddress.enterEmail("bjornjclsaco.geerding@digitaslbi.com");
+          shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
 
