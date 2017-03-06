@@ -26,6 +26,12 @@ public class ProductDisplayPage extends General {
             @FindBy(xpath="//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='size']")
     })
     public List<WebElement> allSizes ;
+
+    @FindAll({
+            @FindBy(xpath="//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='color']")
+    })
+       public List <WebElement> allColors;
+
     @FindBy(id="add-to-cart")
     public WebElement btnAddToCart;
     @FindBy(xpath="//div[@id='pdpMain']/span//a/img[@class='primary-image']")
@@ -42,6 +48,13 @@ public class ProductDisplayPage extends General {
         System.out.println(allSizes.size());
         System.out.println(allSizes.get(0).getText()); //gets the text of the size
         allSizes.get(0).click();
+
+    }
+    /*clicks on the first available color*/
+    public void clickOnFirstColor(){
+        System.out.println(allColors.size());
+        System.out.println(allColors.get(0).getText()); //gets the text of the size
+        allColors.get(0).click();
 
     }
 //div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']
