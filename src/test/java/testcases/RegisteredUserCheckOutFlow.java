@@ -23,9 +23,13 @@ public class RegisteredUserCheckOutFlow extends General {
     General.getBrowser("Chrome");
     driver.get(General.URL);
     driver.manage().window().maximize();
+
     //Accept cookies message
-    final HomePage homePage = new HomePage(driver);
+    HomePage homePage = new HomePage(driver);
+    Thread.sleep(10000);
+    homePage.clickOnCountrySelectorFirstLink("ALL~en");
     homePage.clickAcceptCookiesButton();
+
     //Click on ContinueShopping in the countrySelector PopuP
     // homePage.clickShoppingButtonInCountrySelector();
 
@@ -33,6 +37,8 @@ public class RegisteredUserCheckOutFlow extends General {
     homePage.clickOnSearchIcon();
     ProductListPage plp = homePage.searchText("jacket dickey");
     ProductDisplayPage pdp = plp.clickOnFirstResult();
+    pdp.clickOnFirstColor();
+    Thread.sleep(2000);
     pdp.clickOnFirstSize();
     Thread.sleep(2000);
     pdp.clickOnAddToCart();
