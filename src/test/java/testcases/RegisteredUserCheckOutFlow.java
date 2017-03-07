@@ -50,12 +50,7 @@ public class RegisteredUserCheckOutFlow extends General {
     ShippingAddress shippingAddress = login.clickOnRegisteredLogin();
     shippingAddress.selectMan();
     //commenting this section out as the first name and last name is being filled from the
-  /*  shippingAddress.enterFirstName("test");
-    shippingAddress.enterLastName("tester");
-    shippingAddress.enterAddressOne("Line 1");
-    shippingAddress.enterZip("1114AB");
-    shippingAddress.enterCity("Amsterdam");*/
-    //shippingAddress.selectCountry(countries[i]);
+
     //shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com"); -> commented out as for a registered user the email id is prefilled with the login id
     shippingAddress.enterPhone("3333333333");
     // shippingAddress.selectBillingAddressOption();
