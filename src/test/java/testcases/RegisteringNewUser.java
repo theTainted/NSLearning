@@ -18,7 +18,7 @@ public class RegisteringNewUser extends General{
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
 
-        homePage.clickOnCountrySelectorFirstLink("ALL~en");
+        homePage.clickOnCountrySelectorFirstLink("FR~fr");
         homePage.clickAcceptCookiesButton();
         homePage.clickLoginRegisterButton();
         RegistrationPage register = homePage.clickOnRegisterButton();
