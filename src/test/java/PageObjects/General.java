@@ -20,14 +20,14 @@ public class General {
     public static String URL="https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
     public static String searchString="Jacket";
 
-    public static WebDriver getBrowser(String browserType)
+    public static WebDriver getBrowser(String browser)
 
     {
         //if(driver == null)
 
         {
 
-            if(browserType.equals("Firefox"))
+            if(browser.equals("Firefox"))
 
             {
 
@@ -40,7 +40,7 @@ public class General {
 
             }
 
-            else if(browserType.equals("Chrome"))
+            else if(browser.equals("Chrome"))
 
             {
                 System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
@@ -48,7 +48,7 @@ public class General {
 
             }
 
-            else if(browserType.equals("IE"))
+            else if(browser.equals("IE"))
 
             {
 

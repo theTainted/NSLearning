@@ -3,6 +3,8 @@ package testcases;
 import PageObjects.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -15,6 +17,7 @@ public class RegisteredUserCheckOutFlow extends General {
 @Test
 /*016fd76(Need to add the driver in the general class)*/
     public void testRegisteredUserCheckOutFlow() throws InterruptedException {
+
   /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
     WebDriver driver = new ChromeDriver();*/
     String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
