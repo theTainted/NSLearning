@@ -21,6 +21,10 @@ public class TheHub {
     public WebElement txtBoxPassword;
     @FindBy(xpath="//form[@id='login']/fieldset/div[4]/button")
     public WebElement btnLogin;
+    @FindBy(id="q")
+    public WebElement txtBoxSearch;
+    @FindBy(xpath="//div[@id='search']//button[@class='form-search__btn']")
+    public WebElement btnSearchIcon;
 
     public TheHub(WebDriver driver) {
         this.driver = driver;
@@ -35,5 +39,10 @@ public class TheHub {
     public void clickOnLoginButton(){
         btnLogin.click();
     }
-
+    public void enterSearchText(String searchText){
+        txtBoxSearch.sendKeys(searchText);
+    }
+    public void clickSeachIcon(){
+        btnSearchIcon.click();
+    }
 }
