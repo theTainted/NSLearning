@@ -3,6 +3,7 @@ package testcases;
 import PageObjects.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -13,7 +14,22 @@ import java.util.List;
  * Created by syam.suryanarayanan on 11/21/2016.
  */
 public class RegisteredUserCheckOutFlow extends General {
-
+    @BeforeTest
+    @Parameters("browser")
+    public void setup(String browser) throws Exception {
+        //Check if parameter passed from TestNG is 'firefox'
+        if (browser.equalsIgnoreCase("firefox")) {
+            //create firefox instance
+            driver = new FirefoxDriver();
+        }
+        //Check if parameter passed as 'chrome'
+        else if (browser.equalsIgnoreCase("chrome")) {
+            //set path to chromedriver.exe
+            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+            //create chrome instance
+            driver = new ChromeDriver();
+        }
+    }
 @Test
 /*016fd76(Need to add the driver in the general class)*/
     public void testRegisteredUserCheckOutFlow() throws InterruptedException {
@@ -23,7 +39,7 @@ public class RegisteredUserCheckOutFlow extends General {
     String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 //for(int i=0;i<countries.length;i++) {
 
-    General.getBrowser("Chrome");
+   // General.getBrowser("Chrome");
     driver.get(General.URL);
     driver.manage().window().maximize();
 
