@@ -16,6 +16,8 @@ public class hub {
       TheHub theHub = new TheHub(driver);
       driver.get(TheHub.theHubUrl);
       theHub.setLoginEmail(TheHub.userName);
+      theHub.setLoginPassword(TheHub.password);
+      theHub.clickOnLoginButton();
 
 
 

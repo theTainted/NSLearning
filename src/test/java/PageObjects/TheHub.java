@@ -17,6 +17,10 @@ public class TheHub {
 
     @FindBy(id="login-email")
     public WebElement txtBoxLoginEmail;
+    @FindBy(id="login-password")
+    public WebElement txtBoxPassword;
+    @FindBy(xpath="//form[@id='login']/fieldset/div[4]/button")
+    public WebElement btnLogin;
 
     public TheHub(WebDriver driver) {
         this.driver = driver;
@@ -25,4 +29,11 @@ public class TheHub {
     public void setLoginEmail(String userName){
      txtBoxLoginEmail.sendKeys(userName);
     }
+    public void setLoginPassword(String password){
+        txtBoxPassword.sendKeys(password);
+    }
+    public void clickOnLoginButton(){
+        btnLogin.click();
+    }
+
 }
