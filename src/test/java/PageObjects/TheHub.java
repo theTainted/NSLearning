@@ -2,8 +2,11 @@ package PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
 
 /**
  * Created by syam.suryanarayanan on 3/27/2017.
@@ -25,6 +28,10 @@ public class TheHub {
     public WebElement txtBoxSearch;
     @FindBy(xpath="//div[@id='search']//button[@class='form-search__btn']")
     public WebElement btnSearchIcon;
+    @FindAll({
+        @FindBy(xpath="//form[@id='searchForm']//a[@class='search-header__label-link']")
+    })
+    public List<WebElement> allResultTabs ;
 
     public TheHub(WebDriver driver) {
         this.driver = driver;
@@ -44,5 +51,9 @@ public class TheHub {
     }
     public void clickSeachIcon(){
         btnSearchIcon.click();
+        for (WebElement tab : allResultTabs){
+            System.out.println(tab.getText());
+        }
     }
+
 }
