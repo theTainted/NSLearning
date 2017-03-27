@@ -34,6 +34,7 @@
 
                     <!-- TestNG suite XML files -->
                     <suiteXmlFile>testng.xml</suiteXmlFile>
+
                 </suiteXmlFiles>
 
                 <!--added to see if this helps running multiple browsers
