@@ -53,6 +53,7 @@ public class TheHub {
         btnSearchIcon.click();
         for (WebElement tab : allResultTabs){
             System.out.println(tab.getText());
+
         }
     }
 
