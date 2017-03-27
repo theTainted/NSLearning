@@ -32,7 +32,8 @@ public class TheHub {
         @FindBy(xpath="//form[@id='searchForm']//a[@class='search-header__label-link']")
     })
     public List<WebElement> allResultTabs ;
-
+    @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']//label//input[contains(@value,'Comms')]")
+    public WebElement facetComms;
     public TheHub(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
