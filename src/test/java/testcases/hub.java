@@ -40,7 +40,7 @@ public class hub {
        }*/
        theHub.enterSearchText("big Brother");
        theHub.clickSeachIcon();
-
+       theHub.clickOnAFacet();
 
 
     }
