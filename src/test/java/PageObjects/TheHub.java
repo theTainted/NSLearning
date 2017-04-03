@@ -35,7 +35,7 @@ public class TheHub {
     @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']//input[contains(@value,'Commercial')]")
     public WebElement facetCommercial;
     @FindAll({
-            @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']")
+            @FindBy(xpath="//div[@id='result_update']//label[@class='facet__checkbox-label']")
     })
 
     public List<WebElement> facet;
@@ -71,9 +71,11 @@ public class TheHub {
         System.out.println(facet.size());
         for (int i=0; i<facet.size();i++){
             System.out.println(i);
-            if (facet.get(i).getText().contains("Document")){
+            System.out.println(facet.get(i).getText());
+            if(facet.get(i).getText().contains("Commercial")){
                 System.out.println(facet.get(i).getText());
                 facet.get(i).click();
+                i = facet.size();
             }
         }
 

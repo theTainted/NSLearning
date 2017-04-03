@@ -38,7 +38,7 @@ public class hub {
                System.out.println(hamburgerMenu.get(j).getText());
            }
        }*/
-       theHub.enterSearchText("");
+       theHub.enterSearchText("big brother");
        theHub.clickSeachIcon();
      //  theHub.clickOnAFacet();
         Thread.sleep(1000);
