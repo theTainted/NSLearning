@@ -32,9 +32,13 @@ public class TheHub {
         @FindBy(xpath="//form[@id='searchForm']//a[@class='search-header__label-link']")
     })
     public List<WebElement> allResultTabs ;
-    @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']//label//input[contains(@value,'Commercial')]")
+    @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']//input[contains(@value,'Commercial')]")
     public WebElement facetCommercial;
+    @FindAll({
+            @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']")
+    })
 
+    public List<WebElement> facet;
     public TheHub(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -58,14 +62,23 @@ public class TheHub {
 
         }
     }
-    public void clickOnAFacet(){
-        if (facetCommercial.isDisplayed()){
+   /* public void clickOnAFacet(){
+
         facetCommercial.click();
 
+        }*/
+    public void clickOnFilter(){
+        System.out.println(facet.size());
+        for (int i=0; i<facet.size();i++){
+            System.out.println(i);
+            if (facet.get(i).getText().contains("Document")){
+                System.out.println(facet.get(i).getText());
+                facet.get(i).click();
+            }
         }
-        else{
-            System.out.println("False");
-        }
+
+
     }
+
 
 }

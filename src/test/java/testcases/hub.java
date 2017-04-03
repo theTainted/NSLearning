@@ -14,7 +14,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 2/22/2017.
  */
 public class hub {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
       TheHub theHub = new TheHub(driver);
@@ -38,11 +38,12 @@ public class hub {
                System.out.println(hamburgerMenu.get(j).getText());
            }
        }*/
-       theHub.enterSearchText("big Brother");
+       theHub.enterSearchText("");
        theHub.clickSeachIcon();
-       theHub.clickOnAFacet();
+     //  theHub.clickOnAFacet();
+        Thread.sleep(1000);
+        theHub.clickOnFilter();
 
-   //   driver.findElement(By.xpath("//div[@id='result_update']/div/div[1]/div/div[1]/div[2]/label[1]/div"))  .click();
 
     }
 }
