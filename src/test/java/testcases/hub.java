@@ -42,6 +42,7 @@ public class hub {
        theHub.clickSeachIcon();
        theHub.clickOnAFacet();
 
+   //   driver.findElement(By.xpath("//div[@id='result_update']/div/div[1]/div/div[1]/div[2]/label[1]/div"))  .click();
 
     }
 }
