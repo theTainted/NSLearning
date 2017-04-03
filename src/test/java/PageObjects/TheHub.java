@@ -67,12 +67,12 @@ public class TheHub {
         facetCommercial.click();
 
         }*/
-    public void clickOnFilter(){
+    public void clickOnFilter(String sFacet ){
         System.out.println(facet.size());
         for (int i=0; i<facet.size();i++){
             System.out.println(i);
             System.out.println(facet.get(i).getText());
-            if(facet.get(i).getText().contains("Commercial")){
+            if(facet.get(i).getText().contains(sFacet)){
                 System.out.println(facet.get(i).getText());
                 facet.get(i).click();
                 i = facet.size();

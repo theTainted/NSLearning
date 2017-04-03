@@ -41,8 +41,11 @@ public class hub {
        theHub.enterSearchText("big brother");
        theHub.clickSeachIcon();
      //  theHub.clickOnAFacet();
+
+        theHub.clickOnFilter("Commercial");
         Thread.sleep(1000);
-        theHub.clickOnFilter();
+        theHub.clickOnFilter("United Kingdom");
+
 
 
     }
