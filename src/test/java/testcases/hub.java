@@ -43,9 +43,10 @@ public class hub {
      //  theHub.clickOnAFacet();
 
         theHub.clickOnFilter("Commercial");
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         theHub.clickOnFilter("United Kingdom");
-
+        Thread.sleep(5000);
+        theHub.clickOnFilter("Video");
 
 
     }
