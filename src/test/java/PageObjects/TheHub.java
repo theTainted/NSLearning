@@ -42,20 +42,20 @@ public class TheHub {
         PageFactory.initElements(TheHub.driver, this);
     }
     public void setLoginEmail(String userName){
-        this.txtBoxLoginEmail.sendKeys(userName);
+        txtBoxLoginEmail.sendKeys(userName);
     }
     public void setLoginPassword(String password){
-        this.txtBoxPassword.sendKeys(password);
+        txtBoxPassword.sendKeys(password);
     }
     public void clickOnLoginButton(){
-        this.btnLogin.click();
+        btnLogin.click();
     }
     public void enterSearchText(String searchText){
-        this.txtBoxSearch.sendKeys(searchText);
+        txtBoxSearch.sendKeys(searchText);
     }
     public void clickSeachIcon(){
-        this.btnSearchIcon.click();
-        for (WebElement tab : this.allResultTabs){
+        btnSearchIcon.click();
+        for (WebElement tab : allResultTabs){
             System.out.println(tab.getText());
 
         }
@@ -67,26 +67,26 @@ public class TheHub {
         }*/
     public void clickOnFilter(String sFacet ) throws InterruptedException {
        // System.out.println(facet.size());
-        for (int i = 0; i< this.facet.size(); i++){
+        for (int i = 0; i< facet.size(); i++){
          //   System.out.println(i);
          //   System.out.println(facet.get(i).getText());
-            if(this.facet.get(i).getText().contains(sFacet)){
+            if(facet.get(i).getText().contains(sFacet)){
          //       System.out.println(facet.get(i).getText());
-                this.facet.get(i).click();
-                i = this.facet.size();
+                facet.get(i).click();
+                i = facet.size();
                 Thread.sleep(5000);
-               String chosenFacet= this.selectedFacet();
+               String chosenFacet= selectedFacet();
             }
         }
 
 
     }
     public String selectedFacet(){
-        System.out.println(this.selectedFacet.size());
-        for (int j = 0; j< this.selectedFacet.size(); j++){
-            System.out.println(this.selectedFacet.get(j).getText());
+        System.out.println(selectedFacet.size());
+        for (int j = 0; j< selectedFacet.size(); j++){
+          //  System.out.println(this.selectedFacet.get(j).getText());
         }
-        return String.valueOf(this.selectedFacet);
+        return String.valueOf(selectedFacet);
     }
 
 }
