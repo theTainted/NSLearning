@@ -48,6 +48,8 @@ public class hub {
         Thread.sleep(5000);
         theHub.clickOnFilter("Video");
 
+      //  theHub.selectedFacet();
+
 
     }
 }

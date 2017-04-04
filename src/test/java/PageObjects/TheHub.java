@@ -28,36 +28,34 @@ public class TheHub {
     public WebElement txtBoxSearch;
     @FindBy(xpath="//div[@id='search']//button[@class='form-search__btn']")
     public WebElement btnSearchIcon;
-    @FindAll({
-        @FindBy(xpath="//form[@id='searchForm']//a[@class='search-header__label-link']")
-    })
+    @FindAll(@FindBy(xpath = "//form[@id='searchForm']//a[@class='search-header__label-link']"))
     public List<WebElement> allResultTabs ;
     @FindBy(xpath="//div[@id='result_update']//div[@class='facet__body']//input[contains(@value,'Commercial')]")
     public WebElement facetCommercial;
-    @FindAll({
-            @FindBy(xpath="//div[@id='result_update']//label[@class='facet__checkbox-label']")
-    })
-
+    @FindAll(@FindBy(xpath = "//div[@id='result_update']//label[@class='facet__checkbox-label']"))
     public List<WebElement> facet;
+    @FindAll(@FindBy(xpath = "//div[@id='result_update']//div[@class='facet__selection']/div[@class='facet__selection-label']"))
+    public List<WebElement> selectedFacet;
+
     public TheHub(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+        TheHub.driver = driver;
+        PageFactory.initElements(TheHub.driver, this);
     }
     public void setLoginEmail(String userName){
-     txtBoxLoginEmail.sendKeys(userName);
+        this.txtBoxLoginEmail.sendKeys(userName);
     }
     public void setLoginPassword(String password){
-        txtBoxPassword.sendKeys(password);
+        this.txtBoxPassword.sendKeys(password);
     }
     public void clickOnLoginButton(){
-        btnLogin.click();
+        this.btnLogin.click();
     }
     public void enterSearchText(String searchText){
-        txtBoxSearch.sendKeys(searchText);
+        this.txtBoxSearch.sendKeys(searchText);
     }
     public void clickSeachIcon(){
-        btnSearchIcon.click();
-        for (WebElement tab : allResultTabs){
+        this.btnSearchIcon.click();
+        for (WebElement tab : this.allResultTabs){
             System.out.println(tab.getText());
 
         }
@@ -67,20 +65,28 @@ public class TheHub {
         facetCommercial.click();
 
         }*/
-    public void clickOnFilter(String sFacet ){
-        System.out.println(facet.size());
-        for (int i=0; i<facet.size();i++){
-            System.out.println(i);
-            System.out.println(facet.get(i).getText());
-            if(facet.get(i).getText().contains(sFacet)){
-                System.out.println(facet.get(i).getText());
-                facet.get(i).click();
-                i = facet.size();
+    public void clickOnFilter(String sFacet ) throws InterruptedException {
+       // System.out.println(facet.size());
+        for (int i = 0; i< this.facet.size(); i++){
+         //   System.out.println(i);
+         //   System.out.println(facet.get(i).getText());
+            if(this.facet.get(i).getText().contains(sFacet)){
+         //       System.out.println(facet.get(i).getText());
+                this.facet.get(i).click();
+                i = this.facet.size();
+                Thread.sleep(5000);
+               String chosenFacet= this.selectedFacet();
             }
         }
 
 
     }
-
+    public String selectedFacet(){
+        System.out.println(this.selectedFacet.size());
+        for (int j = 0; j< this.selectedFacet.size(); j++){
+            System.out.println(this.selectedFacet.get(j).getText());
+        }
+        return String.valueOf(this.selectedFacet);
+    }
 
 }
