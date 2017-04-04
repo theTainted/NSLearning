@@ -42,21 +42,21 @@ public class TheHub {
         PageFactory.initElements(TheHub.driver, this);
     }
     public void setLoginEmail(String userName){
-        txtBoxLoginEmail.sendKeys(userName);
+        this.txtBoxLoginEmail.sendKeys(userName);
     }
     public void setLoginPassword(String password){
-        txtBoxPassword.sendKeys(password);
+        this.txtBoxPassword.sendKeys(password);
     }
     public void clickOnLoginButton(){
-        btnLogin.click();
+        this.btnLogin.click();
     }
     public void enterSearchText(String searchText){
-        txtBoxSearch.sendKeys(searchText);
+        this.txtBoxSearch.sendKeys(searchText);
     }
     public void clickSeachIcon(){
-        btnSearchIcon.click();
-        for (WebElement tab : allResultTabs){
-            System.out.println(tab.getText());
+        this.btnSearchIcon.click();
+        for (WebElement tab : this.allResultTabs){
+          //  System.out.println(tab.getText());
 
         }
     }
@@ -67,26 +67,40 @@ public class TheHub {
         }*/
     public void clickOnFilter(String sFacet ) throws InterruptedException {
        // System.out.println(facet.size());
-        for (int i = 0; i< facet.size(); i++){
+        for (int i = 0; i< this.facet.size(); i++){
          //   System.out.println(i);
          //   System.out.println(facet.get(i).getText());
-            if(facet.get(i).getText().contains(sFacet)){
+            if(this.facet.get(i).getText().contains(sFacet)){
          //       System.out.println(facet.get(i).getText());
-                facet.get(i).click();
-                i = facet.size();
+                this.facet.get(i).click();
+
                 Thread.sleep(5000);
-               String chosenFacet= selectedFacet();
+               String chosenFacet= this.selectedFacet();
+                System.out.println("chosen : " +chosenFacet);
+                String aFacet[] = this.facet.get(i).getText().split("\\(");
+                if (chosenFacet==aFacet[0]){
+                    System.out.println("Awesome");
+                }
+                else {
+                    System.out.println("facet : "+aFacet[0]);
+
+
+                }
+                i = this.facet.size();
             }
         }
 
 
     }
-    public String selectedFacet(){
-        System.out.println(selectedFacet.size());
-        for (int j = 0; j< selectedFacet.size(); j++){
-          //  System.out.println(this.selectedFacet.get(j).getText());
+    public String selectedFacet() {
+        System.out.println(this.selectedFacet.size());
+        String chosen = null;
+        for (int j = 0; j < this.selectedFacet.size(); j++) {
+            //  System.out.println(this.selectedFacet.get(j).getText());
+           return chosen = this.selectedFacet.get(j).getText();
         }
-        return String.valueOf(selectedFacet);
+
+        return chosen;
     }
 
 }
