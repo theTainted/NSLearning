@@ -44,8 +44,6 @@ public class hub {
 
         theHub.clickOnFilter("Commercial");
         Thread.sleep(5000);
-        theHub.clickOnFilter("United Kingdom");
-        Thread.sleep(5000);
         theHub.clickOnFilter("Video");
 
       //  theHub.selectedFacet();
