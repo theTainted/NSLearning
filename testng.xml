@@ -3,7 +3,7 @@
     <test name="Chrome Test">
         <parameter name ="browser" value="Chrome"/>
         <classes>
-            <class name ="testcases.RegisteredUserCheckOutFlow"/>
+            <class name ="testcases.theHubLogIn"/>
         </classes>
     </test>
 
