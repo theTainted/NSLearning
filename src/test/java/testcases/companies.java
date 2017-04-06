@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -17,7 +18,9 @@ import java.util.List;
  * Created by syam.suryanarayanan on 4/5/2017.
  */
 public class companies {
-    public static void main(String[] args) throws InterruptedException {
+   // public static void main(String[] args) throws InterruptedException {
+   @Test
+   public void numberOfCompaniesInProduction()throws InterruptedException{
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://thehub.endemolshine.com/");
@@ -64,6 +67,7 @@ public class companies {
         } catch (IOException ioe) {
             System.out.println("Trouble reading from the file: ");
         }
-
+        driver.quit();
     }
+
 }

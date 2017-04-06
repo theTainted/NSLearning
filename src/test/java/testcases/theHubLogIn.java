@@ -20,5 +20,6 @@ public class theHubLogIn {
       theHub.setLoginEmail(TheHub.userName);
       theHub.setLoginPassword(TheHub.password);
       theHub.clickOnLoginButton();
+    driver.quit();
   }
 }
