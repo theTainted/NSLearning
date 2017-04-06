@@ -41,27 +41,29 @@ public class TheHub {
     public List<WebElement> facet;
     @FindAll(@FindBy(xpath = "//div[@id='result_update']//div[@class='facet__selection']/div[@class='facet__selection-label']"))
     public List<WebElement> selectedFacet;
+    @FindBy(xpath="//a[@href='/ErrorPage/Login/Logout']")
+    public WebElement btnLogout;
 
     public TheHub(WebDriver driver) {
         TheHub.driver = driver;
         PageFactory.initElements(TheHub.driver, this);
     }
     public void setLoginEmail(String userName){
-        txtBoxLoginEmail.sendKeys(userName);
+        this.txtBoxLoginEmail.sendKeys(userName);
     }
     public void setLoginPassword(String password){
-        txtBoxPassword.sendKeys(password);
+        this.txtBoxPassword.sendKeys(password);
     }
     public void clickOnLoginButton(){
-        btnLogin.click();
-      Assert.assertTrue(this.loginUserImage.isDisplayed());
+        this.btnLogin.click();
+      Assert.assertTrue(loginUserImage.isDisplayed());
     }
     public void enterSearchText(String searchText){
-        txtBoxSearch.sendKeys(searchText);
+        this.txtBoxSearch.sendKeys(searchText);
     }
     public void clickSeachIcon(){
-        btnSearchIcon.click();
-        for (WebElement tab : allResultTabs){
+        this.btnSearchIcon.click();
+        for (WebElement tab : this.allResultTabs){
           //  System.out.println(tab.getText());
 
         }
@@ -73,18 +75,18 @@ public class TheHub {
         }*/
     public void clickOnFilter(String sFacet ) throws InterruptedException {
        // System.out.println(facet.size());
-        for (int i = 0; i< facet.size(); i++){
+        for (int i = 0; i< this.facet.size(); i++){
          //   System.out.println(i);
          //   System.out.println(facet.get(i).getText());
-            if(facet.get(i).getText().contains(sFacet)){
+            if(this.facet.get(i).getText().contains(sFacet)){
          //       System.out.println(facet.get(i).getText());
-                facet.get(i).click();
+                this.facet.get(i).click();
 
                 Thread.sleep(5000);
-               String chosenFacet= selectedFacet();
+               String chosenFacet= this.selectedFacet();
                 System.out.println("chosen : " +chosenFacet.trim());
                 System.out.println("chosen : " +chosenFacet.trim().length());
-                String aFacet[] = facet.get(i).getText().split("\\(");
+                String aFacet[] = this.facet.get(i).getText().split("\\(");
                 if (chosenFacet.trim().equals(aFacet[0].trim())){
                     System.out.println("Awesome");
 
@@ -95,21 +97,28 @@ public class TheHub {
 
 
                 }
-                i = facet.size();
+                i = this.facet.size();
             }
         }
 
 
     }
     public String selectedFacet() {
-        System.out.println(selectedFacet.size());
+        System.out.println(this.selectedFacet.size());
         String chosen = null;
-        for (int j = 0; j < selectedFacet.size(); j++) {
+        for (int j = 0; j < this.selectedFacet.size(); j++) {
             //  System.out.println(this.selectedFacet.get(j).getText());
-           return chosen = selectedFacet.get(j).getText();
+           return chosen = this.selectedFacet.get(j).getText();
         }
 
         return chosen;
+    }
+
+    public void clickOnLogout(){
+        this.loginUserImage.click();
+        this.btnLogout.click();
+        Assert.assertTrue(this.txtBoxLoginEmail.isDisplayed());
+
     }
 
 }

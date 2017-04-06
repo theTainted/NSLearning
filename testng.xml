@@ -6,6 +6,7 @@
             <class name ="testcases.theHubLogIn"/>
             <class name="testcases.companies"/>
             <class name ="testcases.companies_test"/>
+            <class name="testcases.theHubLogout"/>
         </classes>
     </test>
 
