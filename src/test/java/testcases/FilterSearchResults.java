@@ -50,7 +50,7 @@ public class FilterSearchResults {
         theHub.clickOnFilter("Video");
 
       //  theHub.selectedFacet();
-
+        driver.quit();
 
     }
 }
