@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by syam.suryanarayanan on 2/22/2017.
  */
-public class hub {
+public class FilterSearchResults {
   //  public static void main(String[] args) throws InterruptedException {
     @Test
       public void testFilter() throws InterruptedException{
