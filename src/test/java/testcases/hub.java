@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import PageObjects.TheHub;
+import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,9 @@ import java.util.List;
  * Created by syam.suryanarayanan on 2/22/2017.
  */
 public class hub {
-    public static void main(String[] args) throws InterruptedException {
+  //  public static void main(String[] args) throws InterruptedException {
+    @Test
+      public void testFilter() throws InterruptedException{
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
       TheHub theHub = new TheHub(driver);
