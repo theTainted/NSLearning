@@ -6,6 +6,7 @@
             <class name ="testcases.theHubLogIn"/>
             <class name ="testcases.theHubLogout"/>
             <class name ="testcases.FilterSearchResults"/>
+            <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
         </classes>
     </test>
 
