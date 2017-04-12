@@ -4,7 +4,8 @@
         <parameter name ="browser" value="Chrome"/>
         <classes>
             <class name ="testcases.theHubLogIn"/>
-
+            <class name ="testcases.theHubLogout"/>
+            <class name ="testcases.FilterSearchResults"/>
         </classes>
     </test>
 
