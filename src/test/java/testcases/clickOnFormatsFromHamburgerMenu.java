@@ -21,6 +21,7 @@ public class clickOnFormatsFromHamburgerMenu {
         theHub.clickOnLoginButton();
         theHub.clickOnHamburgerIcon();
         theHub.clickonFormatFromHamburgerMenu();
+        driver.quit();
 
     }
 
