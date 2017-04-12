@@ -53,6 +53,8 @@ public class TheHub {
     public WebElement hamburgerMediaLink;
     @FindBy(xpath="//a[@href='/News']")
     public WebElement hamburgerNewsLink;
+    @FindBy(xpath="//a[@href='/Calendar']")
+    public WebElement hamburgerCalendarLink;
     @FindBy(xpath="//form[@id='searchForm']//h2[@class='main__title']")
     public WebElement pageHeading;
 
@@ -176,6 +178,18 @@ public class TheHub {
             String pageTitle = this.pageHeading.getText();
             System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("News"));
+        }
+        else{
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
+        }
+    }
+    public void clickonCalendarFromHamburgerMenu(){
+
+        if (hamburgerCalendarLink.isDisplayed()){
+            hamburgerCalendarLink.click();
+            String pageTitle = this.pageHeading.getText();
+            System.out.println(pageTitle);
+            Assert.assertTrue(pageTitle.equalsIgnoreCase("Calendar"));
         }
         else{
             Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");

@@ -10,6 +10,7 @@
             <class name ="testcases.clickOnSeriesFromHamburgerMenu"/>
             <class name ="testcases.clickOnMediaFromHamburgerMenu"/>
             <class name="testcases.clickOnNewsFromHamburgerMenu"/>
+            <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
         </classes>
     </test>
 
