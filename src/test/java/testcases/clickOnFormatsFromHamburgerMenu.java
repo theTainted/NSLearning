@@ -19,6 +19,8 @@ public class clickOnFormatsFromHamburgerMenu {
         theHub.setLoginEmail(TheHub.userName);
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
+        theHub.clickOnHamburgerIcon();
+        theHub.clickonFormatFromHamburgerMenu();
 
     }
 
