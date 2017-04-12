@@ -8,6 +8,7 @@
             <class name ="testcases.FilterSearchResults"/>
             <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
             <class name ="testcases.clickOnSeriesFromHamburgerMenu"/>
+            <class name ="testcases.clickOnMediaFromHamburgerMenu"/>
         </classes>
     </test>
 
