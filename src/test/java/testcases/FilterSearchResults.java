@@ -47,10 +47,10 @@ public class FilterSearchResults {
 
         theHub.clickOnFilter("Commercial");
         Thread.sleep(5000);
-        theHub.clickOnFilter("Video");
+        theHub.clickOnFilter("Videos");
 
       //  theHub.selectedFacet();
-        driver.quit();
+      driver.quit();
 
     }
 }
