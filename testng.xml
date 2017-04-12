@@ -11,6 +11,7 @@
             <class name ="testcases.clickOnMediaFromHamburgerMenu"/>
             <class name="testcases.clickOnNewsFromHamburgerMenu"/>
             <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
+            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
         </classes>
     </test>
 
