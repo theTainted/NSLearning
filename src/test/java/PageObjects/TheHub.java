@@ -47,27 +47,29 @@ public class TheHub {
     public WebElement hamburgerIcon;
     @FindBy(xpath="//a[@href='/Formats']")
     public WebElement hamburgerFormatLink;
+    @FindBy(xpath="//form[@id='searchForm']//h2[@class='main__title']")
+    public WebElement pageHeading;
 
     public TheHub(WebDriver driver) {
         TheHub.driver = driver;
         PageFactory.initElements(TheHub.driver, this);
     }
     public void setLoginEmail(String userName){
-        this.txtBoxLoginEmail.sendKeys(userName);
+        txtBoxLoginEmail.sendKeys(userName);
     }
     public void setLoginPassword(String password){
-        this.txtBoxPassword.sendKeys(password);
+        txtBoxPassword.sendKeys(password);
     }
     public void clickOnLoginButton(){
-        this.btnLogin.click();
-      Assert.assertTrue(loginUserImage.isDisplayed());
+        btnLogin.click();
+      Assert.assertTrue(this.loginUserImage.isDisplayed());
     }
     public void enterSearchText(String searchText){
-        this.txtBoxSearch.sendKeys(searchText);
+        txtBoxSearch.sendKeys(searchText);
     }
     public void clickSeachIcon(){
-        this.btnSearchIcon.click();
-        for (WebElement tab : this.allResultTabs){
+        btnSearchIcon.click();
+        for (WebElement tab : allResultTabs){
           //  System.out.println(tab.getText());
 
         }
@@ -79,18 +81,18 @@ public class TheHub {
         }*/
     public void clickOnFilter(String sFacet ) throws InterruptedException {
        // System.out.println(facet.size());
-        for (int i = 0; i< this.facet.size(); i++){
+        for (int i = 0; i< facet.size(); i++){
          //   System.out.println(i);
          //   System.out.println(facet.get(i).getText());
-            if(this.facet.get(i).getText().contains(sFacet)){
+            if(facet.get(i).getText().contains(sFacet)){
          //       System.out.println(facet.get(i).getText());
-                this.facet.get(i).click();
+                facet.get(i).click();
 
                 Thread.sleep(5000);
-               String chosenFacet= this.selectedFacet();
+               String chosenFacet= selectedFacet();
                 System.out.println("chosen : " +chosenFacet.trim());
                 System.out.println("chosen : " +chosenFacet.trim().length());
-                String aFacet[] = this.facet.get(i).getText().split("\\(");
+                String aFacet[] = facet.get(i).getText().split("\\(");
                 if (chosenFacet.trim().equals(aFacet[0].trim())){
                     System.out.println("Awesome");
 
@@ -101,38 +103,40 @@ public class TheHub {
 
 
                 }
-                i = this.facet.size();
+                i = facet.size();
             }
         }
 
 
     }
     public String selectedFacet() {
-        System.out.println(this.selectedFacet.size());
+        System.out.println(selectedFacet.size());
         String chosen = null;
-        for (int j = 0; j < this.selectedFacet.size(); j++) {
+        for (int j = 0; j < selectedFacet.size(); j++) {
             //  System.out.println(this.selectedFacet.get(j).getText());
-           return chosen = this.selectedFacet.get(j).getText();
+           return chosen = selectedFacet.get(j).getText();
         }
 
         return chosen;
     }
 
     public void clickOnLogout(){
-        this.loginUserImage.click();
-        this.btnLogout.click();
-        Assert.assertTrue(this.txtBoxLoginEmail.isDisplayed());
+        loginUserImage.click();
+        btnLogout.click();
+        Assert.assertTrue(txtBoxLoginEmail.isDisplayed());
 
     }
     public void clickOnHamburgerIcon(){
-        hamburgerIcon.click();
+        this.hamburgerIcon.click();
     }
     public void clickonFormatFromHamburgerMenu(){
-        if (this.hamburgerFormatLink.isDisplayed()){
-            this.hamburgerFormatLink.click();
+        if (hamburgerFormatLink.isDisplayed()){
+            hamburgerFormatLink.click();
+            String pageTitle = this.pageHeading.getText();
+            Assert.assertTrue(pageTitle.equalsIgnoreCase("Format"));
         }
         else{
-            Assert.assertFalse(this.hamburgerFormatLink.isDisplayed(),"format link is not ready to be clicked");
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"format link is not ready to be clicked");
         }
     }
 }
