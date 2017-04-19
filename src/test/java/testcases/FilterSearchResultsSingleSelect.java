@@ -24,8 +24,8 @@ public class FilterSearchResultsSingleSelect {
       theHub.setLoginPassword(TheHub.password);
       theHub.clickOnLoginButton();
       theHub.enterSearchText("Hunted");
-      String sText = driver.findElement(By.xpath("//div[@id='result_update']//div[@class='facet collapsed']//h3[@class='facet__header-title']")).getText();
-        System.out.println(sText);
+      theHub.filterUsingSingleSelectFacet("Genre","Drama");
+
      //  theHub.clickOnAFacet();
 
  /*       theHub.clickOnFilter("Commercial");
