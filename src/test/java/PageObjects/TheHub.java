@@ -87,6 +87,7 @@ public class TheHub {
     public void enterSearchText(String searchText){
         txtBoxSearch.sendKeys(searchText);
         this.clickSearchIcon();
+        System.out.println(txtBoxSearch.getText());
     }
     public void clickSearchIcon(){
         btnSearchIcon.click();
