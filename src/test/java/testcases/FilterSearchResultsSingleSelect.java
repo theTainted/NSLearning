@@ -21,8 +21,8 @@ public class FilterSearchResultsSingleSelect {
       driver.manage().window().maximize();
       theHub.setLoginEmail(TheHub.userName);
       theHub.setLoginPassword(TheHub.password);
-
-       theHub.enterSearchText("Hunted");
+      theHub.clickOnLoginButton();
+      theHub.enterSearchText("Hunted");
 
      //  theHub.clickOnAFacet();
 
