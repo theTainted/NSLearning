@@ -24,8 +24,7 @@ public class FilterSearchResultsSingleSelect {
       theHub.setLoginPassword(TheHub.password);
       theHub.clickOnLoginButton();
       theHub.enterSearchText("Hunted");
-      theHub.expandUsingSingleSelectFacet("Genre");
-      theHub.clickOnFilter("Drama");
+      theHub.expandUsingSingleSelectFacet("Company");
 
     }
 }
