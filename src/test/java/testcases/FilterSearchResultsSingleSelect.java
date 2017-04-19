@@ -25,6 +25,9 @@ public class FilterSearchResultsSingleSelect {
       theHub.clickOnLoginButton();
       theHub.enterSearchText("Hunted");
       theHub.expandUsingSingleSelectFacet("Company");
+      theHub.expanddropDownSelectAnOwner();
+      Thread.sleep(2000);
+      theHub.filterUsingSingleSelectFilter("Canal");
 
     }
 }
