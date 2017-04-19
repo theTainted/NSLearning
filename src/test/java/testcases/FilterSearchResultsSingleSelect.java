@@ -37,8 +37,8 @@ public class FilterSearchResultsSingleSelect {
                System.out.println(hamburgerMenu.get(j).getText());
            }
        }*/
-       theHub.enterSearchText("big brother");
-       theHub.clickSeachIcon();
+       theHub.enterSearchText("Hunted");
+
      //  theHub.clickOnAFacet();
 
  /*       theHub.clickOnFilter("Commercial");

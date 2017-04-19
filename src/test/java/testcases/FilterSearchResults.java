@@ -42,7 +42,7 @@ public class FilterSearchResults {
            }
        }*/
        theHub.enterSearchText("big brother");
-       theHub.clickSeachIcon();
+
      //  theHub.clickOnAFacet();
 
         theHub.clickOnFilter("Commercial");
