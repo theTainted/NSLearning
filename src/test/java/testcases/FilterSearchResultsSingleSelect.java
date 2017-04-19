@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * This test case handles the scenario
  */
 public class FilterSearchResultsSingleSelect {
-  //  public static void main(String[] args) throws InterruptedException {
+
     @Test
       public void testFilterSingleSelect() throws InterruptedException{
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
