@@ -1,6 +1,7 @@
 package testcases;
 
 import PageObjects.TheHub;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -23,7 +24,8 @@ public class FilterSearchResultsSingleSelect {
       theHub.setLoginPassword(TheHub.password);
       theHub.clickOnLoginButton();
       theHub.enterSearchText("Hunted");
-
+      String sText = driver.findElement(By.xpath("//div[@id='result_update']//div[@class='facet collapsed']//h3[@class='facet__header-title']")).getText();
+        System.out.println(sText);
      //  theHub.clickOnAFacet();
 
  /*       theHub.clickOnFilter("Commercial");
