@@ -28,6 +28,10 @@ public class FilterSearchResultsSingleSelect {
       theHub.expanddropDownSelectAnOwner();
       Thread.sleep(2000);
       theHub.filterUsingSingleSelectFilter("Canal");
+      Thread.sleep(2000);
+      theHub.expanddropDownSelectAnOwner();
+      Thread.sleep(2000);
+      theHub.filterUsingSingleSelectFilter("NL Film");
       driver.quit();
 
     }
