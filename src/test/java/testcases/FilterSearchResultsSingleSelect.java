@@ -28,6 +28,7 @@ public class FilterSearchResultsSingleSelect {
       theHub.expanddropDownSelectAnOwner();
       Thread.sleep(2000);
       theHub.filterUsingSingleSelectFilter("Canal");
+      driver.quit();
 
     }
 }
