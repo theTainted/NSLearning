@@ -25,15 +25,7 @@ public class FilterSearchResultsSingleSelect {
       theHub.clickOnLoginButton();
       theHub.enterSearchText("Hunted");
       theHub.expandUsingSingleSelectFacet("Genre");
-
-     //  theHub.clickOnAFacet();
-
- /*       theHub.clickOnFilter("Commercial");
-        Thread.sleep(5000);
-        theHub.clickOnFilter("Videos");
-
-      //  theHub.selectedFacet();
-      driver.quit();*/
+      theHub.clickOnFilter("Drama");
 
     }
 }
