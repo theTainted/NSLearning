@@ -75,31 +75,31 @@ public class TheHub {
         PageFactory.initElements(TheHub.driver, this);
     }
     public void setLoginEmail(String userName){
-        this.txtBoxLoginEmail.sendKeys(userName);
+        txtBoxLoginEmail.sendKeys(userName);
     }
     public void setLoginPassword(String password){
-        this.txtBoxPassword.sendKeys(password);
+        txtBoxPassword.sendKeys(password);
     }
     public void clickOnLoginButton(){
-        this.btnLogin.click();
-      Assert.assertTrue(loginUserImage.isDisplayed());
+        btnLogin.click();
+      Assert.assertTrue(this.loginUserImage.isDisplayed());
     }
     public void enterSearchText(String searchText){
-        this.txtBoxSearch.sendKeys(searchText);
-        clickSearchIcon();
+        txtBoxSearch.sendKeys(searchText);
+        this.clickSearchIcon();
 
 
-        if (this.txtBoxSearch.getText().length()!=0){
-            System.out.println(this.txtBoxSearch.getText());
+        if (txtBoxSearch.getText().length()!=0){
+           System.out.println(txtBoxSearch.getText());
         }
           else {
             System.out.println("damn u");
         }
     }
     public void clickSearchIcon(){
-        this.btnSearchIcon.click();
+        btnSearchIcon.click();
 
-        for (WebElement tab : this.allResultTabs){
+        for (WebElement tab : allResultTabs){
           //  System.out.println(tab.getText());
 
         }
@@ -110,17 +110,19 @@ public class TheHub {
 
         }*/
     public void clickOnFilter(String sFacet ) throws InterruptedException {
-        System.out.println(this.facet.size());
-        for (int i = 0; i< this.facet.size(); i++){
+        //System.out.println(this.facet.size());
+        for (int i = 0; i< facet.size(); i++){
          //   System.out.println(i);
          //   System.out.println(facet.get(i).getText());
-            if(this.facet.get(i).getText().contains(sFacet)){
+            if(facet.get(i).getText().contains(sFacet)){
          //       System.out.println(facet.get(i).getText());
-                this.facet.get(i).click();
+                facet.get(i).click();
 
                 Thread.sleep(5000);
-               String chosenFacet= this.selectedFacet();
-                System.out.println("chosen : " +chosenFacet.trim());
+               String chosenFacet= selectedFacet();
+             //   System.out.println(chosenFacet);
+                Assert.assertTrue(chosenFacet.equalsIgnoreCase(sFacet));
+           /*     System.out.println("chosen : " +chosenFacet.trim());
                 System.out.println("chosen : " +chosenFacet.trim().length());
                 String aFacet[] = this.facet.get(i).getText().split("\\(");
                 if (chosenFacet.trim().equals(aFacet[0].trim())){
@@ -133,137 +135,137 @@ public class TheHub {
 
 
                 }
-                i = this.facet.size();
+                i = this.facet.size();*/
             }
         }
 
 
     }
     public String selectedFacet() {
-        System.out.println(this.selectedFacet.size());
+        //System.out.println(this.selectedFacet.size());
         String chosen = null;
-        for (int j = 0; j < this.selectedFacet.size(); j++) {
+        for (int j = 0; j < selectedFacet.size(); j++) {
             //  System.out.println(this.selectedFacet.get(j).getText());
-           return chosen = this.selectedFacet.get(j).getText();
+           return chosen = selectedFacet.get(j).getText();
         }
 
         return chosen;
     }
 
     public void clickOnLogout(){
-        this.loginUserImage.click();
-        this.btnLogout.click();
-        Assert.assertTrue(this.txtBoxLoginEmail.isDisplayed());
+        loginUserImage.click();
+        btnLogout.click();
+        Assert.assertTrue(txtBoxLoginEmail.isDisplayed());
 
     }
     public void clickOnHamburgerIcon(){
-        hamburgerIcon.click();
+        this.hamburgerIcon.click();
     }
     public void clickonFormatFromHamburgerMenu(){
-        if (this.hamburgerFormatLink.isDisplayed()){
-            this.hamburgerFormatLink.click();
-            String pageTitle = pageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerFormatLink.isDisplayed()){
+            hamburgerFormatLink.click();
+            String pageTitle = this.pageHeading.getText();
+            //System.out.println(pageTitle);
            Assert.assertTrue(pageTitle.equalsIgnoreCase("Formats"));
         }
         else{
-            Assert.assertFalse(this.hamburgerFormatLink.isDisplayed(),"format link is not ready to be clicked");
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"format link is not ready to be clicked");
         }
     }
     public void clickonSeriesFromHamburgerMenu(){
-        if (this.hamburgerSeriesLink.isDisplayed()){
-            this.hamburgerSeriesLink.click();
-            String pageTitle = pageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerSeriesLink.isDisplayed()){
+            hamburgerSeriesLink.click();
+            String pageTitle = this.pageHeading.getText();
+            //System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("Series"));
         }
         else{
-            Assert.assertFalse(this.hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
     public void clickonMediaFromHamburgerMenu(){
 
-        if (this.hamburgerMediaLink.isDisplayed()){
-            this.hamburgerMediaLink.click();
-            String pageTitle = pageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerMediaLink.isDisplayed()){
+            hamburgerMediaLink.click();
+            String pageTitle = this.pageHeading.getText();
+            //System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("Media"));
         }
         else{
-            Assert.assertFalse(this.hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
     public void clickonNewsFromHamburgerMenu(){
 
-        if (this.hamburgerNewsLink.isDisplayed()){
-            this.hamburgerNewsLink.click();
-            String pageTitle = pageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerNewsLink.isDisplayed()){
+            hamburgerNewsLink.click();
+            String pageTitle = this.pageHeading.getText();
+            //System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("News"));
         }
         else{
-            Assert.assertFalse(this.hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
     public void clickonCalendarFromHamburgerMenu(){
 
-        if (this.hamburgerCalendarLink.isDisplayed()){
-            this.hamburgerCalendarLink.click();
-            String pageTitle = calendarHeading.getText();
+        if (hamburgerCalendarLink.isDisplayed()){
+            hamburgerCalendarLink.click();
+            String pageTitle = this.calendarHeading.getText();
             System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("Calendar"));
         }
         else{
-            Assert.assertFalse(this.hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerFormatLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
     public void clickonBrandToolkitFromHamburgerMenu(){
 
-        if (this.hamburgerBrandTookitLink.isDisplayed()){
-            this.hamburgerBrandTookitLink.click();
-            String pageTitle = newPageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerBrandTookitLink.isDisplayed()){
+            hamburgerBrandTookitLink.click();
+            String pageTitle = this.newPageHeading.getText();
+            //System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("Brand toolkits"));
         }
         else{
-            Assert.assertFalse(this.hamburgerBrandTookitLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerBrandTookitLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
     public void clickonCommercialFromHamburgerMenu(){
 
-        if (this.hamburgerCommercialLink.isDisplayed()){
-            this.hamburgerCommercialLink.click();
-            String pageTitle = newPageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerCommercialLink.isDisplayed()){
+            hamburgerCommercialLink.click();
+            String pageTitle = this.newPageHeading.getText();
+         //   System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("Commercial"));
         }
         else{
-            Assert.assertFalse(this.hamburgerCommercialLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerCommercialLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
     public void clickonPoliciesFromHamburgerMenu(){
 
-        if (this.hamburgerPoliciesLink.isDisplayed()){
-            this.hamburgerPoliciesLink.click();
-            String pageTitle = newPageHeading.getText();
-            System.out.println(pageTitle);
+        if (hamburgerPoliciesLink.isDisplayed()){
+            hamburgerPoliciesLink.click();
+            String pageTitle = this.newPageHeading.getText();
+            //System.out.println(pageTitle);
             Assert.assertTrue(pageTitle.equalsIgnoreCase("Policies"));
         }
         else{
-            Assert.assertFalse(this.hamburgerPoliciesLink.isDisplayed(),"Series link is not ready to be clicked");
+            Assert.assertFalse(hamburgerPoliciesLink.isDisplayed(),"Series link is not ready to be clicked");
         }
     }
 
     public void expandUsingSingleSelectFacet(String singleSelectFilter){
 
-        this.collapsableFacets.size();
-        System.out.println(this.collapsableFacets.size());
-        for (int j = 0; j < this.collapsableFacets.size(); j++) {
+        collapsableFacets.size();
+        //System.out.println(this.collapsableFacets.size());
+        for (int j = 0; j < collapsableFacets.size(); j++) {
             //  System.out.println(this.selectedFacet.get(j).getText());
 
-            if (this.collapsableFacets.get(j).getText().contains(singleSelectFilter)){
-                System.out.println(this.collapsableFacets.get(j).getText());
-                this.collapsableFacets.get(j).click();
+            if (collapsableFacets.get(j).getText().contains(singleSelectFilter)){
+              //  System.out.println(this.collapsableFacets.get(j).getText());
+                collapsableFacets.get(j).click();
                 break;
             }
 
