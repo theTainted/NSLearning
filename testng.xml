@@ -14,6 +14,7 @@
             <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
             <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
+            <class name="testcases.FilterSearchResultsSingleSelect"/>
         </classes>
     </test>
 
