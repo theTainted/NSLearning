@@ -23,7 +23,7 @@ public class FilterSearchResultsSingleSelect {
       theHub.setLoginEmail(TheHub.userName);
       theHub.setLoginPassword(TheHub.password);
       theHub.clickOnLoginButton();
-      theHub.enterSearchText("");
+      theHub.enterSearchText("Hunted");
       theHub.expandUsingSingleSelectFacet("Company");
       theHub.expanddropDownSelectAnOwner();
       Thread.sleep(3000);
