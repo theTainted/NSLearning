@@ -23,12 +23,12 @@ public class FilterSearchResultsSingleSelect {
       theHub.setLoginEmail(TheHub.userName);
       theHub.setLoginPassword(TheHub.password);
       theHub.clickOnLoginButton();
-      theHub.enterSearchText("Hunted");
+      theHub.enterSearchText("");
       theHub.expandUsingSingleSelectFacet("Company");
       theHub.expanddropDownSelectAnOwner();
-      Thread.sleep(2000);
+      Thread.sleep(3000);
       theHub.filterUsingSingleSelectFilter("Canal");
-      Thread.sleep(2000);
+      Thread.sleep(3000);
       theHub.expanddropDownSelectAnOwner();
       Thread.sleep(2000);
       theHub.filterUsingSingleSelectFilter("Shine TV");
