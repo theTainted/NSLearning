@@ -31,8 +31,10 @@ public class FilterSearchResultsSingleSelect {
       Thread.sleep(2000);
       theHub.expanddropDownSelectAnOwner();
       Thread.sleep(2000);
+      theHub.filterUsingSingleSelectFilter("Shine TV");
+      theHub.expanddropDownSelectAProducer();
       theHub.filterUsingSingleSelectFilter("NL Film");
-      driver.quit();
+
 
     }
 }
