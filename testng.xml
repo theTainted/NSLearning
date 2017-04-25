@@ -15,6 +15,7 @@
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
             <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
             <class name="testcases.FilterSearchResultsSingleSelect"/>
+            <class name="testcases.GuestUserCheckOutFlow"/>
         </classes>
     </test>
 
