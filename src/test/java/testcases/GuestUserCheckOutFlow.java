@@ -25,15 +25,15 @@ public class GuestUserCheckOutFlow extends General{
      public void testGuestUserCheckOutFlow() throws InterruptedException {
        String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 
-   //    for(int i=0;i<countries.length;i++) {
+      // for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
           General.getBrowser("Chrome");
-          driver.get(General.URL);
-          driver.manage().window().maximize();
+        General.driver.get(General.URL);
+        General.driver.manage().window().maximize();
 
           //Accept cookies message
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(General.driver);
         Thread.sleep(10000);
         homePage.clickOnCountrySelectorFirstLink("ALL~en");
         homePage.clickAcceptCookiesButton();
@@ -56,7 +56,7 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterAddressOne("Line 1");
           shippingAddress.enterZip("1114AB");
           shippingAddress.enterCity("Amsterdam");
-          //shippingAddress.selectCountry(countries[i]);
+        //  shippingAddress.selectCountry(countries[i]);
           shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
@@ -73,7 +73,7 @@ public class GuestUserCheckOutFlow extends General{
           billingPage.selectExpiryYear("2020");
           billingPage.clickBtnToPay();
 
-          driver.quit();
+        General.driver.quit();
 /*
                 Actions action = new Actions(driver);
         WebElement we = driver.findElement(By.xpath("//div[@id='wrapper']/header//i[@class='icon-bag']"));
