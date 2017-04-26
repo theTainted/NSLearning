@@ -23,9 +23,9 @@ public class GuestUserCheckOutFlow extends General{
    // public static void main(String[] args) throws InterruptedException {
     /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() throws InterruptedException {
-       String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
+       String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 
-    //  for(int i=0;i<countries.length;i++) {
+  for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
           General.getBrowser("Chrome");
@@ -58,13 +58,13 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterCity("Amsterdam");
         /*  System.out.println(i);
           System.out.println(countries[i]);*/
-        // shippingAddress.selectCountry(countries[i]);
-          shippingAddress.selectCountry("Angolagfsgfsg");
+        shippingAddress.selectCountry(countries[i]);
+        //  shippingAddress.selectCountry("Angolagfsgfsg");
           shippingAddress.enterEmail("syam.suryanarayanan@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
 
-          BillingPage billingPage = shippingAddress.clickBtnToBilling();
+      /*    BillingPage billingPage = shippingAddress.clickBtnToBilling();
 
 
           //  Thread.sleep(5000);
@@ -76,7 +76,7 @@ public class GuestUserCheckOutFlow extends General{
           billingPage.selectExpiryYear("2020");
           billingPage.clickBtnToPay();
 
-        General.driver.quit();
+        General.driver.quit();*/
 /*
                 Actions action = new Actions(driver);
         WebElement we = driver.findElement(By.xpath("//div[@id='wrapper']/header//i[@class='icon-bag']"));
@@ -85,4 +85,4 @@ public class GuestUserCheckOutFlow extends General{
 
        }
     }
-//}
+}
