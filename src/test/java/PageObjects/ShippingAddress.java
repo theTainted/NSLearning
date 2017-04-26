@@ -52,58 +52,62 @@ public class ShippingAddress extends General {
     }
 
     public void selectMan() {
-        this.rdoGenderMan.click();
+        rdoGenderMan.click();
     }
 
     public void enterFirstName(String firstName) {
-        this.txtBoxShippingAddressFirstName.sendKeys(firstName);
+        txtBoxShippingAddressFirstName.sendKeys(firstName);
     }
 
     public void enterLastName(String LastName) {
-        this.txtBoxShippingAddressLastName.sendKeys(LastName);
+        txtBoxShippingAddressLastName.sendKeys(LastName);
 
     }
 
     public void enterAddressOne(String addressOne) {
-        this.txtBoxShippingAddressAddress1.sendKeys(addressOne);
+        txtBoxShippingAddressAddress1.sendKeys(addressOne);
 
     }
 
     public void enterZip(String zip) {
-        this.txtBoxZip.sendKeys(zip);
+        txtBoxZip.sendKeys(zip);
 
     }
 
     public void enterCity(String city) {
-        this.txtBoxCity.sendKeys(city);
+        txtBoxCity.sendKeys(city);
 
     }
 
     public void enterEmail(String email) {
-        this.txtBoxEmailAddress.sendKeys(email);
+        txtBoxEmailAddress.sendKeys(email);
 
     }
 
+    /***
+     *
+     * @param phone
+     */
     public void enterPhone(String phone) {
-        this.txtBoxPhone.sendKeys(phone);
+        txtBoxPhone.sendKeys(phone);
 
     }
 
     public void selectBillingAddressOption() {
-        this.rdoChooseBillingAddress.click();
+        rdoChooseBillingAddress.click();
 
     }
 
     public BillingPage clickBtnToBilling() {
         WebDriverWait wait = new WebDriverWait(General.driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(this.btnToBilling));
+        wait.until(ExpectedConditions.elementToBeClickable(btnToBilling));
 
 
 
      /*   Actions actions = new Actions(driver);
 
         actions.moveToElement(btnToBilling).click().perform();*/
-        this.btnToBilling.sendKeys(Keys.RETURN);
+        btnToBilling.sendKeys(Keys.RETURN);
         return new BillingPage(General.driver);
 
 
@@ -120,9 +124,9 @@ public class ShippingAddress extends General {
      */
     public void selectCountry(String chosenCountry){
         boolean matchFound = false;
-        Select selectCountryDropDown= new Select(this.selectCountry);
+        Select selectCountryDropDown= new Select(selectCountry);
         List<WebElement> countries=selectCountryDropDown.getOptions();
-        this.selectCountry.click();
+        selectCountry.click();
         for (WebElement country: countries){
            if(chosenCountry.equals(country.getText())){
                country.click();

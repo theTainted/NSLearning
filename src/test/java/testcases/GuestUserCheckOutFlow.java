@@ -56,15 +56,14 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterAddressOne("Line 1");
           shippingAddress.enterZip("1114AB");
           shippingAddress.enterCity("Amsterdam");
-        /*  System.out.println(i);
-          System.out.println(countries[i]);*/
+
         shippingAddress.selectCountry(countries[i]);
         //  shippingAddress.selectCountry("Angolagfsgfsg");
           shippingAddress.enterEmail("syam.suryanarayanan@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
 
-      /*    BillingPage billingPage = shippingAddress.clickBtnToBilling();
+        BillingPage billingPage = shippingAddress.clickBtnToBilling();
 
 
           //  Thread.sleep(5000);
@@ -76,12 +75,8 @@ public class GuestUserCheckOutFlow extends General{
           billingPage.selectExpiryYear("2020");
           billingPage.clickBtnToPay();
 
-        General.driver.quit();*/
-/*
-                Actions action = new Actions(driver);
-        WebElement we = driver.findElement(By.xpath("//div[@id='wrapper']/header//i[@class='icon-bag']"));
-        action.moveToElement(we).build().perform();
-        driver.findElement(By.xpath("//div[@id='wrapper']/header//a[@class='btn btn--large btn--fullwidth mini-cart-link-checkout']")).click();*/
+        General.driver.quit();
+
 
        }
     }
