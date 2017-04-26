@@ -43,8 +43,8 @@ public class ShippingAddress extends General {
     public WebElement selectCountry;
 
     public ShippingAddress(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+        General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
 
     public void selectMan() {
@@ -91,7 +91,7 @@ public class ShippingAddress extends General {
     }
 
     public BillingPage clickBtnToBilling() {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(General.driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(btnToBilling));
 
 
@@ -100,7 +100,7 @@ public class ShippingAddress extends General {
 
         actions.moveToElement(btnToBilling).click().perform();*/
         btnToBilling.sendKeys(Keys.RETURN);
-        return new BillingPage(driver);
+        return new BillingPage(General.driver);
 
 
       /*  if (btnToBilling.isEnabled()){
@@ -111,9 +111,10 @@ public class ShippingAddress extends General {
     }
     /**
      * for select dropdowns i am passing values and treating them as WebElements instead of dropdowns, need to check this again.
-     * @param country
+     * @param country . This doesnot work now as expected.
      */
     public void selectCountry(String country){
+
         selectCountry.sendKeys(country);
         //  expiryMonth.selectByIndex(6);
       /*  options=expiryMonth.getOptions();
