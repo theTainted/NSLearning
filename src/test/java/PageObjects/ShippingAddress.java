@@ -8,8 +8,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
+
+import java.util.List;
 
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
@@ -42,64 +45,65 @@ public class ShippingAddress extends General {
     @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_country")
     public WebElement selectCountry;
 
+
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
         PageFactory.initElements(General.driver, this);
     }
 
     public void selectMan() {
-        rdoGenderMan.click();
+        this.rdoGenderMan.click();
     }
 
     public void enterFirstName(String firstName) {
-        txtBoxShippingAddressFirstName.sendKeys(firstName);
+        this.txtBoxShippingAddressFirstName.sendKeys(firstName);
     }
 
     public void enterLastName(String LastName) {
-        txtBoxShippingAddressLastName.sendKeys(LastName);
+        this.txtBoxShippingAddressLastName.sendKeys(LastName);
 
     }
 
     public void enterAddressOne(String addressOne) {
-        txtBoxShippingAddressAddress1.sendKeys(addressOne);
+        this.txtBoxShippingAddressAddress1.sendKeys(addressOne);
 
     }
 
     public void enterZip(String zip) {
-        txtBoxZip.sendKeys(zip);
+        this.txtBoxZip.sendKeys(zip);
 
     }
 
     public void enterCity(String city) {
-        txtBoxCity.sendKeys(city);
+        this.txtBoxCity.sendKeys(city);
 
     }
 
     public void enterEmail(String email) {
-        txtBoxEmailAddress.sendKeys(email);
+        this.txtBoxEmailAddress.sendKeys(email);
 
     }
 
     public void enterPhone(String phone) {
-        txtBoxPhone.sendKeys(phone);
+        this.txtBoxPhone.sendKeys(phone);
 
     }
 
     public void selectBillingAddressOption() {
-        rdoChooseBillingAddress.click();
+        this.rdoChooseBillingAddress.click();
 
     }
 
     public BillingPage clickBtnToBilling() {
         WebDriverWait wait = new WebDriverWait(General.driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(btnToBilling));
+        wait.until(ExpectedConditions.elementToBeClickable(this.btnToBilling));
 
 
 
      /*   Actions actions = new Actions(driver);
 
         actions.moveToElement(btnToBilling).click().perform();*/
-        btnToBilling.sendKeys(Keys.RETURN);
+        this.btnToBilling.sendKeys(Keys.RETURN);
         return new BillingPage(General.driver);
 
 
@@ -111,16 +115,34 @@ public class ShippingAddress extends General {
     }
     /**
      * for select dropdowns i am passing values and treating them as WebElements instead of dropdowns, need to check this again.
-     * @param country . This doesnot work now as expected.
+     * updated to have  a select box inside the method
+     * @param chosenCountry . Have to check if this works as expected.
      */
-    public void selectCountry(String country){
+    public void selectCountry(String chosenCountry){
+        boolean matchFound = false;
+        Select selectCountryDropDown= new Select(this.selectCountry);
+        List<WebElement> countries=selectCountryDropDown.getOptions();
+        this.selectCountry.click();
+        for (WebElement country: countries){
+           if(chosenCountry.equals(country.getText())){
+               country.click();
+               matchFound=true;
+               break;
+            }
 
-        selectCountry.sendKeys(country);
-        //  expiryMonth.selectByIndex(6);
-      /*  options=expiryMonth.getOptions();
+            }
+        if (!matchFound){
+            System.out.println("no match found,setting to default country");
+        }
+
+        }
+
+     /*   selectCountry.sendKeys(country);
+          expiryMonth.selectByIndex(6);
+       options=expiryMonth.getOptions();
         for (WebElement option : options) {
             if(month.equals(option.getText()))
                 System.out.println(option);
-                option.click();*/
-    }
+                option.click();
+    }*/
 }
