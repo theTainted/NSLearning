@@ -25,7 +25,7 @@ public class GuestUserCheckOutFlow extends General{
      public void testGuestUserCheckOutFlow() throws InterruptedException {
        String[] countries = {"Italy","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 
-      // for(int i=0;i<countries.length;i++) {
+      for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
           General.getBrowser("Chrome");
@@ -56,8 +56,10 @@ public class GuestUserCheckOutFlow extends General{
           shippingAddress.enterAddressOne("Line 1");
           shippingAddress.enterZip("1114AB");
           shippingAddress.enterCity("Amsterdam");
-        //  shippingAddress.selectCountry(countries[i]);
-          shippingAddress.enterEmail("bjornjaco.geerding@digitaslbi.com");
+          System.out.println(i);
+          System.out.println(countries[i]);
+         shippingAddress.selectCountry(countries[i]);
+          shippingAddress.enterEmail("syam.suryanarayanan@digitaslbi.com");
           shippingAddress.enterPhone("3333333333");
           // shippingAddress.selectBillingAddressOption();
 
@@ -82,4 +84,4 @@ public class GuestUserCheckOutFlow extends General{
 
        }
     }
-//}
+}

@@ -21,15 +21,10 @@ public class ProductDisplayPage extends General {
    // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
-    @FindAll({
-          //  @FindBy(xpath="//div[@id='product-content']//ul[@class='swatches size']/li") -> updated to the below
-            @FindBy(xpath="//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='size']")
-    })
+    @FindAll(@FindBy(xpath = "//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='size']"))
     public List<WebElement> allSizes ;
 
-    @FindAll({
-            @FindBy(xpath="//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='color']")
-    })
+    @FindAll(@FindBy(xpath = "//div[@id='product-content']//div[@class='product-detail__variants']//ul[@class='swatch-container']//a[@data-type='color']"))
        public List <WebElement> allColors;
 
     @FindBy(id="add-to-cart")
@@ -41,47 +36,47 @@ public class ProductDisplayPage extends General {
     public WebElement miniBasket;
 
     public ProductDisplayPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+        General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
     /*clicks on the first available size*/
     public void clickOnFirstSize(){
-        System.out.println(allSizes.size());
-        System.out.println(allSizes.get(0).getText()); //gets the text of the size
-        allSizes.get(0).click();
+       // System.out.println(allSizes.size());
+       // System.out.println(allSizes.get(0).getText()); //gets the text of the size
+        this.allSizes.get(0).click();
 
     }
     /*clicks on the first available color*/
     public void clickOnFirstColor(){
-        System.out.println(allColors.size());
-        System.out.println(allColors.get(0).getText()); //gets the text of the size
-        allColors.get(0).click();
+        System.out.println(this.allColors.size());
+        System.out.println(this.allColors.get(0).getText()); //gets the text of the size
+        this.allColors.get(0).click();
 
     }
 //div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']
 
     public void clickOnAddToCart(){
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.elementToBeClickable(btnAddToCart));
+        WebDriverWait wait = new WebDriverWait(General.driver, 15);
+        wait.until(ExpectedConditions.elementToBeClickable(this.btnAddToCart));
       //  wait.until(ExpectedConditions.visibilityOf(btnAddToCart));
-        System.out.println(btnAddToCart.isEnabled());
-        if(driver.findElement(By.id("add-to-cart")).isEnabled()){
-            driver.findElement(By.id("add-to-cart")).click();
+        System.out.println(this.btnAddToCart.isEnabled());
+        if(General.driver.findElement(By.id("add-to-cart")).isEnabled()){
+            General.driver.findElement(By.id("add-to-cart")).click();
      //   System.out.println("in if");
         }
          else {
 
-         softAssert.fail("add to cart button is disabled");
-         softAssert.assertAll();
+            this.softAssert.fail("add to cart button is disabled");
+            this.softAssert.assertAll();
         }
     }
 
     public ShoppingBasket clickOnMiniBasketIcon(){
-        if(miniBasket.isEnabled()){
-            miniBasket.click();
+        if(this.miniBasket.isEnabled()){
+            this.miniBasket.click();
 
         }
-        return new ShoppingBasket(driver);
+        return new ShoppingBasket(General.driver);
     }
 
 }

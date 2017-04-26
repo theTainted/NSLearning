@@ -18,23 +18,21 @@ public class ProductListPage extends General {
   /*  @FindAll({
         @FindBy(xpath="//ul[@id='search-result-items']/li")
     })*/
-    @FindAll({
-            @FindBy(xpath="//div[@class='product-image product__thumbnail']//img") //replaced the above list with this one
-    })
+    @FindAll(@FindBy(xpath = "//div[@class='product-image product__thumbnail']//img"))
     public List <WebElement> allResults ;
 
 
 
     public ProductListPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+        General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
 
     /*clicks on the first available product*/
     public ProductDisplayPage clickOnFirstResult(){
-        System.out.println(allResults.size());
-        allResults.get(0).click();
-        return new ProductDisplayPage(driver);
+     //   System.out.println(allResults.size());
+        this.allResults.get(0).click();
+        return new ProductDisplayPage(General.driver);
     }
 
 }
