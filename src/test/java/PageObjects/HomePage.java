@@ -48,13 +48,13 @@ public class HomePage extends General {
     public WebElement footerReturnLink;
 
     public HomePage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+        General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
      //  String sText=" //div[@id='language-overlay']//a[@data-countrycode='";
    //    System.out.println(sText+countryName+"'"+"]");
-       driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).click();
+       General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=\" "+countryName+"\""+"]")).click();
 
   /*     WebDriverWait wait = new WebDriverWait(driver, 30);
        wait.until(ExpectedConditions.elementToBeClickable(btnCountrySelector));
@@ -98,17 +98,17 @@ public class HomePage extends General {
 
      //   action.moveToElement(btnLoginRegister).build().perform();
 
-     btnLoginRegister.click();
+        btnLoginRegister.click();
     }
 
     public RegistrationPage clickOnRegisterButton(){
         System.out.println(btnRegister.isDisplayed());
         btnRegister.click();
-        return new RegistrationPage(driver);
+        return new RegistrationPage(General.driver);
     }
     public ProductListPage searchText(String searchString){
         txtBoxSearch.sendKeys(searchString);
         clickOnSearchIcon();
-        return new ProductListPage(driver);
+        return new ProductListPage(General.driver);
     }
 }
