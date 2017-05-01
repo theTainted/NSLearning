@@ -26,9 +26,7 @@ public class GuestUserCheckOutFlow extends General{
        String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 
       for(int i=0;i<countries.length;i++) {
-      /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();*/
-      General.getBrowser("Firefox");
+        General.getBrowser("Firefox");
 
         General.driver.get(General.URL);
         General.driver.manage().window().maximize();
