@@ -53,7 +53,7 @@ public class HomePage extends General {
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
       if (General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]")).isDisplayed()) {
-          General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' " + countryName + "'" + "]")).click();
+          General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='" + countryName + "'" + "]")).click();
       }
        else {
           System.out.println("something is wrong here");
@@ -64,20 +64,20 @@ public class HomePage extends General {
       // System.out.println("in");
 
 
-       if (btnAcceptCookies.isDisplayed()){
-           btnAcceptCookies.click();
+       if (this.btnAcceptCookies.isDisplayed()){
+           this.btnAcceptCookies.click();
        }
        else{
            System.out.println("accept Cookies button not found");
        }
    }
     public void clickOnSearchIcon() {
-        btnSearchIcon.click();
+        this.btnSearchIcon.click();
 
     }
     public void clickShoppingButtonInCountrySelector() {
-        if (btnShoppingButtonInCountrySelector.isDisplayed()) {
-            btnShoppingButtonInCountrySelector.click();
+        if (this.btnShoppingButtonInCountrySelector.isDisplayed()) {
+            this.btnShoppingButtonInCountrySelector.click();
         }
     }
     public void clickLoginRegisterButton(){
@@ -85,17 +85,17 @@ public class HomePage extends General {
 
      //   action.moveToElement(btnLoginRegister).build().perform();
 
-        btnLoginRegister.click();
+        this.btnLoginRegister.click();
     }
 
     public RegistrationPage clickOnRegisterButton(){
-        System.out.println(btnRegister.isDisplayed());
-        btnRegister.click();
+        System.out.println(this.btnRegister.isDisplayed());
+        this.btnRegister.click();
         return new RegistrationPage(General.driver);
     }
     public ProductListPage searchText(String searchString){
-        txtBoxSearch.sendKeys(searchString);
-        clickOnSearchIcon();
+        this.txtBoxSearch.sendKeys(searchString);
+        this.clickOnSearchIcon();
         return new ProductListPage(General.driver);
     }
 }
