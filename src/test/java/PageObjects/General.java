@@ -33,8 +33,8 @@ public class General {
             ffProfile.setAcceptUntrustedCertificates(true);
             ffProfile.setAssumeUntrustedCertificateIssuer(false);
           System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-             WebDriver driver = new FirefoxDriver (ffProfile);
-            driver = new FirefoxDriver(ffProfile);
+             driver = new FirefoxDriver (ffProfile);
+           // driver = new FirefoxDriver(ffProfile);
         /*   FirefoxProfile profile = new FirefoxProfile();
             profile.setAcceptUntrustedCertificates(true);
             //profile.setAssumeUntrustedCertificateIssuer(false);
@@ -48,7 +48,7 @@ public class General {
 
         {
             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            General.driver = new ChromeDriver();
+            driver = new ChromeDriver();
 
         }
 
@@ -56,11 +56,11 @@ public class General {
 
         {
 
-            General.driver = new InternetExplorerDriver();
+            driver = new InternetExplorerDriver();
 
         }
 
-        return General.driver;
+        return driver;
 
     }
 
