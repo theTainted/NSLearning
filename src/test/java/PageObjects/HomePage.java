@@ -52,45 +52,29 @@ public class HomePage extends General {
         PageFactory.initElements(General.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
-     //  String sText=" //div[@id='language-overlay']//a[@data-countrycode='";
-   //    System.out.println(sText+countryName+"'"+"]");
+      if ()
        General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=\" "+countryName+"\""+"]")).click();
 
-  /*     WebDriverWait wait = new WebDriverWait(driver, 30);
-       wait.until(ExpectedConditions.elementToBeClickable(btnCountrySelector));
 
-
-       boolean countrySelector = btnCountrySelector.isDisplayed();
-       System.out.println(countrySelector);
-       if (countrySelector= true) {
-        System.out.println("in clickOnCountrySelectorFirstLinkcls");
-           btnCountrySelector.click();
-       } else if (countrySelector=false) {
-           driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]")).click();
-
-       }
-       else {
-           System.out.println("help me !!!!");
-       }*/
    }
    public void  clickAcceptCookiesButton(){
       // System.out.println("in");
 
 
-       if (btnAcceptCookies.isDisplayed()){
-           btnAcceptCookies.click();
+       if (this.btnAcceptCookies.isDisplayed()){
+           this.btnAcceptCookies.click();
        }
        else{
            System.out.println("accept Cookies button not found");
        }
    }
     public void clickOnSearchIcon() {
-        btnSearchIcon.click();
+        this.btnSearchIcon.click();
 
     }
     public void clickShoppingButtonInCountrySelector() {
-        if (btnShoppingButtonInCountrySelector.isDisplayed()) {
-            btnShoppingButtonInCountrySelector.click();
+        if (this.btnShoppingButtonInCountrySelector.isDisplayed()) {
+            this.btnShoppingButtonInCountrySelector.click();
         }
     }
     public void clickLoginRegisterButton(){
@@ -98,17 +82,17 @@ public class HomePage extends General {
 
      //   action.moveToElement(btnLoginRegister).build().perform();
 
-        btnLoginRegister.click();
+        this.btnLoginRegister.click();
     }
 
     public RegistrationPage clickOnRegisterButton(){
-        System.out.println(btnRegister.isDisplayed());
-        btnRegister.click();
+        System.out.println(this.btnRegister.isDisplayed());
+        this.btnRegister.click();
         return new RegistrationPage(General.driver);
     }
     public ProductListPage searchText(String searchString){
-        txtBoxSearch.sendKeys(searchString);
-        clickOnSearchIcon();
+        this.txtBoxSearch.sendKeys(searchString);
+        this.clickOnSearchIcon();
         return new ProductListPage(General.driver);
     }
 }
