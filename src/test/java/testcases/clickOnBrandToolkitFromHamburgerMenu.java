@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class clickOnBrandToolkitFromHamburgerMenu {
     @Test
     public void testClickBrandToolkitFromHamburgerMenu(){
-        General.getBrowser("Chrome");
+        General.getBrowser("Firefox");
         /*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
         TheHub theHub = new TheHub(General.driver);
