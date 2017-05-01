@@ -25,7 +25,7 @@ public class GuestUserCheckOutFlow extends General{
      public void testGuestUserCheckOutFlow() throws InterruptedException {
        String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
 
-  for(int i=0;i<countries.length;i++) {
+      for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
       General.getBrowser("Firefox");

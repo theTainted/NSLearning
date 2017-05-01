@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -7,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 //import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 
 /**
@@ -35,11 +37,20 @@ public class General {
           System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
              driver = new FirefoxDriver (ffProfile);
            // driver = new FirefoxDriver(ffProfile);*/
-        FirefoxProfile profile = new FirefoxProfile();
-            profile.setAcceptUntrustedCertificates(true);
-            //profile.setAssumeUntrustedCertificateIssuer(false);
-           System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-            General.driver = new FirefoxDriver(profile);
+
+            DesiredCapabilities dc=DesiredCapabilities.firefox();
+            FirefoxProfile profile = new FirefoxProfile();
+            profile.setAcceptUntrustedCertificates(false);
+            profile.setAssumeUntrustedCertificateIssuer(true);
+            System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+            dc = DesiredCapabilities.firefox();
+            dc.setCapability(FirefoxDriver.PROFILE, profile);
+            driver =  new FirefoxDriver(dc);
+          /*  profile.setAcceptUntrustedCertificates(true);
+            profile.setAssumeUntrustedCertificateIssuer(false);
+            System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+            General.driver = new FirefoxDriver(profile);*/
+
 
 
         }
@@ -48,7 +59,7 @@ public class General {
 
         {
             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            General.driver = new ChromeDriver();
+            driver = new ChromeDriver();
 
         }
 
@@ -56,11 +67,11 @@ public class General {
 
         {
 
-            General.driver = new InternetExplorerDriver();
+            driver = new InternetExplorerDriver();
 
         }
 
-        return General.driver;
+        return driver;
 
     }
 
