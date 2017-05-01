@@ -28,18 +28,18 @@ public class General {
         if(browser.equals("Firefox"))
 
         {
-           ProfilesIni prof = new ProfilesIni();
+          /* ProfilesIni prof = new ProfilesIni();
             FirefoxProfile ffProfile= prof.getProfile ("myProfile");
             ffProfile.setAcceptUntrustedCertificates(true);
-            ffProfile.setAssumeUntrustedCertificateIssuer(false);
+          //  ffProfile.setAssumeUntrustedCertificateIssuer(false);
           System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
              driver = new FirefoxDriver (ffProfile);
-           // driver = new FirefoxDriver(ffProfile);
-        /*   FirefoxProfile profile = new FirefoxProfile();
+           // driver = new FirefoxDriver(ffProfile);*/
+        FirefoxProfile profile = new FirefoxProfile();
             profile.setAcceptUntrustedCertificates(true);
             //profile.setAssumeUntrustedCertificateIssuer(false);
            System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-            driver = new FirefoxDriver(profile);*/
+            General.driver = new FirefoxDriver(profile);
 
 
         }
@@ -48,7 +48,7 @@ public class General {
 
         {
             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            driver = new ChromeDriver();
+            General.driver = new ChromeDriver();
 
         }
 
@@ -56,11 +56,11 @@ public class General {
 
         {
 
-            driver = new InternetExplorerDriver();
+            General.driver = new InternetExplorerDriver();
 
         }
 
-        return driver;
+        return General.driver;
 
     }
 
