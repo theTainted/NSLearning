@@ -28,7 +28,8 @@ public class GuestUserCheckOutFlow extends General{
   for(int i=0;i<countries.length;i++) {
       /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
-          General.getBrowser("Chrome");
+         General.getBrowser("Chrome");
+    //  General.getBrowser("Firefox");
         General.driver.get(General.URL);
         General.driver.manage().window().maximize();
 

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.MarionetteDriver;
+//import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -25,39 +25,36 @@ public class General {
     {
         //if(driver == null)
 
+        if(browser.equals("Firefox"))
+
         {
 
-            if(browser.equals("Firefox"))
+            FirefoxProfile profile = new FirefoxProfile();
+            profile.setAcceptUntrustedCertificates(true);
+            profile.setAssumeUntrustedCertificateIssuer(false);
+           System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
+            General.driver = new FirefoxDriver(profile);
 
-            {
-
-                FirefoxProfile profile = new FirefoxProfile();
-                profile.setAcceptUntrustedCertificates(true);
-                profile.setAssumeUntrustedCertificateIssuer(false);
-               System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-                  driver = new FirefoxDriver(profile);
-
-
-            }
-
-            else if(browser.equals("Chrome"))
-
-            {
-                System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-                driver = new ChromeDriver();
-
-            }
-
-            else if(browser.equals("IE"))
-
-            {
-
-                driver = new InternetExplorerDriver();
-
-            }
 
         }
-        return driver;
+
+        else if(browser.equals("Chrome"))
+
+        {
+            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+            General.driver = new ChromeDriver();
+
+        }
+
+        else if(browser.equals("IE"))
+
+        {
+
+            General.driver = new InternetExplorerDriver();
+
+        }
+
+        return General.driver;
 
     }
 
