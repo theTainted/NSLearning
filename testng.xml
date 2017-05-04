@@ -7,6 +7,7 @@
             <class name="testcases.theHubLogout"/>
             <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
             <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
+            <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
         </classes>
     </test>
 
