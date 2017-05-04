@@ -9,7 +9,7 @@ package testcases;
         import org.testng.annotations.Parameters;
         import org.testng.annotations.Test;
 
-        import static PageObjects.General.driver;
+
 
 /**
  * Created by syam.suryanarayanan on 4/6/2017.
@@ -29,6 +29,6 @@ public class theHubLogIn  extends General {
         theHub.setLoginEmail(TheHub.userName);
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
-        General.driver.quit();
+       General.driver.close();
     }
 }

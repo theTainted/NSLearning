@@ -21,8 +21,8 @@ public class General {
 
 
    // public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/se/en/homepage/";
-    public static String URL="https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
-    public static String searchString="Jacket";
+    public  static String URL="https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
+    public  static String  searchString="Jacket";
 
 
  @BeforeTest
@@ -54,7 +54,7 @@ public class General {
 
         {
             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            driver = new ChromeDriver();
+            General.driver = new ChromeDriver();
 
         }
 
@@ -65,11 +65,11 @@ public class General {
             caps.setCapability("ignoreZoomSetting", true);*/
 
             System.setProperty("webdriver.ie.driver","C:/IEDriverServer.exe");
-            driver = new InternetExplorerDriver();
+            General.driver = new InternetExplorerDriver();
 
         }
 
-        return driver;
+        return General.driver;
 
     }
 
