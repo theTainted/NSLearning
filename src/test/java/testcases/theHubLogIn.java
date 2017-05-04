@@ -4,6 +4,8 @@ import PageObjects.General;
 import PageObjects.TheHub;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
@@ -12,7 +14,7 @@ import org.testng.annotations.Test;
 public class theHubLogIn {
   @BeforeTest
   @Parameters("browser")
-
+  General.getBrowser()
 
   @Test
     public void testTheHubLogin(){
