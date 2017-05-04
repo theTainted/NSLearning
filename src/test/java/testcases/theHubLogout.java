@@ -21,6 +21,7 @@ public class theHubLogout extends General {
         theHub.setLoginEmail(TheHub.userName);
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
+        theHub.clickOnLogout();
 
         //General.driver.quit();
     }
