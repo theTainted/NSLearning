@@ -4,17 +4,20 @@
         <parameter name ="browser" value="Chrome"/>
         <classes>
             <class name ="testcases.theHubLogIn"/>
-
         </classes>
     </test>
     <test name="IE Test">
         <parameter name ="browser" value="IE"/>
         <classes>
             <class name ="testcases.theHubLogIn"/>
-
-
         </classes>
     </test>
+    <test name="FF Test">
+    <parameter name ="browser" value="Firefox"/>
+    <classes>
+        <class name ="testcases.theHubLogIn"/>
+    </classes>
+</test>
 
 </suite>
 
