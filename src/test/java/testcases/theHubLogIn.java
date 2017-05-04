@@ -29,6 +29,6 @@ public class theHubLogIn  extends General {
         theHub.setLoginEmail(TheHub.userName);
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
-        General.driver.quit();
+     //   General.driver.quit();
     }
 }

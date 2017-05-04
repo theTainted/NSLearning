@@ -22,7 +22,7 @@ public class theHubLogout extends General {
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
 
-        General.driver.quit();
+        //General.driver.quit();
     }
 }
 
