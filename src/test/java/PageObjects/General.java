@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -25,7 +26,7 @@ public class General {
     public  static String  searchString="Jacket";
 
 
- @BeforeTest
+ @BeforeClass
    @Parameters("browser")
     public static WebDriver getBrowser(String browser)
 
@@ -45,14 +46,14 @@ public class General {
              System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
              dc = DesiredCapabilities.firefox();
              dc.setCapability(FirefoxDriver.PROFILE, profile);
-             driver = new FirefoxDriver(dc);
+             General.driver = new FirefoxDriver(dc);
 
 
          } else if (browser.equals("Chrome"))
 
          {
              System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-             driver = new ChromeDriver();
+             General.driver = new ChromeDriver();
 
          } else if (browser.equals("IE"))
 
@@ -61,11 +62,11 @@ public class General {
             caps.setCapability("ignoreZoomSetting", true);*/
 
              System.setProperty("webdriver.ie.driver", "C:/IEDriverServer.exe");
-             driver = new InternetExplorerDriver();
+             General.driver = new InternetExplorerDriver();
 
          }
 
-         return driver;
+         return General.driver;
      }
 
 

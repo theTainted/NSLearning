@@ -4,6 +4,7 @@ import PageObjects.General;
 import PageObjects.TheHub;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 /**
@@ -23,8 +24,10 @@ public class theHubLogout extends General  {
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
         theHub.clickOnLogout();
-
-     General.driver.quit();
+    }
+    @AfterClass
+    public void tearDown() {
+        General.driver.quit();
     }
 }
 
