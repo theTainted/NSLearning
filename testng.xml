@@ -5,7 +5,6 @@
         <classes>
             <class name ="testcases.theHubLogIn"/>
 
-
         </classes>
     </test>
     <test name="IE Test">
