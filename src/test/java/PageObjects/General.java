@@ -61,7 +61,7 @@ public class General {
         else if(browser.equals("IE"))
 
         {
-
+            System.setProperty("webdriver.ie.driver","C:/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
 
         }
