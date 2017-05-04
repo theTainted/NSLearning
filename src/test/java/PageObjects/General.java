@@ -29,49 +29,45 @@ public class General {
    @Parameters("browser")
     public static WebDriver getBrowser(String browser)
 
-    {
-       // if(driver == null)
+ {
 
-        if(browser.equals("Firefox"))
+     if (General.driver == null)
 
-        {
+         if (browser.equals("Firefox"))
 
-
-            DesiredCapabilities dc=DesiredCapabilities.firefox();
-            FirefoxProfile profile = new FirefoxProfile();
-            profile.setAcceptUntrustedCertificates(false);
-            profile.setAssumeUntrustedCertificateIssuer(true);
-            System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
-            dc = DesiredCapabilities.firefox();
-            dc.setCapability(FirefoxDriver.PROFILE, profile);
-            General.driver =  new FirefoxDriver(dc);
+         {
 
 
+             DesiredCapabilities dc = DesiredCapabilities.firefox();
+             FirefoxProfile profile = new FirefoxProfile();
+             profile.setAcceptUntrustedCertificates(false);
+             profile.setAssumeUntrustedCertificateIssuer(true);
+             System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
+             dc = DesiredCapabilities.firefox();
+             dc.setCapability(FirefoxDriver.PROFILE, profile);
+             General.driver = new FirefoxDriver(dc);
 
-        }
 
-        else if(browser.equals("Chrome"))
+         } else if (browser.equals("Chrome"))
 
-        {
-            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            General.driver = new ChromeDriver();
+         {
+             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+             General.driver = new ChromeDriver();
 
-        }
+         } else if (browser.equals("IE"))
 
-        else if(browser.equals("IE"))
-
-        {
+         {
           /*  DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
             caps.setCapability("ignoreZoomSetting", true);*/
 
-            System.setProperty("webdriver.ie.driver","C:/IEDriverServer.exe");
-            General.driver = new InternetExplorerDriver();
+             System.setProperty("webdriver.ie.driver", "C:/IEDriverServer.exe");
+             General.driver = new InternetExplorerDriver();
 
-        }
+         }
 
-        return General.driver;
+         return General.driver;
+     }
 
-    }
 
 }
 

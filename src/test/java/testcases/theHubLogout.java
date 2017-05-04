@@ -24,7 +24,7 @@ public class theHubLogout extends General  {
         theHub.clickOnLoginButton();
         theHub.clickOnLogout();
 
-      //General.driver.quit();
+     General.driver.quit();
     }
 }
 
