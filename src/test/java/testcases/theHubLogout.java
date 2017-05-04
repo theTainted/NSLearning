@@ -13,16 +13,16 @@ public class theHubLogout extends General {
 
     @Test
     public void testTheHubLogout(){
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        TheHub theHub = new TheHub(driver);
-        driver.get(TheHub.theHubUrl);
-        driver.manage().window().maximize();
+        /*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();*/
+        TheHub theHub = new TheHub(General.driver);
+        General.driver.get(TheHub.theHubUrl);
+        General.driver.manage().window().maximize();
         theHub.setLoginEmail(TheHub.userName);
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
 
-        driver.quit();
+        General.driver.quit();
     }
 }
 
