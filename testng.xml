@@ -5,6 +5,7 @@
         <classes>
             <class name ="testcases.theHubLogIn"/>
             <class name="testcases.theHubLogout"/>
+            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
         </classes>
     </test>
     <test name="IE Test">
@@ -12,15 +13,9 @@
         <classes>
             <class name ="testcases.theHubLogIn"/>
             <class name="testcases.theHubLogout"/>
+            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
         </classes>
     </test>
-    <test name="FF Test">
-    <parameter name ="browser" value="Firefox"/>
-    <classes>
-        <class name ="testcases.theHubLogIn"/>
-        <class name="testcases.theHubLogout"/>
-    </classes>
-</test>
 
 </suite>
 
