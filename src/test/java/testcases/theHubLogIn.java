@@ -20,9 +20,9 @@ public class theHubLogIn  extends General {
   @Test
     public void testTheHubLogin(){
       /*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-      WebDriver driver = new ChromeDriver();
+      WebDriver driver = new ChromeDriver();*/
    System.setProperty("webdriver.ie.driver","C:/IEDriverServer.exe");
-      General.driver = new InternetExplorerDriver();*/
+      General.driver = new InternetExplorerDriver();
       TheHub theHub = new TheHub(General.driver);
       General.driver.get(TheHub.theHubUrl);
       General.driver.manage().window().maximize();
