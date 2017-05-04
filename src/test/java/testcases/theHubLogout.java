@@ -9,11 +9,12 @@ import org.testng.annotations.Test;
 /**
  * Created by syam.suryanarayanan on 4/6/2017.
  */
-public class theHubLogout extends General {
+public class theHubLogout extends General  {
 
     @Test
     public void testTheHubLogout(){
-     /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        General.getBrowser("Chrome");
+       /*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
         TheHub theHub = new TheHub(General.driver);
         General.driver.get(TheHub.theHubUrl);

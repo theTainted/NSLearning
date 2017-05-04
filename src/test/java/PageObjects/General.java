@@ -25,8 +25,8 @@ public class General {
     public static String searchString="Jacket";
 
 
-   @BeforeTest
-   @Parameters("browser")
+ /*  @BeforeTest
+   @Parameters("browser")*/
     public static WebDriver getBrowser(String browser)
 
     {
@@ -44,7 +44,7 @@ public class General {
             System.setProperty("webdriver.gecko.driver","C:/geckodriver.exe");
             dc = DesiredCapabilities.firefox();
             dc.setCapability(FirefoxDriver.PROFILE, profile);
-            General.driver =  new FirefoxDriver(dc);
+            driver =  new FirefoxDriver(dc);
 
 
 
@@ -54,7 +54,7 @@ public class General {
 
         {
             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            driver = new ChromeDriver();
+            General.driver = new ChromeDriver();
 
         }
 
@@ -65,11 +65,11 @@ public class General {
             caps.setCapability("ignoreZoomSetting", true);*/
 
             System.setProperty("webdriver.ie.driver","C:/IEDriverServer.exe");
-            driver = new InternetExplorerDriver();
+            General.driver = new InternetExplorerDriver();
 
         }
 
-        return driver;
+        return General.driver;
 
     }
 
