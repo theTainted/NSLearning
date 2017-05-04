@@ -28,7 +28,7 @@ public class theHubLogIn  extends General {
       General.driver.manage().window().maximize();
       theHub.setLoginEmail(TheHub.userName);
       theHub.setLoginPassword(TheHub.password);
-      theHub.clickOnLoginButton();
+    //  theHub.clickOnLoginButton();
       //General.driver.quit();
   }
 }
