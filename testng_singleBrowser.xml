@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run">
+     <test name="Chrome Test">
+        <parameter name ="browser" value="chrome"/>
+        <classes>
+            <class name ="testcases.theHubLogIn"/>
+        </classes>
+    </test>
+</suite>
+
+

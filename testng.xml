@@ -1,11 +1,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run">
-     <test name="Chrome Test">
-        <parameter name ="browser" value="chrome"/>
+    <test name="Chrome Test">
+        <parameter name ="browser" value="Chrome"/>
         <classes>
             <class name ="testcases.theHubLogIn"/>
+            <class name="testcases.theHubLogout"/>
         </classes>
     </test>
-</suite>
+    <test name="IE Test">
+        <parameter name ="browser" value="IE"/>
+        <classes>
+            <class name ="testcases.theHubLogIn"/>
+            <class name="testcases.theHubLogout"/>
+        </classes>
+    </test>
+    <test name="FF Test">
+    <parameter name ="browser" value="Firefox"/>
+    <classes>
+        <class name ="testcases.theHubLogIn"/>
+        <class name="testcases.theHubLogout"/>
+    </classes>
+</test>
 
+</suite>
 

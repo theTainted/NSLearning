@@ -13,8 +13,8 @@ public class theHubLogout extends General  {
 
     @Test
     public void testTheHubLogout(){
-        General.getBrowser("Chrome");
-       /*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+      /*  General.getBrowser("Chrome");
+      System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
         TheHub theHub = new TheHub(General.driver);
         General.driver.get(TheHub.theHubUrl);
@@ -24,7 +24,7 @@ public class theHubLogout extends General  {
         theHub.clickOnLoginButton();
         theHub.clickOnLogout();
 
-        //General.driver.quit();
+      General.driver.quit();
     }
 }
 
