@@ -10,6 +10,15 @@
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
         </classes>
     </test>
-
+    <test name="IE Test">
+        <parameter name ="browser" value="IE"/>
+        <classes>
+            <class name ="testcases.theHubLogIn"/>
+            <class name="testcases.theHubLogout"/>
+            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
+            <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
+            <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
+        </classes>
+    </test>
 </suite>
 
