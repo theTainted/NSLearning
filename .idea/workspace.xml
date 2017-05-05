@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/clickOnFormatsFromHamburgerMenu.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/clickOnFormatsFromHamburgerMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/clickOnMediaFromHamburgerMenu.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/clickOnMediaFromHamburgerMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
     </list>
     <ignored path="NorthSails.iws" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="clickOnFormatsFromHamburgerMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnFormatsFromHamburgerMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="575">
+              <caret line="30" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -40,9 +40,22 @@
       <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+            <state relative-caret-position="575">
+              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clickOnMediaFromHamburgerMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnMediaFromHamburgerMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,6 +83,7 @@
         <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnCalendarFromHamburgerMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnCommercialFromHamburgerMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnFormatsFromHamburgerMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnMediaFromHamburgerMenu.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
@@ -480,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493970885799</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&lt;class name =&quot;testcases.clickOnFormatsFromHamburgerMenu&quot;/&gt;">
+      <created>1493971204850</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493971204850</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3" />
@@ -550,7 +571,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated the tearDown method to be driver.quit from general.driver.quit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the tearDown method to be driver.quit from general.driver.quit" />
+    <MESSAGE value="&lt;class name =&quot;testcases.clickOnFormatsFromHamburgerMenu&quot;/&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;class name =&quot;testcases.clickOnFormatsFromHamburgerMenu&quot;/&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -567,13 +589,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.0.1/selenium-support-3.0.1.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.0.1/selenium-support-3.0.1.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -996,16 +1011,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnFormatsFromHamburgerMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="575">
+          <caret line="30" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnMediaFromHamburgerMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        <state relative-caret-position="575">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
           <folding />
         </state>
       </provider>
