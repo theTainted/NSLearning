@@ -3,7 +3,7 @@
      <test name="Chrome Test">
         <parameter name ="browser" value="chrome"/>
         <classes>
-            <class name ="testcases.theHubLogIn"/>
+            <class name ="testcases.clickOnFormatTabInAllResults"/>
         </classes>
     </test>
 </suite>
