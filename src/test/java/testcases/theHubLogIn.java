@@ -35,6 +35,6 @@ public class theHubLogIn  extends General {
 
     @AfterClass
     public void tearDown() {
-        General.driver.quit();
+        driver.quit();
     }
 }
