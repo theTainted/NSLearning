@@ -1,18 +1,19 @@
 package testcases;
 
+import PageObjects.General;
 import PageObjects.TheHub;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 /**
  * Created by syam.suryanarayanan on 4/12/2017.
  */
-public class clickOnNewsFromHamburgerMenu {
+public class clickOnNewsFromHamburgerMenu extends General{
     @Test
     public void testClickNewsFromHamburgerMenu(){
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+
         TheHub theHub = new TheHub(driver);
         driver.get(TheHub.theHubUrl);
         driver.manage().window().maximize();
@@ -21,8 +22,11 @@ public class clickOnNewsFromHamburgerMenu {
         theHub.clickOnLoginButton();
         theHub.clickOnHamburgerIcon();
         theHub.clickonNewsFromHamburgerMenu();
-        driver.quit();
+
 
     }
-
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
 }

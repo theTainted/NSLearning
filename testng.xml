@@ -10,6 +10,7 @@
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
             <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
             <class name="testcases.clickOnMediaFromHamburgerMenu"/>
+            <class name="testcases.clickOnNewsFromHamburgerMenu"/>
         </classes>
     </test>
     <test name="IE Test">
@@ -22,6 +23,7 @@
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
             <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
             <class name="testcases.clickOnMediaFromHamburgerMenu"/>
+            <class name="testcases.clickOnNewsFromHamburgerMenu"/>
         </classes>
     </test>
 </suite>
