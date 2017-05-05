@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  */
 public class clickOnFormatTabInAllResults extends General {
   @Test
-  public void testClickOnFormatTabInAllResults(){
+  public void testClickOnFormatTabInAllResults() throws InterruptedException {
 
 
         TheHub theHub = new TheHub(driver);
@@ -22,10 +22,12 @@ public class clickOnFormatTabInAllResults extends General {
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
         theHub.enterSearchText("Hunted");
+        Thread.sleep(2000);
+        theHub.clickOnTabInAllResults("Formats");
 
     }
- /*   @AfterClass
+   @AfterClass
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }
