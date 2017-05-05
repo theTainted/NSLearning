@@ -13,8 +13,7 @@ import org.testng.annotations.Test;
 public class clickOnPoliciesFromHamburgerMenu extends General {
     @Test
     public void testClickPoliciesromHamburgerMenu(){
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+
         TheHub theHub = new TheHub(driver);
         driver.get(TheHub.theHubUrl);
         driver.manage().window().maximize();
