@@ -22,8 +22,9 @@ public class clickOnFormatTabInAllResults extends General {
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
         theHub.enterSearchText("Hunted");
-        Thread.sleep(2000);
+
         theHub.clickOnTabInAllResults("Formats");
+      Thread.sleep(5000);
 
     }
    @AfterClass
