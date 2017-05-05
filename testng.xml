@@ -1,11 +1,42 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Example test run">
-     <test name="Chrome Test">
+<suite name="Example test run" thread-count="1">
+    <test name="Chrome Test">
         <parameter name ="browser" value="Chrome"/>
         <classes>
-            <class name ="testcases.clickOnFormatTabInAllResults"/>
+            <class name ="testcases.theHubLogIn"/>
+            <class name="testcases.theHubLogout"/>
+            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
+            <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
+            <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
+            <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
+            <class name="testcases.clickOnMediaFromHamburgerMenu"/>
+            <class name="testcases.clickOnNewsFromHamburgerMenu"/>
+            <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
+            <class name="testcases.clickOnSeriesFromHamburgerMenu"/>
+            <class name="testcases.clickOnFormatTabInAllResults"/>
+            <class name="testcases.clickOnSeriesTabInAllResults"/>
+            <class name="testcases.clickOnMediaTabInAllResults"/>
+            <class name="testcases.clickOnNewsTabInAllResults"/>
+            </classes>
+    </test>
+    <test name=" IE Test">
+        <parameter name ="browser" value="IE"/>
+        <classes>
+            <class name ="testcases.theHubLogIn"/>
+            <class name="testcases.theHubLogout"/>
+            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
+            <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
+            <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
+            <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
+            <class name="testcases.clickOnMediaFromHamburgerMenu"/>
+            <class name="testcases.clickOnNewsFromHamburgerMenu"/>
+            <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
+            <class name="testcases.clickOnSeriesFromHamburgerMenu"/>
+            <class name="testcases.clickOnFormatTabInAllResults"/>
+            <class name="testcases.clickOnSeriesTabInAllResults"/>
+            <class name="testcases.clickOnMediaTabInAllResults"/>
+            <class name="testcases.clickOnNewsTabInAllResults"/>
         </classes>
     </test>
 </suite>
-
 
