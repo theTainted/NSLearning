@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="TheHub.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TheHub.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="294" column="9" selection-start-line="291" selection-start-column="49" selection-end-line="294" selection-end-column="9" />
+            <state relative-caret-position="731">
+              <caret line="309" column="5" selection-start-line="309" selection-start-column="5" selection-end-line="309" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -39,8 +39,8 @@
       <file leaf-file-name="clickOnFormatTabInAllResults.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnFormatTabInAllResults.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="625">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <state relative-caret-position="25">
+              <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -116,8 +116,8 @@
         <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnSeriesTabInAllResults.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnMediaTabInAllResults.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/clickOnNewsTabInAllResults.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -715,7 +715,21 @@
       <option name="project" value="LOCAL" />
       <updated>1493977805497</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="&lt;class name=&quot;testcases.clickOnFormatTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnSeriesTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnMediaTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnNewsTabInAllResults&quot;/&gt;&#10;            &#10;            Need to add validations">
+      <created>1493978137623</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1493978137623</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added firefox also to the testng">
+      <created>1493982205423</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1493982205423</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -746,7 +760,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29858157" sideWeight="0.4414249" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33492473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33492473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.4972457" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -804,7 +818,8 @@
     <MESSAGE value="Added a method clickOnTabInAllResults(String TabName)  &#10;validations needs to be added" />
     <MESSAGE value="&lt;class name=&quot;testcases.clickOnFormatTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnSeriesTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnMediaTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnNewsTabInAllResults&quot;/&gt;" />
     <MESSAGE value="&lt;class name=&quot;testcases.clickOnFormatTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnSeriesTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnMediaTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnNewsTabInAllResults&quot;/&gt;&#10;            &#10;            Need to add validations" />
-    <option name="LAST_COMMIT_MESSAGE" value="&lt;class name=&quot;testcases.clickOnFormatTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnSeriesTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnMediaTabInAllResults&quot;/&gt;&#10;            &lt;class name=&quot;testcases.clickOnNewsTabInAllResults&quot;/&gt;&#10;            &#10;            Need to add validations" />
+    <MESSAGE value="added firefox also to the testng" />
+    <option name="LAST_COMMIT_MESSAGE" value="added firefox also to the testng" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,8 +1158,8 @@
         <state relative-caret-position="600">
           <caret line="29" column="5" selection-start-line="26" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
           <folding>
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1154,8 +1169,8 @@
         <state relative-caret-position="425">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1165,8 +1180,8 @@
         <state relative-caret-position="625">
           <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="false" />
+            <element signature="e#855#856#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1192,8 +1207,8 @@
         <state relative-caret-position="425">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="false" />
+            <element signature="e#1065#1066#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1203,8 +1218,8 @@
         <state relative-caret-position="675">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="false" />
+            <element signature="e#843#844#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1214,8 +1229,8 @@
         <state relative-caret-position="600">
           <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#912#913#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1224,9 +1239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,26 +1275,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+        <state relative-caret-position="731">
+          <caret line="309" column="5" selection-start-line="309" selection-start-column="5" selection-end-line="309" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnFormatTabInAllResults.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="625">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="294" column="9" selection-start-line="291" selection-start-column="49" selection-end-line="294" selection-end-column="9" />
+        <state relative-caret-position="25">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
           <folding />
         </state>
       </provider>
