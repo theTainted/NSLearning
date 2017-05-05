@@ -1,14 +1,16 @@
 package testcases;
 
+import PageObjects.General;
 import PageObjects.TheHub;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 /**
  * Created by syam.suryanarayanan on 4/12/2017.
  */
-public class clickOnPoliciesFromHamburgerMenu {
+public class clickOnPoliciesFromHamburgerMenu extends General {
     @Test
     public void testClickPoliciesromHamburgerMenu(){
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
@@ -21,8 +23,11 @@ public class clickOnPoliciesFromHamburgerMenu {
         theHub.clickOnLoginButton();
         theHub.clickOnHamburgerIcon();
         theHub.clickonPoliciesFromHamburgerMenu();
-        driver.quit();
+
 
     }
-
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
 }

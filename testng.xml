@@ -11,6 +11,8 @@
             <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
             <class name="testcases.clickOnMediaFromHamburgerMenu"/>
             <class name="testcases.clickOnNewsFromHamburgerMenu"/>
+            <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
+            <class name="testcases.clickOnSeriesFromHamburgerMenu"/>
         </classes>
     </test>
     <test name="IE Test">
@@ -24,6 +26,8 @@
             <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
             <class name="testcases.clickOnMediaFromHamburgerMenu"/>
             <class name="testcases.clickOnNewsFromHamburgerMenu"/>
+            <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
+            <class name="testcases.clickOnSeriesFromHamburgerMenu"/>
         </classes>
     </test>
 </suite>
