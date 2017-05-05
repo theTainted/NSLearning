@@ -8,6 +8,7 @@
             <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
             <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
+            <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
         </classes>
     </test>
     <test name="IE Test">
@@ -18,6 +19,7 @@
             <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
             <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
             <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
+            <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
         </classes>
     </test>
 </suite>
