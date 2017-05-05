@@ -28,7 +28,7 @@ public class clickOnBrandToolkitFromHamburgerMenu extends General{
     }
     @AfterClass
     public void tearDown() {
-        driver.quit();
+        General.driver.quit();
     }
 }
 
