@@ -24,8 +24,8 @@ public class clickOnFormatTabInAllResults extends General {
         theHub.enterSearchText("Hunted");
 
     }
-    @AfterClass
+ /*   @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }
