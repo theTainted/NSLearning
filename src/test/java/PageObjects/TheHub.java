@@ -299,7 +299,7 @@ public class TheHub {
         for (WebElement tab : this.allResultTabs){
 
             if(tabName.equalsIgnoreCase(tab.getText())){
-                System.out.println("it worked");
+
                 driver.findElement(By.xpath("//form[@id='searchForm']//a[@data-category='"+tabName+"']")).click(); //TODO: this needs to be made into a page object
 
                 break;
