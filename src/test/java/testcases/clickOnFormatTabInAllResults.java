@@ -15,9 +15,9 @@ public class clickOnFormatTabInAllResults extends General {
   public void testClickOnFormatTabInAllResults(){
 
 
-        TheHub theHub = new TheHub(General.driver);
-        General.driver.get(TheHub.theHubUrl);
-        General.driver.manage().window().maximize();
+        TheHub theHub = new TheHub(driver);
+        driver.get(TheHub.theHubUrl);
+        driver.manage().window().maximize();
         theHub.setLoginEmail(TheHub.userName);
         theHub.setLoginPassword(TheHub.password);
         theHub.clickOnLoginButton();
