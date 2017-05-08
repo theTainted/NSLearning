@@ -127,10 +127,9 @@ public class TheHub {
     public void clickOnFilter(String sFacet ) throws InterruptedException {
         //System.out.println(this.facet.size());
         for (int i = 0; i< this.facet.size(); i++){
-         //   System.out.println(i);
-         //   System.out.println(facet.get(i).getText());
+
             if(this.facet.get(i).getText().contains(sFacet)){
-         //       System.out.println(facet.get(i).getText());
+
                 this.facet.get(i).click();
 
                 Thread.sleep(5000);
@@ -274,20 +273,21 @@ public class TheHub {
         }
 
     }
-    public void filterUsingSingleSelectFilter(String filterValue){
+    public void filterUsingSingleSelectFilter(String filterValue) {
         /* Need to make this take a list of item from the dop down and then click on it
         Ideally this function when used to choose a filter from a facet like company, and when again using this method in the same function for the same facet
         but a different filter should replace the first chosen filter from the facet . An example :
         Check the for filters like company  which replace an selected filter inside the company facet (choose 'A' from company facet and then 'B' B should replace A)
                   */
-        if(driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text(),"+"'"+filterValue+"')]")).isDisplayed()) {
-            driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).click();
-        }
-        else{
 
-            Assert.assertTrue(driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text(),"+"'"+filterValue+"')]")).isDisplayed(),"the option is not displayed");
+            if (driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).isDisplayed()) {
+                driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).click();
+            } else {
+
+                Assert.assertTrue(driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).isDisplayed(), "the option is not displayed");
+            }
         }
-    }
+
 
     public void expanddropDownSelectAnOwner(){
         if(dropDownSelectAnOwner.isDisplayed()){
