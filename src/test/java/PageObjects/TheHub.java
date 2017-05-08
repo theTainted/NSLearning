@@ -20,7 +20,7 @@ public class TheHub {
     public static String theHubUrl = "http://test-thehub.endemolshine.com/";
     public static String userName = "syam.suryanarayanan@digitaslbi.com";
     public static String password = "P@ssword1";
-    SoftAssert softAssert;
+    SoftAssert softAssert = new SoftAssert();
 
     @FindBy(id="login-email")
     public WebElement txtBoxLoginEmail;
@@ -279,14 +279,15 @@ public class TheHub {
         but a different filter should replace the first chosen filter from the facet . An example :
         Check the for filters like company  which replace an selected filter inside the company facet (choose 'A' from company facet and then 'B' B should replace A)
          Now it works by checking the size         */
-
-            if (driver.findElements(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).size()>0){
-
+            List <WebElement> options = driver.findElements(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]"));
+           if (options.size()!=0){
 
                 driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).click();
             } else {
 
-                Assert.assertTrue(driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).isDisplayed(), "the option is not displayed");
+               softAssert.assertTrue(options.size()==0,"Element not present");
+               softAssert.assertAll();
+
             }
         }
 

@@ -16,7 +16,7 @@ public class FilterSearchResultsSingleSelect extends General {
 
     @Test
       public void testFilterSingleSelect() throws InterruptedException{
-       /* System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+     /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();*/
       TheHub theHub = new TheHub(driver);
       driver.get(TheHub.theHubUrl);
