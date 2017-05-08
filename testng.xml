@@ -17,6 +17,7 @@
             <class name="testcases.clickOnSeriesTabInAllResults"/>
             <class name="testcases.clickOnMediaTabInAllResults"/>
             <class name="testcases.clickOnNewsTabInAllResults"/>
+            <class name="testcases.FilterSearchResultsSingleSelect"/>
             </classes>
     </test>
     <test name=" IE Test">
@@ -36,6 +37,7 @@
             <class name="testcases.clickOnSeriesTabInAllResults"/>
             <class name="testcases.clickOnMediaTabInAllResults"/>
             <class name="testcases.clickOnNewsTabInAllResults"/>
+            <class name="testcases.FilterSearchResultsSingleSelect"/>
         </classes>
     </test>
 
