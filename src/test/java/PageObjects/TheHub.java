@@ -278,9 +278,11 @@ public class TheHub {
         Ideally this function when used to choose a filter from a facet like company, and when again using this method in the same function for the same facet
         but a different filter should replace the first chosen filter from the facet . An example :
         Check the for filters like company  which replace an selected filter inside the company facet (choose 'A' from company facet and then 'B' B should replace A)
-                  */
+         Now it works by checking the size         */
 
-            if (driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).isDisplayed()) {
+            if (driver.findElements(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).size()>0){
+
+
                 driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).click();
             } else {
 
