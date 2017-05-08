@@ -36,7 +36,7 @@ public class FilterSearchResultsSingleSelect extends General {
       Thread.sleep(2000);
       theHub.expanddropDownSelectAProducer();
       theHub.filterUsingSingleSelectFilter("NL Film");
-      //driver.quit();
+     driver.quit();
 
 
     }
