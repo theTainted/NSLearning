@@ -38,24 +38,6 @@
             <class name="testcases.clickOnNewsTabInAllResults"/>
         </classes>
     </test>
-    <test name=" Firefox Test">
-        <parameter name ="browser" value="Firefox"/>
-        <classes>
-            <class name ="testcases.theHubLogIn"/>
-            <class name="testcases.theHubLogout"/>
-            <class name="testcases.clickOnBrandToolkitFromHamburgerMenu"/>
-            <class name="testcases.clickOnCalendarFromHamburgerMenu"/>
-            <class name="testcases.clickOnCommercialFromHamburgerMenu"/>
-            <class name ="testcases.clickOnFormatsFromHamburgerMenu"/>
-            <class name="testcases.clickOnMediaFromHamburgerMenu"/>
-            <class name="testcases.clickOnNewsFromHamburgerMenu"/>
-            <class name="testcases.clickOnPoliciesFromHamburgerMenu"/>
-            <class name="testcases.clickOnSeriesFromHamburgerMenu"/>
-            <class name="testcases.clickOnFormatTabInAllResults"/>
-            <class name="testcases.clickOnSeriesTabInAllResults"/>
-            <class name="testcases.clickOnMediaTabInAllResults"/>
-            <class name="testcases.clickOnNewsTabInAllResults"/>
-        </classes>
-    </test>
+
 </suite>
 
