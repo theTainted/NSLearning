@@ -279,7 +279,13 @@ public class TheHub {
         but a different filter should replace the first chosen filter from the facet . An example :
         Check the for filters like company  which replace an selected filter inside the company facet (choose 'A' from company facet and then 'B' B should replace A)
          */
-        driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text(),"+"'"+filterValue+"')]")).click();
+        if(driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text(),"+"'"+filterValue+"')]")).isDisplayed()) {
+            driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text()," + "'" + filterValue + "')]")).click();
+        }
+        else{
+
+            Assert.assertTrue(driver.findElement(By.xpath("//div[@id='result_update']//option[contains(text(),"+"'"+filterValue+"')]")).isDisplayed(),"the option is not displayed");
+        }
     }
 
     public void expanddropDownSelectAnOwner(){
