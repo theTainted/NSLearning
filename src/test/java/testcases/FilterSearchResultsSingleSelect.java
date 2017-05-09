@@ -26,7 +26,7 @@ public class FilterSearchResultsSingleSelect extends General {
       theHub.clickOnLoginButton();
       theHub.enterSearchText("Hunted");
       theHub.expandUsingSingleSelectFacet("Company");
-     theHub.expanddropDownSelectAnOwner();
+      theHub.expanddropDownSelectAnOwner();
       Thread.sleep(3000);
       theHub.filterUsingSingleSelectFilter("Canal");
       Thread.sleep(3000);
