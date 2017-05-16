@@ -3,13 +3,13 @@
     <test name="Chrome Test">
         <parameter name ="browser" value="Chrome"/>
         <classes>
-            <class name ="testcases.GuestUserCheckOutFlow"
+            <class name ="testcases.GuestUserCheckOutFlow"/>
         </classes>
     </test>
     <test name=" IE Test">
         <parameter name ="browser" value="IE"/>
         <classes>
-            <class name ="testcases.GuestUserCheckOutFlow"
+            <class name ="testcases.GuestUserCheckOutFlow"/>
         </classes>
     </test>
 
