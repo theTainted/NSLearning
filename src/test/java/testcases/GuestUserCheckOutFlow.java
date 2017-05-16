@@ -23,8 +23,7 @@ public class GuestUserCheckOutFlow extends General{
     @Test
      public void testGuestUserCheckOutFlow() throws InterruptedException {
      //  String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
-      String[] countries = {"Angola","Iceland","India"};
-      for(int i=0;i<countries.length;i++) {
+
 
         driver.get(General.URL);
        driver.manage().window().maximize();
@@ -34,6 +33,8 @@ public class GuestUserCheckOutFlow extends General{
         Thread.sleep(10000);
         homePage.clickOnCountrySelectorFirstLink("ALL~en");
         homePage.clickAcceptCookiesButton();
+      String[] countries = {"Angola","Iceland","India"};
+      for(int i=0;i<countries.length;i++) {
           //Search for Jackets
           homePage.clickOnSearchIcon();
           ProductListPage plp = homePage.searchText("jacket dickey");
