@@ -67,9 +67,7 @@ public class HomePage extends General {
        if (this.btnAcceptCookies.isDisplayed()){
            this.btnAcceptCookies.click();
        }
-       else{
-           System.out.println("accept Cookies button not found");
-       }
+
    }
     public void clickOnSearchIcon() {
         this.btnSearchIcon.click();
