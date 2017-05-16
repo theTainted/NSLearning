@@ -23,10 +23,9 @@ public class GuestUserCheckOutFlow extends General{
    // public static void main(String[] args) throws InterruptedException {
     /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() throws InterruptedException {
-       String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
-
+     //  String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
+      String[] countries = {"Angola","Iceland","India"};
       for(int i=0;i<countries.length;i++) {
-        General.getBrowser("Firefox");
 
         General.driver.get(General.URL);
         General.driver.manage().window().maximize();
