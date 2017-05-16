@@ -27,8 +27,8 @@ public class GuestUserCheckOutFlow extends General{
       String[] countries = {"Angola","Iceland","India"};
       for(int i=0;i<countries.length;i++) {
 
-        General.driver.get(General.URL);
-        General.driver.manage().window().maximize();
+        driver.get(General.URL);
+       driver.manage().window().maximize();
 
           //Accept cookies message
         HomePage homePage = new HomePage(General.driver);
