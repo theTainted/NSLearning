@@ -65,7 +65,7 @@ public class HomePage extends General {
 
 
        if (this.btnAcceptCookies.isDisplayed()){
-           this.btnAcceptCookies.click();
+            this.btnAcceptCookies.click();
        }
 
    }
