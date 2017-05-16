@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 
@@ -20,8 +21,6 @@ import java.util.concurrent.TimeUnit;
 public class GuestUserCheckOutFlow extends General{
 
     @Test
-   // public static void main(String[] args) throws InterruptedException {
-    /*016fd76(Need to add the driver in the general class)*/
      public void testGuestUserCheckOutFlow() throws InterruptedException {
      //  String[] countries = {"Angola","Germany","France","Spain","United Kingdom","Netherlands","Switzerland","Sweden","Belgium","Greece"};
       String[] countries = {"Angola","Iceland","India"};
@@ -73,9 +72,13 @@ public class GuestUserCheckOutFlow extends General{
           billingPage.selectExpiryYear("2020");
           billingPage.clickBtnToPay();
 
-        General.driver.quit();
+
 
 
        }
     }
+  @AfterClass
+  public void tearDown() {
+    driver.quit();
+  }
 }
