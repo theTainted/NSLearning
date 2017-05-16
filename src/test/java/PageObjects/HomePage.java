@@ -52,7 +52,7 @@ public class HomePage extends General {
         PageFactory.initElements(General.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
-      if (General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode=' "+countryName+"'"+"]")).isDisplayed()) {
+      if (General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).isDisplayed()) {
           General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='" + countryName + "'" + "]")).click();
       }
        else {
