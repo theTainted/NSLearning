@@ -31,7 +31,7 @@ public class GuestUserCheckOutFlow extends General{
        driver.manage().window().maximize();
 
           //Accept cookies message
-        HomePage homePage = new HomePage(General.driver);
+        HomePage homePage = new HomePage(driver);
         Thread.sleep(10000);
         homePage.clickOnCountrySelectorFirstLink("ALL~en");
         homePage.clickAcceptCookiesButton();
