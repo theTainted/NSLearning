@@ -29,12 +29,6 @@ public class accessingurl {
                 //System.out.println(sCurrentLine);
                 WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
-               // System.out.println(driver.getCurrentUrl());
-                //if(driver.getCurrentUrl().contains("https")){
-                    //System.out.println("redirects to https");
-
-
-
 
                     String sCurrentUrl=driver.getCurrentUrl();
                 System.out.println(sCurrentLine + ":"+sCurrentUrl);
