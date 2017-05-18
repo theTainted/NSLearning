@@ -14,9 +14,9 @@ public class accessingurl {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
       //  WebDriver driver = new ChromeDriver();
          String fileName = "C:\\urlredirects1.txt";
-        BufferedWriter  bw ;
+        /*BufferedWriter  bw ;
         FileWriter fw = new FileWriter(fileName);
-        bw = new BufferedWriter(fw);
+        bw = new BufferedWriter(fw);*/
         File f = new File(fileName);
         if(!f.exists()) {
             f.createNewFile();
@@ -29,19 +29,22 @@ public class accessingurl {
          br = new BufferedReader(new FileReader("C:\\url1.txt"));
 
             while ((sCurrentLine = br.readLine()) != null) {
+                BufferedWriter  bw ;
+                FileWriter fw = new FileWriter(fileName);
+                bw = new BufferedWriter(fw);
                 WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
                 String sCurrentUrl=driver.getCurrentUrl();
 
-                bw.write(sCurrentLine + " : "+sCurrentUrl);
+                bw.write(sCurrentLine + " :-> "+sCurrentUrl);
                 bw.newLine();
                 driver.quit();
 
-
+                bw.close();
 
                 }
 
-        bw.close();
+      //  bw.close();
 
         }
 
