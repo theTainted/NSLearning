@@ -167,4 +167,3 @@ http://www.obam.nu/fonds-in-beeld/carbon-footprint/
 http://www.obam.nu/disclaimer/http://www.obam.nu/sitemap/http://www.obam.nu/nieuws/http://www.obam.nu/nieuws/morningstar/http://www.obam.nu/nieuws/obam-tachtig-jaar/http://www.obam.nu/doelen/
 
 
-</urlset>
