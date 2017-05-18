@@ -26,7 +26,7 @@ public class accessingurl {
 
          String sCurrentLine;
 
-         br = new BufferedReader(new FileReader("\\..\\url1.txt"));
+         br = new BufferedReader(new FileReader("C:\\url1.txt"));
 
             while ((sCurrentLine = br.readLine()) != null) {
                 WebDriver driver = new ChromeDriver();
