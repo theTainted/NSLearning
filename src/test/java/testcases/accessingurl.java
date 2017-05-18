@@ -13,7 +13,7 @@ public class accessingurl {
     public static void main(String [] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
       //  WebDriver driver = new ChromeDriver();
-         String fileName = "C:\\asdf.txt";
+         String fileName = "C:\\urlredirects.txt";
         BufferedWriter  bw ;
         FileWriter fw = new FileWriter(fileName);
         bw = new BufferedWriter(fw);
