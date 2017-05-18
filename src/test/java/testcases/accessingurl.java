@@ -23,18 +23,16 @@ public class accessingurl {
         }
 
         BufferedReader br = null;
-      //  BufferedWriter bw = null;
+
          String sCurrentLine;
 
          br = new BufferedReader(new FileReader("\\..\\url1.txt"));
-       //  FileWriter fw = new FileWriter(fileName);
+
             while ((sCurrentLine = br.readLine()) != null) {
                 WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
                 String sCurrentUrl=driver.getCurrentUrl();
-                // fw.write(sCurrentLine + " : "+sCurrentUrl);
-            // fw = new FileWriter(fileName);
-            //   bw = new BufferedWriter(fw);
+
                 bw.write(sCurrentLine + " : "+sCurrentUrl);
                 bw.newLine();
                 driver.quit();
