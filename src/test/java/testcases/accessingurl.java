@@ -13,9 +13,11 @@ public class accessingurl {
     public static void main(String [] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
       //  WebDriver driver = new ChromeDriver();
-         String fileName = "\\..\\filename22.txt";
-
-
+         String fileName = "C:\\filename22.txt";
+        File f = new File(fileName);
+        if(!f.exists()) {
+            f.createNewFile();
+        }
 
         BufferedReader br = null;
 
@@ -24,15 +26,19 @@ public class accessingurl {
             String sCurrentLine;
 
             br = new BufferedReader(new FileReader("\\..\\url1.txt"));
-        FileWriter fw = new FileWriter(fileName,true);
+        FileWriter fw = new FileWriter(fileName);
+        BufferedWriter bw = new BufferedWriter(fw);
+
             while ((sCurrentLine = br.readLine()) != null) {
                 //System.out.println(sCurrentLine);
                 WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
 
                     String sCurrentUrl=driver.getCurrentUrl();
-                System.out.println(sCurrentLine + ":"+sCurrentUrl);
-                    fw.write(sCurrentLine + ":"+sCurrentUrl);
+                    bw.write(sCurrentLine + " : "+sCurrentUrl);
+
+                    bw.newLine();
+
                  driver.quit();
 
 
