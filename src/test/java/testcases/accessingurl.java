@@ -14,6 +14,9 @@ public class accessingurl {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
       //  WebDriver driver = new ChromeDriver();
          String fileName = "C:\\asdf.txt";
+        BufferedWriter  bw ;
+        FileWriter fw = new FileWriter(fileName);
+        bw = new BufferedWriter(fw);
         File f = new File(fileName);
         if(!f.exists()) {
             f.createNewFile();
@@ -23,23 +26,23 @@ public class accessingurl {
       //  BufferedWriter bw = null;
          String sCurrentLine;
          br = new BufferedReader(new FileReader("\\..\\url1.txt"));
-         FileWriter fw = new FileWriter(fileName);
+       //  FileWriter fw = new FileWriter(fileName);
             while ((sCurrentLine = br.readLine()) != null) {
                 WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
                 String sCurrentUrl=driver.getCurrentUrl();
                 // fw.write(sCurrentLine + " : "+sCurrentUrl);
-             fw = new FileWriter(fileName);
-                BufferedWriter  bw = new BufferedWriter(fw);
+            // fw = new FileWriter(fileName);
+            //   bw = new BufferedWriter(fw);
                 bw.write(sCurrentLine + " : "+sCurrentUrl);
-                bw.flush();
+                bw.newLine();
                 driver.quit();
 
 
 
                 }
 
-
+        bw.close();
 
         }
 
