@@ -27,7 +27,7 @@ public class accessingurl {
 
             br = new BufferedReader(new FileReader("\\..\\url1.txt"));
         FileWriter fw = new FileWriter(fileName);
-        BufferedWriter bw = new BufferedWriter(fw);
+
 
             while ((sCurrentLine = br.readLine()) != null) {
                 //System.out.println(sCurrentLine);
@@ -35,9 +35,9 @@ public class accessingurl {
                 driver.get(sCurrentLine);
 
                     String sCurrentUrl=driver.getCurrentUrl();
-                    bw.write(sCurrentLine + " : "+sCurrentUrl);
+                    fw.write(sCurrentLine + " : "+sCurrentUrl);
 
-                    bw.newLine();
+
 
                  driver.quit();
 
