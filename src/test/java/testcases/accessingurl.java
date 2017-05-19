@@ -14,11 +14,11 @@ public class accessingurl {
 
     public static void main(String [] args) throws IOException, InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        String sTimeStamp =  new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        String sTimeStamp =  new SimpleDateFormat("yyyy.MM.dd.HH.mm").format(new Date());
          String fileName = "C:\\urlredirects_"+sTimeStamp+".txt";
-        /*BufferedWriter  bw ;
+        BufferedWriter  bw ;
         FileWriter fw = new FileWriter(fileName);
-        bw = new BufferedWriter(fw);*/
+        bw = new BufferedWriter(fw);
         File f = new File(fileName);
         if(!f.exists()) {
             f.createNewFile();
@@ -28,26 +28,29 @@ public class accessingurl {
 
          String sCurrentLine;
 
-         br = new BufferedReader(new FileReader("C:\\urlWithoutHttps.txt"));
+         br = new BufferedReader(new FileReader("C:\\urlWithHttps.txt"));
 
             while ((sCurrentLine = br.readLine()) != null) {
-                BufferedWriter  bw ;
+             /*   BufferedWriter  bw ;
                 FileWriter fw = new FileWriter(fileName);
-                bw = new BufferedWriter(fw);
+                bw = new BufferedWriter(fw);*/
                 WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
                 Thread.sleep(1000);
                 String sCurrentUrl=driver.getCurrentUrl();
 
                 bw.write(sCurrentLine + " :-> "+sCurrentUrl);
+                Thread.sleep(1000);
                 bw.newLine();
+                bw.flush();
+                //bw.close();
                 driver.quit();
 
-                bw.close();
+
 
                 }
 
-      //  bw.close();
+       bw.close();
 
         }
 
