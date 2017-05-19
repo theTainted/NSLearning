@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created by syam.suryanarayanan on 5/17/2017.
@@ -12,8 +14,8 @@ public class accessingurl {
 
     public static void main(String [] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-      //  WebDriver driver = new ChromeDriver();
-         String fileName = "C:\\urlredirects1.txt";
+        String sTimeStamp =  new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+         String fileName = "C:\\urlredirects_"+sTimeStamp+".txt";
         /*BufferedWriter  bw ;
         FileWriter fw = new FileWriter(fileName);
         bw = new BufferedWriter(fw);*/
@@ -26,7 +28,7 @@ public class accessingurl {
 
          String sCurrentLine;
 
-         br = new BufferedReader(new FileReader("C:\\url1.txt"));
+         br = new BufferedReader(new FileReader("C:\\urlWithHttps.txt"));
 
             while ((sCurrentLine = br.readLine()) != null) {
                 BufferedWriter  bw ;
