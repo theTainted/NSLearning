@@ -28,7 +28,7 @@ public class accessingurl {
 
          String sCurrentLine;
 
-         br = new BufferedReader(new FileReader("C:\\urlWithHttps.txt"));
+         br = new BufferedReader(new FileReader("C:\\urlWithoutHttps.txt"));
 
             while ((sCurrentLine = br.readLine()) != null) {
              /*   BufferedWriter  bw ;
