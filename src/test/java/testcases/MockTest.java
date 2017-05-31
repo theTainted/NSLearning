@@ -5,7 +5,7 @@ package testcases;
  */
 public class MockTest {
     public static void main(String [] args){
-        int testArray[] ={1,2,3};
+        int testArray[] ={1,2,3,5};
         int sum = 0;
         for (int i = 0; i < testArray.length; i++) {
             sum = sum + testArray[i];
