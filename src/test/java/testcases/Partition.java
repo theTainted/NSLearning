@@ -43,6 +43,7 @@ public class Partition {
                         part[i][j] = part[i][j] ||
                                 part[i - arr[j-1]][j-1];
                 }
+
             }
 
         /* // uncomment this part to print table
