@@ -68,7 +68,7 @@ public class MockTest
     public static void main (String[] args)
     {
 
-        int arr[] = {3, 1, 5, 9, 12};
+        int arr[] = {3, 1, 5, 9};
         int n = arr.length;
         if (findPartition(arr, n) == true)
             System.out.println("Can be divided into two "+
