@@ -24,7 +24,7 @@ public class jdbcConnection {
 
                 try {
                     connection = DriverManager
-                            .getConnection("jdbc:mysql://localhost:3306/testdatabase","root", "root");
+                            .getConnection("jdbc:mysql://localhost:3306/Test.testdatabase","root", "root");
                     /*String query = "SELECT * FROM test";
                     // create the java statement
                     Statement st = connection.createStatement();
