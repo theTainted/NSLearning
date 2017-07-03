@@ -33,7 +33,7 @@ public class GuestUserCheckOutFlow extends General{
         Thread.sleep(10000);
         homePage.clickOnCountrySelectorFirstLink("ALL~en");
         homePage.clickAcceptCookiesButton();
-      String[] countries = {"Angola","Iceland","India"};
+      String[] countries = {"Angola"};
       for(int i=0;i<countries.length;i++) {
           //Search for Jackets
           homePage.clickOnSearchIcon();
@@ -46,7 +46,12 @@ public class GuestUserCheckOutFlow extends General{
           pdp.clickOnAddToCart();
         Thread.sleep(2000);
           ShoppingBasket sb = pdp.clickOnMiniBasketIcon();
+          Thread.sleep(5000);
           Login login = sb.clickOnCheckoutButton();
+          Thread.sleep(5000);
+        //  System.out.println( driver.findElement(By.xpath("//div[@id='checkoutloginpage']//button[@name='dwfrm_login_unregistered']")).isDisplayed());
+           login.popupUnregisteredCheckIn.click();
+
           ShippingAddress shippingAddress = login.clickOnCheckoutAsGuest();
           shippingAddress.selectMan();
           shippingAddress.enterFirstName("test");
@@ -78,8 +83,8 @@ public class GuestUserCheckOutFlow extends General{
 
        }
     }
-  @AfterClass
+/*  @AfterClass
   public void tearDown() {
     driver.quit();
-  }
+  }*/
 }

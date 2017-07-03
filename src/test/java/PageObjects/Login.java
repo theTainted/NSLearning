@@ -24,6 +24,9 @@ public class Login extends General {
     @FindBy(xpath="//div[@id='checkoutloginpage']//button[@name='dwfrm_login_register']")
     public WebElement btnCreateAccount;
 
+    @FindBy(xpath="//div[@id='checkoutloginpage']//button[@name='dwfrm_login_unregistered']")
+    public WebElement popupUnregisteredCheckIn;
+
     public Login(WebDriver driver){
         this.driver= driver;
         PageFactory.initElements(this.driver,this);
