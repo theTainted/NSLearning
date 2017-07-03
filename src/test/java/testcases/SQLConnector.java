@@ -21,7 +21,7 @@ public class  SQLConnector {
         String password = "root";
 
         //Query to Execute
-        String query = "select *  from testtable;";
+        String query = "select lastName from testtable where testCaseID='TC001';";
 
         //Load mysql jdbc driver
         Class.forName("com.mysql.jdbc.Driver");
@@ -35,12 +35,14 @@ public class  SQLConnector {
         // Execute the SQL Query. Store results in ResultSet
         ResultSet rs= stmt.executeQuery(query);
 
+
         // While Loop to iterate through all data and print results
-        while (rs.next()){
-            String testCaseID = rs.getString(1);
-            String firstName = rs.getString(2);
-            String lastName = rs.getString(2);
-            System. out.println(testCaseID+"  "+firstName);
+       while (rs.next()){
+          //  String testCaseID = rs.getString(1);
+          //  String firstName = rs.getString(2);
+           // String lastName = rs.getString();
+           System.out.println(rs.getString("lastName"));
+           // System. out.println(testCaseID+"  "+firstName);
         }
         // closing DB Connection
         con.close();
