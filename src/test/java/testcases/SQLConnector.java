@@ -12,16 +12,16 @@ import  java.sql.SQLException;
 public class  SQLConnector {
     public static void  main(String[] args) throws  ClassNotFoundException, SQLException {
         //Connection URL Syntax: "jdbc:mysql://ipaddress:portnumber/db_name"
-        String dbUrl = "jdbc:mysql://localhost:3036/emp";
+        String dbUrl = "jdbc:mysql://127.0.0.1:3306/testdatabase";
 
         //Database Username
         String username = "root";
 
         //Database Password
-        String password = "guru99";
+        String password = "root";
 
         //Query to Execute
-        String query = "select *  from employee;";
+        String query = "select *  from testtable;";
 
         //Load mysql jdbc driver
         Class.forName("com.mysql.jdbc.Driver");
@@ -37,9 +37,10 @@ public class  SQLConnector {
 
         // While Loop to iterate through all data and print results
         while (rs.next()){
-            String myName = rs.getString(1);
-            String myAge = rs.getString(2);
-            System. out.println(myName+"  "+myAge);
+            String testCaseID = rs.getString(1);
+            String firstName = rs.getString(2);
+            String lastName = rs.getString(2);
+            System. out.println(testCaseID+"  "+firstName);
         }
         // closing DB Connection
         con.close();
