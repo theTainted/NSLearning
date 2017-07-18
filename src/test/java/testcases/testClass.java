@@ -17,7 +17,7 @@ public class testClass {
         WebDriver driver = new ChromeDriver();
         driver.get("https://staging.scs.co.uk");
         driver.manage().window().maximize();
-        for (int i=0;i<=2;i++) {
+        for (int i=0;i<=aProducts.length;i++) {
             driver.findElement(By.id("q")).sendKeys(aProducts[i]);
             driver.findElement(By.id("q")).sendKeys(Keys.RETURN);
 
