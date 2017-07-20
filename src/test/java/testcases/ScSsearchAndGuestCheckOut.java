@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
 public class ScSsearchAndGuestCheckOut {
-    public static void main (String[] args){
+    public static void main (String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String sURL = "https://staging.scs.co.uk";
@@ -19,12 +19,18 @@ public class ScSsearchAndGuestCheckOut {
         driver.manage().window().maximize();
         driver.findElement(By.id("q")).sendKeys(sProductName);
         driver.findElement(By.id("q")).sendKeys(Keys.RETURN);
-        System.out.println(driver.findElements(By.xpath("//input[@id='add-to-cart']")).size());
+       /* System.out.println(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
         boolean elementExists = driver.findElements(By.id("add-to-cart")).size()!=0;
         if (elementExists==true){
             driver.findElement(By.id("add-to-cart")).click();
+        }*/
+
+       boolean elementExists = driver.findElements(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).size()!=0;
+        if(elementExists==true){
+            driver.findElement(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).click();
         }
-
-
+        Thread.sleep(3000);
+        driver.switchTo().frame(1);
+        System.out.println(driver.findElements(By.xpath("//div[@id='dialog--extra-products']/div/div[2]/div/div/div[2]/a[1]")).size());
     }
 }
