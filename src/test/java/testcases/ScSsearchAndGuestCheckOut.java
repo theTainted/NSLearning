@@ -30,7 +30,10 @@ public class ScSsearchAndGuestCheckOut {
             driver.findElement(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).click();
         }
         Thread.sleep(3000);
-        driver.switchTo().frame(1);
-        System.out.println(driver.findElements(By.xpath("//div[@id='dialog--extra-products']/div/div[2]/div/div/div[2]/a[1]")).size());
+       // driver.switchTo().frame(1);
+        boolean windowContinueToCheckOutButtonExists =driver.findElements(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).size()!=0;
+        if (windowContinueToCheckOutButtonExists==true){
+            driver.findElement(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).click();
+        }
     }
 }
