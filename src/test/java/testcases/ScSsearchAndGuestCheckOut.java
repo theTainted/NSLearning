@@ -1,5 +1,6 @@
 package testcases;
 
+import PageObjects.ShippingAddress;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -45,5 +46,13 @@ public class ScSsearchAndGuestCheckOut {
         if (upsellContinueToCheckOutButtonExists==true){
             driver.findElement(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).click();
         }
+
+        ShippingAddress shippingAddress = new ShippingAddress(driver);
+       // shippingAddress.selectMan();
+        shippingAddress.enterFirstName("test");
+        shippingAddress.enterLastName("tester");
+     //   shippingAddress.enterAddressOne("Line 1");
+     //   shippingAddress.enterZip("1114AB");
+     //   shippingAddress.enterCity("Amsterdam");
     }
 }
