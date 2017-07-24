@@ -36,12 +36,12 @@ public class ScSsearchAndGuestCheckOut {
             driver.findElement(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).click();
         }
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size()!=0;
-        if (cookieButtonExists == true) {
+        if (cookieButtonExists) {
             driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
         }
         driver.findElement(By.name("dwfrm_cart_unregistered")).click();
         boolean upsellContinueToCheckOutButtonExists =driver.findElements(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).size()!=0;
-        System.out.println(upsellContinueToCheckOutButtonExists );
+
         if (upsellContinueToCheckOutButtonExists==true){
             driver.findElement(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).click();
         }
