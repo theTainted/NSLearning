@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
-public class ScSsearchAndGuestCheckOut {
+ class ScSsearchAndGuestCheckOut {
     public static void main (String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -51,6 +51,8 @@ public class ScSsearchAndGuestCheckOut {
        // shippingAddress.selectMan();
         shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
+        shippingAddress.enterEmail("syam.suryanarayanan@digitaslbi.com");
+        shippingAddress.enterPhone("3333333333");
      //   shippingAddress.enterAddressOne("Line 1");
      //   shippingAddress.enterZip("1114AB");
      //   shippingAddress.enterCity("Amsterdam");
