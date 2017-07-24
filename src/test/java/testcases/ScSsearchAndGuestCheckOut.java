@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
- class ScSsearchAndGuestCheckOut {
+ public class ScSsearchAndGuestCheckOut {
     public static void main (String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
