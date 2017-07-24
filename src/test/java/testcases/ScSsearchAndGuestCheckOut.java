@@ -35,5 +35,14 @@ public class ScSsearchAndGuestCheckOut {
         if (windowContinueToCheckOutButtonExists==true){
             driver.findElement(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).click();
         }
+        boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size()!=0;
+        if (cookieButtonExists == true) {
+            driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
+        }
+        driver.findElement(By.name("dwfrm_cart_unregistered")).click();
+        boolean windowContinueToCheckOutButtonExists_1 =driver.findElements(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).size()!=0;
+        if (windowContinueToCheckOutButtonExists_1==true){
+            driver.findElement(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).click();
+        }
     }
 }
