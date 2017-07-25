@@ -35,6 +35,7 @@ public class ShippingAddress extends General {
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_city")
     public WebElement txtBoxCity;
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_email_emailAddress")
+
     public WebElement txtBoxEmailAddress;
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_phone")
     public WebElement txtBoxPhone;
@@ -44,7 +45,8 @@ public class ShippingAddress extends General {
     public WebElement btnToBilling;
     @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_country")
     public WebElement selectCountry;
-
+    @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_email")
+    public WebElement scstxtBoxEmailAddress;
 
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
@@ -81,6 +83,11 @@ public class ShippingAddress extends General {
 
     public void enterEmail(String email) {
         txtBoxEmailAddress.sendKeys(email);
+
+    }
+
+    public void scsEnterEmail(String email) {
+        scstxtBoxEmailAddress.sendKeys(email);
 
     }
 

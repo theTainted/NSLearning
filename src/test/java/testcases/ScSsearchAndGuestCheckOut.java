@@ -52,7 +52,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
        // shippingAddress.selectMan();
         shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
-      //  shippingAddress.enterEmail("syam.suryanarayanan@digitaslbi.com");
+       shippingAddress.scsEnterEmail("syam.suryanaryanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
      //   shippingAddress.enterAddressOne("Line 1");
      //   shippingAddress.enterZip("1114AB");
