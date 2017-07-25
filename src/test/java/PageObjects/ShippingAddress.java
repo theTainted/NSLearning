@@ -212,7 +212,7 @@ public class ShippingAddress extends General {
        if (addressNumber > numberOfAddresses){
 
            addressPicker.selectByIndex(1);
-           LOGGER.info("the size is less than the entered integer");
+           LOGGER.warning("the size is less than the entered integer");
 
        }
         else{
