@@ -54,6 +54,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanaryanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
+        shippingAddress.selectBestTimeToContact("Call me now");
      //   shippingAddress.enterAddressOne("Line 1");
      //   shippingAddress.enterZip("1114AB");
      //   shippingAddress.enterCity("Amsterdam");
