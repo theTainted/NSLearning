@@ -14,8 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
     public static void main (String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        //String sURL = "https://staging.scs.co.uk";
-        String sURL ="https://" + "storefront" + ":" + "sancerre" + "@" + "development.scs.co.uk";
+        String sURL = "https://staging.scs.co.uk";
+      //  String sURL ="https://" + "storefront" + ":" + "sancerre" + "@" + "development.scs.co.uk";
         String sProductName ="L036211";
         driver.get(sURL);
         driver.manage().window().maximize();
