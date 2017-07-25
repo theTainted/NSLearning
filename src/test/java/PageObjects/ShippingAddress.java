@@ -31,6 +31,7 @@ public class ShippingAddress extends General {
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_address1")
     public WebElement txtBoxShippingAddressAddress1;
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_postal")
+
     public WebElement txtBoxZip;
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_city")
     public WebElement txtBoxCity;
@@ -49,6 +50,8 @@ public class ShippingAddress extends General {
     public WebElement scstxtBoxEmailAddress;
     @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_bestTimeToContact")
     public WebElement scsSelectBestTimeToContact;
+    @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_zip")
+    public WebElement scstxtBoxZip;
 
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
@@ -78,6 +81,13 @@ public class ShippingAddress extends General {
 
     }
 
+    /**
+     *
+     * @param postCode
+     */
+    public void scsEnterZip(String postCode){
+        scstxtBoxZip.sendKeys(postCode);
+    }
     public void enterCity(String city) {
         txtBoxCity.sendKeys(city);
 
