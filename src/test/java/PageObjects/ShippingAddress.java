@@ -203,7 +203,7 @@ public class ShippingAddress extends General {
      *
      * @param addressNumber
      */
-    public void selectAnAddressFromAddressDropDown(int addressNumber){
+    public void scsSelectAnAddressFromAddressDropDown(int addressNumber){
         Select addressPicker= new Select(scsDropDownPostCodeLookUp);
         List <WebElement> addresses = addressPicker.getOptions();
        int numberOfAddresses= addresses.size();
