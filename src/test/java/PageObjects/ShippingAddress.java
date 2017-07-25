@@ -207,7 +207,7 @@ public class ShippingAddress extends General {
         Select addressPicker= new Select(scsDropDownPostCodeLookUp);
         List <WebElement> addresses = addressPicker.getOptions();
        int numberOfAddresses= addresses.size();
-       if (addressNumber > numberOfAddresses){
+       if (addressNumber >= numberOfAddresses){
 
            addressPicker.selectByIndex(1);
        }
