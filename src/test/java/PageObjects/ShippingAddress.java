@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class ShippingAddress extends General {
 
-   // WebDriver driver;
+    // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath = "//input[@value='Man']")
@@ -43,10 +43,12 @@ public class ShippingAddress extends General {
     public WebElement rdoChooseBillingAddress;
     @FindBy(xpath = "//form[@id='dwfrm_singleshipping_shippingAddress']/fieldset[@class='to-billing']//button[@class='btn btn--blue']")
     public WebElement btnToBilling;
-    @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_country")
+    @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_country")
     public WebElement selectCountry;
-    @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_email")
+    @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_email")
     public WebElement scstxtBoxEmailAddress;
+    @FindBy(id = "dwfrm_singleshipping_shippingAddress_addressFields_bestTimeToContact")
+    public WebElement scsSelectBestTimeToContact;
 
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
@@ -124,29 +126,31 @@ public class ShippingAddress extends General {
 
         }*/
     }
+
     /**
      * for select dropdowns i am passing values and treating them as WebElements instead of dropdowns, need to check this again.
      * updated to have  a select box inside the method
+     *
      * @param chosenCountry . Have to check if this works as expected.
      */
-    public void selectCountry(String chosenCountry){
+    public void selectCountry(String chosenCountry) {
         boolean matchFound = false;
-        Select selectCountryDropDown= new Select(selectCountry);
-        List<WebElement> countries=selectCountryDropDown.getOptions();
+        Select selectCountryDropDown = new Select(selectCountry);
+        List<WebElement> countries = selectCountryDropDown.getOptions();
         selectCountry.click();
-        for (WebElement country: countries){
-           if(chosenCountry.equals(country.getText())){
-               country.click();
-               matchFound=true;
-               break;
+        for (WebElement country : countries) {
+            if (chosenCountry.equals(country.getText())) {
+                country.click();
+                matchFound = true;
+                break;
             }
 
-            }
-        if (!matchFound){
+        }
+        if (!matchFound) {
             System.out.println("no match found,setting to default country");
         }
 
-        }
+    }
 
      /*   selectCountry.sendKeys(country);
           expiryMonth.selectByIndex(6);
@@ -156,4 +160,22 @@ public class ShippingAddress extends General {
                 System.out.println(option);
                 option.click();
     }*/
+
+    /**
+     * @param scsChosenBestTimeToContact
+     */
+    public void selectBestTimeToContact(String scsChosenBestTimeToContact) {
+        boolean matchFound = false;
+        Select selectBestTimeToContact = new Select(scsSelectBestTimeToContact);
+        List<WebElement> bestTimeToContact = selectBestTimeToContact.getOptions();
+        scsSelectBestTimeToContact.click();
+        for (WebElement toContact : bestTimeToContact) {
+            if (scsChosenBestTimeToContact.equals(toContact.getText())) {
+                toContact.click();
+                matchFound = true;
+                break;
+            }
+
+        }
+    }
 }
