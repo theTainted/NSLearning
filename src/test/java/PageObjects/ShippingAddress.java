@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
@@ -204,12 +205,15 @@ public class ShippingAddress extends General {
      * @param addressNumber
      */
     public void scsSelectAnAddressFromAddressDropDown(int addressNumber){
+        Logger LOGGER = Logger.getLogger("InfoLogging");
         Select addressPicker= new Select(scsDropDownPostCodeLookUp);
         List <WebElement> addresses = addressPicker.getOptions();
        int numberOfAddresses= addresses.size();
        if (addressNumber > numberOfAddresses){
 
            addressPicker.selectByIndex(1);
+           LOGGER.info("the size is less than the entered integer");
+
        }
         else{
            addressPicker.selectByIndex(addressNumber);
