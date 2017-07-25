@@ -58,6 +58,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         //   shippingAddress.enterAddressOne("Line 1");
         shippingAddress.scsEnterZip("AB11 5BA");
         shippingAddress.clickOnLookUp();
-        shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
+        Thread.sleep(5000);
+        shippingAddress.scsSelectAnAddressFromAddressDropDown(4);
     }
 }
