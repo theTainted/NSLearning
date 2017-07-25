@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="clicks on address from the addresspicker">
+    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
@@ -33,8 +33,8 @@
       <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="61" column="63" lean-forward="false" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+            <state relative-caret-position="660">
+              <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,7 +45,7 @@
       <file leaf-file-name="BillingPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="1490">
               <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
               <folding />
             </state>
@@ -55,38 +55,15 @@
       <file leaf-file-name="ShippingAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="212" column="8" lean-forward="true" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
+            <state relative-caret-position="310">
+              <caret line="208" column="71" lean-forward="true" selection-start-line="208" selection-start-column="71" selection-end-line="208" selection-end-column="71" />
               <folding>
-                <element signature="e#3376#3377#0" expanded="true" />
-                <element signature="e#3423#3424#0" expanded="true" />
-                <element signature="e#6298#6299#0" expanded="true" />
-                <element signature="e#6339#6340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Select.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.4.0/selenium-support-3.4.0.jar!/org/openqa/selenium/support/ui/Select.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="e#1105#1106#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="By.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/By.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding>
-                <element signature="e#6901#6902#0" expanded="true" />
-                <element signature="e#6941#6942#0" expanded="true" />
+                <element signature="e#3532#3533#0" expanded="true" />
+                <element signature="e#3579#3580#0" expanded="true" />
+                <element signature="e#6454#6455#0" expanded="true" />
+                <element signature="e#6495#6496#0" expanded="true" />
+                <element signature="e#7171#7172#0" expanded="true" />
+                <element signature="e#7223#7224#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -651,27 +628,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00077" summary="renamed the testng xml so that now the default is for the NS">
-      <created>1496126573106</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1496126573107</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Added MockTest for the balanced array problem">
-      <created>1496209356645</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1496209356646</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Added MockTest for the balanced array problem">
-      <created>1496209850381</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1496209850381</updated>
-    </task>
     <task id="LOCAL-00080" summary="Added class  Partition for the balanced array problem">
       <created>1496298897623</created>
       <option name="number" value="00080" />
@@ -994,7 +950,28 @@
       <option name="project" value="LOCAL" />
       <updated>1500974007163</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="clicks on address from the addresspicker">
+      <created>1500974030520</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1500974030520</updated>
+    </task>
+    <task id="LOCAL-00127" summary="tried using the logger">
+      <created>1500974267296</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1500974267296</updated>
+    </task>
+    <task id="LOCAL-00128" summary="tried using the logger">
+      <created>1500976514941</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1500976514941</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1033,19 +1010,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875723" sideWeight="0.57799184" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32685384" sideWeight="0.48518518" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875723" sideWeight="0.42200816" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875723" sideWeight="0.42200816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975176" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3004961" sideWeight="0.4124128" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28825492" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28825492" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49430776" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3376527" sideWeight="0.5041322" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3981214" sideWeight="0.47814816" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3981214" sideWeight="0.47814816" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1068,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tried creating a file name with a timestamp" />
     <MESSAGE value="Addeed  a new interrupted exception in the method" />
     <MESSAGE value="writes only the last line" />
     <MESSAGE value="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path" />
@@ -1116,18 +1092,11 @@
     <MESSAGE value="created clicking on Lookup for scs shipping address page." />
     <MESSAGE value="clicks on address from the addresspicker&#10; public void selectAnAddressFromAddressDropDown(int addressNumber)" />
     <MESSAGE value="clicks on address from the addresspicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="clicks on address from the addresspicker" />
+    <MESSAGE value="tried using the logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried using the logger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java</url>
-          <line>207</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager>
@@ -1504,14 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1533,23 +1494,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1490">
+          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="212" column="8" lean-forward="true" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
+        <state relative-caret-position="310">
+          <caret line="208" column="71" lean-forward="true" selection-start-line="208" selection-start-column="71" selection-end-line="208" selection-end-column="71" />
           <folding>
-            <element signature="e#3376#3377#0" expanded="true" />
-            <element signature="e#3423#3424#0" expanded="true" />
-            <element signature="e#6298#6299#0" expanded="true" />
-            <element signature="e#6339#6340#0" expanded="true" />
+            <element signature="e#3532#3533#0" expanded="true" />
+            <element signature="e#3579#3580#0" expanded="true" />
+            <element signature="e#6454#6455#0" expanded="true" />
+            <element signature="e#6495#6496#0" expanded="true" />
+            <element signature="e#7171#7172#0" expanded="true" />
+            <element signature="e#7223#7224#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="61" column="63" lean-forward="false" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+        <state relative-caret-position="660">
+          <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -57,6 +57,8 @@ public class ShippingAddress extends General {
     public WebElement scsPostCodeLookUp;
     @FindBy (id="addresses-found")
     public WebElement scsDropDownPostCodeLookUp;
+    @FindBy(name="dwfrm_singleshipping_shippingAddress_directPayment")
+    public WebElement scsBtnContinueInShippingPage;
 
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
@@ -218,5 +220,8 @@ public class ShippingAddress extends General {
         else{
            addressPicker.selectByIndex(addressNumber);
        }
+    }
+    public void clickscsBtnContinueInShippingPage(){
+        scsBtnContinueInShippingPage.click();
     }
 }
