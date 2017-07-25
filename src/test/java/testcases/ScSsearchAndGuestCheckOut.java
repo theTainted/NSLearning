@@ -59,7 +59,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.scsEnterZip("AB11 5BA");
         shippingAddress.clickOnLookUp();
         Thread.sleep(5000);
-        shippingAddress.scsSelectAnAddressFromAddressDropDown(4);
+        shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
         shippingAddress.clickscsBtnContinueInShippingPage();
     }
 }
