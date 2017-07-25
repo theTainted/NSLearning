@@ -54,6 +54,8 @@ public class ShippingAddress extends General {
     public WebElement scstxtBoxZip;
     @FindBy(xpath="//fieldset[@id='checkout-details-delivery']//button[@value='Postcode lookup']")
     public WebElement scsPostCodeLookUp;
+    @FindBy (id="addresses-found")
+    public WebElement scsDropDownPostCodeLookUp;
 
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
@@ -195,5 +197,22 @@ public class ShippingAddress extends General {
      */
     public void clickOnLookUp(){
         scsPostCodeLookUp.click();
+    }
+
+    /**
+     *
+     * @param addressNumber
+     */
+    public void selectAnAddressFromAddressDropDown(int addressNumber){
+        Select addressPicker= new Select(scsDropDownPostCodeLookUp);
+        List <WebElement> addresses = addressPicker.getOptions();
+       int numberOfAddresses= addresses.size();
+       if (addressNumber > numberOfAddresses){
+
+           addressPicker.selectByIndex(1);
+       }
+        else{
+           addressPicker.selectByIndex(addressNumber);
+       }
     }
 }
