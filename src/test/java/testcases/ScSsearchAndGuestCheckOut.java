@@ -57,6 +57,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.selectBestTimeToContact("Call me now");
      //   shippingAddress.enterAddressOne("Line 1");
       shippingAddress.scsEnterZip("AB11 5BA");
+      shippingAddress.clickOnLookUp();
      //   shippingAddress.enterCity("Amsterdam");
     }
 }

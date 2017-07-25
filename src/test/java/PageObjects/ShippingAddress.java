@@ -52,6 +52,8 @@ public class ShippingAddress extends General {
     public WebElement scsSelectBestTimeToContact;
     @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_zip")
     public WebElement scstxtBoxZip;
+    @FindBy(xpath="//fieldset[@id='checkout-details-delivery']//button[@value='Postcode lookup']")
+    public WebElement scsPostCodeLookUp;
 
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
@@ -187,5 +189,11 @@ public class ShippingAddress extends General {
             }
 
         }
+    }
+    /**
+     *
+     */
+    public void clickOnLookUp(){
+        scsPostCodeLookUp.click();
     }
 }
