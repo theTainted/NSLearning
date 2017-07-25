@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested.">
+    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NorthSails.iml" afterPath="$PROJECT_DIR$/NorthSails.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,6 +15,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NorthSails$ScSsearchAndGuestCheckOut.coverage" NAME="ScSsearchAndGuestCheckOut Coverage Results" MODIFIED="1500962825816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>testcases.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="C:\Users\syam.suryanarayanan\IdeaProjects\NorthSails" />
   </component>
@@ -29,8 +31,8 @@
       <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="735">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,9 +53,12 @@
       <file leaf-file-name="ShippingAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="560">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding>
+                <element signature="e#3152#3153#0" expanded="true" />
+                <element signature="e#3199#3200#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,6 +101,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selectCountry</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -612,48 +622,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00063" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
-      <created>1495105570715</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1495105570715</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
-      <created>1495105625430</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1495105625430</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
-      <created>1495105677939</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1495105677939</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
-      <created>1495106039276</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1495106039276</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
-      <created>1495106145780</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1495106145780</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
-      <created>1495106166713</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1495106166713</updated>
-    </task>
     <task id="LOCAL-00069" summary="Added the url1 and url.txt to the northsails working folder. updated the filepath in accessingurl.java to have a relative path">
       <created>1495106812881</created>
       <option name="number" value="00069" />
@@ -955,7 +923,49 @@
       <option name="project" value="LOCAL" />
       <updated>1500962325914</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Added a new object for scsEmailAddress in shippingAddress. Need to try to make them to more generic so that the same can be used in multiple projects">
+      <created>1500962775643</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1500962775643</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Added a new object for scsEmailAddress in shippingAddress. Need to try to make them to more generic so that the same can be used in multiple projects">
+      <created>1500962804492</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1500962804492</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Added the below to shipppingaddress.java&#10;public void selectBestTimeToContact(String scsChosenBestTimeToContact) {&#10;        boolean matchFound = false;&#10;        Select selectBestTimeToContact = new Select(scsSelectBestTimeToContact);&#10;        List&lt;WebElement&gt; bestTimeToContact = selectBestTimeToContact.getOptions();&#10;        scsSelectBestTimeToContact.click();&#10;        for (WebElement toContact : bestTimeToContact) {&#10;            if (scsChosenBestTimeToContact.equals(toContact.getText())) {&#10;                toContact.click();&#10;                matchFound = true;&#10;                break;&#10;            }&#10;&#10;        }&#10;    }">
+      <created>1500964164603</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1500964164603</updated>
+    </task>
+    <task id="LOCAL-00115" summary="added the best time to contact">
+      <created>1500964248453</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1500964248453</updated>
+    </task>
+    <task id="LOCAL-00116" summary="added entering zipcode for scs">
+      <created>1500965185497</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1500965185497</updated>
+    </task>
+    <task id="LOCAL-00117" summary="added entering zipcode for scs">
+      <created>1500965230827</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1500965230827</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -984,6 +994,7 @@
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
     <frame x="89" y="0" width="2791" height="1620" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49851963" order="6" side_tool="false" content_ui="tabs" />
@@ -995,10 +1006,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32685384" sideWeight="0.48518518" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875723" sideWeight="0.42200816" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975176" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3004961" sideWeight="0.4124128" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28825492" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28825492" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49430776" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1010,7 +1023,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49430776" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1051,10 +1063,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed a space in clickOnCountrySelector" />
-    <MESSAGE value="removed the else condition from clickAcceptCookiesButton()" />
-    <MESSAGE value="Now the guestUserCheckOutFlow does not work the second iteration in the loop as the cookies button is not visible." />
-    <MESSAGE value="moved the loop after clickAcceptCookiesButton() in the testGuestUserCheckOutFlow" />
     <MESSAGE value="tried creating  a script which reads a file and passes the url and then accesses it and then writes the currentUrl to a file" />
     <MESSAGE value="this only writes the last line to the text file" />
     <MESSAGE value="AccessingUrl now writes to the text file properly" />
@@ -1076,7 +1084,11 @@
     <MESSAGE value="used the northsails shippingaddress pageobject and tried entering first and last name." />
     <MESSAGE value="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested." />
     <MESSAGE value="added the development url" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the development url" />
+    <MESSAGE value="Added a new object for scsEmailAddress in shippingAddress. Need to try to make them to more generic so that the same can be used in multiple projects" />
+    <MESSAGE value="Added the below to shipppingaddress.java&#10;public void selectBestTimeToContact(String scsChosenBestTimeToContact) {&#10;        boolean matchFound = false;&#10;        Select selectBestTimeToContact = new Select(scsSelectBestTimeToContact);&#10;        List&lt;WebElement&gt; bestTimeToContact = selectBestTimeToContact.getOptions();&#10;        scsSelectBestTimeToContact.click();&#10;        for (WebElement toContact : bestTimeToContact) {&#10;            if (scsChosenBestTimeToContact.equals(toContact.getText())) {&#10;                toContact.click();&#10;                matchFound = true;&#10;                break;&#10;            }&#10;&#10;        }&#10;    }" />
+    <MESSAGE value="added the best time to contact" />
+    <MESSAGE value="added entering zipcode for scs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added entering zipcode for scs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1481,16 +1493,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="560">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#3152#3153#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="735">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
