@@ -49,8 +49,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
         }
 
         ShippingAddress shippingAddress = new ShippingAddress(driver);
-        // shippingAddress.selectMan();
-        shippingAddress.enterFirstName("test");
+        shippingAddress.scsSelectTitle("Miss");
+       shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanaryanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
@@ -60,6 +60,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.clickOnLookUp();
         Thread.sleep(5000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
-        shippingAddress.clickscsBtnContinueInShippingPage();
+
+       // shippingAddress.clickscsBtnContinueInShippingPage()
     }
 }

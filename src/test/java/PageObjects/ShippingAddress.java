@@ -61,6 +61,12 @@ public class ShippingAddress extends General {
     @FindBy(xpath="//form[@id='dwfrm_singleshipping_shippingAddress']//button[@value='Continue']")
     public WebElement scsBtnContinueInShippingPage;
 
+    @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_title")
+    public WebElement scsDropDownTitle;
+
+
+    Logger LOGGER = Logger.getLogger("InfoLogging");
+
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
         PageFactory.initElements(General.driver, this);
@@ -208,7 +214,7 @@ public class ShippingAddress extends General {
      * @param addressNumber
      */
     public void scsSelectAnAddressFromAddressDropDown(int addressNumber){
-        Logger LOGGER = Logger.getLogger("InfoLogging");
+
         Select addressPicker= new Select(scsDropDownPostCodeLookUp);
         List <WebElement> addresses = addressPicker.getOptions();
        int numberOfAddresses= addresses.size();
@@ -223,6 +229,25 @@ public class ShippingAddress extends General {
        }
     }
     public void clickscsBtnContinueInShippingPage(){
+        boolean bValue = scsBtnContinueInShippingPage.isDisplayed();
+        LOGGER.info(String.valueOf(bValue));
         scsBtnContinueInShippingPage.click();
+    }
+    /**
+     * @param title
+     */
+    public void scsSelectTitle(String title) {
+        boolean matchFound = false;
+        Select selectTitle = new Select(scsDropDownTitle);
+        List<WebElement> setTitle = selectTitle.getOptions();
+        scsDropDownTitle.click();
+        for (WebElement chosenTitle : setTitle) {
+             if (title.equals(chosenTitle.getText())) {
+              chosenTitle.click();
+                matchFound = true;
+                break;
+            }
+
+        }
     }
 }
