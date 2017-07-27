@@ -58,7 +58,7 @@ public class ShippingAddress extends General {
     @FindBy (id="addresses-found")
     public WebElement scsDropDownPostCodeLookUp;
 
-    @FindBy(xpath="//form[@id='dwfrm_singleshipping_shippingAddress']//button[@value='Continue']")
+    @FindBy(xpath="//form[@id='dwfrm_singleshipping_shippingAddress']//button[@name='dwfrm_singleshipping_shippingAddress_directPayment']")
     public WebElement scsBtnContinueInShippingPage;
 
     @FindBy(id="dwfrm_singleshipping_shippingAddress_addressFields_title")
