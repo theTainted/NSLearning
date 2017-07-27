@@ -61,6 +61,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
         Thread.sleep(5000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
 
-       // shippingAddress.clickscsBtnContinueInShippingPage()
+       shippingAddress.clickscsBtnContinueInShippingPage();
     }
 }
