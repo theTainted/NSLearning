@@ -6,9 +6,12 @@ package testcases;
         import org.openqa.selenium.chrome.ChromeDriver;
 
         import java.util.List;
+        import java.util.logging.Logger;
 
 public class FMLogin {
+
     public static void main(String[] args) throws InterruptedException {
+        Logger LOG = Logger.getLogger("InfoLogging");
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String sURL = "http://t2.fleurametz.com";
@@ -21,7 +24,7 @@ public class FMLogin {
         driver.findElement(By.xpath("//input[@class='btn btn--login btn-login']")).click();
   /*      if((driver.findElement(By.xpath("//li[3]//a[@class='dropdown-text']")).getText()).equals(sEmail)) {
 
-            System.out.println("true");
+            LOG.info("true");
         }
 */
         List<WebElement> deliveryDateHasOrder = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']/div/form//td[@class='delivery-order has-order']/a"));
@@ -33,7 +36,7 @@ public class FMLogin {
 
 
         for (WebElement test :possibleDeliveryDatesWithNoOrders) {
-            System.out.println(test.getText());
+            LOG.info(test.getText());
             if (test.getText().equalsIgnoreCase("11")) {
                 test.click();
                 break;
