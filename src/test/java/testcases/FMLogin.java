@@ -32,6 +32,9 @@ public class FMLogin {
         List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']"));
         System.out.println(possibleDeliveryDatesWithNoOrders.size());
     }
+
+
+
 }
 
 
