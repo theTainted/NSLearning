@@ -32,12 +32,17 @@ public class FMLogin {
         List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']"));
 
 
-        for (WebElement test :possibleDeliveryDatesWithNoOrders){
+        for (WebElement test :possibleDeliveryDatesWithNoOrders) {
             System.out.println(test.getText());
+            if (test.getText().equalsIgnoreCase("11")) {
+                test.click();
+                break;
+            }
+
+
+
         }
-
-
-
+        driver.findElement(By.xpath("//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]")).click();
     }
 }
 
