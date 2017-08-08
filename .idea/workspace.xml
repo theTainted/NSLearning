@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="16" column="50" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="991">
+              <caret line="61" column="65" lean-forward="true" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FMLogin.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FMLogin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/FMLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="253">
+              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,18 +69,8 @@
       <file leaf-file-name="ShippingAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuestUserCheckOutFlow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/GuestUserCheckOutFlow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="64" column="75" lean-forward="false" selection-start-line="64" selection-start-column="75" selection-end-line="64" selection-end-column="75" />
+            <state relative-caret-position="-3238">
+              <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -117,7 +108,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>selectCountry</find>
+      <find>;</find>
+      <find>for</find>
+      <find>system.out.println</find>
     </findStrings>
+    <replaceStrings>
+      <replace>LOG.info</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -161,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/test/java/testcases/GuestUserCheckOutFlow.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/testClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/FMLogin.java" />
       </list>
     </option>
@@ -196,6 +193,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -243,7 +241,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -635,76 +632,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00089" summary="added the connector">
-      <created>1499062157811</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1499062157811</updated>
-    </task>
-    <task id="LOCAL-00090" summary="renamed and using a similar code from gugur99:)">
-      <created>1499063421778</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1499063421778</updated>
-    </task>
-    <task id="LOCAL-00091" summary="this works now, like an idiot that i am i was giving the table name instead of the database. gave the database as testDataBase">
-      <created>1499064035222</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1499064035222</updated>
-    </task>
-    <task id="LOCAL-00092" summary="this works now, like an idiot that i am i was giving the table name instead of the database. gave the database as testDataBase">
-      <created>1499065335871</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1499065335871</updated>
-    </task>
-    <task id="LOCAL-00093" summary="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested.">
-      <created>1499069402337</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1499069402337</updated>
-    </task>
-    <task id="LOCAL-00094" summary="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested.">
-      <created>1500280960768</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1500280960768</updated>
-    </task>
-    <task id="LOCAL-00095" summary="for the fun for it created the testClass, now it searches for few variants in the array, and stops when it finds one with the result">
-      <created>1500372521969</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1500372521970</updated>
-    </task>
-    <task id="LOCAL-00096" summary="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested.">
-      <created>1500372564399</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1500372564399</updated>
-    </task>
-    <task id="LOCAL-00097" summary="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested.">
-      <created>1500377455651</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1500377455651</updated>
-    </task>
-    <task id="LOCAL-00098" summary="updated the guestCheckoutFlow to handle the popup to (click and use the unregistered workflow). Have not tested.">
-      <created>1500381971406</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1500381971406</updated>
-    </task>
     <task id="LOCAL-00099" summary="ScS Trial Test Case">
       <created>1500530820488</created>
       <option name="number" value="00099" />
@@ -978,7 +905,77 @@
       <option name="project" value="LOCAL" />
       <updated>1502173815726</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Added  List&lt;WebElement&gt; deliveryDateTodayHasOrder =driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']/a&quot;)) in FMLogin.java">
+      <created>1502173844512</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1502173844512</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Added  List&lt;WebElement&gt; deliveryDateTodayHasOrder =driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']&quot;)) in FMLogin.java">
+      <created>1502173954596</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1502173954596</updated>
+    </task>
+    <task id="LOCAL-00140" summary="List&lt;WebElement&gt; possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']&quot;));&#10;        System.out.println(possibleDeliveryDatesWithNoOrders.size());">
+      <created>1502174669650</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1502174669650</updated>
+    </task>
+    <task id="LOCAL-00141" summary="List&lt;WebElement&gt; possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']&quot;));&#10;        System.out.println(possibleDeliveryDatesWithNoOrders.size());">
+      <created>1502178839493</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1502178839493</updated>
+    </task>
+    <task id="LOCAL-00142" summary="List&lt;WebElement&gt; possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']&quot;));&#10;        System.out.println(possibleDeliveryDatesWithNoOrders.size());">
+      <created>1502180894713</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1502180894713</updated>
+    </task>
+    <task id="LOCAL-00143" summary="test webelement throws an error. &#10;looping using the commented out forloop only retrieves the same value. the loop should be in the tr and not on the span. Check it.">
+      <created>1502181840042</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1502181840042</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Added this in FMLogin.java this shows the dates when the delivery is possible       &#10;       &#10;        List&lt;WebElement&gt; deliveryDateHasOrder = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']/div/form//td[@class='delivery-order has-order']/a&quot;));&#10;&#10;        Thread.sleep(2000);&#10;        List&lt;WebElement&gt; deliveryDateTodayHasOrder = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']&quot;));&#10;&#10;        List&lt;WebElement&gt; possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']&quot;));&#10;&#10;&#10;        for (WebElement test :possibleDeliveryDatesWithNoOrders){&#10;            System.out.println(test.getText());&#10;        }">
+      <created>1502195225384</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1502195225384</updated>
+    </task>
+    <task id="LOCAL-00145" summary="removed the section with comments">
+      <created>1502195260403</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1502195260403</updated>
+    </task>
+    <task id="LOCAL-00146" summary=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();">
+      <created>1502196706168</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1502196706169</updated>
+    </task>
+    <task id="LOCAL-00147" summary=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();">
+      <created>1502197440706</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1502197440707</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1007,32 +1004,33 @@
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
     <frame x="78" y="-11" width="2813" height="1642" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49851963" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251445" sideWeight="0.43571693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3981214" sideWeight="0.5231567" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32685384" sideWeight="0.48518518" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31009957" sideWeight="0.4197851" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3004961" sideWeight="0.4124128" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3042999" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30797502" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3376527" sideWeight="0.5041322" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3981214" sideWeight="0.47684327" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24990812" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3975818" sideWeight="0.47684327" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32503557" sideWeight="0.43571693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31009957" sideWeight="0.4197851" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975176" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49430776" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1075,12 +1073,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added MockTest for the balanced array problem" />
-    <MESSAGE value="Added class  Partition for the balanced array problem" />
-    <MESSAGE value="The JDBC connection works but fails saying the DB is not found" />
-    <MESSAGE value="added the connector" />
-    <MESSAGE value="renamed and using a similar code from gugur99:)" />
-    <MESSAGE value="this works now, like an idiot that i am i was giving the table name instead of the database. gave the database as testDataBase" />
     <MESSAGE value="for the fun for it created the testClass, now it searches for few variants in the array, and stops when it finds one with the result" />
     <MESSAGE value="ScS Trial Test Case" />
     <MESSAGE value="added to click on the popup , the example has  a price &gt;200, so this will click continue to checkout on the popup" />
@@ -1100,11 +1092,25 @@
     <MESSAGE value="public void scsSelectTitle(String title) in ShippingAddress.java" />
     <MESSAGE value="PoC for FM" />
     <MESSAGE value="Added  List&lt;WebElement&gt; deliveryDateTodayHasOrder =driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']/a&quot;)) in FMLogin.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  List&lt;WebElement&gt; deliveryDateTodayHasOrder =driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']/a&quot;)) in FMLogin.java" />
+    <MESSAGE value="Added  List&lt;WebElement&gt; deliveryDateTodayHasOrder =driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']&quot;)) in FMLogin.java" />
+    <MESSAGE value="List&lt;WebElement&gt; possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']&quot;));&#10;        System.out.println(possibleDeliveryDatesWithNoOrders.size());" />
+    <MESSAGE value="test webelement throws an error. &#10;looping using the commented out forloop only retrieves the same value. the loop should be in the tr and not on the span. Check it." />
+    <MESSAGE value="Added this in FMLogin.java this shows the dates when the delivery is possible       &#10;       &#10;        List&lt;WebElement&gt; deliveryDateHasOrder = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']/div/form//td[@class='delivery-order has-order']/a&quot;));&#10;&#10;        Thread.sleep(2000);&#10;        List&lt;WebElement&gt; deliveryDateTodayHasOrder = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']&quot;));&#10;&#10;        List&lt;WebElement&gt; possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath(&quot;//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']&quot;));&#10;&#10;&#10;        for (WebElement test :possibleDeliveryDatesWithNoOrders){&#10;            System.out.println(test.getText());&#10;        }" />
+    <MESSAGE value="removed the section with comments" />
+    <MESSAGE value=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();" />
+    <option name="LAST_COMMIT_MESSAGE" value=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="79" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/FMLogin.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="84" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1117,30 +1123,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/clickOnSeriesFromHamburgerMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/GuestUserCheckOutFlow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1434,13 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/com/google/common/collect/ImmutableMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.4.0/selenium-remote-driver-3.4.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1486,39 +1461,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/FMLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1525">
           <caret line="73" column="7" lean-forward="false" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/com/google/common/collect/SingletonImmutableBiMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/com/google/common/collect/ImmutableBiMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/com/google/common/collect/ImmutableMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.4.0/selenium-remote-driver-3.4.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3238">
+          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/FMLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="991">
+          <caret line="61" column="65" lean-forward="true" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

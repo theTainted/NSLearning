@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         driver.manage().window().maximize();
         driver.findElement(By.id("q")).sendKeys(sProductName);
         driver.findElement(By.id("q")).sendKeys(Keys.RETURN);
-       /* System.out.println(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
+       /* LOG.info(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
         boolean elementExists = driver.findElements(By.id("add-to-cart")).size()!=0;
         if (elementExists==true){
             driver.findElement(By.id("add-to-cart")).click();
