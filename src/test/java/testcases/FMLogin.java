@@ -36,12 +36,7 @@ public class FMLogin {
             System.out.println(test.getText());
         }
 
-    /*
-     for (int i=1;i<=possibleDeliveryDatesWithNoOrders.size();i++){
-         String sText= driver.findElement(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a["+i+"]")).getText();
-         System.out.println(i +":"+sText );
 
-     }*/
 
     }
 }
