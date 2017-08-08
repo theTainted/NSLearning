@@ -32,19 +32,18 @@ public class FMLogin {
         List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']"));
 
 
+        for (WebElement test :possibleDeliveryDatesWithNoOrders){
+            System.out.println(test.getText());
+        }
+
     /*
      for (int i=1;i<=possibleDeliveryDatesWithNoOrders.size();i++){
          String sText= driver.findElement(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a["+i+"]")).getText();
          System.out.println(i +":"+sText );
 
      }*/
-    List <WebElement> test = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']/div/form/div[1]/fieldset/div[2]/div/div/div/div[1]/table/tbody/tr[2]//td//a[@class='order-day-link']//span[1])"));
-    System.out.println(test.size());
 
     }
-
-
-
 }
 
 
