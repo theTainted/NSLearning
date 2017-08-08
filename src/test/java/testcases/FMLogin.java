@@ -29,8 +29,19 @@ public class FMLogin {
         Thread.sleep(2000);
         List<WebElement> deliveryDateTodayHasOrder = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']"));
         System.out.println(deliveryDateTodayHasOrder.size());
-        List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']"));
-        System.out.println(possibleDeliveryDatesWithNoOrders.size());
+        List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']"));
+
+
+     /*   for (WebElement date : possibleDeliveryDatesWithNoOrders){
+            i++;
+           String sText= driver.findElement(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']//")).getText();
+            System.out.println(i +":"+sText );
+        }*/
+     for (int i=1;i<=possibleDeliveryDatesWithNoOrders.size();i++){
+         String sText= driver.findElement(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a["+i+"]")).getText();
+         System.out.println(i +":"+sText );
+
+     }
     }
 
 
