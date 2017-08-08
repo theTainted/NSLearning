@@ -8,7 +8,7 @@ package testcases;
         import java.util.List;
 
 public class FMLogin {
-    public static void main (String [] args){
+    public static void main (String [] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String sURL = "http://t2.fleurametz.com";
@@ -26,8 +26,8 @@ public class FMLogin {
 */
         List<WebElement> deliveryDateHasOrder = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']/div/form//td[@class='delivery-order has-order']/a"));
         System.out.println(deliveryDateHasOrder.size());
-
-        List<WebElement> deliveryDateTodayHasOrder =driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']/a"));
+        Thread.sleep(2000);
+        List<WebElement> deliveryDateTodayHasOrder =driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']"));
         System.out.println(deliveryDateTodayHasOrder.size());
     }
 }
