@@ -5,6 +5,8 @@ package testcases;
         import org.openqa.selenium.WebElement;
         import org.openqa.selenium.chrome.ChromeDriver;
 
+        import java.util.Calendar;
+        import java.util.Date;
         import java.util.List;
         import java.util.logging.Logger;
 
@@ -12,6 +14,7 @@ public class FMLogin {
 
     public static void main(String[] args) throws InterruptedException {
         Logger LOG = Logger.getLogger("InfoLogging");
+
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String sURL = "http://t2.fleurametz.com";
@@ -34,10 +37,15 @@ public class FMLogin {
 
         List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']"));        for (WebElement test :possibleDeliveryDatesWithNoOrders) {
           //  LOG.info(test.getText());
-            if (test.getText().equalsIgnoreCase("11")) {
+
+            Date date = new Date();
+            System.out.println(date);
+
+            if (test.getText().equalsIgnoreCase("16")) {
                 test.click();
                 break;
             }
+
         }
         driver.findElement(By.xpath("//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]")).click();
     }
