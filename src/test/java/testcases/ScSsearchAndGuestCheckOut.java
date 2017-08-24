@@ -1,6 +1,7 @@
 package testcases;
 
 import PageObjects.ShippingAddress;
+import PageObjects.scsOrderPreview;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -62,5 +63,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
         Thread.sleep(3000);
        shippingAddress.clickscsBtnContinueInShippingPage();
+        scsOrderPreview orderPreview = new scsOrderPreview(driver);
+        orderPreview.clickOnChkBoxTerm();
     }
 }
