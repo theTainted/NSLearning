@@ -16,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         WebDriver driver = new ChromeDriver();
         String sURL = "https://staging.scs.co.uk";
         //  String sURL ="https://" + "storefront" + ":" + "sancerre" + "@" + "development.scs.co.uk";
-        String sProductName = "L036211";
+        String sProductName = "L036281";
         driver.get(sURL);
         driver.manage().window().maximize();
         driver.findElement(By.id("q")).sendKeys(sProductName);
