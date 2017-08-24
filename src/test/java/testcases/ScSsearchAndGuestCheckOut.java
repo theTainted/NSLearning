@@ -1,5 +1,6 @@
 package testcases;
 
+import PageObjects.General;
 import PageObjects.ShippingAddress;
 import PageObjects.scsOrderPreview;
 import org.openqa.selenium.By;
@@ -11,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
- public class ScSsearchAndGuestCheckOut {
+ public class ScSsearchAndGuestCheckOut extends General {
     public static void main (String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
