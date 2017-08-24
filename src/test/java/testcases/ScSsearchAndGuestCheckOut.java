@@ -60,7 +60,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.clickOnLookUp();
         Thread.sleep(7000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
-
+        Thread.sleep(3000);
        shippingAddress.clickscsBtnContinueInShippingPage();
     }
 }
