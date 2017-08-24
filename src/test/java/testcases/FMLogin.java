@@ -35,13 +35,14 @@ public class FMLogin {
         Thread.sleep(2000);
         List<WebElement> deliveryDateTodayHasOrder = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery-order active has-order today']"));
 
-        List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']"));        for (WebElement test :possibleDeliveryDatesWithNoOrders) {
+        List<WebElement> possibleDeliveryDatesWithNoOrders = driver.findElements(By.xpath("//div[@id='start-new-order-calendar']//form//table//td[@class='delivery']//a[@class='order-day-link']"));
+        for (WebElement test :possibleDeliveryDatesWithNoOrders) {
           //  LOG.info(test.getText());
 
             Date date = new Date();
             System.out.println(date);
 
-            if (test.getText().equalsIgnoreCase("16")) {
+            if (test.getText().equalsIgnoreCase("25")) {
                 test.click();
                 break;
             }
