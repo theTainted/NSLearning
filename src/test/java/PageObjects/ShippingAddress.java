@@ -231,6 +231,7 @@ public class ShippingAddress extends General {
     public void clickscsBtnContinueInShippingPage(){
         boolean bValue = scsBtnContinueInShippingPage.isDisplayed();
         LOGGER.info(String.valueOf(bValue));
+
         scsBtnContinueInShippingPage.click();
     }
     /**
