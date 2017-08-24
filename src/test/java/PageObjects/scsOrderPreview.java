@@ -17,7 +17,7 @@ public class scsOrderPreview extends General{
         PageFactory.initElements(this.driver, this);
     }
      public void clickOnChkBoxTerm(){
-        System.out.println(chkBoxTerms.getAttribute("value"));
+        System.out.println(chkBoxTerms.getAttribute("label"));
         chkBoxTerms.click();
 
      }
