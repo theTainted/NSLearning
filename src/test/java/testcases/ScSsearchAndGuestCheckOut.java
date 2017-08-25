@@ -75,5 +75,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
         orderPreview.clickOnPayByCard();
+
+        BillingPage billingPage = new BillingPage(driver);
+         billingPage.enterNumber("5100290029002909");
+         billingPage.enterCVV("737");
+         billingPage.enterName("test");
+         billingPage.selectExpiryMonth("October");
+         billingPage.selectExpiryYear("2020");
+         billingPage.clickBtnToPay();
     }
 }
