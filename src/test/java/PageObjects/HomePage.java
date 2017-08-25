@@ -48,6 +48,9 @@ public class HomePage extends General {
     @FindBy(xpath="//div[@id='wrapper']/footer//a[contains(@href,'returns')]")
     public WebElement footerReturnLink;
 
+    @FindBy(xpath="//nav[@id='menu']//a[@class='nav-customer__link iconDesktop']")
+    public WebElement scsLogin;
+
     public HomePage(WebDriver driver) {
         General.driver = driver;
         PageFactory.initElements(General.driver, this);
@@ -99,4 +102,9 @@ public class HomePage extends General {
         txtBoxSearch.sendKeys(Keys.RETURN);
         return new ProductListPage(General.driver);
     }
+
+    public void clickOnSCSLogin(){
+        scsLogin.click();
+    }
+
 }
