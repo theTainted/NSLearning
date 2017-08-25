@@ -62,7 +62,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         shippingAddress.scsSelectTitle("Miss");
        shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
-        shippingAddress.scsEnterEmail("syam.suryanaryanan@digitaslbi.com");
+        shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
         shippingAddress.selectBestTimeToContact("Call me now");
         //   shippingAddress.enterAddressOne("Line 1");
