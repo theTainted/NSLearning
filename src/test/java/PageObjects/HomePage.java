@@ -93,8 +93,10 @@ public class HomePage extends General {
         return new RegistrationPage(General.driver);
     }
     public ProductListPage searchText(String searchString){
+        //updated to work on scs by passing keys.return
         this.txtBoxSearch.sendKeys(searchString);
-        this.clickOnSearchIcon();
+      //  this.clickOnSearchIcon();
+        txtBoxSearch.sendKeys(Keys.RETURN);
         return new ProductListPage(General.driver);
     }
 }
