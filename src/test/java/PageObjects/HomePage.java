@@ -30,7 +30,8 @@ public class HomePage extends General {
     @FindBy(xpath="//div[@id='simple-search']/form/button[@class='simple-search__submit js-btn-search']")
     public WebElement btnSearchIcon;
 
-    @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
+ //   @FindBy (xpath="//*[@id='simple-search']//input[@name='q']")
+    @FindBy(id="q")
     public WebElement txtBoxSearch;
 
     @FindBy(id="shopping-button")
