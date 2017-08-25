@@ -2,6 +2,7 @@ package testcases;
 
 import PageObjects.General;
 import PageObjects.HomePage;
+import PageObjects.Login;
 import org.testng.annotations.Test;
 
 public class scsRegisteringAnUser extends General {
@@ -13,7 +14,8 @@ public class scsRegisteringAnUser extends General {
         driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
-        homePage.clickOnSCSLogin();
+       Login login =  homePage.clickOnSCSLogin();
+       login.clickCreateAccountButton();
 
     }
 }
