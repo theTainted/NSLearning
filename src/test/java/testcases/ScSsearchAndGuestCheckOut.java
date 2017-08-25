@@ -74,5 +74,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
        shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
+        orderPreview.clickOnPayByCard();
     }
 }
