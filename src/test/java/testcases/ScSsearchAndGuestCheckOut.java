@@ -2,6 +2,7 @@ package testcases;
 
 import PageObjects.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -13,19 +14,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-     @Test
-     public void testScSearchAndGuestCheckOut() throws InterruptedException{
-         String sProductName = "L036281";
+    @Test
+    public void testScSearchAndGuestCheckOut() throws InterruptedException {
+        String sProductName = "L036281";
 
-         driver.get(General.URL);
-         driver.manage().window().maximize();
-         HomePage homePage = new HomePage(driver);
-         ProductListPage plp = homePage.searchText(sProductName);
-
-
+        driver.get(General.URL);
+        driver.manage().window().maximize();
+        HomePage homePage = new HomePage(driver);
+        ProductListPage plp = homePage.searchText(sProductName);
 
 
-   //***************************************************************************************************************
+        //***************************************************************************************************************
        /*  driver.findElement(By.id("q")).sendKeys(sProductName);
          driver.findElement(By.id("q")).sendKeys(Keys.RETURN);*/
 
@@ -35,7 +34,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         if (elementExists==true){
             driver.findElement(By.id("add-to-cart")).click();
         }*/
-       //**************************************************************************************************************
+        //**************************************************************************************************************
 
         boolean elementExists = driver.findElements(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).size() != 0;
         if (elementExists == true) {
@@ -60,7 +59,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
         ShippingAddress shippingAddress = new ShippingAddress(driver);
         shippingAddress.scsSelectTitle("Miss");
-       shippingAddress.enterFirstName("test");
+        shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
@@ -71,17 +70,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
         Thread.sleep(7000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
         Thread.sleep(3000);
-       shippingAddress.clickscsBtnContinueInShippingPage();
+        shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
         orderPreview.clickOnPayByCard();
 
         BillingPage billingPage = new BillingPage(driver);
-         billingPage.enterNumber("5100290029002909");
-         billingPage.enterCVV("737");
-         billingPage.enterName("test");
-         billingPage.selectExpiryMonth("10");
-         billingPage.selectExpiryYear("2020");
-         billingPage.clickBtnToPay();
+        billingPage.enterNumber("5100290029002909");
+        billingPage.enterCVV("737");
+        billingPage.enterName("test");
+        billingPage.selectExpiryMonth("10");
+        billingPage.selectExpiryYear("2020");
+        billingPage.clickBtnToPay();
+    }
+
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
     }
 }
