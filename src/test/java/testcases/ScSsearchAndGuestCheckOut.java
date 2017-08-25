@@ -20,14 +20,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
          driver.get(General.URL);
          driver.manage().window().maximize();
-         driver.findElement(By.id("q")).sendKeys(sProductName);
-         driver.findElement(By.id("q")).sendKeys(Keys.RETURN);
+       /*  driver.findElement(By.id("q")).sendKeys(sProductName);
+         driver.findElement(By.id("q")).sendKeys(Keys.RETURN);*/
 
-      /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        String sURL = "https://staging.scs.co.uk";*/
-        //  String sURL ="https://" + "storefront" + ":" + "sancerre" + "@" + "development.scs.co.uk";
-
+     
        /* LOG.info(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
         boolean elementExists = driver.findElements(By.id("add-to-cart")).size()!=0;
         if (elementExists==true){
