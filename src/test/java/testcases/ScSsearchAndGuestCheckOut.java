@@ -3,6 +3,7 @@ package testcases;
 import PageObjects.General;
 import PageObjects.ShippingAddress;
 import PageObjects.scsOrderPreview;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -13,16 +14,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-    public static void main (String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+     @Test
+     public void testScSearchAndGuestCheckOut() throws InterruptedException{
+         String sProductName = "L036281";
+
+         driver.get(General.URL);
+         driver.manage().window().maximize();
+         driver.findElement(By.id("q")).sendKeys(sProductName);
+         driver.findElement(By.id("q")).sendKeys(Keys.RETURN);
+
+      /*  System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String sURL = "https://staging.scs.co.uk";
+        String sURL = "https://staging.scs.co.uk";*/
         //  String sURL ="https://" + "storefront" + ":" + "sancerre" + "@" + "development.scs.co.uk";
-        String sProductName = "L036281";
-        driver.get(sURL);
-        driver.manage().window().maximize();
-        driver.findElement(By.id("q")).sendKeys(sProductName);
-        driver.findElement(By.id("q")).sendKeys(Keys.RETURN);
+
        /* LOG.info(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
         boolean elementExists = driver.findElements(By.id("add-to-cart")).size()!=0;
         if (elementExists==true){

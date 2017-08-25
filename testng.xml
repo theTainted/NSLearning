@@ -3,7 +3,7 @@
 <test name="Chrome Test">
     <parameter name ="browser" value="Chrome"/>
     <classes>
-        <class name ="testcases.GuestUserCheckOutFlow"/>
+        <class name ="testcases.ScSsearchAndGuestCheckOut"/>
     </classes>
 </test>
 
