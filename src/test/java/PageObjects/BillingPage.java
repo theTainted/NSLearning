@@ -27,7 +27,8 @@ public class BillingPage extends General {
     public WebElement txtBoxCVVNumber;
     @FindBy(id="dwfrm_billing_terms")
     public WebElement chkBoxTermsAndConditions;
-    @FindBy (id="dwfrm_billing_paymentMethods_creditCard_expiration_month")
+   // @FindBy (id="dwfrm_billing_paymentMethods_creditCard_expiration_month")
+    @FindBy(id="dwfrm_billing_paymentMethods_creditCard_month")
     public WebElement expiryMonth;
     @FindBy(id="dwfrm_billing_paymentMethods_creditCard_expiration_year")
     public WebElement expiryYear;
