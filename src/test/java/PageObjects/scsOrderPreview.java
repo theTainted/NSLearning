@@ -9,7 +9,8 @@ import org.testng.asserts.SoftAssert;
 public class scsOrderPreview extends General{
     @FindBy(xpath="//label[@for='dwfrm_summary_summaryCheckboxes_readTermsConditions']")
     public WebElement chkBoxTerms;
-
+    @FindBy(xpath="//div[@class='form-actions--buttons-creditcards']/button[@name='dwfrm_summary_summaryCheckboxes_submitSummary']")
+    public WebElement btnPayByCard;
         //  WebDriver driver;
         SoftAssert softAssert = new SoftAssert();
     public scsOrderPreview (WebDriver driver) {
@@ -20,5 +21,8 @@ public class scsOrderPreview extends General{
         System.out.println(chkBoxTerms.getAttribute("label"));
         chkBoxTerms.click();
 
+     }
+     public void clickOnPayByCard(){
+         btnPayByCard.click();
      }
     }
