@@ -21,7 +21,8 @@ public class Login extends General {
     public WebElement txtPassword;
     @FindBy(xpath="//form[@id='dwfrm_login']//button[@name='dwfrm_login_login']")
     public WebElement btnLogin;
-    @FindBy(xpath="//div[@id='checkoutloginpage']//button[@name='dwfrm_login_register']")
+  //  @FindBy(xpath="//div[@id='checkoutloginpage']//button[@name='dwfrm_login_register']")
+    @FindBy(xpath="//form[@id='dwfrm_login_register']//button[@value='Create an Account']") //->updated for SCS
     public WebElement btnCreateAccount;
 
     @FindBy(xpath="//div[@id='checkoutloginpage']//button[@name='dwfrm_login_unregistered']")
