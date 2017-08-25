@@ -28,9 +28,10 @@ public class BillingPage extends General {
     @FindBy(id="dwfrm_billing_terms")
     public WebElement chkBoxTermsAndConditions;
    // @FindBy (id="dwfrm_billing_paymentMethods_creditCard_expiration_month")
-    @FindBy(id="dwfrm_billing_paymentMethods_creditCard_month")
+    @FindBy(id="dwfrm_billing_paymentMethods_creditCard_month") //->updated for scs
     public WebElement expiryMonth;
-    @FindBy(id="dwfrm_billing_paymentMethods_creditCard_expiration_year")
+   // @FindBy(id="dwfrm_billing_paymentMethods_creditCard_expiration_year")
+    @FindBy(id="dwfrm_billing_paymentMethods_creditCard_year")//-> updated for scs
     public WebElement expiryYear;
     @FindBy(xpath="//form[@id='dwfrm_billing']//button[@name='dwfrm_billing_save']")
     public WebElement btnPay;
