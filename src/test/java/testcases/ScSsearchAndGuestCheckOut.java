@@ -1,8 +1,6 @@
 package testcases;
 
-import PageObjects.General;
-import PageObjects.ShippingAddress;
-import PageObjects.scsOrderPreview;
+import PageObjects.*;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -20,15 +18,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
          driver.get(General.URL);
          driver.manage().window().maximize();
+         HomePage homePage = new HomePage(driver);
+         ProductListPage plp = homePage.searchText(sProductName);
+
+
+
+
+   //***************************************************************************************************************
        /*  driver.findElement(By.id("q")).sendKeys(sProductName);
          driver.findElement(By.id("q")).sendKeys(Keys.RETURN);*/
 
-     
+
        /* LOG.info(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
         boolean elementExists = driver.findElements(By.id("add-to-cart")).size()!=0;
         if (elementExists==true){
             driver.findElement(By.id("add-to-cart")).click();
         }*/
+       //**************************************************************************************************************
 
         boolean elementExists = driver.findElements(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).size() != 0;
         if (elementExists == true) {
