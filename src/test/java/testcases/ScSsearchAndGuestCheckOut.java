@@ -80,7 +80,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
          billingPage.enterNumber("5100290029002909");
          billingPage.enterCVV("737");
          billingPage.enterName("test");
-         billingPage.selectExpiryMonth("October");
+         billingPage.selectExpiryMonth("10");
          billingPage.selectExpiryYear("2020");
          billingPage.clickBtnToPay();
     }
