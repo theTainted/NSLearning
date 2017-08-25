@@ -103,8 +103,9 @@ public class HomePage extends General {
         return new ProductListPage(General.driver);
     }
 
-    public void clickOnSCSLogin(){
+    public Login clickOnSCSLogin(){
         scsLogin.click();
+        return new Login(General.driver);
     }
 
 }
