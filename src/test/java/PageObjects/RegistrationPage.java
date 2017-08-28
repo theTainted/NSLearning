@@ -30,7 +30,8 @@ public class RegistrationPage extends General {
    // @FindBy(xpath="//input[contains(@id,'dwfrm_profile_login_passwordconfirm_')]")
     @FindBy(id="dwfrm_profile_login_passwordconfirm") //->Updated for scs
     public WebElement txtBoxConfirmPassword;
-    @FindBy(xpath="//form[@id='RegistrationForm']//button[@name='dwfrm_profile_confirm']")
+  //  @FindBy(xpath="//form[@id='RegistrationForm']//button[@name='dwfrm_profile_confirm']")
+    @FindBy(xpath="//form[@id='RegistrationForm']//button[@value='Apply']")//->updated for Scs
     public WebElement btnCreateAccount;
 
 

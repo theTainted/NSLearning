@@ -24,6 +24,7 @@ public class scsRegisteringAnUser extends General {
         registration.enterConfirmationEmailAddress();
         registration.enterPassword();
         registration.enterConfrimsPassword();
+        registration.clickCreateAccount();
 
 
     }
