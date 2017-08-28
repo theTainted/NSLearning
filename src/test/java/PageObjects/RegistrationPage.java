@@ -24,9 +24,11 @@ public class RegistrationPage extends General {
     public WebElement txtBoxEmail;
     @FindBy(id="dwfrm_profile_customer_emailconfirm")
     public WebElement txtBoxConfirmEmail;
-    @FindBy(xpath="//input[contains(@id,'dwfrm_profile_login_password_')]")
+   // @FindBy(xpath="//input[contains(@id,'dwfrm_profile_login_password_')]")
+    @FindBy(id="dwfrm_profile_login_password") //->Updated for ScS
     public WebElement txtBoxPassword;
-    @FindBy(xpath="//input[contains(@id,'dwfrm_profile_login_passwordconfirm_')]")
+   // @FindBy(xpath="//input[contains(@id,'dwfrm_profile_login_passwordconfirm_')]")
+    @FindBy(id="dwfrm_profile_login_passwordconfirm") //->Updated for scs
     public WebElement txtBoxConfirmPassword;
     @FindBy(xpath="//form[@id='RegistrationForm']//button[@name='dwfrm_profile_confirm']")
     public WebElement btnCreateAccount;
@@ -67,6 +69,7 @@ public class RegistrationPage extends General {
     }
 
     public void enterPassword(){
+
         txtBoxPassword.sendKeys("test1234");
     }
     public void enterConfrimsPassword(){
