@@ -85,6 +85,7 @@ public class RegistrationPage extends General {
     }
     public void assertHeadingMyAccount(String headingText){
         softAssert.assertTrue(headingMyAccount.getText().equals(headingText),"User is registered");
+        softAssert.assertAll();
 
 
 
