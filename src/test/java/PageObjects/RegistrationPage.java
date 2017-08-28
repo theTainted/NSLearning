@@ -33,6 +33,8 @@ public class RegistrationPage extends General {
   //  @FindBy(xpath="//form[@id='RegistrationForm']//button[@name='dwfrm_profile_confirm']")
     @FindBy(xpath="//form[@id='RegistrationForm']//button[@value='Apply']")//->updated for Scs
     public WebElement btnCreateAccount;
+    @FindBy(xpath="//div[@id='main']/div/h1[contains(text(),'My account')]")
+    public WebElement headingMyAccount;
 
 
     public RegistrationPage(WebDriver driver) {
@@ -74,11 +76,17 @@ public class RegistrationPage extends General {
         txtBoxPassword.sendKeys("test1234");
     }
     public void enterConfrimsPassword(){
+
         txtBoxConfirmPassword.sendKeys("test1234");
     }
     public void clickCreateAccount(){
         btnCreateAccount.click();
 
     }
+    public void assertHeadingMyAccount(String headingText){
+        softAssert.assertTrue(headingMyAccount.getText().equals(headingText),"User is registered");
 
+
+
+    }
 }
