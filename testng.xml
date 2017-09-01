@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run">
-    <!--
+
  <test name="Chrome Test">
   <parameter name ="browser" value="Chrome"/>
     <classes>
@@ -10,14 +10,14 @@
 
     </classes>
 </test>
--->
-<test name ="Firefox Test">
-    <classes>
+    <!--
+ <test name ="Firefox Test">
+     <classes>
 
-        <class name ="testcases.scsRegisteringAnUser"/>
-        <class name ="testcases.ScSsearchAndGuestCheckOut"/>
+         <class name ="testcases.scsRegisteringAnUser"/>
+         <class name ="testcases.ScSsearchAndGuestCheckOut"/>
 
-    </classes>
-</test>
-
-</suite>
+     </classes>
+ </test>
+ -->
+ </suite>
