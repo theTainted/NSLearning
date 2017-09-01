@@ -11,7 +11,7 @@ public class scsRegisteringAnUser extends General {
     @Test
 
     public void testScSRegisteringAnUser(){
-
+        General.getBrowser("Firefox");
         driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
