@@ -23,8 +23,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
     @Test
     public void testScSearchAndGuestCheckOut() throws InterruptedException {
         String sProductName = "L036281";
-  //     General.getBrowser("Chrome");
-        driver.get(General.URL);
+       General.getBrowser("Chrome");
+      driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         ProductListPage plp = homePage.searchText(sProductName);
@@ -90,8 +90,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
         billingPage.clickBtnToPay();
     }
 
-    @AfterClass
+   /* @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }
