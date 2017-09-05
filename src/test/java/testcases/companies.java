@@ -22,7 +22,7 @@ public class companies {
    @Test
    public void numberOfCompaniesInProduction()throws InterruptedException{
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+       // WebDriver driver = new ChromeDriver();
         driver.get("https://thehub.endemolshine.com/");
         driver.findElement(By.id("login-email")).sendKeys("Alma.santo@endemolshine.com");
         driver.findElement(By.id("login-password")).sendKeys("Jeroen1979!");

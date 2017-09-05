@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
  public class ScSsearchAndGuestCheckOut extends General {
   @Test
-    public void testScSearchAndGuestCheckOut() throws InterruptedException {
+    public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
 
   String sProductName = "L036281";

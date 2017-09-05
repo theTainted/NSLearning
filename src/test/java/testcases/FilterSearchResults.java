@@ -19,7 +19,7 @@ public class FilterSearchResults {
     @Test
       public void testFilter() throws InterruptedException{
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+     //   WebDriver driver = new ChromeDriver();
       TheHub theHub = new TheHub(driver);
       driver.get(TheHub.theHubUrl);
       driver.manage().window().maximize();

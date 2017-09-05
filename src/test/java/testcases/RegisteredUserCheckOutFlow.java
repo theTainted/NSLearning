@@ -27,7 +27,7 @@ public class RegisteredUserCheckOutFlow extends General {
             //set path to chromedriver.exe
             System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
             //create chrome instance
-            driver = new ChromeDriver();
+        //    driver = new ChromeDriver();
         }
     }
 @Test

@@ -16,7 +16,7 @@ public class FMLogin {
         Logger LOG = Logger.getLogger("InfoLogging");
 
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+       // WebDriver driver = new ChromeDriver();
         String sURL = "http://t2.fleurametz.com";
         String sEmail = "mobilexl@fleurametz.com";
         String sPassword = "lelie";

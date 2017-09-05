@@ -34,7 +34,7 @@ public class accessingurl {
              /*   BufferedWriter  bw ;
                 FileWriter fw = new FileWriter(fileName);
                 bw = new BufferedWriter(fw);*/
-                WebDriver driver = new ChromeDriver();
+          //      WebDriver driver = new ChromeDriver();
                 driver.get(sCurrentLine);
                 Thread.sleep(1000);
                 String sCurrentUrl=driver.getCurrentUrl();
