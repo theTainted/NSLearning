@@ -14,7 +14,7 @@ public class scsOrderPreview extends General{
         //  WebDriver driver;
         SoftAssert softAssert = new SoftAssert();
     public scsOrderPreview (WebDriver driver) {
-        this.driver = driver;
+        General.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
      public void clickOnChkBoxTerm(){
