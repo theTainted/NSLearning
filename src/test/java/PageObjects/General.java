@@ -33,7 +33,7 @@ public class General {
 
  {
 
-    // if (General.driver == null)
+     if (General.driver == null)
 
          if (browser.equals("Firefox"))
 
@@ -47,14 +47,14 @@ public class General {
              System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
              dc = DesiredCapabilities.firefox();
              dc.setCapability(FirefoxDriver.PROFILE, profile);
-             General.driver = new FirefoxDriver(dc);
+            driver = new FirefoxDriver(dc);
 
 
          } else if (browser.equals("Chrome"))
 
          {
              System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-             General.driver = new ChromeDriver();
+            driver = new ChromeDriver();
 
          } else if (browser.equals("IE"))
 
@@ -63,11 +63,11 @@ public class General {
             caps.setCapability("ignoreZoomSetting", true);*/
 
              System.setProperty("webdriver.ie.driver", "C:/IEDriverServer.exe");
-             General.driver = new InternetExplorerDriver();
+           driver = new InternetExplorerDriver();
 
          }
 
-         return General.driver;
+         return driver;
      }
 
 
