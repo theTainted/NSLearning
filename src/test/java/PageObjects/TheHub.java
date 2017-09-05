@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class TheHub {
 
-    public static WebDriver driver;
+  public static WebDriver driver;
     public static String theHubUrl = "http://test-thehub.endemolshine.com/";
     public static String userName = "syam.suryanarayanan@digitaslbi.com";
     public static String password = "P@ssword1";
