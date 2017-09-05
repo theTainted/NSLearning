@@ -40,7 +40,7 @@ public class BillingPage extends General {
 
 
     public BillingPage(WebDriver driver) {
-        this.driver = driver;
+       General.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
     public void enterName(String name) {
