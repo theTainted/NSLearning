@@ -26,11 +26,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
   String sProductName = "L036281";
  General.getBrowser("Chrome");
-    //  driver.get(General.URL);
+
     driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
-        ProductListPage plp = homePage.searchText(sProductName);
+       ProductListPage plp = homePage.searchText(sProductName);
 
 
         //***************************************************************************************************************
