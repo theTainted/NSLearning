@@ -20,11 +20,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-    @Test
+  @Test
     public void testScSearchAndGuestCheckOut() throws InterruptedException {
-        String sProductName = "L036281";
-       General.getBrowser("Chrome");
-      driver.get(General.URL);
+
+
+  String sProductName = "L036281";
+ General.getBrowser("Chrome");
+    //  driver.get(General.URL);
+    driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         ProductListPage plp = homePage.searchText(sProductName);
