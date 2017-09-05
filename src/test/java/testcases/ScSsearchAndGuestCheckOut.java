@@ -1,6 +1,12 @@
 package testcases;
 
-import PageObjects.*;
+import PageObjects.General;
+import PageObjects.HomePage;
+import PageObjects.ProductListPage;
+import PageObjects.scsOrderPreview;
+import PageObjects.ShippingAddress;
+import PageObjects.BillingPage;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -17,7 +23,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
     @Test
     public void testScSearchAndGuestCheckOut() throws InterruptedException {
         String sProductName = "L036281";
-        General.getBrowser("Chrome");
+  //     General.getBrowser("Chrome");
         driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);

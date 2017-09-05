@@ -29,8 +29,8 @@ public class Login extends General {
     public WebElement popupUnregisteredCheckIn;
 
     public Login(WebDriver driver){
-        this.driver= driver;
-        PageFactory.initElements(this.driver,this);
+       General.driver= driver;
+        PageFactory.initElements(General.driver,this);
     }
 
 

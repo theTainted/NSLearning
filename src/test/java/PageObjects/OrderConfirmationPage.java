@@ -18,8 +18,8 @@ public class OrderConfirmationPage extends General{
 
 
     public OrderConfirmationPage(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(this.driver,this);
+        General.driver=driver;
+        PageFactory.initElements(General.driver,this);
 
     }
 

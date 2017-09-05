@@ -16,8 +16,8 @@ public class ShoppingBasket extends General {
     @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart']")
     public WebElement btnTopCheckout;
     public ShoppingBasket(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+       General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
 
     public Login clickOnCheckoutButton(){

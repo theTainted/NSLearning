@@ -30,8 +30,8 @@ public class ReturnPage extends General {
     public WebElement elDropdownReason;
 
     public ReturnPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(this.driver, this);
+      General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
 
     public void clickLinkReturn(){
