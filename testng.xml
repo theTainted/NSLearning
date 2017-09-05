@@ -4,8 +4,9 @@
  <test name="Chrome Test">
   <parameter name ="browser" value="Chrome"/>
     <classes>
-
+<!--
         <class name ="testcases.scsRegisteringAnUser"/>
+        -->
         <class name ="testcases.ScSsearchAndGuestCheckOut"/>
 
     </classes>
