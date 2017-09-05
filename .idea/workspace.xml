@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/FMLogin.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/FMLogin.java.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/FilterSearchResults.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/FilterSearchResults.java.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/accessingurl.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/accessingurl.java.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/companies.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/companies.java.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/companies_test.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/companies_test.java.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/testClass.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/testClass.java.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +40,8 @@
       <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="126">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,7 +49,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="accessingurl.java.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="77" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -100,6 +114,8 @@
       <find>new ChromeDriver();</find>
       <find>public static void</find>
       <find>@Before</find>
+      <find>new ChromeDriver()</find>
+      <find>new ChromeDriver</find>
     </findStrings>
     <replaceStrings>
       <replace>LOG.info</replace>
@@ -156,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/scsOrderPreview.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/RegisteredUserCheckOutFlow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
       </list>
     </option>
   </component>
@@ -651,20 +667,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00155" summary=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();">
-      <created>1503573762332</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1503573762332</updated>
-    </task>
-    <task id="LOCAL-00156" summary=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();">
-      <created>1503573782333</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1503573782333</updated>
-    </task>
     <task id="LOCAL-00157" summary=" driver.findElement(By.xpath(&quot;//div[@id='start-new-order-calendar']//span[contains(text(),'Start nieuwe order')]&quot;)).click();">
       <created>1503585322521</created>
       <option name="number" value="00157" />
@@ -994,7 +996,21 @@
       <option name="project" value="LOCAL" />
       <updated>1504615537373</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="General.driver=driver;">
+      <created>1504616447797</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1504616447797</updated>
+    </task>
+    <task id="LOCAL-00205" summary="commeted all new ChromeDriver();">
+      <created>1504616910643</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1504616910643</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1094,7 +1110,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created teh scsOrderPreview Class file." />
     <MESSAGE value="added clickOnChkBoxes()" />
     <MESSAGE value="getAttribute doesnot get a correct value" />
     <MESSAGE value="converted to a testng test case" />
@@ -1119,7 +1134,8 @@
     <MESSAGE value="Added General.getBrowser(&quot;Firefox&quot;);" />
     <MESSAGE value="Added General.getBrowser(&quot;Chrome&quot;);" />
     <MESSAGE value="General.driver=driver;" />
-    <option name="LAST_COMMIT_MESSAGE" value="General.driver=driver;" />
+    <MESSAGE value="commeted all new ChromeDriver();" />
+    <option name="LAST_COMMIT_MESSAGE" value="commeted all new ChromeDriver();" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,7 +1159,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -1172,7 +1188,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1201,14 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="15" column="77" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/SQLConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1231,13 +1239,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/testClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/testClass.java.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="30" column="13" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,7 +1464,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/FMLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/FMLogin.java.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="71" />
@@ -1516,20 +1522,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/accessingurl.java.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        <state relative-caret-position="210">
+          <caret line="15" column="77" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="77" />
           <folding />
         </state>
       </provider>
