@@ -92,9 +92,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
         billingPage.selectExpiryYear("2020");
         billingPage.clickBtnToPay();
     }
-
+/*
    @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }
