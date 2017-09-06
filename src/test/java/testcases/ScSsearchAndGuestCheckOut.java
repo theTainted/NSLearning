@@ -93,8 +93,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
         billingPage.clickBtnToPay();
     }
 
-   /* @AfterClass
+   @AfterClass
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }
