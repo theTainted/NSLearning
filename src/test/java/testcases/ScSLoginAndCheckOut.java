@@ -17,5 +17,8 @@ public class ScSLoginAndCheckOut {
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         Login login =  homePage.clickOnSCSLogin();
+        login.enterUserName("tester@yopmail.com");
+        login.enterPassword("test1234");
+
     }
 }
