@@ -51,6 +51,7 @@ public class Login extends General {
     public void enterPassword(String password){
         txtPassword.sendKeys(password);
     }
+
     public ShippingAddress clickOnRegisteredLogin(){
         btnLogin.click();
         return new ShippingAddress(driver);
