@@ -1,12 +1,12 @@
 package testcases;
 
-import PageObjects.General;
-import PageObjects.HomePage;
-import PageObjects.Login;
-import PageObjects.ShippingAddress;
-import org.testng.annotations.Test;
+        import PageObjects.General;
+        import PageObjects.HomePage;
+        import PageObjects.Login;
+        import PageObjects.ShippingAddress;
+        import org.testng.annotations.Test;
 
-import static PageObjects.General.driver;
+        import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut {
     @Test
