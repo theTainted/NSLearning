@@ -19,7 +19,7 @@ public class ScSLoginAndCheckOut {
         Login login =  homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
         login.enterPassword("test1234");
-        login.clickOnLogin();
+        login.clickOnRegisteredLogin();
 
     }
 }
