@@ -58,7 +58,7 @@ public class Login extends General {
         return new ShippingAddress(driver);
     }*/
 
-    public void clickOnRegisteredLogin() {
+    public void clickOnLogin() {
         btnLogin.click();
     }
 

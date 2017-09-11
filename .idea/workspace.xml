@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +36,7 @@
       <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="315">
               <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -45,13 +45,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScSLoginAndCheckOut.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScSLoginAndCheckOut.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="441">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+              <folding>
+                <element signature="e#1714#1715#0" expanded="true" />
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#2020#2021#0" expanded="true" />
+                <element signature="e#2052#2053#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,7 +75,7 @@
       <file leaf-file-name="scsRegisteringAnUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="278">
               <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="504">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,8 +97,8 @@
       <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="572">
+              <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -175,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/TheHub.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/OrderConfirmationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ReturnPage.java" />
@@ -185,8 +199,9 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
       </list>
     </option>
   </component>
@@ -218,6 +233,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,16 +267,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="PageObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NorthSails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NorthSails" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testcases" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -672,41 +695,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00164" summary="getAttribute doesnot get a correct value">
-      <created>1503587193896</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1503587193896</updated>
-    </task>
-    <task id="LOCAL-00165" summary="converted to a testng test case">
-      <created>1503649230795</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1503649230796</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Removed&#10; /*  System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;C:/chromedriver.exe&quot;);&#10;        WebDriver driver = new ChromeDriver();&#10;        String sURL = &quot;https://staging.scs.co.uk&quot;;*/&#10;        //  String sURL =&quot;https://&quot; + &quot;storefront&quot; + &quot;:&quot; + &quot;sancerre&quot; + &quot;@&quot; + &quot;development.scs.co.uk&quot;;">
-      <created>1503649289518</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1503649289518</updated>
-    </task>
-    <task id="LOCAL-00167" summary="Removed&#10; /*  System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;C:/chromedriver.exe&quot;);&#10;        WebDriver driver = new ChromeDriver();&#10;        String sURL = &quot;https://staging.scs.co.uk&quot;;*/&#10;        //  String sURL =&quot;https://&quot; + &quot;storefront&quot; + &quot;:&quot; + &quot;sancerre&quot; + &quot;@&quot; + &quot;development.scs.co.uk&quot;;">
-      <created>1503649582272</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1503649582272</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Removed&#10; /*  System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;C:/chromedriver.exe&quot;);&#10;        WebDriver driver = new ChromeDriver();&#10;        String sURL = &quot;https://staging.scs.co.uk&quot;;*/&#10;        //  String sURL =&quot;https://&quot; + &quot;storefront&quot; + &quot;:&quot; + &quot;sancerre&quot; + &quot;@&quot; + &quot;development.scs.co.uk&quot;;">
-      <created>1503650408443</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1503650408443</updated>
-    </task>
     <task id="LOCAL-00169" summary=" //   @FindBy (xpath=&quot;//*[@id='simple-search']//input[@name='q']&quot;)&#10;    @FindBy(id=&quot;q&quot;)&#10;    public WebElement txtBoxSearch;">
       <created>1503650509750</created>
       <option name="number" value="00169" />
@@ -1015,7 +1003,42 @@
       <option name="project" value="LOCAL" />
       <updated>1504703871586</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="Added a new class file in testcases ScSLoginAndCheckOut">
+      <created>1504859719614</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1504859719614</updated>
+    </task>
+    <task id="LOCAL-00214" summary="added the login part">
+      <created>1504859878420</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1504859878420</updated>
+    </task>
+    <task id="LOCAL-00215" summary="added the login part">
+      <created>1504859991220</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1504859991220</updated>
+    </task>
+    <task id="LOCAL-00216" summary="added the login part">
+      <created>1505138819851</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1505138819856</updated>
+    </task>
+    <task id="LOCAL-00217" summary="added the login part">
+      <created>1505138850738</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1505138850738</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1046,20 +1069,20 @@
   </component>
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
-    <frame x="84" y="-9" width="1845" height="1098" extended-state="6" />
+    <frame x="84" y="-9" width="2805" height="1638" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284924" sideWeight="0.49542627" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5883002" sideWeight="0.58903337" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.373444" sideWeight="0.5914254" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32685384" sideWeight="0.48518518" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39403972" sideWeight="0.41096663" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.373444" sideWeight="0.40857458" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46806106" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47050202" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1115,7 +1138,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" //   @FindBy (xpath=&quot;//*[@id='simple-search']//input[@name='q']&quot;)&#10;    @FindBy(id=&quot;q&quot;)&#10;    public WebElement txtBoxSearch;" />
     <MESSAGE value="Updated searchText(String searchString)&#10;        //updated to work on scs by passing keys.return&#10;        this.txtBoxSearch.sendKeys(searchString);&#10;      //  this.clickOnSearchIcon();&#10;        txtBoxSearch.sendKeys(Keys.RETURN);" />
     <MESSAGE value="Added &#10; public void clickOnPayByCard(){&#10;         btnPayByCard.click();&#10;     }" />
     <MESSAGE value="We need to add something like ProductListPage plp = homePage.searchText(sProductName); insted of just creating a scsOrderPreview object it should be something like&#10;scsOrderPreview op = shippingAddress.clickscsBtnContinueInShippingPage()" />
@@ -1140,7 +1162,8 @@
     <MESSAGE value="The issue of the 2 browser windows opening was fixed by adding if driver==null in general.java" />
     <MESSAGE value="Added @AfterClass" />
     <MESSAGE value="Added a new class file in testcases ScSLoginAndCheckOut" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new class file in testcases ScSLoginAndCheckOut" />
+    <MESSAGE value="added the login part" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the login part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,14 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/OrderConfirmationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1416,6 +1431,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1491,11 +1507,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,19 +1527,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="504">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="278">
           <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1531,19 +1568,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="441">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
