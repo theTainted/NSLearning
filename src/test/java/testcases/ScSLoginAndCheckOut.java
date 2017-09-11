@@ -8,7 +8,7 @@ package testcases;
 
 public class ScSLoginAndCheckOut {
     @Test
-    public  void testScSLoginAndCheckOut(){
+    public  void testScSLoginAndCheckOut() throws InterruptedException {
         String sProductName = "L036281";
         General.getBrowser("Chrome");
 
