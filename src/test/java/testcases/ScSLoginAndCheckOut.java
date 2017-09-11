@@ -1,9 +1,6 @@
 package testcases;
 
-        import PageObjects.General;
-        import PageObjects.HomePage;
-        import PageObjects.Login;
-        import PageObjects.ShippingAddress;
+        import PageObjects.*;
         import org.testng.annotations.Test;
 
         import static PageObjects.General.driver;
@@ -22,6 +19,7 @@ public class ScSLoginAndCheckOut {
         login.enterPassword("test1234");
         login.clickOnRegisteredLogin();
 
+        ProductListPage plp = homePage.searchText(sProductName);
 
     }
 }
