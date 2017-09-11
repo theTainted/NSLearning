@@ -20,7 +20,8 @@ public class ScSLoginAndCheckOut {
         Login login =  homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
         login.enterPassword("test1234");
-        ShippingAddress shippingAddress = login.clickOnRegisteredLogin();
+        login.clickOnRegisteredLogin();
+
 
     }
 }
