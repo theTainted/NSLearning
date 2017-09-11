@@ -3,6 +3,7 @@ package testcases;
 import PageObjects.General;
 import PageObjects.HomePage;
 import PageObjects.Login;
+import PageObjects.ShippingAddress;
 import org.testng.annotations.Test;
 
 import static PageObjects.General.driver;
@@ -19,7 +20,7 @@ public class ScSLoginAndCheckOut {
         Login login =  homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
         login.enterPassword("test1234");
-        login.clickOnRegisteredLogin();
+        ShippingAddress shippingAddress = login.clickOnRegisteredLogin();
 
     }
 }
