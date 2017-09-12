@@ -6,9 +6,10 @@ package testcases;
 
         import static PageObjects.General.driver;
 
-public class ScSLoginAndCheckOut {
-    @Test
-    public  void testScSLoginAndCheckOut() throws InterruptedException {
+public class ScSLoginAndCheckOut   {
+  //  @Test
+ //  public  void testScSLoginAndCheckOut() throws InterruptedException {
+    public static void main (String[] args) throws InterruptedException{
         String sProductName = "L036281";
         General.getBrowser("Chrome");
 

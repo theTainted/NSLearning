@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
+    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
     </list>
     <ignored path="NorthSails.iws" />
@@ -33,11 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
+      <file leaf-file-name="ScSsearchAndGuestCheckOut.java.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="378">
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScSLoginAndCheckOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,14 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScSLoginAndCheckOut.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
+      <file leaf-file-name="ShoppingBasket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="735">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,25 +69,13 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+            <state relative-caret-position="903">
+              <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="e#1714#1715#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
                 <element signature="e#1806#1807#0" expanded="true" />
-                <element signature="e#2020#2021#0" expanded="true" />
-                <element signature="e#2052#2053#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scsRegisteringAnUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1852#1853#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +94,8 @@
       <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+            <state relative-caret-position="399">
+              <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -194,13 +191,13 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ReturnPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/scsOrderPreview.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/RegisteredUserCheckOutFlow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
       </list>
     </option>
@@ -234,8 +231,9 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,7 +279,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -695,125 +692,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00169" summary=" //   @FindBy (xpath=&quot;//*[@id='simple-search']//input[@name='q']&quot;)&#10;    @FindBy(id=&quot;q&quot;)&#10;    public WebElement txtBoxSearch;">
-      <created>1503650509750</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1503650509750</updated>
-    </task>
-    <task id="LOCAL-00170" summary="Updated searchText(String searchString)&#10;        //updated to work on scs by passing keys.return&#10;        this.txtBoxSearch.sendKeys(searchString);&#10;      //  this.clickOnSearchIcon();&#10;        txtBoxSearch.sendKeys(Keys.RETURN);">
-      <created>1503650680008</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1503650680008</updated>
-    </task>
-    <task id="LOCAL-00171" summary="Added &#10; public void clickOnPayByCard(){&#10;         btnPayByCard.click();&#10;     }">
-      <created>1503651106032</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1503651106032</updated>
-    </task>
-    <task id="LOCAL-00172" summary="We need to add something like ProductListPage plp = homePage.searchText(sProductName); insted of just creating a scsOrderPreview object it should be something like&#10;scsOrderPreview op = shippingAddress.clickscsBtnContinueInShippingPage()">
-      <created>1503651268866</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1503651268866</updated>
-    </task>
-    <task id="LOCAL-00173" summary="We need to add something like ProductListPage plp = homePage.searchText(sProductName); insted of just creating a scsOrderPreview object it should be something like&#10;&#9;&#9;&#9;&#9;scsOrderPreview op = shippingAddress.clickscsBtnContinueInShippingPage()&#10;something similar as the above for billing page as well.">
-      <created>1503652105402</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1503652105402</updated>
-    </task>
-    <task id="LOCAL-00174" summary="we need to ``">
-      <created>1503652214445</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1503652214445</updated>
-    </task>
-    <task id="LOCAL-00175" summary=" // @FindBy (id=&quot;dwfrm_billing_paymentMethods_creditCard_expiration_month&quot;)&#10;    @FindBy(id=&quot;dwfrm_billing_paymentMethods_creditCard_month&quot;)&#10;    public WebElement expiryMonth;">
-      <created>1503652353460</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1503652353460</updated>
-    </task>
-    <task id="LOCAL-00176" summary="// @FindBy(id=&quot;dwfrm_billing_paymentMethods_creditCard_expiration_year&quot;)&#10;    @FindBy(id=&quot;dwfrm_billing_paymentMethods_creditCard_year&quot;)//-&gt; updated for scs&#10;    public WebElement expiryYear;">
-      <created>1503652506243</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1503652506244</updated>
-    </task>
-    <task id="LOCAL-00177" summary="we need to ``">
-      <created>1503652862594</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1503652862594</updated>
-    </task>
-    <task id="LOCAL-00178" summary="we need to ``">
-      <created>1503654738658</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1503654738658</updated>
-    </task>
-    <task id="LOCAL-00179" summary="we need to ``">
-      <created>1503664690804</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1503664690805</updated>
-    </task>
-    <task id="LOCAL-00180" summary="created scsRegisteringAnUser">
-      <created>1503664836611</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1503664836611</updated>
-    </task>
-    <task id="LOCAL-00181" summary="created method to click on login in the SCS HomePage">
-      <created>1503665254326</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1503665254326</updated>
-    </task>
-    <task id="LOCAL-00182" summary="created method to click on login in the SCS HomePage">
-      <created>1503665350730</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1503665350730</updated>
-    </task>
-    <task id="LOCAL-00183" summary="created method to click on login in the SCS HomePage">
-      <created>1503665533595</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1503665533595</updated>
-    </task>
-    <task id="LOCAL-00184" summary="added clicking on create account button">
-      <created>1503665668360</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1503665668360</updated>
-    </task>
-    <task id="LOCAL-00185" summary="added clicking on create account button">
-      <created>1503665689720</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1503665689720</updated>
-    </task>
     <task id="LOCAL-00186" summary="added clicking on create account button">
       <created>1503666202399</created>
       <option name="number" value="00186" />
@@ -1038,7 +916,126 @@
       <option name="project" value="LOCAL" />
       <updated>1505138850738</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="added the login part">
+      <created>1505138926600</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1505138926600</updated>
+    </task>
+    <task id="LOCAL-00219" summary="added the login part">
+      <created>1505138987638</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1505138987638</updated>
+    </task>
+    <task id="LOCAL-00220" summary="added the login part">
+      <created>1505139000546</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1505139000546</updated>
+    </task>
+    <task id="LOCAL-00221" summary="added the login part">
+      <created>1505139067328</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1505139067329</updated>
+    </task>
+    <task id="LOCAL-00222" summary="added the login part">
+      <created>1505140041518</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1505140041518</updated>
+    </task>
+    <task id="LOCAL-00223" summary="added the login part">
+      <created>1505140678989</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1505140678989</updated>
+    </task>
+    <task id="LOCAL-00224" summary="added ProductListPage plp = homePage.searchText() which needs to be relooked into, as it doesnot sound right after logging in create the plp object with the homepage.">
+      <created>1505140861540</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1505140861540</updated>
+    </task>
+    <task id="LOCAL-00225" summary="Convert the below into functions&#10;&#10;boolean elementExists = driver.findElements(By.xpath(&quot;//input[@class='add-to-cart btn btn--buy btn--large btn--full']&quot;)).size() != 0;&#10;        if (elementExists == true) {&#10;            driver.findElement(By.xpath(&quot;//input[@class='add-to-cart btn btn--buy btn--large btn--full']&quot;)).click();&#10;        }&#10;        Thread.sleep(3000);&#10;        // driver.switchTo().frame(1);&#10;        boolean windowContinueToCheckOutButtonExists = driver.findElements(By.xpath(&quot;//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]&quot;)).size() != 0;&#10;        if (windowContinueToCheckOutButtonExists == true) {&#10;            driver.findElement(By.xpath(&quot;//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]&quot;)).click();&#10;        }&#10;        boolean cookieButtonExists = driver.findElements(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).size() != 0;&#10;        if (cookieButtonExists) {&#10;            driver.findElement(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).click();&#10;        }">
+      <created>1505140917607</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1505140917607</updated>
+    </task>
+    <task id="LOCAL-00226" summary="Need to also replace thread.sleep to an implicit wait">
+      <created>1505140965013</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1505140965013</updated>
+    </task>
+    <task id="LOCAL-00227" summary="Need to also replace thread.sleep to an implicit wait">
+      <created>1505209935831</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1505209935831</updated>
+    </task>
+    <task id="LOCAL-00228" summary="Need to also replace thread.sleep to an implicit wait">
+      <created>1505215003913</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1505215003913</updated>
+    </task>
+    <task id="LOCAL-00229" summary=" public void clickOnCloseNewsLetterPopUp()">
+      <created>1505216303429</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1505216303429</updated>
+    </task>
+    <task id="LOCAL-00230" summary="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();">
+      <created>1505216465853</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1505216465853</updated>
+    </task>
+    <task id="LOCAL-00231" summary="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();">
+      <created>1505216624450</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1505216624450</updated>
+    </task>
+    <task id="LOCAL-00232" summary="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();">
+      <created>1505216848328</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1505216848328</updated>
+    </task>
+    <task id="LOCAL-00233" summary="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();">
+      <created>1505217170155</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1505217170155</updated>
+    </task>
+    <task id="LOCAL-00234" summary="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();">
+      <created>1505217517512</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1505217517512</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1073,29 +1070,29 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284924" sideWeight="0.49542627" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32503557" sideWeight="0.43571693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.373444" sideWeight="0.5914254" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3098202" sideWeight="0.557347" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32685384" sideWeight="0.48518518" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.373444" sideWeight="0.40857458" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3098202" sideWeight="0.442653" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3174274" sideWeight="0.40747526" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47050202" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47526565" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3376527" sideWeight="0.5041322" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39695713" sideWeight="0.47233418" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24990812" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39695713" sideWeight="0.4737999" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32503557" sideWeight="0.43571693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31009957" sideWeight="0.44395444" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975176" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.49430776" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1138,11 +1135,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated searchText(String searchString)&#10;        //updated to work on scs by passing keys.return&#10;        this.txtBoxSearch.sendKeys(searchString);&#10;      //  this.clickOnSearchIcon();&#10;        txtBoxSearch.sendKeys(Keys.RETURN);" />
-    <MESSAGE value="Added &#10; public void clickOnPayByCard(){&#10;         btnPayByCard.click();&#10;     }" />
-    <MESSAGE value="We need to add something like ProductListPage plp = homePage.searchText(sProductName); insted of just creating a scsOrderPreview object it should be something like&#10;scsOrderPreview op = shippingAddress.clickscsBtnContinueInShippingPage()" />
-    <MESSAGE value="We need to add something like ProductListPage plp = homePage.searchText(sProductName); insted of just creating a scsOrderPreview object it should be something like&#10;&#9;&#9;&#9;&#9;scsOrderPreview op = shippingAddress.clickscsBtnContinueInShippingPage()&#10;something similar as the above for billing page as well." />
-    <MESSAGE value=" // @FindBy (id=&quot;dwfrm_billing_paymentMethods_creditCard_expiration_month&quot;)&#10;    @FindBy(id=&quot;dwfrm_billing_paymentMethods_creditCard_month&quot;)&#10;    public WebElement expiryMonth;" />
     <MESSAGE value="// @FindBy(id=&quot;dwfrm_billing_paymentMethods_creditCard_expiration_year&quot;)&#10;    @FindBy(id=&quot;dwfrm_billing_paymentMethods_creditCard_year&quot;)//-&gt; updated for scs&#10;    public WebElement expiryYear;" />
     <MESSAGE value="we need to ``" />
     <MESSAGE value="created scsRegisteringAnUser" />
@@ -1163,11 +1155,16 @@
     <MESSAGE value="Added @AfterClass" />
     <MESSAGE value="Added a new class file in testcases ScSLoginAndCheckOut" />
     <MESSAGE value="added the login part" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the login part" />
+    <MESSAGE value="added ProductListPage plp = homePage.searchText() which needs to be relooked into, as it doesnot sound right after logging in create the plp object with the homepage." />
+    <MESSAGE value="Convert the below into functions&#10;&#10;boolean elementExists = driver.findElements(By.xpath(&quot;//input[@class='add-to-cart btn btn--buy btn--large btn--full']&quot;)).size() != 0;&#10;        if (elementExists == true) {&#10;            driver.findElement(By.xpath(&quot;//input[@class='add-to-cart btn btn--buy btn--large btn--full']&quot;)).click();&#10;        }&#10;        Thread.sleep(3000);&#10;        // driver.switchTo().frame(1);&#10;        boolean windowContinueToCheckOutButtonExists = driver.findElements(By.xpath(&quot;//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]&quot;)).size() != 0;&#10;        if (windowContinueToCheckOutButtonExists == true) {&#10;            driver.findElement(By.xpath(&quot;//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]&quot;)).click();&#10;        }&#10;        boolean cookieButtonExists = driver.findElements(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).size() != 0;&#10;        if (cookieButtonExists) {&#10;            driver.findElement(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).click();&#10;        }" />
+    <MESSAGE value="Need to also replace thread.sleep to an implicit wait" />
+    <MESSAGE value=" public void clickOnCloseNewsLetterPopUp()" />
+    <MESSAGE value="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();" />
+    <option name="LAST_COMMIT_MESSAGE" value="        ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="96" />
+      <option name="time" value="97" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1427,14 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/FilterSearchResultsSingleSelect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1447,14 +1436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/RegisteredUserCheckOutFlow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="17" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1499,24 +1480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/RegisterAndThenCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -1535,44 +1498,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        <state relative-caret-position="903">
+          <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
             <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#2020#2021#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/RegisteredUserCheckOutFlow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1260">
+          <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/RegisterAndThenCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
