@@ -26,7 +26,11 @@ public class ScSLoginAndCheckOut {
         if (elementExists == true) {
             driver.findElement(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).click();
         }
-        Thread.sleep(3000);
+
+        Thread.sleep(5000);
+        ShoppingBasket sb = new ShoppingBasket(driver);
+        sb.clickOnCloseNewsLetterPopUp();
+
         // driver.switchTo().frame(1);
         boolean windowContinueToCheckOutButtonExists = driver.findElements(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).size() != 0;
         if (windowContinueToCheckOutButtonExists == true) {
