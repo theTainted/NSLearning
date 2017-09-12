@@ -23,8 +23,8 @@ public class General {
 
    // public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/se/en/homepage/";
    // public  static String URL="https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
-   // public static String URL="https://staging.scs.co.uk";
-    public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
+   public static String URL="https://staging.scs.co.uk";
+   // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
     public  static String  searchString="Jacket";
 
 @BeforeClass
