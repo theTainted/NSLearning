@@ -7,7 +7,7 @@ package testcases;
         import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut extends General  {
-  //  @Test
+@Test
  public  void testScSLoginAndCheckOut() throws InterruptedException {
 
        String sProductName = "L036281";

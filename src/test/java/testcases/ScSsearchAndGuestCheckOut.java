@@ -7,20 +7,15 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-  @Test
+@Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
 
