@@ -45,6 +45,10 @@ public class ScSLoginAndCheckOut   {
             sb.clickOnCloseNewsLetterPopUp();
         }
         ShippingAddress shippingAddress = new ShippingAddress(driver);
+     boolean upsellContinueToCheckOutButtonExists = driver.findElements(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).size() != 0;
+     if (upsellContinueToCheckOutButtonExists == true) {
+         driver.findElement(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).click();
+     }
    shippingAddress.scsSelectTitle("Miss");
         shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
