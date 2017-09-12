@@ -8,9 +8,9 @@ package testcases;
 
 public class ScSLoginAndCheckOut   {
   //  @Test
- //  public  void testScSLoginAndCheckOut() throws InterruptedException {
-    public static void main (String[] args) throws InterruptedException{
-        String sProductName = "L036281";
+ public  void testScSLoginAndCheckOut() throws InterruptedException {
+
+       String sProductName = "L036281";
         General.getBrowser("Chrome");
 
         driver.get(General.URL);
@@ -45,7 +45,7 @@ public class ScSLoginAndCheckOut   {
             sb.clickOnCloseNewsLetterPopUp();
         }
         ShippingAddress shippingAddress = new ShippingAddress(driver);
-      /* shippingAddress.scsSelectTitle("Miss");
+   shippingAddress.scsSelectTitle("Miss");
         shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
@@ -60,8 +60,8 @@ public class ScSLoginAndCheckOut   {
         shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
-        orderPreview.clickOnPayByCard();*/
-/*
+        orderPreview.clickOnPayByCard();
+        /*
         BillingPage billingPage = new BillingPage(driver);
         billingPage.enterNumber("5100290029002909");
         billingPage.enterCVV("737");
