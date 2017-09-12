@@ -41,7 +41,7 @@ public class ScSLoginAndCheckOut   {
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;
         if (cookieButtonExists) {
             driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
-            Thread.sleep(5000);
+            Thread.sleep(15000);
             sb.clickOnCloseNewsLetterPopUp();
         }
         ShippingAddress shippingAddress = new ShippingAddress(driver);
