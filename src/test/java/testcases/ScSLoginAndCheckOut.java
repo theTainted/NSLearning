@@ -80,4 +80,3 @@ public class ScSLoginAndCheckOut extends General {
         }
 
     }
-}
