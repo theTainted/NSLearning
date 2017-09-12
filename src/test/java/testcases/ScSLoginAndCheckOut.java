@@ -6,21 +6,21 @@ package testcases;
 
         import static PageObjects.General.driver;
 
-public class ScSLoginAndCheckOut extends General  {
-@Test
- public  void testScSLoginAndCheckOut() throws InterruptedException {
+public class ScSLoginAndCheckOut extends General {
+    @Test
+    public void testScSLoginAndCheckOut() throws InterruptedException {
 
-       String sProductName = "L036281";
+        String sProductName = "L036281";
         General.getBrowser("Chrome");
 
         driver.get(General.URL);
 
-     General.getBrowser("Chrome");
+        General.getBrowser("Chrome");
 
-     driver.get(General.URL);
-     driver.manage().window().maximize();
+        driver.get(General.URL);
+        driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
-        Login login =  homePage.clickOnSCSLogin();
+        Login login = homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
         login.enterPassword("test1234");
         login.clickOnRegisteredLogin();
@@ -48,27 +48,27 @@ public class ScSLoginAndCheckOut extends General  {
        /*     Thread.sleep(15000);
             sb.clickOnCloseNewsLetterPopUp();
         }*/
-        ShippingAddress shippingAddress = new ShippingAddress(driver);
-     boolean upsellContinueToCheckOutButtonExists = driver.findElements(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).size() != 0;
-     if (upsellContinueToCheckOutButtonExists == true) {
-         driver.findElement(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).click();
-     }
-   shippingAddress.scsSelectTitle("Miss");
-        shippingAddress.enterFirstName("test");
-        shippingAddress.enterLastName("tester");
-        shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
-        shippingAddress.enterPhone("3333333333");
-        shippingAddress.selectBestTimeToContact("Call me now");
+            ShippingAddress shippingAddress = new ShippingAddress(driver);
+            boolean upsellContinueToCheckOutButtonExists = driver.findElements(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).size() != 0;
+            if (upsellContinueToCheckOutButtonExists == true) {
+                driver.findElement(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).click();
+            }
+            shippingAddress.scsSelectTitle("Miss");
+            shippingAddress.enterFirstName("test");
+            shippingAddress.enterLastName("tester");
+            shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
+            shippingAddress.enterPhone("3333333333");
+            shippingAddress.selectBestTimeToContact("Call me now");
 
-        shippingAddress.scsEnterZip("AB11 5BA");
-        shippingAddress.clickOnLookUp();
-        Thread.sleep(7000);
-        shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
-        Thread.sleep(3000);
-        shippingAddress.clickscsBtnContinueInShippingPage();
-        scsOrderPreview orderPreview = new scsOrderPreview(driver);
-        orderPreview.clickOnChkBoxTerm();
-        orderPreview.clickOnPayByCard();
+            shippingAddress.scsEnterZip("AB11 5BA");
+            shippingAddress.clickOnLookUp();
+            Thread.sleep(7000);
+            shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
+            Thread.sleep(3000);
+            shippingAddress.clickscsBtnContinueInShippingPage();
+            scsOrderPreview orderPreview = new scsOrderPreview(driver);
+            orderPreview.clickOnChkBoxTerm();
+            orderPreview.clickOnPayByCard();
         /*
         BillingPage billingPage = new BillingPage(driver);
         billingPage.enterNumber("5100290029002909");
@@ -77,6 +77,7 @@ public class ScSLoginAndCheckOut extends General  {
         billingPage.selectExpiryMonth("10");
         billingPage.selectExpiryYear("2020");
         billingPage.clickBtnToPay();*/
-    }
+        }
 
+    }
 }
