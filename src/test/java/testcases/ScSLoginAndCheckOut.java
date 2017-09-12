@@ -27,7 +27,7 @@ public class ScSLoginAndCheckOut {
             driver.findElement(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).click();
         }
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         ShoppingBasket sb = new ShoppingBasket(driver);
 
 
@@ -36,10 +36,12 @@ public class ScSLoginAndCheckOut {
         if (windowContinueToCheckOutButtonExists == true) {
             driver.findElement(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).click();
         }
-        sb.clickOnCloseNewsLetterPopUp();
+
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;
         if (cookieButtonExists) {
             driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
+            Thread.sleep(5000);
+            sb.clickOnCloseNewsLetterPopUp();
         }
         ShippingAddress shippingAddress = new ShippingAddress(driver);
       //  shippingAddress.scsSelectTitle("Miss");
