@@ -36,6 +36,31 @@ public class ScSLoginAndCheckOut {
         if (cookieButtonExists) {
             driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
         }
-
+        ShippingAddress shippingAddress = new ShippingAddress(driver);
+      //  shippingAddress.scsSelectTitle("Miss");
+        shippingAddress.enterFirstName("test");
+        shippingAddress.enterLastName("tester");
+        shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
+        shippingAddress.enterPhone("3333333333");
+        shippingAddress.selectBestTimeToContact("Call me now");
+        //   shippingAddress.enterAddressOne("Line 1");
+        shippingAddress.scsEnterZip("AB11 5BA");
+        shippingAddress.clickOnLookUp();
+        Thread.sleep(7000);
+        shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
+        Thread.sleep(3000);
+        shippingAddress.clickscsBtnContinueInShippingPage();
+        scsOrderPreview orderPreview = new scsOrderPreview(driver);
+        orderPreview.clickOnChkBoxTerm();
+        orderPreview.clickOnPayByCard();
+/*
+        BillingPage billingPage = new BillingPage(driver);
+        billingPage.enterNumber("5100290029002909");
+        billingPage.enterCVV("737");
+        billingPage.enterName("test");
+        billingPage.selectExpiryMonth("10");
+        billingPage.selectExpiryYear("2020");
+        billingPage.clickBtnToPay();*/
     }
+
 }
