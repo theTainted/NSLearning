@@ -45,9 +45,9 @@ public class ScSLoginAndCheckOut extends General {
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;
         if (cookieButtonExists) {
             driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
-       /*     Thread.sleep(15000);
+         Thread.sleep(20000);
             sb.clickOnCloseNewsLetterPopUp();
-        }*/
+        }
             ShippingAddress shippingAddress = new ShippingAddress(driver);
             boolean upsellContinueToCheckOutButtonExists = driver.findElements(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).size() != 0;
             if (upsellContinueToCheckOutButtonExists == true) {
