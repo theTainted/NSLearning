@@ -44,13 +44,13 @@ public class ScSLoginAndCheckOut {
             sb.clickOnCloseNewsLetterPopUp();
         }
         ShippingAddress shippingAddress = new ShippingAddress(driver);
-      //  shippingAddress.scsSelectTitle("Miss");
+      /* shippingAddress.scsSelectTitle("Miss");
         shippingAddress.enterFirstName("test");
         shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
         shippingAddress.selectBestTimeToContact("Call me now");
-        //   shippingAddress.enterAddressOne("Line 1");
+
         shippingAddress.scsEnterZip("AB11 5BA");
         shippingAddress.clickOnLookUp();
         Thread.sleep(7000);
@@ -59,7 +59,7 @@ public class ScSLoginAndCheckOut {
         shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
-        orderPreview.clickOnPayByCard();
+        orderPreview.clickOnPayByCard();*/
 /*
         BillingPage billingPage = new BillingPage(driver);
         billingPage.enterNumber("5100290029002909");
