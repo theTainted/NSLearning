@@ -29,13 +29,14 @@ public class ScSLoginAndCheckOut {
 
         Thread.sleep(5000);
         ShoppingBasket sb = new ShoppingBasket(driver);
-        sb.clickOnCloseNewsLetterPopUp();
+
 
         // driver.switchTo().frame(1);
         boolean windowContinueToCheckOutButtonExists = driver.findElements(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).size() != 0;
         if (windowContinueToCheckOutButtonExists == true) {
             driver.findElement(By.xpath("//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")).click();
         }
+        sb.clickOnCloseNewsLetterPopUp();
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;
         if (cookieButtonExists) {
             driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
