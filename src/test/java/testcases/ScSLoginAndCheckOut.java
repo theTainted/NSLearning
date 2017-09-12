@@ -6,7 +6,7 @@ package testcases;
 
         import static PageObjects.General.driver;
 
-public class ScSLoginAndCheckOut   {
+public class ScSLoginAndCheckOut extends General  {
   //  @Test
  public  void testScSLoginAndCheckOut() throws InterruptedException {
 
@@ -14,7 +14,11 @@ public class ScSLoginAndCheckOut   {
         General.getBrowser("Chrome");
 
         driver.get(General.URL);
-        driver.manage().window().maximize();
+
+     General.getBrowser("Chrome");
+
+     driver.get(General.URL);
+     driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         Login login =  homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
