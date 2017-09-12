@@ -33,13 +33,8 @@ public class ShoppingBasket extends General {
     }
     public void clickOnCloseNewsLetterPopUp(){
 
-        try{
-            btnCloseNewsLetterPopUp.isDisplayed();
-            btnCloseNewsLetterPopUp.click();
-        }
-        catch(NoSuchElementException e){
-            e.printStackTrace();
-
+      if (btnCloseNewsLetterPopUp.isDisplayed()){
+          btnCloseNewsLetterPopUp.click();
         }
     }
 
