@@ -7,9 +7,9 @@ package testcases;
         import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut extends General {
-   @Test
-  public void testScSLoginAndCheckOut() throws InterruptedException {
-   // public static void main (String [] args){
+ /*  @Test
+  public void testScSLoginAndCheckOut() throws InterruptedException {*/
+   public static void main (String [] args) throws InterruptedException{
 
         String sProductName = "L036281";
         General.getBrowser("Chrome");
@@ -48,6 +48,7 @@ public class ScSLoginAndCheckOut extends General {
         Thread.sleep(7000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
         Thread.sleep(7000);
+        homePage.clickOnCookieNotification();
         shippingAddress.scsBtnContinueInShippingPage();
 
         scsOrderPreview orderPreview = new scsOrderPreview(driver);

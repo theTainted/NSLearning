@@ -107,5 +107,10 @@ public class HomePage extends General {
         scsLogin.click();
         return new Login(General.driver);
     }
-
+    public void clickOnCookieNotification(){
+        boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;
+        if (cookieButtonExists) {
+            driver.findElement(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).click();
+        }
+    }
 }
