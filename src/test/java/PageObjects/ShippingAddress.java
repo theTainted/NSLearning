@@ -66,7 +66,7 @@ public class ShippingAddress extends General {
 
 
     Logger LOGGER = Logger.getLogger("InfoLogging");
-
+    WebDriverWait wait = new WebDriverWait(General.driver, 10);
     public ShippingAddress(WebDriver driver) {
         General.driver = driver;
         PageFactory.initElements(General.driver, this);
@@ -236,9 +236,7 @@ public class ShippingAddress extends General {
        }
     }
     public void clickscsBtnContinueInShippingPage(){
-        boolean bValue = scsBtnContinueInShippingPage.isDisplayed();
-        LOGGER.info(String.valueOf(bValue));
-
+       wait.until(ExpectedConditions.elementToBeClickable(scsBtnContinueInShippingPage));
         scsBtnContinueInShippingPage.click();
     }
     /**
