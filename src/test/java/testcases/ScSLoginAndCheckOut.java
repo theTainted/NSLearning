@@ -31,6 +31,7 @@ public class ScSLoginAndCheckOut extends General {
         pdp.scsClickOnContinueInTheShoppingBasketOverlay();
         ShoppingBasket sb = new ShoppingBasket(driver);
         sb.clickOnCloseNewsLetterPopUp();
+        sb.clickOnCheckoutButton();
 
 
     }
