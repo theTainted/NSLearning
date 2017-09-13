@@ -56,5 +56,13 @@ public class ScSLoginAndCheckOut extends General {
         Thread.sleep(2000);
         orderPreview.clickOnPayByCard();
 
+     BillingPage billingPage = new BillingPage(driver);
+     billingPage.enterNumber("5100290029002909");
+     billingPage.enterCVV("737");
+     billingPage.enterName("test");
+     billingPage.selectExpiryMonth("10");
+     billingPage.selectExpiryYear("2020");
+     //billingPage.clickBtnToPay();
+
     }
 }
