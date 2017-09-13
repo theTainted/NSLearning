@@ -17,30 +17,38 @@ public class ShoppingBasket extends General {
 
   //  WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart']")
-    public WebElement btnTopCheckout;
+   /* @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart']") -> changing to below to support scs
+   public WebElement btnTopCheckout;*/
+    @FindBy(xpath="//form[@id='checkout-form']//button[@class='btn btn--pay btn--full shopping-cart-payment__btn dialogify']")
+    public WebElement btnScSCheckOut;
     @FindBy(xpath="//div[@id='wrapper-sc']//a[@class='close-sc']")
     public WebElement btnCloseNewsLetterPopUp;
 
 
 
-    WebDriverWait wait = new WebDriverWait(General.driver, 15);
+    WebDriverWait wait = new WebDriverWait(General.driver, 20);
     public ShoppingBasket(WebDriver driver) {
        General.driver = driver;
         PageFactory.initElements(General.driver, this);
     }
-
+/*
     public Login clickOnCheckoutButton(){
         if(btnTopCheckout.isEnabled()){
             btnTopCheckout.click();
 
         }
         return new Login(driver);
-    }
+    }*/
     public void clickOnCloseNewsLetterPopUp(){
         wait.until(ExpectedConditions.elementToBeClickable(btnCloseNewsLetterPopUp));
+        System.out.println("newsletterpopup : "+btnCloseNewsLetterPopUp.isEnabled());
         btnCloseNewsLetterPopUp.click();
 
+
+    }
+
+    public void scsClickOnCheckOutButton(){
+        btnScSCheckOut.click();
 
     }
 
