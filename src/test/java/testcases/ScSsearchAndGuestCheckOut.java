@@ -74,7 +74,7 @@ import org.openqa.selenium.By;
         Thread.sleep(7000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
         Thread.sleep(3000);
-        shippingAddress.clickscsBtnContinueInShippingPage();
+        shippingAddress.scsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
         orderPreview.clickOnPayByCard();
