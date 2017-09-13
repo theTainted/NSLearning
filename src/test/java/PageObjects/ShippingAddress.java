@@ -77,11 +77,24 @@ public class ShippingAddress extends General {
     }
 
     public void enterFirstName(String firstName) {
-        txtBoxShippingAddressFirstName.sendKeys(firstName);
+
+        txtBoxShippingAddressFirstName.click();
+        String sFirstName = txtBoxShippingAddressFirstName.getAttribute("value");
+        System.out.println("abc:"+sFirstName);
+        if (sFirstName.isEmpty()){
+            txtBoxShippingAddressLastName.sendKeys(firstName);
+        }
+
     }
 
     public void enterLastName(String LastName) {
-        txtBoxShippingAddressLastName.sendKeys(LastName);
+
+        txtBoxShippingAddressLastName.click();
+        String sLastName = txtBoxShippingAddressLastName.getAttribute("value");
+        System.out.println("abc:"+sLastName);
+        if (sLastName.isEmpty()){
+            txtBoxShippingAddressLastName.sendKeys(LastName);
+        }
 
     }
 
