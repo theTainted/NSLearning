@@ -34,8 +34,11 @@ public class ShoppingBasket extends General {
     public void clickOnCloseNewsLetterPopUp(){
 
       if (btnCloseNewsLetterPopUp.isDisplayed()){
-          btnCloseNewsLetterPopUp.click();
+         System.out.println("nice");
         }
+        else {
+          System.out.println("nope");
+      }
     }
 
 }
