@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import java.util.NoSuchElementException;
@@ -19,6 +21,10 @@ public class ShoppingBasket extends General {
     public WebElement btnTopCheckout;
     @FindBy(xpath="//div[@id='wrapper-sc']//a[@class='close-sc']")
     public WebElement btnCloseNewsLetterPopUp;
+
+
+
+    WebDriverWait wait = new WebDriverWait(General.driver, 15);
     public ShoppingBasket(WebDriver driver) {
        General.driver = driver;
         PageFactory.initElements(General.driver, this);
@@ -32,13 +38,10 @@ public class ShoppingBasket extends General {
         return new Login(driver);
     }
     public void clickOnCloseNewsLetterPopUp(){
+        wait.until(ExpectedConditions.elementToBeClickable(btnCloseNewsLetterPopUp));
+        btnCloseNewsLetterPopUp.click();
 
-      if (btnCloseNewsLetterPopUp.isDisplayed()){
-         System.out.println("nice");
-        }
-        else {
-          System.out.println("nope");
-      }
+
     }
 
 }
