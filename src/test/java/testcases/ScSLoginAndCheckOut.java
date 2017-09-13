@@ -50,10 +50,7 @@ public class ScSLoginAndCheckOut extends General {
         Thread.sleep(20000);
         sb.clickOnCloseNewsLetterPopUp();
             ShippingAddress shippingAddress = new ShippingAddress(driver);
-            boolean upsellContinueToCheckOutButtonExists = driver.findElements(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).size() != 0;
-            if (upsellContinueToCheckOutButtonExists == true) {
-                driver.findElement(By.xpath("//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")).click();
-            }
+          driver.findElement(By.xpath("//form[@id='checkout-form']//button[@class='btn btn--pay btn--full shopping-cart-payment__btn dialogify']")).click();
             shippingAddress.scsSelectTitle("Miss");
             shippingAddress.enterFirstName("test");
             shippingAddress.enterLastName("tester");
