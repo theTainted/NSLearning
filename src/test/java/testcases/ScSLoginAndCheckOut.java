@@ -51,6 +51,7 @@ public class ScSLoginAndCheckOut extends General {
         shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
+        Thread.sleep(2000);
         orderPreview.clickOnPayByCard();
 
     }
