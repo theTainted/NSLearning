@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="&#10;&#10;public void scsClickOnCheckOutButton(){&#10;        btnScSCheckOut.click();&#10;&#10;    }&#10;&#9;&#10;&#9;&#10;&#9;&#10;&#9;public void scsClickOnContinueInTheShoppingBasketOverlay(){&#10;        wait.until(ExpectedConditions.elementToBeClickable(scsOverlayContinueButton));&#10;        scsOverlayContinueButton.click();&#10;&#10;    }&#10;sb.scsClickOnCheckOutButton();">
+    <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -708,13 +706,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00211" summary="Added @AfterClass">
-      <created>1504703712260</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1504703712260</updated>
-    </task>
     <task id="LOCAL-00212" summary="Added @AfterClass">
       <created>1504703871586</created>
       <option name="number" value="00212" />
@@ -1051,7 +1042,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505297062352</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="added a method to click on continue on the second overlay,&#10;Need to handle the scenario when there is no overlay">
+      <created>1505297947126</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1505297947126</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1151,7 +1149,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="In registration.java added &#10; public void assertHeadingMyAccount(String headingText){&#10;        softAssert.assertTrue(headingMyAccount.getText().equals(headingText),&quot;User is registered&quot;);" />
     <MESSAGE value="added firefox also." />
     <MESSAGE value="commented the chrome test part" />
     <MESSAGE value="Added General.getBrowser(&quot;Firefox&quot;);" />
@@ -1176,7 +1173,8 @@
     <MESSAGE value="       /* ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.clickOnCloseNewsLetterPopUp();*/" />
     <MESSAGE value="Added sb.clickOnCheckOutButton, this needs to be fixed, because the return object is login, which is not required, for the registered user." />
     <MESSAGE value="&#10;&#10;public void scsClickOnCheckOutButton(){&#10;        btnScSCheckOut.click();&#10;&#10;    }&#10;&#9;&#10;&#9;&#10;&#9;&#10;&#9;public void scsClickOnContinueInTheShoppingBasketOverlay(){&#10;        wait.until(ExpectedConditions.elementToBeClickable(scsOverlayContinueButton));&#10;        scsOverlayContinueButton.click();&#10;&#10;    }&#10;sb.scsClickOnCheckOutButton();" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;&#10;public void scsClickOnCheckOutButton(){&#10;        btnScSCheckOut.click();&#10;&#10;    }&#10;&#9;&#10;&#9;&#10;&#9;&#10;&#9;public void scsClickOnContinueInTheShoppingBasketOverlay(){&#10;        wait.until(ExpectedConditions.elementToBeClickable(scsOverlayContinueButton));&#10;        scsOverlayContinueButton.click();&#10;&#10;    }&#10;sb.scsClickOnCheckOutButton();" />
+    <MESSAGE value="added a method to click on continue on the second overlay,&#10;Need to handle the scenario when there is no overlay" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a method to click on continue on the second overlay,&#10;Need to handle the scenario when there is no overlay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
