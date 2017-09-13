@@ -36,11 +36,11 @@ public class ScSLoginAndCheckOut extends General {
         sb.scsClickOnOverlayContinue();
 
         ShippingAddress shippingAddress = new ShippingAddress(driver);
-       /* shippingAddress.scsSelectTitle("Miss");
+       shippingAddress.scsSelectTitle("Miss");
         shippingAddress.enterFirstName("test");
-        shippingAddress.enterLastName("tester");*/
+        shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
-       /* shippingAddress.enterPhone("3333333333");
+        shippingAddress.enterPhone("3333333333");
         shippingAddress.selectBestTimeToContact("Call me now");
         //   shippingAddress.enterAddressOne("Line 1");
         shippingAddress.scsEnterZip("AB11 5BA");
@@ -51,7 +51,7 @@ public class ScSLoginAndCheckOut extends General {
         shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
-        orderPreview.clickOnPayByCard();*/
+        orderPreview.clickOnPayByCard();
 
     }
 }
