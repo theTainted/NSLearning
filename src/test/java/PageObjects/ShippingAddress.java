@@ -113,9 +113,13 @@ public class ShippingAddress extends General {
     }
 
     public void scsEnterEmail(String email) {
+        System.out.println("here ahoy");
         scstxtBoxEmailAddress.click();
-        String sEmail = scstxtBoxEmailAddress.getText();
+        String sEmail = scstxtBoxEmailAddress.getAttribute("value");
         System.out.println("abc:"+sEmail);
+        if (sEmail.isEmpty()){
+            scstxtBoxEmailAddress.sendKeys(email);
+        }
         //scstxtBoxEmailAddress.sendKeys(email);
 
     }
