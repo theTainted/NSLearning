@@ -47,7 +47,7 @@ public class ScSLoginAndCheckOut extends General {
         shippingAddress.clickOnLookUp();
         Thread.sleep(7000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
-        Thread.sleep(3000);
+        Thread.sleep(7000);
         shippingAddress.clickscsBtnContinueInShippingPage();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
         orderPreview.clickOnChkBoxTerm();
