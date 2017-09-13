@@ -26,6 +26,9 @@ public class ScSLoginAndCheckOut extends General {
         login.clickOnRegisteredLogin();
 
         ProductListPage plp = homePage.searchText(sProductName);
+        ProductDisplayPage pdp = new ProductDisplayPage(driver);
+        pdp.scsAddToBasket();
+        pdp.scsClickOnContinueInTheShoppingBasketOverlay();
 
     }
 }
