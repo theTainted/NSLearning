@@ -126,7 +126,7 @@ public class ShippingAddress extends General {
     }
 
     public void scsEnterEmail(String email) {
-        System.out.println("here ahoy");
+
         scstxtBoxEmailAddress.click();
         String sEmail = scstxtBoxEmailAddress.getAttribute("value");
         System.out.println("abc:"+sEmail);
@@ -249,6 +249,7 @@ public class ShippingAddress extends General {
        }
     }
     public void clickscsBtnContinueInShippingPage(){
+        System.out.println("clickscsBtnContinueInShippingPage");
        wait.until(ExpectedConditions.elementToBeClickable(scsBtnContinueInShippingPage));
         scsBtnContinueInShippingPage.click();
     }
