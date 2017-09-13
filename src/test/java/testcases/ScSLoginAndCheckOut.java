@@ -7,8 +7,9 @@ package testcases;
         import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut extends General {
-    @Test
-    public void testScSLoginAndCheckOut() throws InterruptedException {
+ //   @Test
+   // public void testScSLoginAndCheckOut() throws InterruptedException {
+    public static void main (String [] args){
 
         String sProductName = "L036281";
         General.getBrowser("Chrome");
@@ -33,6 +34,24 @@ public class ScSLoginAndCheckOut extends General {
        // sb.clickOnCloseNewsLetterPopUp();
         sb.scsClickOnCheckOutButton();
         sb.scsClickOnOverlayContinue();
+
+        ShippingAddress shippingAddress = new ShippingAddress(driver);
+       /* shippingAddress.scsSelectTitle("Miss");
+        shippingAddress.enterFirstName("test");
+        shippingAddress.enterLastName("tester");*/
+        shippingAddress.scsEnterEmail("");
+       /* shippingAddress.enterPhone("3333333333");
+        shippingAddress.selectBestTimeToContact("Call me now");
+        //   shippingAddress.enterAddressOne("Line 1");
+        shippingAddress.scsEnterZip("AB11 5BA");
+        shippingAddress.clickOnLookUp();
+        Thread.sleep(7000);
+        shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
+        Thread.sleep(3000);
+        shippingAddress.clickscsBtnContinueInShippingPage();
+        scsOrderPreview orderPreview = new scsOrderPreview(driver);
+        orderPreview.clickOnChkBoxTerm();
+        orderPreview.clickOnPayByCard();*/
 
     }
 }
