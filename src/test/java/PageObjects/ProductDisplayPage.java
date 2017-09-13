@@ -37,6 +37,11 @@ public class ProductDisplayPage extends General {
     @FindBy(xpath="//input[@class='add-to-cart btn btn--buy btn--large btn--full']") //-> updated for scs
     public WebElement scsAddToBasketButton;
 
+    @FindBy(xpath="//div[@id='dialog--extra-products']//div[@class='dialog--button--bar']/a[1]")
+    public WebElement scsOverlayContinueButton;
+
+
+    WebDriverWait wait = new WebDriverWait(General.driver, 15);
 
     public ProductDisplayPage(WebDriver driver) {
         General.driver = driver;
@@ -82,13 +87,17 @@ public class ProductDisplayPage extends General {
         return new ShoppingBasket(General.driver);
     }
     public void scsAddToBasket(){
-        WebDriverWait wait = new WebDriverWait(General.driver, 15);
+
         wait.until(ExpectedConditions.elementToBeClickable(scsAddToBasketButton));
         //  wait.until(ExpectedConditions.visibilityOf(btnAddToCart));
         System.out.println("AddToBasketButton : "+scsAddToBasketButton.isEnabled());
         scsAddToBasketButton.click();
 
     }
+    public void scsClickOnContinueInTheShoppingBasketOverlay(){
+        wait.until(ExpectedConditions.elementToBeClickable(scsOverlayContinueButton));
+        scsOverlayContinueButton.click();
 
+    }
 
 }
