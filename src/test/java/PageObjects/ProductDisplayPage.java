@@ -34,6 +34,9 @@ public class ProductDisplayPage extends General {
    // @FindBy(xpath="//div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']") ->updated to the below
     @FindBy(id="mini-cart")
     public WebElement miniBasket;
+    @FindBy(xpath="//input[@class='add-to-cart btn btn--buy btn--large btn--full']") //-> updated for scs
+    public WebElement scsAddToBasketButton;
+
 
     public ProductDisplayPage(WebDriver driver) {
         General.driver = driver;
@@ -78,5 +81,14 @@ public class ProductDisplayPage extends General {
         }
         return new ShoppingBasket(General.driver);
     }
+    public void scsAddToBasket(){
+        WebDriverWait wait = new WebDriverWait(General.driver, 15);
+        wait.until(ExpectedConditions.elementToBeClickable(scsAddToBasketButton));
+        //  wait.until(ExpectedConditions.visibilityOf(btnAddToCart));
+        System.out.println("AddToBasketButton : "+scsAddToBasketButton.isEnabled());
+        scsAddToBasketButton.click();
+
+    }
+
 
 }
