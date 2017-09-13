@@ -248,7 +248,7 @@ public class ShippingAddress extends General {
            addressPicker.selectByIndex(addressNumber);
        }
     }
-    public void clickscsBtnContinueInShippingPage(){
+    public void scsBtnContinueInShippingPage(){
         System.out.println("clickscsBtnContinueInShippingPage");
        wait.until(ExpectedConditions.elementToBeClickable(scsBtnContinueInShippingPage));
         scsBtnContinueInShippingPage.click();
