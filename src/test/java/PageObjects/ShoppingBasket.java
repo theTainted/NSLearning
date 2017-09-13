@@ -24,6 +24,9 @@ public class ShoppingBasket extends General {
     @FindBy(xpath="//div[@id='wrapper-sc']//a[@class='close-sc']")
     public WebElement btnCloseNewsLetterPopUp;
 
+    @FindBy(xpath="//form[@id='upsell-checkout-form']/button[@class='btn btn--pay btn--dialog--black']")
+     public WebElement btnOverlayContinue;
+
 
 
     WebDriverWait wait = new WebDriverWait(General.driver, 20);
@@ -51,5 +54,7 @@ public class ShoppingBasket extends General {
         btnScSCheckOut.click();
 
     }
-
+    public void scsClickOnOverlayContinue(){
+        btnOverlayContinue.click();
+    }
 }
