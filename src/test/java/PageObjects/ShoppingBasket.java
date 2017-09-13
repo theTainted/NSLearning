@@ -17,7 +17,7 @@ public class ShoppingBasket extends General {
     SoftAssert softAssert = new SoftAssert();
     @FindBy(xpath="//form[@id='checkout-form']//button[@name='dwfrm_cart_checkoutCart']")
     public WebElement btnTopCheckout;
-    @FindBy(xpath="//div[@id='wrapper-sc']/div[1]/a[@class='close-sc']")
+    @FindBy(xpath="//div[@id='wrapper-sc']//a[@class='close-sc']")
     public WebElement btnCloseNewsLetterPopUp;
     public ShoppingBasket(WebDriver driver) {
        General.driver = driver;
