@@ -9,7 +9,8 @@ import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
 
-
+    @BeforeClass
+    @Parameters("browser")
     @Test
 
     public void testScSRegisteringAnUser(){
