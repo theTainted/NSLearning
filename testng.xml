@@ -2,7 +2,7 @@
 <suite name="Example test run">
 
   <test name="Chrome Test">
-      <parameter name ="browser" value="Chrome"/>
+      <parameter name ="browser" value="Chrome" />
      <classes>
 
          <class name ="testcases.scsRegisteringAnUser"/>
