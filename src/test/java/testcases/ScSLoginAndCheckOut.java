@@ -68,8 +68,8 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.clickBtnToPay();
    // driver.quit();
     }
- /*  @AfterClass
+ @AfterMethod
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }

@@ -92,8 +92,8 @@ import org.openqa.selenium.By;
         billingPage.clickBtnToPay();
       //  driver.quit();
     }
-/* @AfterClass
+ @AfterMethod
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }
