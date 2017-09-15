@@ -2,6 +2,8 @@ package testcases;
 
         import PageObjects.*;
         import org.openqa.selenium.By;
+        import org.testng.annotations.AfterClass;
+        import org.testng.annotations.AfterTest;
         import org.testng.annotations.Test;
 
         import static PageObjects.General.driver;
@@ -65,4 +67,8 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.clickBtnToPay();
 
     }
+ /*   @AfterTest
+    public void tearDown() {
+        driver.quit();
+    }*/
 }

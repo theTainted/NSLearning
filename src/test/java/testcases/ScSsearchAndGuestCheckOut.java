@@ -7,6 +7,8 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 
@@ -15,6 +17,7 @@ import org.openqa.selenium.By;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
+
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
@@ -87,8 +90,8 @@ import org.openqa.selenium.By;
         billingPage.selectExpiryYear("2020");
         billingPage.clickBtnToPay();
     }
-/*
-   @AfterClass
+
+  /* @AfterTest
     public void tearDown() {
         driver.quit();
     }*/

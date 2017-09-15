@@ -5,6 +5,7 @@ import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class scsRegisteringAnUser extends General {
@@ -31,7 +32,7 @@ public class scsRegisteringAnUser extends General {
 
 
     }
-   /* @AfterClass
+  /*  @AfterTest
     public void tearDown() {
         driver.quit();
     }*/
