@@ -16,8 +16,7 @@ import org.openqa.selenium.By;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-    @BeforeClass
-    @Parameters("browser")
+
 
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {

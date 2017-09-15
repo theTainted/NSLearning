@@ -8,8 +8,7 @@ package testcases;
         import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut extends General {
-    @BeforeClass
-    @Parameters("browser")
+
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
