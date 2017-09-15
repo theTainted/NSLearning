@@ -7,6 +7,7 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.openqa.selenium.By;
@@ -23,7 +24,7 @@ import org.openqa.selenium.By;
 
 
   String sProductName = "L036281";
- General.getBrowser("Chrome");
+ //General.getBrowser("Chrome");
 
     driver.get(General.URL);
         driver.manage().window().maximize();
@@ -89,7 +90,7 @@ import org.openqa.selenium.By;
         billingPage.selectExpiryMonth("10");
         billingPage.selectExpiryYear("2020");
         billingPage.clickBtnToPay();
-        driver.quit();
+      //  driver.quit();
     }
 /* @AfterClass
     public void tearDown() {

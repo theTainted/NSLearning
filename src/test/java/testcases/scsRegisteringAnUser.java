@@ -4,6 +4,7 @@ import PageObjects.General;
 import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
@@ -13,7 +14,8 @@ public class scsRegisteringAnUser extends General {
     @Test
 
     public void testScSRegisteringAnUser(){
-        General.getBrowser("Chrome");
+
+       General.getBrowser("Chrome");
         driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
@@ -29,7 +31,7 @@ public class scsRegisteringAnUser extends General {
         registration.clickCreateAccount();
        System.out.println(driver.getCurrentUrl());
        registration.assertHeadingMyAccount("My account");
-        driver.quit();
+       // driver.quit();
 
     }
 /* @AfterClass

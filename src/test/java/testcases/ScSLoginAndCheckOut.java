@@ -2,6 +2,7 @@ package testcases;
 
         import PageObjects.*;
         import org.openqa.selenium.By;
+        import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.testng.annotations.*;
 
@@ -12,9 +13,9 @@ public class ScSLoginAndCheckOut extends General {
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
+    General.getBrowser("Chrome");
+     String sProductName = "L036281";
 
-        String sProductName = "L036281";
-        General.getBrowser("Chrome");
 
         driver.get(General.URL);
 
@@ -65,7 +66,7 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.selectExpiryMonth("10");
      billingPage.selectExpiryYear("2020");
      billingPage.clickBtnToPay();
-    driver.quit();
+   // driver.quit();
     }
  /*  @AfterClass
     public void tearDown() {
