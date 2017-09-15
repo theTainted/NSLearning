@@ -8,22 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
-    @BeforeClass
-    @Parameters("browser")
-    public void setup(String browser) throws Exception {
-        //Check if parameter passed from TestNG is 'firefox'
-        if (browser.equalsIgnoreCase("firefox")) {
-            //create firefox instance
-            driver = new FirefoxDriver();
-        }
-        //Check if parameter passed as 'chrome'
-        else if (browser.equalsIgnoreCase("Chrome")) {
-            //set path to chromedriver.exe
-            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            //create chrome instance
-            //    driver = new ChromeDriver();
-        }
-    }
+
 
     @Test
 

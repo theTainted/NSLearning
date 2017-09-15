@@ -8,22 +8,7 @@ package testcases;
         import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut extends General {
-    @BeforeClass
-    @Parameters("browser")
-    public void setup(String browser) throws Exception {
-        //Check if parameter passed from TestNG is 'firefox'
-        if (browser.equalsIgnoreCase("firefox")) {
-            //create firefox instance
-            driver = new FirefoxDriver();
-        }
-        //Check if parameter passed as 'chrome'
-        else if (browser.equalsIgnoreCase("Chrome")) {
-            //set path to chromedriver.exe
-            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            //create chrome instance
-            //    driver = new ChromeDriver();
-        }
-    }
+
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{

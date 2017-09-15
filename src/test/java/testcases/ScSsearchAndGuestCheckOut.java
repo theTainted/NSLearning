@@ -16,22 +16,7 @@ import org.openqa.selenium.By;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-    @BeforeClass
-    @Parameters("browser")
-    public void setup(String browser) throws Exception {
-        //Check if parameter passed from TestNG is 'firefox'
-        if (browser.equalsIgnoreCase("firefox")) {
-            //create firefox instance
-            driver = new FirefoxDriver();
-        }
-        //Check if parameter passed as 'chrome'
-        else if (browser.equalsIgnoreCase("Chrome")) {
-            //set path to chromedriver.exe
-            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            //create chrome instance
-            //    driver = new ChromeDriver();
-        }
-    }
+
 
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
