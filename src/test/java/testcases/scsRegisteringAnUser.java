@@ -4,11 +4,26 @@ import PageObjects.General;
 import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
+    @BeforeClass
+    @Parameters("browser")
+    public void setup(String browser) throws Exception {
+        //Check if parameter passed from TestNG is 'firefox'
+        if (browser.equalsIgnoreCase("firefox")) {
+            //create firefox instance
+            driver = new FirefoxDriver();
+        }
+        //Check if parameter passed as 'chrome'
+        else if (browser.equalsIgnoreCase("Chrome")) {
+            //set path to chromedriver.exe
+            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+            //create chrome instance
+            //    driver = new ChromeDriver();
+        }
+    }
 
     @Test
 
@@ -32,8 +47,8 @@ public class scsRegisteringAnUser extends General {
 
 
     }
-  /*  @AfterTest
+ @AfterClass
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }

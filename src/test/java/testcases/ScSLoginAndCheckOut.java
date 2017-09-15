@@ -2,13 +2,28 @@ package testcases;
 
         import PageObjects.*;
         import org.openqa.selenium.By;
-        import org.testng.annotations.AfterClass;
-        import org.testng.annotations.AfterTest;
-        import org.testng.annotations.Test;
+        import org.openqa.selenium.firefox.FirefoxDriver;
+        import org.testng.annotations.*;
 
         import static PageObjects.General.driver;
 
 public class ScSLoginAndCheckOut extends General {
+    @BeforeClass
+    @Parameters("browser")
+    public void setup(String browser) throws Exception {
+        //Check if parameter passed from TestNG is 'firefox'
+        if (browser.equalsIgnoreCase("firefox")) {
+            //create firefox instance
+            driver = new FirefoxDriver();
+        }
+        //Check if parameter passed as 'chrome'
+        else if (browser.equalsIgnoreCase("Chrome")) {
+            //set path to chromedriver.exe
+            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+            //create chrome instance
+            //    driver = new ChromeDriver();
+        }
+    }
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
@@ -67,8 +82,8 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.clickBtnToPay();
 
     }
- /*   @AfterTest
+   @AfterClass
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }
