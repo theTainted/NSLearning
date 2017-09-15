@@ -65,10 +65,10 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.selectExpiryMonth("10");
      billingPage.selectExpiryYear("2020");
      billingPage.clickBtnToPay();
-
+    driver.quit();
     }
-   @AfterClass
+ /*  @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }

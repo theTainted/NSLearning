@@ -9,8 +9,7 @@ import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
 
-    @BeforeClass
-    @Parameters("browser")
+
     @Test
 
     public void testScSRegisteringAnUser(){
@@ -30,11 +29,11 @@ public class scsRegisteringAnUser extends General {
         registration.clickCreateAccount();
        System.out.println(driver.getCurrentUrl());
        registration.assertHeadingMyAccount("My account");
-
+        driver.quit();
 
     }
- @AfterClass
+/* @AfterClass
     public void tearDown() {
         driver.quit();
-    }
+    }*/
 }
