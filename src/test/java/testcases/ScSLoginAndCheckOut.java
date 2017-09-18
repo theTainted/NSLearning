@@ -2,10 +2,11 @@ package testcases;
 
         import PageObjects.*;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
+        import org.testng.annotations.AfterTest;
+        import org.testng.annotations.Test;
 
 public class ScSLoginAndCheckOut extends General {
-    WebDriver drive;
+    General general = new General();
 
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
@@ -65,8 +66,8 @@ public class ScSLoginAndCheckOut extends General {
    // billingPage.clickBtnToPay();
 
     }
-/* @AfterTest
+ @AfterTest
     public void tearDown() {
-        General.driver.quit();
-    }*/
+        driver.quit();
+    }
 }
