@@ -10,11 +10,13 @@ import PageObjects.BillingPage;
 import org.testng.annotations.*;
 import org.openqa.selenium.By;
 
+import static PageObjects.General.driver;
+
 
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
- public class ScSsearchAndGuestCheckOut extends General {
+ public class ScSsearchAndGuestCheckOut  {
 
 
 @Test
@@ -24,8 +26,8 @@ import org.openqa.selenium.By;
   String sProductName = "L036281";
  General.getBrowser("Chrome");
 
-    General.driver.get(General.URL);
-       General. driver.manage().window().maximize();
+    driver.get(General.URL);
+       driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        ProductListPage plp = homePage.searchText(sProductName);
 
