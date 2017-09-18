@@ -15,8 +15,8 @@ import org.testng.annotations.*;
 /**
  * Created by syam.suryanarayanan on 11/21/2016.
  */
-public class General {
-public static WebDriver driver ;
+ public class General {
+ protected static WebDriver driver ;
 
 
 

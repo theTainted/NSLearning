@@ -1,0 +1,28 @@
+package PageObjects;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class General {
+    static String URL="https://staging.scs.co.uk";
+    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
+    static WebDriver createInstance(String browserName) {
+        WebDriver driver = null;
+        if (browserName.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+            return driver;
+        }
+        if (browserName.equalsIgnoreCase("IE")) {
+            driver = new InternetExplorerDriver();
+            return driver;
+        }
+        if (browserName.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver();
+            return driver;
+        }
+        return driver;
+    }
+}
