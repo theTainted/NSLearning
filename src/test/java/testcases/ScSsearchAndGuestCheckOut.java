@@ -7,12 +7,9 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 //import static PageObjects.General.driver;
 
@@ -20,8 +17,8 @@ import org.testng.annotations.Test;
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
- public class ScSsearchAndGuestCheckOut extends General {
 
+ public class ScSsearchAndGuestCheckOut extends General {
 
 
 @Test
@@ -88,9 +85,5 @@ General.getBrowser("Chrome");
      //   billingPage.clickBtnToPay();
 
     }
-@AfterTest
-    public void tearDown() {
 
-    driver.quit();
-    }
 }

@@ -33,8 +33,5 @@ public class scsRegisteringAnUser extends General {
 
 
     }
-@AfterTest
-    public void tearDown() {
-      driver.quit();
-    }
+
 }

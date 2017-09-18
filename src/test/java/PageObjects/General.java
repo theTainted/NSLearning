@@ -10,10 +10,7 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 /**
  * Created by syam.suryanarayanan on 11/21/2016.
@@ -30,7 +27,7 @@ public static WebDriver driver ;
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
    // public  static String  searchString="Jacket";
 
-@BeforeTest
+@BeforeClass
 @Parameters("browser")
     public  static WebDriver getBrowser(String browser)
 
@@ -72,7 +69,11 @@ public static WebDriver driver ;
 
          return driver;
      }
+    @AfterClass
+    public void tearDown() {
 
+        driver.quit();
+    }
 
 }
 
