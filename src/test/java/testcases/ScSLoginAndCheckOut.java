@@ -11,15 +11,13 @@ public class ScSLoginAndCheckOut extends General {
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
-    General.getBrowser("Chrome");
+    general.getBrowser("Chrome");
      String sProductName = "L036281";
 
 
-        driver.get(General.URL);
+        driver.get(general.URL);
 
-        General.getBrowser("Chrome");
-
-        driver.get(General.URL);
+        driver.get(general.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         Login login = homePage.clickOnSCSLogin();
