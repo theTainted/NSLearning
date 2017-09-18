@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * Created by syam.suryanarayanan on 11/17/2016.
  */
 public class ShippingAddress extends General {
-    General general = new General();
+ //   General general = new General();
 
     // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
@@ -65,10 +65,10 @@ public class ShippingAddress extends General {
 
 
     Logger LOGGER = Logger.getLogger("InfoLogging");
-    WebDriverWait wait = new WebDriverWait(general.driver, 10);
+    WebDriverWait wait = new WebDriverWait(General.driver, 10);
     public ShippingAddress(WebDriver driver) {
-        general.driver = driver;
-        PageFactory.initElements(general.driver, this);
+        General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
 
     public void selectMan() {
@@ -151,7 +151,7 @@ public class ShippingAddress extends General {
     }
 
     public BillingPage clickBtnToBilling() {
-        WebDriverWait wait = new WebDriverWait(general.driver, 30);
+        WebDriverWait wait = new WebDriverWait(General.driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(btnToBilling));
 
 
@@ -160,7 +160,7 @@ public class ShippingAddress extends General {
 
         actions.moveToElement(btnToBilling).click().perform();*/
         btnToBilling.sendKeys(Keys.RETURN);
-        return new BillingPage(general.driver);
+        return new BillingPage(General.driver);
 
 
       /*  if (btnToBilling.isEnabled()){

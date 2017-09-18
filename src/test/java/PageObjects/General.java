@@ -19,7 +19,7 @@ import org.testng.annotations.Parameters;
  * Created by syam.suryanarayanan on 11/21/2016.
  */
 public class General {
-   public  WebDriver driver ;
+   public static WebDriver driver ;
 
 
    // public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/se/en/homepage/";
@@ -30,11 +30,11 @@ public class General {
 
 @BeforeMethod
    @Parameters("browser")
-    public  WebDriver getBrowser(String browser)
+    public  static WebDriver getBrowser(String browser)
 
     {
 
-     if (this.driver == null)
+     if (General.driver == null)
 
          if (browser.equals("Firefox"))
 

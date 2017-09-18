@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
  */
 public class HomePage extends General {
    // WebDriver driver;
-    General general = new General();
+  //  General general = new General();
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
@@ -50,12 +50,12 @@ public class HomePage extends General {
     public WebElement scsLogin;
 
     public HomePage(WebDriver driver) {
-        general.driver = driver;
+        General.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
-      if (general.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).isDisplayed()) {
-          general.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='" + countryName + "'" + "]")).click();
+      if (General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).isDisplayed()) {
+          General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='" + countryName + "'" + "]")).click();
       }
        else {
           System.out.println("something is wrong here");
@@ -91,19 +91,19 @@ public class HomePage extends General {
     public RegistrationPage clickOnRegisterButton(){
         System.out.println(this.btnRegister.isDisplayed());
         this.btnRegister.click();
-        return new RegistrationPage(general.driver);
+        return new RegistrationPage(General.driver);
     }
     public ProductListPage searchText(String searchString){
         //updated to work on scs by passing keys.return
         this.txtBoxSearch.sendKeys(searchString);
       //  this.clickOnSearchIcon();
         txtBoxSearch.sendKeys(Keys.RETURN);
-        return new ProductListPage(general.driver);
+        return new ProductListPage(General.driver);
     }
 
     public Login clickOnSCSLogin(){
         scsLogin.click();
-        return new Login(general.driver);
+        return new Login(General.driver);
     }
     public void clickOnCookieNotification(){
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;

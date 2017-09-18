@@ -40,11 +40,11 @@ public class ProductDisplayPage extends General {
     public WebElement scsOverlayContinueButton;
 
 
-    WebDriverWait wait = new WebDriverWait(general.driver, 15);
+    WebDriverWait wait = new WebDriverWait(General.driver, 15);
 
     public ProductDisplayPage(WebDriver driver) {
-        general.driver = driver;
-        PageFactory.initElements(general.driver, this);
+     //   General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
     /*clicks on the first available size*/
     public void clickOnFirstSize(){
@@ -63,12 +63,12 @@ public class ProductDisplayPage extends General {
 //div[@id='wrapper']//ul[@class='navigation-tools']/li[@class='navigation-tools__item navigation-tools__minicart js-minicart']
 
     public void clickOnAddToCart(){
-        WebDriverWait wait = new WebDriverWait(general.driver, 15);
+        WebDriverWait wait = new WebDriverWait(General.driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(this.btnAddToCart));
       //  wait.until(ExpectedConditions.visibilityOf(btnAddToCart));
         System.out.println(this.btnAddToCart.isEnabled());
-        if(general.driver.findElement(By.id("add-to-cart")).isEnabled()){
-            general.driver.findElement(By.id("add-to-cart")).click();
+        if(General.driver.findElement(By.id("add-to-cart")).isEnabled()){
+            General.driver.findElement(By.id("add-to-cart")).click();
      //   System.out.println("in if");
         }
          else {
@@ -83,7 +83,7 @@ public class ProductDisplayPage extends General {
             this.miniBasket.click();
 
         }
-        return new ShoppingBasket(general.driver);
+        return new ShoppingBasket(General.driver);
     }
     public void scsAddToBasket(){
 

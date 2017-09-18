@@ -7,19 +7,19 @@ import org.openqa.selenium.WebDriver;
         import org.testng.annotations.Test;
 
 public class ScSLoginAndCheckOut extends General {
-    General general = new General();
+
 
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
-    general.getBrowser("Chrome");
+    General.getBrowser("Chrome");
      String sProductName = "L036281";
 
 
-        driver.get(general.URL);
+       General.driver.get(General.URL);
 
-        driver.get(general.URL);
-        driver.manage().window().maximize();
+
+       General. driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         Login login = homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
@@ -65,9 +65,9 @@ public class ScSLoginAndCheckOut extends General {
    // billingPage.clickBtnToPay();
 
     }
- @AfterMethod
+ @AfterTest
     public void tearDown() {
 
-     driver.quit();
+    driver.quit();
     }
 }

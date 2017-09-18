@@ -36,10 +36,10 @@ public class BillingPage extends General {
     public WebElement btnPay;
     List<WebElement> options;
     List<WebElement> optionYear;
-    General general = new General();
+
 
     public BillingPage(WebDriver driver) {
-      general.driver = driver;
+      General.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
     public void enterName(String name) {

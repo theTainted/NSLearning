@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
 public class scsOrderPreview extends General {
-    General general = new General();
+   // General general = new General();
     @FindBy(xpath="//label[@for='dwfrm_summary_summaryCheckboxes_readTermsConditions']")
     public WebElement chkBoxTerms;
     @FindBy(xpath="//div[@class='form-actions--buttons-creditcards']//button[@name='dwfrm_summary_summaryCheckboxes_submitSummary']")
@@ -15,8 +15,8 @@ public class scsOrderPreview extends General {
         //  WebDriver driver;
         SoftAssert softAssert = new SoftAssert();
     public scsOrderPreview (WebDriver driver) {
-        general.driver = driver;
-        PageFactory.initElements(general.driver, this);
+        General.driver = driver;
+        PageFactory.initElements(General.driver, this);
     }
      public void clickOnChkBoxTerm(){
         System.out.println(chkBoxTerms.getAttribute("label"));

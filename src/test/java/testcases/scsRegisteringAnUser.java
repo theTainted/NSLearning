@@ -7,15 +7,15 @@ import PageObjects.RegistrationPage;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
-    General general = new General();
+
 
     @Test
 
     public void testScSRegisteringAnUser(){
 
-       general.getBrowser("Chrome");
-        driver.get(general.URL);
-        driver.manage().window().maximize();
+       General.getBrowser("Chrome");
+       driver.get(General.URL);
+      driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        Login login =  homePage.clickOnSCSLogin();
        login.clickCreateAccountButton();
@@ -32,7 +32,7 @@ public class scsRegisteringAnUser extends General {
 
 
     }
-@AfterMethod
+@AfterTest
     public void tearDown() {
       driver.quit();
     }
