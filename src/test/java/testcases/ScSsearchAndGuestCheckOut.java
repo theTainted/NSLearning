@@ -29,7 +29,7 @@ import org.testng.annotations.Test;
 
 General.getBrowser("Chrome");
     General.getBrowser("Chrome");
-
+    driver.manage().deleteAllCookies();
   String sProductName = "L036281";
 
 

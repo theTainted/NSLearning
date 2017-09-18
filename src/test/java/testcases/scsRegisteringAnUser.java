@@ -14,6 +14,7 @@ public class scsRegisteringAnUser extends General {
     public void testScSRegisteringAnUser(){
 
     General.getBrowser("Chrome");
+        driver.manage().deleteAllCookies();
        driver.get(General.URL);
       driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);

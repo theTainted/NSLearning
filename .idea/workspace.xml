@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/testcases/RegisteredUserCheckOutFlow.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/RegisteredUserCheckOutFlow.java.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/General.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/HomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/OrderConfirmationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/OrderConfirmationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProductDisplayPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProductDisplayPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProductListPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProductListPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/RegistrationPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/RegistrationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ReturnPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ReturnPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/scsOrderPreview.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/scsOrderPreview.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
@@ -46,7 +33,44 @@
     <favorites_list name="NorthSails" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScSLoginAndCheckOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scsRegisteringAnUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,10 +156,7 @@
         <option value="$PROJECT_DIR$/src/test/java/testcases/theHubLogout.java.txt" />
         <option value="$PROJECT_DIR$/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/Login.java" />
@@ -147,6 +168,9 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/scsOrderPreview.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ShippingAddress.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingBasket.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
       </list>
     </option>
   </component>
@@ -642,13 +666,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
     </task>
-    <task id="LOCAL-00263" summary="added a method to click on continue on the second overlay,&#10;Need to handle the scenario when there is no overlay">
-      <created>1505303987135</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1505303987135</updated>
-    </task>
     <task id="LOCAL-00264" summary="Updated the enteremailID to check if there is one is already if its there then will not enter the passed emailAddress, this is to handle already loggedin email address, needs to be refined for something better">
       <created>1505304371386</created>
       <option name="number" value="00264" />
@@ -985,7 +1002,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505734043776</updated>
     </task>
-    <option name="localTasksCounter" value="312" />
+    <task id="LOCAL-00312" summary="again set it back to static">
+      <created>1505734360065</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1505734360065</updated>
+    </task>
+    <option name="localTasksCounter" value="313" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1095,8 +1119,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added driver.findElement(By.xpath(&quot;//form[@id='checkout-form']//button[@class='btn btn--pay btn--full shopping-cart-payment__btn dialogify']&quot;)).click(); &#10;&#10;to click on paynow button" />
-    <MESSAGE value="need to re-write the ScSLogingAndCheckOut.Java" />
     <MESSAGE value="Added &#10; public void scsAddToBasket(){&#10;        WebDriverWait wait = new WebDriverWait(General.driver, 15);&#10;        wait.until(ExpectedConditions.elementToBeClickable(scsAddToBasketButton));&#10;        //  wait.until(ExpectedConditions.visibilityOf(btnAddToCart));&#10;        System.out.println(&quot;AddToBasketButton : &quot;+scsAddToBasketButton.isEnabled());&#10;        scsAddToBasketButton.click();&#10;&#10;    }" />
     <MESSAGE value=" public void scsClickOnContinueInTheShoppingBasketOverlay()" />
     <MESSAGE value="       /* ShoppingBasket sb = new ShoppingBasket(driver);&#10;        sb.click    public void clickOnCloseNewsLetterPopUp(){&#10;                        wait.until(ExpectedConditions.elementToBeClickable(btnCloseNewsLetterPopUp));&#10;                        btnCloseNewsLetterPopUp.click();&#10;OnCloseNewsLetterPopUp();*/" />
@@ -1120,7 +1142,9 @@
     <MESSAGE value="Added General general = new General();&#10;Replaced General.driver with general.driver" />
     <MESSAGE value="replaced General as a a static" />
     <MESSAGE value="    //  General.driver = driver;&#10;        this.general.driver=driver;&#10;        created a general object as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="    //  General.driver = driver;&#10;        this.general.driver=driver;&#10;        created a general object as well." />
+    <MESSAGE value="again set it back to static" />
+    <MESSAGE value="added driver.manage().deleteAllCookies();" />
+    <option name="LAST_COMMIT_MESSAGE" value="added driver.manage().deleteAllCookies();" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1432,36 +1456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="57" column="113" lean-forward="true" selection-start-line="57" selection-start-column="113" selection-end-line="57" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/BillingPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-520">
@@ -1549,6 +1543,36 @@
         <state relative-caret-position="257">
           <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

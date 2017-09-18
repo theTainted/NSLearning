@@ -12,6 +12,7 @@ public class ScSLoginAndCheckOut extends General {
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
 General.getBrowser("Chrome");
+     driver.manage().deleteAllCookies();
      String sProductName = "L036281";
 
 
