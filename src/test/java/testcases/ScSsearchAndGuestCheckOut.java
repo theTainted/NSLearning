@@ -89,8 +89,8 @@ import org.openqa.selenium.By;
         billingPage.enterName("test");
         billingPage.selectExpiryMonth("10");
         billingPage.selectExpiryYear("2020");
-      //  billingPage.clickBtnToPay();
-      //  driver.quit();
+        billingPage.clickBtnToPay();
+
     }
  @AfterTest
     public void tearDown() {

@@ -31,7 +31,7 @@ public class scsRegisteringAnUser extends General {
         registration.clickCreateAccount();
        System.out.println(driver.getCurrentUrl());
        registration.assertHeadingMyAccount("My account");
-       // driver.quit();
+
 
     }
  @AfterTest
