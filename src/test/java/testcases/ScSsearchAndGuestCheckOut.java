@@ -25,7 +25,7 @@ import org.openqa.selenium.By;
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
 General.getBrowser("Chrome");
-    General.getBrowser("Chrome");
+  //  General.getBrowser("Chrome");
  //   driver.manage().deleteAllCookies();
   String sProductName = "L036281";
 
