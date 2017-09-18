@@ -11,6 +11,7 @@ import org.testng.asserts.SoftAssert;
  */
 public class OrderConfirmationPage extends General {
     //WebDriver driver;
+    General general = new General();
     SoftAssert softAssert = new SoftAssert();
 
   @FindBy(xpath="//div[@id='main']//div[@class='confirmation__message']")
@@ -18,8 +19,8 @@ public class OrderConfirmationPage extends General {
 
 
     public OrderConfirmationPage(WebDriver driver){
-        General.driver=driver;
-        PageFactory.initElements(General.driver,this);
+        general.driver=driver;
+        PageFactory.initElements(general.driver,this);
 
     }
 

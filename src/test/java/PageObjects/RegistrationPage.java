@@ -14,6 +14,7 @@ import java.util.Date;
  * Created by syam.suryanarayanan on 11/29/2016.
  */
 public class RegistrationPage extends General {
+    General general = new General();
     public String sEmailAddress ;
     SoftAssert softAssert = new SoftAssert();
     @FindBy(id="dwfrm_profile_customer_firstname")
@@ -38,8 +39,8 @@ public class RegistrationPage extends General {
 
 
     public RegistrationPage(WebDriver driver) {
-        General.driver = driver;
-        PageFactory.initElements(General.driver, this);
+        general.driver = driver;
+        PageFactory.initElements(general.driver, this);
     }
 
 

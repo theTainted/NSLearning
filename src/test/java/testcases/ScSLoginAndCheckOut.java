@@ -2,6 +2,7 @@ package testcases;
 
         import PageObjects.*;
 import org.openqa.selenium.WebDriver;
+        import org.testng.annotations.AfterMethod;
         import org.testng.annotations.AfterTest;
         import org.testng.annotations.Test;
 
@@ -66,6 +67,7 @@ public class ScSLoginAndCheckOut extends General {
     }
  @AfterMethod
     public void tearDown() {
-        driver.quit();
+
+     driver.quit();
     }
 }

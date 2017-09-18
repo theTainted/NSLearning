@@ -13,6 +13,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 12/8/2016.
  */
 public class ReturnPage extends General {
+    General general = new General();
     // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
      @FindBy(xpath="//div[@id='primary']//a[contains(@href,'return')]")
@@ -30,8 +31,8 @@ public class ReturnPage extends General {
     public WebElement elDropdownReason;
 
     public ReturnPage(WebDriver driver) {
-      General.driver = driver;
-        PageFactory.initElements(General.driver, this);
+      general.driver = driver;
+        PageFactory.initElements(general.driver, this);
     }
 
     public void clickLinkReturn(){
