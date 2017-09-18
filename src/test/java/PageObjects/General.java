@@ -28,7 +28,7 @@ public class General {
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
     public  static String  searchString="Jacket";
 
-@BeforeTest
+@BeforeMethod
    @Parameters("browser")
     public  WebDriver getBrowser(String browser)
 
