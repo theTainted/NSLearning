@@ -2,15 +2,13 @@ package testcases;
 
 import PageObjects.General;
 import PageObjects.TheHub;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 /**
  * Created by syam.suryanarayanan on 4/6/2017.
  */
-public class theHubLogout extends General  {
+public class theHubLogout extends General {
 
     @Test
     public void testTheHubLogout(){

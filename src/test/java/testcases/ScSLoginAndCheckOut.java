@@ -1,14 +1,11 @@
 package testcases;
 
         import PageObjects.*;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-        import org.testng.annotations.*;
-
-        import static PageObjects.General.driver;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 public class ScSLoginAndCheckOut extends General {
+    WebDriver drive;
 
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
@@ -65,11 +62,11 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.enterName("test");
      billingPage.selectExpiryMonth("10");
      billingPage.selectExpiryYear("2020");
-    billingPage.clickBtnToPay();
+   // billingPage.clickBtnToPay();
 
     }
- @AfterTest
+/* @AfterTest
     public void tearDown() {
         General.driver.quit();
-    }
+    }*/
 }

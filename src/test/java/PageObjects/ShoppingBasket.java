@@ -8,8 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
-import java.util.NoSuchElementException;
-
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
  */

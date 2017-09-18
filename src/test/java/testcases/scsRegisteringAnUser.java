@@ -4,8 +4,6 @@ import PageObjects.General;
 import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
@@ -34,8 +32,8 @@ public class scsRegisteringAnUser extends General {
 
 
     }
- @AfterTest
+ /*@AfterTest
     public void tearDown() {
        General. driver.quit();
-    }
+    }*/
 }

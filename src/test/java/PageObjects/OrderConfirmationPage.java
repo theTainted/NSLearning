@@ -9,7 +9,7 @@ import org.testng.asserts.SoftAssert;
 /**
  * Created by syam.suryanarayanan on 11/17/2016.
  */
-public class OrderConfirmationPage extends General{
+public class OrderConfirmationPage extends General {
     //WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 

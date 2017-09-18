@@ -1,24 +1,12 @@
 package testcases;
 
 import PageObjects.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
-
-
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by syam.suryanarayanan on 11/3/2016.
  */
-public class GuestUserCheckOutFlow extends General{
+public class GuestUserCheckOutFlow extends General {
 
     @Test
      public void testGuestUserCheckOutFlow() throws InterruptedException {

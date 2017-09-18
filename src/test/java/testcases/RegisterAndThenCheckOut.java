@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 /**
  * Created by syam.suryanarayanan on 11/30/2016.
  */
-public class RegisterAndThenCheckOut extends General{
+public class RegisterAndThenCheckOut extends General {
 @Test
     public void testRegisterAndThenCheckOut() {
         General.getBrowser("Chrome");

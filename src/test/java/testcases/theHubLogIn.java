@@ -2,12 +2,7 @@ package testcases;
 
         import PageObjects.General;
         import PageObjects.TheHub;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.ie.InternetExplorerDriver;
         import org.testng.annotations.AfterClass;
-        import org.testng.annotations.BeforeTest;
-        import org.testng.annotations.Parameters;
         import org.testng.annotations.Test;
 
 

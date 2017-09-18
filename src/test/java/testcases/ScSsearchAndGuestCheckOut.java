@@ -7,8 +7,6 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.openqa.selenium.By;
 
@@ -89,11 +87,11 @@ import org.openqa.selenium.By;
         billingPage.enterName("test");
         billingPage.selectExpiryMonth("10");
         billingPage.selectExpiryYear("2020");
-        billingPage.clickBtnToPay();
+     //   billingPage.clickBtnToPay();
 
     }
- @AfterTest
+/*@AfterTest
     public void tearDown() {
         General.driver.quit();
-    }
+    }*/
 }

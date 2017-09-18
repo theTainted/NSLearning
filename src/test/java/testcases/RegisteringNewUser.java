@@ -3,14 +3,12 @@ package testcases;
 
 
 import PageObjects.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;;
 
 /**
  * Created by syam.suryanarayanan on 11/29/2016.
  */
-public class RegisteringNewUser extends General{
+public class RegisteringNewUser extends General {
 @Test
     public void testRegisteringNewUser(){
         General.getBrowser("Chrome");
