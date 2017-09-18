@@ -21,20 +21,20 @@ import org.testng.annotations.Test;
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-General general = new General();
 
-       // General.getBrowser("Chrome");
+
+
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
-   // General.getBrowser("Chrome");
-    driver= this.general.getBrowser("Chrome");
+General.getBrowser("Chrome");
+    General.getBrowser("Chrome");
 
   String sProductName = "L036281";
 
 
  //   driver.get(General.URL);
-       driver.get(general.URL) ;
+       driver.get(General.URL) ;
        driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        ProductListPage plp = homePage.searchText(sProductName);

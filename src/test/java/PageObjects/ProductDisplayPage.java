@@ -16,7 +16,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 11/14/2016.
  */
 public class ProductDisplayPage extends General {
-    General general = new General();
+//    General general = new General();
    // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
 
@@ -43,8 +43,8 @@ public class ProductDisplayPage extends General {
     WebDriverWait wait = new WebDriverWait(driver, 15);
 
     public ProductDisplayPage(WebDriver driver) {
-        //  General.driver = driver;
-        this.general.driver=driver;
+     General.driver = driver;
+    //    this.general.driver=driver;
         PageFactory.initElements(driver, this);
     }
     /*clicks on the first available size*/

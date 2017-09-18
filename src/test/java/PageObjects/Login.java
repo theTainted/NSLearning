@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
  */
 public class Login extends General {
     //  WebDriver driver;
- General general = new General();
+// General general = new General();
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath = "//div[@id='checkoutloginpage']//button[@name='dwfrm_login_unregistered']")
@@ -30,8 +30,8 @@ public class Login extends General {
     public WebElement popupUnregisteredCheckIn;
 
     public Login(WebDriver driver) {
-        //  General.driver = driver;
-        this.general.driver=driver;
+         General.driver = driver;
+        //this.general.driver=driver;
         PageFactory.initElements(driver, this);
     }
 

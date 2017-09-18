@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * Created by syam.suryanarayanan on 11/17/2016.
  */
 public class ShippingAddress extends General {
- General general = new General();
+ //General general = new General();
 
     // WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
@@ -67,8 +67,8 @@ public class ShippingAddress extends General {
     Logger LOGGER = Logger.getLogger("InfoLogging");
     WebDriverWait wait = new WebDriverWait(driver, 10);
     public ShippingAddress(WebDriver driver) {
-        //  General.driver = driver;
-        this.general.driver=driver;
+       General.driver = driver;
+     //   this.general.driver=driver;
         PageFactory.initElements(driver, this);
     }
 

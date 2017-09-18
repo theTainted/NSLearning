@@ -15,7 +15,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 11/17/2016.
  */
 public class BillingPage extends General {
-    General general = new General();
+  //  General general = new General();
 
     SoftAssert softAssert = new SoftAssert();
 
@@ -40,8 +40,8 @@ public class BillingPage extends General {
 
 
     public BillingPage(WebDriver driver) {
-        //  General.driver = driver;
-        this.general.driver=driver;
+        General.driver = driver;
+       // this.general.driver=driver;
         PageFactory.initElements(this.driver, this);
     }
     public void enterName(String name) {

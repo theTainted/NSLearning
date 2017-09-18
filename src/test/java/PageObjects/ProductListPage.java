@@ -12,7 +12,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 11/14/2016.
  */
 public class ProductListPage extends General {
- General general = new General();
+ //General general = new General();
     //WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
   /*  @FindAll({
@@ -24,8 +24,8 @@ public class ProductListPage extends General {
 
 
     public ProductListPage(WebDriver driver) {
-        //  General.driver = driver;
-        this.general.driver=driver;
+   General.driver = driver;
+ //       this.general.driver=driver;
         PageFactory.initElements(driver, this);
     }
 

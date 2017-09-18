@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
  * Created by syam.suryanarayanan on 11/17/2016.
  */
 public class ShoppingBasket extends General {
-    General general = new General();
+ //   General general = new General();
 
   //  WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
@@ -30,8 +30,8 @@ public class ShoppingBasket extends General {
 
     WebDriverWait wait = new WebDriverWait(driver, 20);
     public ShoppingBasket(WebDriver driver) {
-        //  General.driver = driver;
-        this.general.driver=driver;
+        General.driver = driver;
+       // this.general.driver=driver;
         PageFactory.initElements(driver, this);
     }
 

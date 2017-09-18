@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
  */
 public class HomePage extends General {
 
-   General general = new General();
+ //  General general = new General();
 
     SoftAssert softAssert = new SoftAssert();
 
@@ -51,8 +51,8 @@ public class HomePage extends General {
     public WebElement scsLogin;
 
     public HomePage(WebDriver driver) {
-      //  General.driver = driver;
-        this.general.driver=driver;
+    General.driver = driver;
+      //  this.general.driver=driver;
         PageFactory.initElements(this.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
