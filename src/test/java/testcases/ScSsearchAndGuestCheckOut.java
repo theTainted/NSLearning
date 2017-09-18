@@ -24,9 +24,9 @@ import org.openqa.selenium.By;
 
 
   String sProductName = "L036281";
- //General.getBrowser("Chrome");
+ General.getBrowser("Chrome");
 
-    driver.get(General.URL);
+    this.driver.get(General.URL);
         driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        ProductListPage plp = homePage.searchText(sProductName);
@@ -94,6 +94,6 @@ import org.openqa.selenium.By;
     }
  @AfterMethod
     public void tearDown() {
-        driver.quit();
+        General.driver.quit();
     }
 }
