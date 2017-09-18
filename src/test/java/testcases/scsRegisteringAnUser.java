@@ -7,14 +7,14 @@ import PageObjects.RegistrationPage;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
-
+General general = new General();
 
     @Test
 
     public void testScSRegisteringAnUser(){
 
-       General.getBrowser("Chrome");
-       driver.get(General.URL);
+      driver= this.general.getBrowser("Chrome");
+       driver.get(general.URL);
       driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        Login login =  homePage.clickOnSCSLogin();

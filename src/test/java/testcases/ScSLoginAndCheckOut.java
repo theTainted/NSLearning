@@ -7,19 +7,18 @@ import org.openqa.selenium.WebDriver;
 
 public class ScSLoginAndCheckOut extends General {
 
-
+    General general = new General();
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
 
-    General.getBrowser("Chrome");
+   driver= this. general.getBrowser("Chrome");
      String sProductName = "L036281";
 
 
-       General.driver.get(General.URL);
+      driver.get(general.URL);
 
-
-       General. driver.manage().window().maximize();
+   driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
         Login login = homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
