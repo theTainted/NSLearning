@@ -32,18 +32,6 @@ import static PageObjects.General.driver;
        ProductListPage plp = homePage.searchText(sProductName);
 
 
-        //***************************************************************************************************************
-       /*  driver.findElement(By.id("q")).sendKeys(sProductName);
-         driver.findElement(By.id("q")).sendKeys(Keys.RETURN);*/
-
-
-       /* LOG.info(driver.findElements(By.xpath("//form[contains(@id,'dwfrm_product_addtocart')]//input[@id='add-to-cart']")).size());
-        boolean elementExists = driver.findElements(By.id("add-to-cart")).size()!=0;
-        if (elementExists==true){
-            driver.findElement(By.id("add-to-cart")).click();
-        }*/
-        //**************************************************************************************************************
-
         boolean elementExists = driver.findElements(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).size() != 0;
         if (elementExists == true) {
             driver.findElement(By.xpath("//input[@class='add-to-cart btn btn--buy btn--large btn--full']")).click();
