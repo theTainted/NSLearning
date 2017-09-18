@@ -45,15 +45,16 @@ public static WebDriver driver ;
              dc = DesiredCapabilities.firefox();
              dc.setCapability(FirefoxDriver.PROFILE, profile);
             driver = new FirefoxDriver(dc);
-
+            return driver;
 
          } else if (browser.equals("Chrome"))
 
          {
              System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
             driver = new ChromeDriver();
-
-         } else if (browser.equals("IE"))
+            return driver;
+         }
+         else if (browser.equals("IE"))
 
          {
           /*  DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
