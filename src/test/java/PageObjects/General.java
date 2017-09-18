@@ -11,6 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -23,11 +24,11 @@ public class General {
 
    // public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/se/en/homepage/";
    // public  static String URL="https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
-   public static String URL="https://staging.scs.co.uk";
+   public  static String URL="https://staging.scs.co.uk";
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
     public  static String  searchString="Jacket";
 
-@BeforeTest
+@BeforeMethod
    @Parameters("browser")
     public  static WebDriver getBrowser(String browser)
 
