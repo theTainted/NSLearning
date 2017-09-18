@@ -19,10 +19,10 @@ import org.openqa.selenium.By;
 
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
-
+    General general = new General();
 
   String sProductName = "L036281";
- General.getBrowser("Chrome");
+ general.getBrowser("Chrome");
 
     this.driver.get(General.URL);
         driver.manage().window().maximize();
@@ -90,8 +90,8 @@ import org.openqa.selenium.By;
      //   billingPage.clickBtnToPay();
 
     }
-/*@AfterTest
+@AfterTest
     public void tearDown() {
-        General.driver.quit();
-    }*/
+    driver.quit();
+    }
 }
