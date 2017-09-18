@@ -2,8 +2,7 @@ package testcases;
 
         import PageObjects.*;
 import org.openqa.selenium.WebDriver;
-        import org.testng.annotations.AfterMethod;
-        import org.testng.annotations.AfterTest;
+        import org.testng.annotations.*;
         import org.testng.annotations.Test;
 
 public class ScSLoginAndCheckOut extends General {
@@ -12,6 +11,7 @@ public class ScSLoginAndCheckOut extends General {
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
+
     General.getBrowser("Chrome");
      String sProductName = "L036281";
 

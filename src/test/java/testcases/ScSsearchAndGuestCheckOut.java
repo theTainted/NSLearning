@@ -7,8 +7,12 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
 import org.openqa.selenium.By;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import static PageObjects.General.driver;
 
@@ -16,15 +20,17 @@ import static PageObjects.General.driver;
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
- public class ScSsearchAndGuestCheckOut  {
+ public class ScSsearchAndGuestCheckOut extends General {
 
 
+       // General.getBrowser("Chrome");
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
+    General.getBrowser("Chrome");
 
   String sProductName = "L036281";
- General.getBrowser("Chrome");
+
 
     driver.get(General.URL);
        driver.manage().window().maximize();
@@ -82,6 +88,7 @@ import static PageObjects.General.driver;
     }
 @AfterTest
     public void tearDown() {
-  driver.quit();
+
+    driver.quit();
     }
 }
