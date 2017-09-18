@@ -39,8 +39,9 @@ public class RegistrationPage extends General {
 
 
     public RegistrationPage(WebDriver driver) {
-       // General.driver = driver;
-        PageFactory.initElements(General.driver, this);
+        //  General.driver = driver;
+        this.general.driver=driver;
+        PageFactory.initElements(driver, this);
     }
 
 

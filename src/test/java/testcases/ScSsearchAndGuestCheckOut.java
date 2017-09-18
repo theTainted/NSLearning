@@ -14,25 +14,27 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import static PageObjects.General.driver;
+//import static PageObjects.General.driver;
 
 
 /**
  * Created by syam.suryanarayanan on 7/20/2017.
  */
  public class ScSsearchAndGuestCheckOut extends General {
-
+General general = new General();
 
        // General.getBrowser("Chrome");
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
-    General.getBrowser("Chrome");
+   // General.getBrowser("Chrome");
+    driver= this.general.getBrowser("Chrome");
 
   String sProductName = "L036281";
 
 
-    driver.get(General.URL);
+ //   driver.get(General.URL);
+       driver.get(general.URL) ;
        driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        ProductListPage plp = homePage.searchText(sProductName);

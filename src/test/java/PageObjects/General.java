@@ -19,22 +19,24 @@ import org.testng.annotations.Parameters;
  * Created by syam.suryanarayanan on 11/21/2016.
  */
 public class General {
-   public static WebDriver driver ;
+  // public static WebDriver driver ;
+    public WebDriver driver;
 
 
    // public static String URL = "https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com/se/en/homepage/";
    // public  static String URL="https://" + "storefront" + ":" + "storefront" + "@" + "development.northsails.com";
-   public  static String URL="https://staging.scs.co.uk";
+//   public  static String URL="https://staging.scs.co.uk";
+   public   String URL="https://staging.scs.co.uk";
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
-    public  static String  searchString="Jacket";
+   // public  static String  searchString="Jacket";
 
 @BeforeTest
 @Parameters("browser")
-    public  static WebDriver getBrowser(String browser)
+    public  WebDriver getBrowser(String browser)
 
     {
-
-     if (General.driver == null)
+//if(General.driver==null)
+     if (this.driver == null)
 
          if (browser.equals("Firefox"))
 

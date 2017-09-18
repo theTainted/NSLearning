@@ -12,8 +12,9 @@ import org.testng.asserts.SoftAssert;
  * Created by syam.suryanarayanan on 11/14/2016.
  */
 public class HomePage extends General {
-   // WebDriver driver;
-  //  General general = new General();
+
+   General general = new General();
+
     SoftAssert softAssert = new SoftAssert();
 
     @FindBy(xpath="//div[@id='js-cookie-message']//button[@class='btn']")
@@ -50,12 +51,13 @@ public class HomePage extends General {
     public WebElement scsLogin;
 
     public HomePage(WebDriver driver) {
-        General.driver = driver;
+      //  General.driver = driver;
+        this.general.driver=driver;
         PageFactory.initElements(this.driver, this);
     }
    public void clickOnCountrySelectorFirstLink(String countryName) {
-      if (General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).isDisplayed()) {
-          General.driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='" + countryName + "'" + "]")).click();
+     if (driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='"+countryName+"'"+"]")).isDisplayed()) { //replaced General.driver with driver
+         driver.findElement(By.xpath("//div[@id='language-overlay']//a[@data-countrycode='" + countryName + "'" + "]")).click();
       }
        else {
           System.out.println("something is wrong here");
@@ -91,19 +93,19 @@ public class HomePage extends General {
     public RegistrationPage clickOnRegisterButton(){
         System.out.println(this.btnRegister.isDisplayed());
         this.btnRegister.click();
-        return new RegistrationPage(General.driver);
+        return new RegistrationPage(driver); //replaced General.driver with driver
     }
     public ProductListPage searchText(String searchString){
         //updated to work on scs by passing keys.return
         this.txtBoxSearch.sendKeys(searchString);
       //  this.clickOnSearchIcon();
         txtBoxSearch.sendKeys(Keys.RETURN);
-        return new ProductListPage(General.driver);
+        return new ProductListPage(driver);////replaced General.driver with driver
     }
 
     public Login clickOnSCSLogin(){
         scsLogin.click();
-        return new Login(General.driver);
+        return new Login(driver);//replaced General.driver with driver
     }
     public void clickOnCookieNotification(){
         boolean cookieButtonExists = driver.findElements(By.xpath("//div[@class='cookie-policy__container shown']/span[@class='icon-close']")).size() != 0;
