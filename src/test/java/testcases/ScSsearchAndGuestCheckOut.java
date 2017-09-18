@@ -90,7 +90,7 @@ import org.openqa.selenium.By;
      //   billingPage.clickBtnToPay();
 
     }
-@AfterTest
+@AfterMethod
     public void tearDown() {
     driver.quit();
     }
