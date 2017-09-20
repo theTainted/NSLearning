@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run">
 
-  <test name="Chrome Test" parallel="false">
+  <test name="Chrome Test" >
       <parameter name ="browser" value="Chrome" />
      <classes>
 

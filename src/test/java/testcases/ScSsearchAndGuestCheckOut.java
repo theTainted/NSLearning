@@ -85,5 +85,10 @@ General.getBrowser("Chrome");
      //   billingPage.clickBtnToPay();
 
     }
+    @AfterTest
+    public void tearDown()  {
 
+        driver.quit();
+
+    }
 }

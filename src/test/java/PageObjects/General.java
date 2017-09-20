@@ -16,7 +16,7 @@ import org.testng.annotations.*;
  * Created by syam.suryanarayanan on 11/21/2016.
  */
  public class General {
- protected static WebDriver driver ;
+   public  static WebDriver driver;
 
 
 
@@ -24,11 +24,11 @@ import org.testng.annotations.*;
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
    // public  static String  searchString="Jacket";
 
-@BeforeClass
+@BeforeTest
 @Parameters("browser")
-    public  static WebDriver getBrowser(String browser)
+    public  static WebDriver getBrowser(String browser){
 
-    {
+
 //if(General.driver==null)
      if (General.driver == null)
 
@@ -51,7 +51,7 @@ import org.testng.annotations.*;
 
          {
              System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-            driver = new ChromeDriver();
+           driver = new ChromeDriver();
             return driver;
          }
          else if (browser.equals("IE"))
@@ -67,12 +67,12 @@ import org.testng.annotations.*;
 
          return driver;
      }
-    @AfterClass
+/*    @AfterClass
     public void tearDown() {
 
         driver.quit();
     }
-
+*/
 }
 
 

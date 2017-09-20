@@ -4,6 +4,7 @@ import PageObjects.General;
 import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
+import org.openqa.selenium.By;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
@@ -14,7 +15,8 @@ public class scsRegisteringAnUser extends General {
     public void testScSRegisteringAnUser(){
 
     General.getBrowser("Chrome");
-     //   driver.manage().deleteAllCookies();
+
+      // driver.manage().deleteAllCookies();
        driver.get(General.URL);
       driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
@@ -30,8 +32,14 @@ public class scsRegisteringAnUser extends General {
         registration.clickCreateAccount();
        System.out.println(driver.getCurrentUrl());
        registration.assertHeadingMyAccount("My account");
+       driver.findElement(By.xpath("//div[@id='main']//a[@title='Logout'])")).click();
 
 
     }
+    @AfterTest
+    public void tearDown()  {
 
+        driver.quit();
+
+    }
 }
