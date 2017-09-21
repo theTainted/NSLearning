@@ -5,6 +5,7 @@ import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
@@ -14,7 +15,7 @@ public class scsRegisteringAnUser extends General {
 
     public void testScSRegisteringAnUser(){
 
-    General.getBrowser("Chrome");
+  WebDriver driver=  General.getBrowser("Chrome"); ////added to see if it helps in the race condition
 
       // driver.manage().deleteAllCookies();
        driver.get(General.URL);
@@ -36,7 +37,7 @@ public class scsRegisteringAnUser extends General {
 
 
     }
-    @AfterTest
+    @AfterClass
     public void tearDown()  {
 
         driver.quit();

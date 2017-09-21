@@ -16,21 +16,21 @@ import org.testng.annotations.*;
  * Created by syam.suryanarayanan on 11/21/2016.
  */
  public class General {
-   public  static WebDriver driver;
-
+  // public  static WebDriver driver;
+  protected static  WebDriver driver ; //added to see if it helps in the race condition and also remove the static declarations in the page
 
 
    public  static String URL="https://staging.scs.co.uk";
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
    // public  static String  searchString="Jacket";
 
-@BeforeTest
+@BeforeClass
 @Parameters("browser")
-    public  static WebDriver getBrowser(String browser){
+    public static WebDriver getBrowser(String browser){
 
 
 //if(General.driver==null)
-     if (General.driver == null)
+     //if (this.driver == null)
 
          if (browser.equals("Firefox"))
 
@@ -44,15 +44,16 @@ import org.testng.annotations.*;
              System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
              dc = DesiredCapabilities.firefox();
              dc.setCapability(FirefoxDriver.PROFILE, profile);
-            driver = new FirefoxDriver(dc);
-            return driver;
+           // driver = new FirefoxDriver(dc);
+            return new FirefoxDriver(dc); //added to see if it helps in the race condition
 
          } else if (browser.equals("Chrome"))
 
          {
              System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-           driver = new ChromeDriver();
-            return driver;
+           //driver = new ChromeDriver();
+             System.out.println("inside the general");
+            return new ChromeDriver();//added to see if it helps in the race condition
          }
          else if (browser.equals("IE"))
 
@@ -61,11 +62,13 @@ import org.testng.annotations.*;
             caps.setCapability("ignoreZoomSetting", true);*/
 
              System.setProperty("webdriver.ie.driver", "C:/IEDriverServer.exe");
-           driver = new InternetExplorerDriver();
+       //    driver = new InternetExplorerDriver();
+             return new InternetExplorerDriver(); //added to see if it helps in the race condition
 
          }
+//return driver
+        return null; ///added to see if it helps in the race condition
 
-         return driver;
      }
 /*    @AfterClass
     public void tearDown() {

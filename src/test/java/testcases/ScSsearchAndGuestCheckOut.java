@@ -7,6 +7,7 @@ import PageObjects.scsOrderPreview;
 import PageObjects.ShippingAddress;
 import PageObjects.BillingPage;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import org.openqa.selenium.By;
@@ -24,14 +25,13 @@ import org.openqa.selenium.By;
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
-General.getBrowser("Chrome");
+    WebDriver driver =General.getBrowser("Chrome"); //added to see if it helps in the race condition
+    System.out.println("one here ");
   //  General.getBrowser("Chrome");
  //   driver.manage().deleteAllCookies();
   String sProductName = "L036281";
 
-
- //   driver.get(General.URL);
-       driver.get(General.URL) ;
+      driver.get(General.URL) ;
        driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        ProductListPage plp = homePage.searchText(sProductName);
@@ -85,7 +85,7 @@ General.getBrowser("Chrome");
      //   billingPage.clickBtnToPay();
 
     }
-    @AfterTest
+    @AfterClass
     public void tearDown()  {
 
         driver.quit();

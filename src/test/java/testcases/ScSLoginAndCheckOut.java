@@ -1,7 +1,7 @@
 package testcases;
 
         import PageObjects.*;
-import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.WebDriver;
         import org.testng.annotations.*;
         import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ public class ScSLoginAndCheckOut extends General {
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
-General.getBrowser("Chrome");
+WebDriver driver = General.getBrowser("Chrome");//added to see if it helps in the race condition
     // driver.manage().deleteAllCookies();
      String sProductName = "L036281";
 
@@ -64,7 +64,7 @@ General.getBrowser("Chrome");
    // billingPage.clickBtnToPay();
 
     }
-    @AfterTest
+    @AfterClass
     public void tearDown() {
 
         driver.quit();
