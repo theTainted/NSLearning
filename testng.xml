@@ -5,11 +5,11 @@
       <parameter name ="browser" value="Chrome" />
      <classes>
 
+         <class name ="testcases.scsRegisteringAnUser"/>
 
 
-         <class name ="testcases.ScSsearchAndGuestCheckOut"/>
     <!--
-  <class name ="testcases.scsRegisteringAnUser"/>
+  <class name ="testcases.ScSsearchAndGuestCheckOut"/>
   <class name="testcases.ScSLoginAndCheckOut"/>
   -->
 

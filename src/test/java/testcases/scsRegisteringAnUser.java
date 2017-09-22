@@ -15,7 +15,7 @@ public class scsRegisteringAnUser extends General {
 
     public void testScSRegisteringAnUser(){
 
-  WebDriver driver=  General.getBrowser("Chrome"); ////added to see if it helps in the race condition
+  driver=  General.getBrowser("Chrome"); ////added to see if it helps in the race condition
 
       // driver.manage().deleteAllCookies();
        driver.get(General.URL);
