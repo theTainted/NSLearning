@@ -26,7 +26,7 @@ import org.openqa.selenium.By;
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
     WebDriver driver =General.getBrowser("Chrome"); //added to see if it helps in the race condition
-    System.out.println("one here ");
+
   //  General.getBrowser("Chrome");
  //   driver.manage().deleteAllCookies();
   String sProductName = "L036281";

@@ -15,8 +15,8 @@ public class scsRegisteringAnUser extends General {
 
     public void testScSRegisteringAnUser(){
 
-  driver=  General.getBrowser("Chrome"); ////added to see if it helps in the race condition
-
+driver = General.getBrowser("Chrome"); ////added to see if it helps in the race condition
+        System.out.println("one here ");
       // driver.manage().deleteAllCookies();
        driver.get(General.URL);
       driver.manage().window().maximize();
@@ -37,7 +37,7 @@ public class scsRegisteringAnUser extends General {
 
 
     }
-    @AfterClass
+    @AfterTest
     public void tearDown()  {
 
         driver.quit();

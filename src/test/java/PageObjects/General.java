@@ -24,7 +24,7 @@ import org.testng.annotations.*;
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
    // public  static String  searchString="Jacket";
 
-@BeforeClass
+@BeforeTest
 @Parameters("browser")
     public static WebDriver getBrowser(String browser){
 
