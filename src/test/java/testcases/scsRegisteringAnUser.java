@@ -9,16 +9,16 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
-//General general = new General();
+
 
     @Test
 
-    public void testScSRegisteringAnUser(){
+    public void testScSRegisteringAnUser() {
 
-driver = General.getBrowser("Chrome"); ////added to see if it helps in the race condition
+        driver = General.getBrowser("Chrome"); ////added to see if it helps in the race condition
         System.out.println("one here ");
-      // driver.manage().deleteAllCookies();
-       driver.get(General.URL);
+        // driver.manage().deleteAllCookies();
+        driver.get(General.URL);
       driver.manage().window().maximize();
         HomePage homePage = new HomePage(driver);
        Login login =  homePage.clickOnSCSLogin();
@@ -37,10 +37,11 @@ driver = General.getBrowser("Chrome"); ////added to see if it helps in the race 
 
 
     }
-    @AfterTest
+ /*   @AfterTest
     public void tearDown()  {
 
         driver.quit();
 
-    }
+    }*/
+
 }
