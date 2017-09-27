@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e0e48a-4372-4c70-8a7f-22ff0e8d09e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/General.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" afterPath="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
     </list>
     <ignored path="NorthSails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScSsearchAndGuestCheckOut.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state relative-caret-position="0">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1506063939790" expanded="true" signature="3776:3803" ph="{...}" />
@@ -59,13 +56,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="General.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+            <state relative-caret-position="399">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <marker date="1506064085482" expanded="true" signature="2617:2676" ph="{...}" />
+                <marker date="1506500293752" expanded="true" signature="2617:2676" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -104,12 +101,12 @@
       <file leaf-file-name="scsRegisteringAnUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="178">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1506073794368" expanded="true" signature="335:336" ph="@{...}" />
-                <marker date="1506073794368" expanded="true" signature="1409:1430" ph="{...}" />
+                <marker date="1506074358340" expanded="true" signature="301:302" ph="@{...}" />
+                <marker date="1506074358340" expanded="true" signature="1389:1410" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -215,8 +212,8 @@
         <option value="$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/General.java" />
       </list>
     </option>
   </component>
@@ -249,10 +246,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,6 +293,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,26 +321,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ScSLoginAndCheckOut">
-    <configuration name="FMLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="testcases.FMLogin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="NorthSails" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="TestNG.scsRegisteringAnUser.main">
     <configuration name="ScSLoginAndCheckOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -649,6 +627,38 @@
       <setting name="rowsRange" value="" />
       <method />
     </configuration>
+    <configuration name="scsRegisteringAnUser.main" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NorthSails" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.scsRegisteringAnUser" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="scsRegisteringAnUser.testScSRegisteringAnUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -683,18 +693,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ScSsearchAndGuestCheckOut" />
-      <item index="1" class="java.lang.String" itemvalue="Application.FMLogin" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ScSsearchAndGuestCheckOut.testScSearchAndGuestCheckOut" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.scsRegisteringAnUser.testScSRegisteringAnUser" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ScSLoginAndCheckOut" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ScSsearchAndGuestCheckOut.testScSearchAndGuestCheckOut" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.scsRegisteringAnUser.testScSRegisteringAnUser" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ScSLoginAndCheckOut" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.scsRegisteringAnUser.main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ScSLoginAndCheckOut" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ScSsearchAndGuestCheckOut" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.scsRegisteringAnUser.testScSRegisteringAnUser" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ScSsearchAndGuestCheckOut.testScSearchAndGuestCheckOut" />
-        <item index="4" class="java.lang.String" itemvalue="Application.FMLogin" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.scsRegisteringAnUser.main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ScSLoginAndCheckOut" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ScSsearchAndGuestCheckOut" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.scsRegisteringAnUser.testScSRegisteringAnUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ScSsearchAndGuestCheckOut.testScSearchAndGuestCheckOut" />
       </list>
     </recent_temporary>
   </component>
@@ -711,20 +721,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494223101679</updated>
-    </task>
-    <task id="LOCAL-00275" summary="added thread.sleep, we need to remove those">
-      <created>1505307125791</created>
-      <option name="number" value="00275" />
-      <option name="presentableId" value="LOCAL-00275" />
-      <option name="project" value="LOCAL" />
-      <updated>1505307125791</updated>
-    </task>
-    <task id="LOCAL-00276" summary="Added in HomePage&#10;    public void clickOnCookieNotification(){&#10;        boolean cookieButtonExists = driver.findElements(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).size() != 0;&#10;        if (cookieButtonExists) {&#10;            driver.findElement(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).click();&#10;        }&#10;    }">
-      <created>1505307541108</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
-      <option name="project" value="LOCAL" />
-      <updated>1505307541108</updated>
     </task>
     <task id="LOCAL-00277" summary="Added in HomePage&#10;    public void clickOnCookieNotification(){&#10;        boolean cookieButtonExists = driver.findElements(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).size() != 0;&#10;        if (cookieButtonExists) {&#10;            driver.findElement(By.xpath(&quot;//div[@class='cookie-policy__container shown']/span[@class='icon-close']&quot;)).click();&#10;        }&#10;    }">
       <created>1505307561994</created>
@@ -1055,7 +1051,21 @@
       <option name="project" value="LOCAL" />
       <updated>1506063358276</updated>
     </task>
-    <option name="localTasksCounter" value="324" />
+    <task id="LOCAL-00324" summary="now it kind of runs parallel but 2 browser instances are open . and some elements are not being found. need to check">
+      <created>1506073838320</created>
+      <option name="number" value="00324" />
+      <option name="presentableId" value="LOCAL-00324" />
+      <option name="project" value="LOCAL" />
+      <updated>1506073838321</updated>
+    </task>
+    <task id="LOCAL-00325" summary="now it kind of runs parallel but 2 browser instances are open . and some elements are not being found. need to check">
+      <created>1506074660700</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
+      <option name="project" value="LOCAL" />
+      <updated>1506074660700</updated>
+    </task>
+    <option name="localTasksCounter" value="326" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1080,6 +1090,12 @@
     <history-entry file="clickOnFormatTabInAllResults_testClickOnFormatTabInAllResults - 2017.05.05 at 10h 33m 27s.xml">
       <configuration name="clickOnFormatTabInAllResults.testClickOnFormatTabInAllResults" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="scsRegisteringAnUser_main - 2017.09.22 at 11h 58m 26s.xml">
+      <configuration name="scsRegisteringAnUser.main" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="scsRegisteringAnUser_main - 2017.09.22 at 11h 58m 42s.xml">
+      <configuration name="scsRegisteringAnUser.main" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="scsRegisteringAnUser_testScSRegisteringAnUser - 2017.08.28 at 08h 46m 21s.xml">
       <configuration name="scsRegisteringAnUser.testScSRegisteringAnUser" configurationId="TestNG" />
     </history-entry>
@@ -1093,13 +1109,13 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.6159766" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.61817515" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264177" sideWeight="0.48369366" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.38402346" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264177" sideWeight="0.48222792" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.38182485" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23048736" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23488458" sideWeight="0.49586776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1109,8 +1125,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24990812" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42384106" sideWeight="0.46616542" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.433942" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42323652" sideWeight="0.46463907" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32434303" sideWeight="0.43275926" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30905077" sideWeight="0.43447906" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975176" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1194,7 +1210,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="109" />
+      <option name="time" value="110" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1522,16 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1548,35 +1554,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+        <state relative-caret-position="0">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <marker date="1506064085482" expanded="true" signature="2617:2676" ph="{...}" />
+            <element signature="imports" expanded="true" />
+            <marker date="1506063939790" expanded="true" signature="3776:3803" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSLoginAndCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/scsRegisteringAnUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="178">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1506073794368" expanded="true" signature="335:336" ph="@{...}" />
-            <marker date="1506073794368" expanded="true" signature="1409:1430" ph="{...}" />
+            <marker date="1506074358340" expanded="true" signature="301:302" ph="@{...}" />
+            <marker date="1506074358340" expanded="true" signature="1389:1410" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testcases/ScSsearchAndGuestCheckOut.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/General.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state relative-caret-position="399">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1506063939790" expanded="true" signature="3776:3803" ph="{...}" />
+            <marker date="1506500293752" expanded="true" signature="2617:2676" ph="{...}" />
           </folding>
         </state>
       </provider>
