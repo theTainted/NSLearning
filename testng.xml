@@ -4,10 +4,10 @@
   <test name="Chrome Test" parallel ="false">
       <parameter name ="browser" value="Chrome" />
      <classes>
-    <!--
+
       <class name ="testcases.scsRegisteringAnUser"/>
         <class name="testcases.ScSLoginAndCheckOut"/>
-     -->
+
       <class name ="testcases.ScSsearchAndGuestCheckOut"/>
 
 

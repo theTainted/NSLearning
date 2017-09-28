@@ -19,7 +19,10 @@ public class ScSLoginAndCheckOut extends General {
       driver.get(General.URL);
 
    driver.manage().window().maximize();
+   Thread.sleep(10000);
+
         HomePage homePage = new HomePage(driver);
+     homePage.clickOnCookieNotification();
         Login login = homePage.clickOnSCSLogin();
         login.enterUserName("tester@yopmail.com");
         login.enterPassword("test1234");
@@ -49,7 +52,7 @@ public class ScSLoginAndCheckOut extends General {
         Thread.sleep(7000);
 
         shippingAddress.scsBtnContinueInShippingPage();
-        homePage.clickOnCookieNotification();
+
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
          homePage.clickOnCookieNotification();
         orderPreview.clickOnChkBoxTerm();
@@ -62,12 +65,12 @@ public class ScSLoginAndCheckOut extends General {
      billingPage.enterName("test");
      billingPage.selectExpiryMonth("10");
      billingPage.selectExpiryYear("2020");
-   // billingPage.clickBtnToPay();
+  billingPage.clickBtnToPay();
 
     }
-   /* @AfterClass
+ @AfterClass
     public void tearDown() {
 
         driver.quit();
-    }*/
+    }
 }

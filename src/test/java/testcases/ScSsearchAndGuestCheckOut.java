@@ -33,7 +33,9 @@ import org.openqa.selenium.By;
 
       driver.get(General.URL) ;
        driver.manage().window().maximize();
+       Thread.sleep(10000);
         HomePage homePage = new HomePage(driver);
+    homePage.clickOnCookieNotification();
        ProductListPage plp = homePage.searchText(sProductName);
 
 
@@ -82,7 +84,7 @@ import org.openqa.selenium.By;
         billingPage.enterName("test");
         billingPage.selectExpiryMonth("10");
         billingPage.selectExpiryYear("2020");
-     //   billingPage.clickBtnToPay();
+  billingPage.clickBtnToPay();
 
     }
   @AfterClass
