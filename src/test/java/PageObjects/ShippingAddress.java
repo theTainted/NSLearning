@@ -80,9 +80,11 @@ public class ShippingAddress extends General {
 
         txtBoxShippingAddressFirstName.click();
         String sFirstName = txtBoxShippingAddressFirstName.getAttribute("value");
-        System.out.println("abc:"+sFirstName);
-        if (sFirstName.isEmpty()){
-            txtBoxShippingAddressLastName.sendKeys(firstName);
+        System.out.println("abc firstName:"+sFirstName);
+        System.out.println("firstName.Length:"+ sFirstName.length());
+
+        if (sFirstName.length()==0){
+            txtBoxShippingAddressFirstName.sendKeys(firstName);
         }
 
     }

@@ -47,10 +47,11 @@ public class ScSLoginAndCheckOut extends General {
         Thread.sleep(7000);
         shippingAddress.scsSelectAnAddressFromAddressDropDown(3);
         Thread.sleep(7000);
-        homePage.clickOnCookieNotification();
-        shippingAddress.scsBtnContinueInShippingPage();
 
+        shippingAddress.scsBtnContinueInShippingPage();
+        homePage.clickOnCookieNotification();
         scsOrderPreview orderPreview = new scsOrderPreview(driver);
+         homePage.clickOnCookieNotification();
         orderPreview.clickOnChkBoxTerm();
         Thread.sleep(2000);
         orderPreview.clickOnPayByCard();
@@ -64,9 +65,9 @@ public class ScSLoginAndCheckOut extends General {
    // billingPage.clickBtnToPay();
 
     }
-    @AfterClass
+   /* @AfterClass
     public void tearDown() {
 
         driver.quit();
-    }
+    }*/
 }
