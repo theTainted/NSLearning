@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,7 +25,7 @@ import org.testng.annotations.*;
    // public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
    // public  static String  searchString="Jacket";
 
-@BeforeTest
+@BeforeClass
 @Parameters("browser")
     public static WebDriver getBrowser(String browser){
 

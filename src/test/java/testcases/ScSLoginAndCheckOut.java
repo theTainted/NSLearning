@@ -11,7 +11,7 @@ public class ScSLoginAndCheckOut extends General {
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
-WebDriver driver = General.getBrowser("Chrome");//added to see if it helps in the race condition
+ driver = General.getBrowser("Chrome");//added to see if it helps in the race condition
     // driver.manage().deleteAllCookies();
      String sProductName = "L036281";
 

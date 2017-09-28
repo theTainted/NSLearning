@@ -15,7 +15,7 @@ public class scsRegisteringAnUser extends General {
 
     public void testScSRegisteringAnUser() {
 
-       General.getBrowser("Chrome"); ////added to see if it helps in the race condition
+      driver= General.getBrowser("Chrome"); ////added to see if it helps in the race condition
         System.out.println("one here ");
         // driver.manage().deleteAllCookies();
         driver.get(General.URL);
@@ -33,15 +33,15 @@ public class scsRegisteringAnUser extends General {
         registration.clickCreateAccount();
        System.out.println(driver.getCurrentUrl());
        registration.assertHeadingMyAccount("My account");
-       driver.findElement(By.xpath("//div[@id='main']//a[@title='Logout'])")).click();
+     //  driver.findElement(By.xpath("//div[@id='main']//a[@title='Logout'])")).click();
 
 
     }
- /*   @AfterTest
+  @AfterClass
     public void tearDown()  {
 
         driver.quit();
 
-    }*/
+    }
 
 }
