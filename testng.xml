@@ -6,22 +6,23 @@
      <classes>
 
       <class name ="testcases.scsRegisteringAnUser"/>
-        <class name="testcases.ScSLoginAndCheckOut"/>
-
-      <class name ="testcases.ScSsearchAndGuestCheckOut"/>
-
-
-
-    </classes>
-    </test>
     <!--
-    <test name ="Firefox Test">
-    <classes>
+     <class name="testcases.ScSLoginAndCheckOut"/>
 
-    < class name ="testcases.scsRegisteringAnUser"/>
-      <class name ="testcases.ScSsearchAndGuestCheckOut"/>
+   <class name ="testcases.ScSsearchAndGuestCheckOut"/>
+ -->
 
-    </classes>
-    </test>
-    -->
+
+ </classes>
+ </test>
+ <!--
+ <test name ="Firefox Test">
+ <classes>
+
+ < class name ="testcases.scsRegisteringAnUser"/>
+   <class name ="testcases.ScSsearchAndGuestCheckOut"/>
+
+ </classes>
+ </test>
+ -->
  </suite>
