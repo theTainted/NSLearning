@@ -6,11 +6,11 @@
     <classes>
 
         <class name ="testcases.scsRegisteringAnUser"/>
-        <!--
+
          <class name="testcases.ScSLoginAndCheckOut"/>
 
        <class name ="testcases.ScSsearchAndGuestCheckOut"/>
-     -->
+
 
 
     </classes>
