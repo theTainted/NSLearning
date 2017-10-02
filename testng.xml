@@ -1,28 +1,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run">
 
-  <test name="Chrome Test" parallel ="false">
-      <parameter name ="browser" value="Chrome" />
-     <classes>
+<test name="Chrome Test" parallel ="false">
+    <parameter name ="browser" value="Chrome" />
+    <classes>
 
-      <class name ="testcases.scsRegisteringAnUser"/>
-    <!--
-     <class name="testcases.ScSLoginAndCheckOut"/>
+        <class name ="testcases.scsRegisteringAnUser"/>
+        <!--
+         <class name="testcases.ScSLoginAndCheckOut"/>
 
-   <class name ="testcases.ScSsearchAndGuestCheckOut"/>
- -->
+       <class name ="testcases.ScSsearchAndGuestCheckOut"/>
+     -->
 
 
- </classes>
- </test>
- <!--
- <test name ="Firefox Test">
- <classes>
+    </classes>
+</test>
+<!--
+<test name ="Firefox Test">
+<classes>
 
- < class name ="testcases.scsRegisteringAnUser"/>
-   <class name ="testcases.ScSsearchAndGuestCheckOut"/>
+< class name ="testcases.scsRegisteringAnUser"/>
+  <class name ="testcases.ScSsearchAndGuestCheckOut"/>
 
- </classes>
- </test>
- -->
- </suite>
+</classes>
+</test>
+-->
+</suite>

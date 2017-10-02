@@ -22,8 +22,8 @@ import org.testng.annotations.*;
 
 
  // public  static String URL="https://staging.scs.co.uk";
-// public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
- public static String URL = "https://"+"storefront"+":"+"storefront"+"@"+"staging.cortefiel.com/es/es";
+ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"development.scs.co.uk";
+// public static String URL = "https://"+"storefront"+":"+"storefront"+"@"+"staging.cortefiel.com/es/es";
    // public  static String  searchString="Jacket";
 
 @BeforeClass
