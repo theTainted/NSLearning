@@ -39,7 +39,7 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
 //if(General.driver==null)
      //if (this.driver == null)
 
-         if (browser.equals("Firefox"))
+         if (browser.equalsIgnoreCase("Firefox"))
 
          {
 
@@ -54,7 +54,7 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
          //   driver = new FirefoxDriver(dc);
             return new FirefoxDriver(dc); //added to see if it helps in the race condition
 
-         } else if (browser.equals("Chrome"))
+         } else if (browser.equalsIgnoreCase("Chrome"))
 
          {
              System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
@@ -62,7 +62,7 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
              System.out.println("inside the general");
             return new ChromeDriver();//added to see if it helps in the race condition
          }
-         else if (browser.equals("IE"))
+         else if (browser.equalsIgnoreCase("IE"))
 
          {
           /*  DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
