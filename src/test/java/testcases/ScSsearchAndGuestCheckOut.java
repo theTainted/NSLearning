@@ -63,7 +63,7 @@ import org.openqa.selenium.By;
         ShippingAddress shippingAddress = new ShippingAddress(driver);
         shippingAddress.scsSelectTitle("Miss");
         shippingAddress.enterFirstName("test");
-     shippingAddress.enterLastName("tester");
+        shippingAddress.enterLastName("tester");
         shippingAddress.scsEnterEmail("syam.suryanarayanan@digitaslbi.com");
         shippingAddress.enterPhone("3333333333");
         shippingAddress.selectBestTimeToContact("Call me now");
