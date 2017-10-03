@@ -8,7 +8,7 @@ import PageObjects.RegistrationPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-public class scsRegisteringAnUser extends General {
+public class scsRegisteringAnUser  {
 
     WebDriver  driver= General.getBrowser("chrome");
 
@@ -17,7 +17,6 @@ public class scsRegisteringAnUser extends General {
     public void testScSRegisteringAnUser() throws InterruptedException {
 
         ////added to see if it helps in the race condition
-        System.out.println(General.URL);
 
         // driver.manage().deleteAllCookies();
      driver.get(General.URL);
