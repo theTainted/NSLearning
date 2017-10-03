@@ -15,7 +15,7 @@
   -->
         </classes>
     </test>
-    <!--
+<!--
        <test name=" IE Test" parallel="false">
            <parameter name ="browser" value="IE"/>
        <classes>
