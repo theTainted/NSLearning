@@ -29,8 +29,9 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
 // public static String URL = "https://"+"storefront"+":"+"storefront"+"@"+"staging.cortefiel.com/es/es";
    // public  static String  searchString="Jacket";
 
+    @Parameters("browser")
 @BeforeClass
-@Parameters("browser")
+
     public static WebDriver getBrowser(String browser){
 
 

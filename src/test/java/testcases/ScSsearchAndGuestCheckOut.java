@@ -13,7 +13,7 @@ import org.testng.annotations.*;
 import org.openqa.selenium.By;
 
  public class ScSsearchAndGuestCheckOut  {
-     WebDriver driver =General.getBrowser("Chrome"); //added to see if it helps in the race condition
+     WebDriver driver =General.getBrowser("chrome"); //added to see if it helps in the race condition
 
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {

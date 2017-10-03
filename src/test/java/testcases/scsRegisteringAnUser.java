@@ -8,8 +8,9 @@ import PageObjects.RegistrationPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-public class scsRegisteringAnUser  {
-    WebDriver  driver= General.getBrowser("Chrome");
+public class scsRegisteringAnUser extends General  {
+
+   WebDriver  driver= General.getBrowser("chrome");
 
     @Test
 
@@ -17,6 +18,7 @@ public class scsRegisteringAnUser  {
 
      ; ////added to see if it helps in the race condition
         System.out.println("one here ");
+
         // driver.manage().deleteAllCookies();
         driver.get(General.URL);
       driver.manage().window().maximize();
