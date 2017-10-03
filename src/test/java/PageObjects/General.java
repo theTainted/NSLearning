@@ -45,7 +45,7 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
 
 
              DesiredCapabilities dc = DesiredCapabilities.firefox();
-             FirefoxProfile profile = new FirefoxProfile();
+             FirefoxProfile profile = new FirefoxProfile(); 
              profile.setAcceptUntrustedCertificates(false);
              profile.setAssumeUntrustedCertificateIssuer(true);
              System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
