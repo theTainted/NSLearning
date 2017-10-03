@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 
 public class scsRegisteringAnUser extends General {
 
-    //WebDriver  driver= General.getBrowser("chrome");
+    WebDriver  driver= General.getBrowser("chrome");
 
     @Test
 
