@@ -12,13 +12,6 @@ import org.testng.annotations.*;
 
 import org.openqa.selenium.By;
 
-//import static PageObjects.General.driver;
-
-
-/**
- * Created by syam.suryanarayanan on 7/20/2017.
- */
-
  public class ScSsearchAndGuestCheckOut extends General {
 
 
@@ -87,7 +80,7 @@ import org.openqa.selenium.By;
   billingPage.clickBtnToPay();
 
     }
-  @AfterClass
+  @AfterTest
     public void tearDown()  {
 
         driver.quit();
