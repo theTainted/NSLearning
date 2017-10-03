@@ -16,7 +16,8 @@
         </classes>
     </test>
     <!--
-    <test name ="Firefox Test">
+    <test name=" IE Test" parallel="false">
+        <parameter name ="browser" value="IE"/>
     <classes>
 
     < class name ="testcases.scsRegisteringAnUser"/>
