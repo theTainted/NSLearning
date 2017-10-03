@@ -15,15 +15,17 @@
   -->
         </classes>
     </test>
-    <!--
+
     <test name=" IE Test" parallel="false">
         <parameter name ="browser" value="IE"/>
     <classes>
+        <class name ="testcases.scsRegisteringAnUser"/>
+        <!--
 
-    < class name ="testcases.scsRegisteringAnUser"/>
-      <class name ="testcases.ScSsearchAndGuestCheckOut"/>
-
-    </classes>
-    </test>
+        <class name ="testcases.scsRegisteringAnUser"/>
+          <class name ="testcases.ScSsearchAndGuestCheckOut"/>
     -->
-</suite>
+        </classes>
+        </test>
+
+    </suite>
