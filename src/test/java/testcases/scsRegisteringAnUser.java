@@ -4,18 +4,18 @@ import PageObjects.General;
 import PageObjects.HomePage;
 import PageObjects.Login;
 import PageObjects.RegistrationPage;
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-public class scsRegisteringAnUser extends General {
-
+public class scsRegisteringAnUser  {
+    WebDriver  driver= General.getBrowser("Chrome");
 
     @Test
 
-    public void testScSRegisteringAnUser() throws InterruptedException {
+    public void testScSRegisteringAnUser()  throws InterruptedException {
 
-      driver= General.getBrowser("Chrome"); ////added to see if it helps in the race condition
+     ; ////added to see if it helps in the race condition
         System.out.println("one here ");
         // driver.manage().deleteAllCookies();
         driver.get(General.URL);

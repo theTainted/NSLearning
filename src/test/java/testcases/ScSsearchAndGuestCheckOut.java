@@ -12,13 +12,13 @@ import org.testng.annotations.*;
 
 import org.openqa.selenium.By;
 
- public class ScSsearchAndGuestCheckOut extends General {
-
+ public class ScSsearchAndGuestCheckOut  {
+     WebDriver driver =General.getBrowser("Chrome"); //added to see if it helps in the race condition
 
 @Test
     public  void testScSearchAndGuestCheckOut() throws InterruptedException {
 
-   driver =General.getBrowser("Chrome"); //added to see if it helps in the race condition
+
 
   //  General.getBrowser("Chrome");
  //   driver.manage().deleteAllCookies();
@@ -80,7 +80,7 @@ import org.openqa.selenium.By;
   billingPage.clickBtnToPay();
 
     }
-  @AfterTest
+  @AfterClass
     public void tearDown()  {
 
         driver.quit();

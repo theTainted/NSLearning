@@ -5,13 +5,14 @@ package testcases;
         import org.testng.annotations.*;
         import org.testng.annotations.Test;
 
-public class ScSLoginAndCheckOut extends General {
+public class ScSLoginAndCheckOut  {
+    WebDriver driver = General.getBrowser("Chrome");//added to see if it helps in the race condition
 
 //    General general = new General();
  @Test
   public void testScSLoginAndCheckOut() throws InterruptedException {
   // public static void main (String [] args) throws InterruptedException{
- driver = General.getBrowser("Chrome");//added to see if it helps in the race condition
+
     // driver.manage().deleteAllCookies();
      String sProductName = "L036281";
 
