@@ -34,7 +34,7 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
 @Parameters("browser")
     public static WebDriver getBrowser(String browser){
 
-    WebDriver driver;
+
 
 //if(General.driver==null)
      //if (this.driver == null)
@@ -70,6 +70,7 @@ public static String URL = "https://"+"storefront"+":"+"sancerre"+"@"+"developme
 
              System.setProperty("webdriver.ie.driver", "C:/IEDriverServer.exe");
       // driver = new InternetExplorerDriver();
+             System.out.println("UE");
             return new InternetExplorerDriver(); //added to see if it helps in the race condition
 
          }
