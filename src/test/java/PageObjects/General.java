@@ -1,6 +1,7 @@
 package PageObjects;
 
 //import org.junit.BeforeClass;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +17,7 @@ import org.testng.annotations.*;
 /**
  * Created by syam.suryanarayanan on 11/21/2016.
  */
- public class General {
+ public  class General {
   // public  static WebDriver driver;
   protected static  WebDriver driver ; //added to see if it helps in the race condition and also remove the static declarations in the page
 
